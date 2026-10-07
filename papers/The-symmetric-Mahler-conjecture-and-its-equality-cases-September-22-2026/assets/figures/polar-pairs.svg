@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="560" viewBox="0 0 960 560" font-family="Helvetica, Arial, sans-serif">
+  <title>Three symmetric convex bodies, their polars, and their volume products</title>
+  <rect x="0" y="0" width="960" height="560" fill="#ffffff"/>
+
+  <!-- Legend -->
+  <g font-size="15" fill="#222">
+    <rect x="250" y="22" width="22" height="16" fill="#4C72B0" fill-opacity="0.28" stroke="#2B5797" stroke-width="2"/>
+    <text x="280" y="35">the body K</text>
+    <rect x="420" y="22" width="22" height="16" fill="#DD8452" fill-opacity="0.12" stroke="#C0592B" stroke-width="2.5" stroke-dasharray="6 3"/>
+    <text x="450" y="35">its polar K° (dashed)</text>
+    <text x="640" y="35" fill="#555">axis ticks at ±1</text>
+  </g>
+
+  <!-- Panel titles -->
+  <g font-size="17" font-weight="bold" fill="#222" text-anchor="middle">
+    <text x="170" y="78">Square ↔ diamond</text>
+    <text x="480" y="78">Hexagon ↔ hexagon</text>
+    <text x="790" y="78">Disk ↔ disk</text>
+  </g>
+
+  <!-- Axes -->
+  <g stroke="#bbbbbb" stroke-width="1">
+    <line x1="60" y1="210" x2="280" y2="210"/>
+    <line x1="170" y1="100" x2="170" y2="320"/>
+    <line x1="370" y1="210" x2="590" y2="210"/>
+    <line x1="480" y1="100" x2="480" y2="320"/>
+    <line x1="680" y1="210" x2="900" y2="210"/>
+    <line x1="790" y1="100" x2="790" y2="320"/>
+  </g>
+  <!-- unit ticks -->
+  <g stroke="#999999" stroke-width="1.5">
+    <line x1="95" y1="205" x2="95" y2="215"/><line x1="245" y1="205" x2="245" y2="215"/>
+    <line x1="165" y1="135" x2="175" y2="135"/><line x1="165" y1="285" x2="175" y2="285"/>
+    <line x1="405" y1="205" x2="405" y2="215"/><line x1="555" y1="205" x2="555" y2="215"/>
+    <line x1="475" y1="135" x2="485" y2="135"/><line x1="475" y1="285" x2="485" y2="285"/>
+    <line x1="715" y1="205" x2="715" y2="215"/><line x1="865" y1="205" x2="865" y2="215"/>
+    <line x1="785" y1="135" x2="795" y2="135"/><line x1="785" y1="285" x2="795" y2="285"/>
+  </g>
+
+  <!-- Panel 1: square [-1,1]^2 and diamond |x|+|y| <= 1 (scale 75 px per unit, centre 170,210) -->
+  <rect x="95" y="135" width="150" height="150" fill="#4C72B0" fill-opacity="0.28" stroke="#2B5797" stroke-width="2.5"/>
+  <polygon points="245,210 170,135 95,210 170,285" fill="#DD8452" fill-opacity="0.12" stroke="#C0592B" stroke-width="3" stroke-dasharray="8 4"/>
+
+  <!-- Panel 2: regular hexagon with vertices at distance 1, and its polar (vertices at distance 2/sqrt3) -->
+  <polygon points="555,210 517.5,145.05 442.5,145.05 405,210 442.5,274.95 517.5,274.95" fill="#4C72B0" fill-opacity="0.28" stroke="#2B5797" stroke-width="2.5"/>
+  <polygon points="555,166.70 480,123.40 405,166.70 405,253.30 480,296.60 555,253.30" fill="#DD8452" fill-opacity="0.12" stroke="#C0592B" stroke-width="3" stroke-dasharray="8 4"/>
+
+  <!-- Panel 3: unit disk, which is its own polar -->
+  <circle cx="790" cy="210" r="75" fill="#4C72B0" fill-opacity="0.28" stroke="#2B5797" stroke-width="2.5"/>
+  <circle cx="790" cy="210" r="75" fill="none" stroke="#C0592B" stroke-width="3" stroke-dasharray="8 4"/>
+
+  <!-- Areas and products -->
+  <g font-size="15" fill="#222" text-anchor="middle">
+    <text x="170" y="348">area(K) = 4,  area(K°) = 2</text>
+    <text x="480" y="348">area(K) ≈ 2.60,  area(K°) ≈ 3.46</text>
+    <text x="790" y="348">area(K) = area(K°) = π</text>
+  </g>
+  <g font-size="17" font-weight="bold" text-anchor="middle">
+    <text x="170" y="374" fill="#1a7f37">product = 8</text>
+    <text x="480" y="374" fill="#444">product = 9</text>
+    <text x="790" y="374" fill="#8250df">product = π² ≈ 9.87</text>
+  </g>
+
+  <!-- Number line from 7.5 to 10.2: x = 120 + (v - 7.5) * 266.67 -->
+  <text x="480" y="420" font-size="15" fill="#333" text-anchor="middle">Every symmetric convex body in the plane has a volume product between 8 and π²</text>
+  <line x1="120" y1="460" x2="840" y2="460" stroke="#444" stroke-width="2"/>
+  <rect x="253.3" y="452" width="498.6" height="16" fill="#e8e8e8" stroke="none"/>
+  <line x1="120" y1="460" x2="840" y2="460" stroke="#444" stroke-width="2"/>
+  <g stroke="#444" stroke-width="1.5">
+    <line x1="253.3" y1="450" x2="253.3" y2="470"/>
+    <line x1="520" y1="450" x2="520" y2="470"/>
+    <line x1="751.9" y1="450" x2="751.9" y2="470"/>
+  </g>
+  <circle cx="253.3" cy="460" r="7" fill="#1a7f37"/>
+  <circle cx="520" cy="460" r="7" fill="#444"/>
+  <circle cx="751.9" cy="460" r="7" fill="#8250df"/>
+  <g font-size="15" text-anchor="middle">
+    <text x="253.3" y="492" fill="#1a7f37" font-weight="bold">8 = 4²/2!</text>
+    <text x="253.3" y="512" fill="#1a7f37">minimum: parallelograms</text>
+    <text x="253.3" y="530" fill="#555" font-size="13">(the 2D case, proved by Mahler)</text>
+    <text x="520" y="492" fill="#444" font-weight="bold">9</text>
+    <text x="520" y="512" fill="#444">regular hexagon</text>
+    <text x="751.9" y="492" fill="#8250df" font-weight="bold">π² ≈ 9.87</text>
+    <text x="751.9" y="512" fill="#8250df">maximum: ellipses</text>
+    <text x="751.9" y="530" fill="#555" font-size="13">(Blaschke–Santaló)</text>
+  </g>
+</svg>

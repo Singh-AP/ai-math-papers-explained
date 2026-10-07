@@ -64,6 +64,8 @@ nlm studio status      $NB --json   # wait until everything is "completed"; slid
 Save every artifact ID together with its **type and title** when it is created (the `--json` output). Never pair IDs with outputs by list position: `nlm studio status` does not list artifacts in creation order. After downloading a mind map, check its root `name` to confirm it is the map you meant.
 
 Restrict reports and mind maps to the paper sources (`--source-ids`). Background sources such as Wikipedia pull in unrelated and unverifiable claims.
+
+Write prompts as **plain statements of fact** ("The paper proves the lower bound by …; the upper bound comes from …"), never as warnings or commands ("CRITICAL: never swap these bounds", "do not use …"). NotebookLM copies imperative guard text verbatim onto slides and into infographics. Keep each prompt under about 2,000 characters.
 ## 4. Download, keeping full quality
 
 ```bash

@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 700" width="1000" height="700" font-family="Helvetica, Arial, sans-serif">
+  <title>The squeeze at the end of the proof: a linear upper bound against a quadratic lower bound</title>
+  <desc>Schematic plot. Horizontal axis: B, the largest elliptic index of the root. Vertical axis: height. The finite tests force the height of the elliptic point attached to the root to be at most about C times B (a straight line). The canonical height of the elliptic curve forces the same height to be about 2 h-hat(P) times B squared (a parabola). Both can hold only to the left of the crossing point B0, so B is bounded by an ordinary number and the root consists of ordinary integers.</desc>
+  <defs>
+    <marker id="ax" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="9" markerHeight="9" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#111827"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="700" fill="#ffffff"/>
+  <text x="500" y="36" font-size="23" font-weight="bold" fill="#111827" text-anchor="middle">The squeeze at the end of the proof: linear beats quadratic</text>
+  <text x="500" y="62" font-size="15" fill="#4b5563" text-anchor="middle">Schematic, not to scale. Both bounds are about the same number: the height of the elliptic point attached to the root.</text>
+
+  <!-- allowed zone -->
+  <rect x="110.0" y="76.0" width="425.7" height="484.0" fill="#ecfdf5"/>
+  <!-- impossible zone -->
+  <rect x="535.7" y="76.0" width="354.3" height="484.0" fill="#fef2f2"/>
+  <polygon points="535.7,297.8 539.5,293.1 543.4,288.4 547.2,283.5 551.0,278.7 554.8,273.8 558.6,268.9 562.5,263.9 566.3,258.9 570.1,253.8 573.9,248.7 577.7,243.6 581.5,238.4 585.4,233.1 589.2,227.9 593.0,222.6 596.8,217.2 600.6,211.8 604.5,206.4 608.3,200.9 612.1,195.4 615.9,189.8 619.7,184.2 623.6,178.5 627.4,172.8 631.2,167.1 635.0,161.3 638.8,155.5 642.6,149.6 646.5,143.7 650.3,137.8 654.1,131.8 657.9,125.8 661.7,119.7 665.6,113.6 669.4,107.4 673.2,101.2 677.0,95.0 680.8,88.7 684.6,82.4 688.5,76.0 890.0,76.0 890.0,98.0 535.7,297.8" fill="#fecaca" opacity="0.6"/>
+
+  <!-- axes -->
+  <line x1="110" y1="560.0" x2="920.0" y2="560.0" stroke="#111827" stroke-width="1.6" marker-end="url(#ax)"/>
+  <line x1="110" y1="560.0" x2="110" y2="62.0" stroke="#111827" stroke-width="1.6" marker-end="url(#ax)"/>
+  <text x="898.0" y="590.0" font-size="17" font-weight="bold" fill="#111827" text-anchor="end">B</text>
+  <text x="898.0" y="614.0" font-size="14" fill="#374151" text-anchor="end">the largest index of the root; a priori it might be an “infinitely large” integer</text>
+  <text x="94.0" y="318.0" font-size="16" font-weight="bold" fill="#111827" text-anchor="middle" transform="rotate(-90 94.0 318.0)">height of the attached elliptic point</text>
+
+  <!-- crossing -->
+  <line x1="535.7" y1="560.0" x2="535.7" y2="76.0" stroke="#047857" stroke-width="2" stroke-dasharray="7 5"/>
+  <text x="535.7" y="582.0" font-size="16" font-weight="bold" fill="#047857" text-anchor="middle">B<tspan font-size="12" dy="4">0</tspan></text>
+
+  <!-- curves -->
+  <line x1="110.0" y1="538.0" x2="890.0" y2="98.0" stroke="#2563eb" stroke-width="3.5"/>
+  <polyline points="110.0,560.0 117.2,559.9 124.5,559.7 131.7,559.3 138.9,558.8 146.2,558.1 153.4,557.3 160.6,556.3 167.8,555.2 175.1,553.9 182.3,552.4 189.5,550.8 196.8,549.1 204.0,547.2 211.2,545.2 218.5,543.0 225.7,540.6 232.9,538.1 240.2,535.5 247.4,532.7 254.6,529.8 261.8,526.6 269.1,523.4 276.3,520.0 283.5,516.4 290.8,512.7 298.0,508.9 305.2,504.9 312.5,500.7 319.7,496.4 326.9,491.9 334.2,487.3 341.4,482.6 348.6,477.6 355.8,472.6 363.1,467.4 370.3,462.0 377.5,456.5 384.8,450.8 392.0,445.0 399.2,439.0 406.5,432.9 413.7,426.6 420.9,420.2 428.2,413.6 435.4,406.9 442.6,400.0 449.8,392.9 457.1,385.8 464.3,378.4 471.5,370.9 478.8,363.3 486.0,355.5 493.2,347.6 500.5,339.5 507.7,331.2 514.9,322.8 522.2,314.3 529.4,305.6 536.6,296.7 543.8,287.8 551.1,278.6 558.3,269.3 565.5,259.8 572.8,250.2 580.0,240.5 587.2,230.6 594.5,220.5 601.7,210.3 608.9,199.9 616.2,189.4 623.4,178.8 630.6,168.0 637.8,157.0 645.1,145.9 652.3,134.6 659.5,123.2 666.8,111.6 674.0,99.9 681.2,88.0 688.5,76.0" fill="none" stroke="#ea580c" stroke-width="3.5"/>
+  <circle cx="535.7" cy="297.8" r="6" fill="#047857"/>
+
+  <!-- labels for curves -->
+  <g font-size="15">
+    <line x1="760" y1="329.0" x2="702.8" y2="206.6" stroke="#2563eb" stroke-width="1.5"/>
+    <rect x="630" y="329.0" width="272" height="66" rx="8" fill="#ffffff" stroke="#2563eb"/>
+    <text x="642" y="351.0" font-weight="bold" fill="#1d4ed8">Upper bound from the tests</text>
+    <text x="642" y="371.0" fill="#111827">height ≤ C · B   (Section 2.7)</text>
+    <text x="642" y="388.0" fill="#6b7280" font-size="13">five-point height estimate + local tests</text>
+
+    <rect x="140" y="96" width="300" height="66" rx="8" fill="#ffffff" stroke="#ea580c"/>
+    <text x="152" y="118" font-weight="bold" fill="#c2410c">Lower bound from the elliptic curve</text>
+    <text x="152" y="138" fill="#111827">height ≈ 2ĥ(P) · B²   (canonical height)</text>
+    <text x="152" y="155" fill="#6b7280" font-size="13">multiples nP get complicated like n²</text>
+  </g>
+
+  <!-- zone labels -->
+  <g font-size="15" text-anchor="middle">
+    <text x="322.9" y="296.0" fill="#047857" font-weight="bold">both bounds can hold</text>
+    <text x="322.9" y="315.0" fill="#047857">only here: B ≤ B<tspan font-size="11" dy="4">0</tspan></text>
+    <text x="722.9" y="498.4" fill="#b91c1c" font-weight="bold">impossible zone</text>
+    <text x="722.9" y="517.4" fill="#b91c1c">the parabola is above the line</text>
+  </g>
+
+  <!-- conclusion -->
+  <rect x="110" y="640" width="810" height="40" rx="8" fill="#f0fdf4" stroke="#047857"/>
+  <text x="515" y="666" font-size="15" fill="#065f46" text-anchor="middle">So B is an ordinary finite number, the indices are genuine integers, and the root is a genuine integer solution.</text>
+</svg>

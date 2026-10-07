@@ -3,7 +3,8 @@
 
 Each manuscript maps to one directory, papers/<preprint-slug>/, using the same
 slug as openai/math/preprints/<preprint-slug>/. A paper counts as explained
-once papers/<preprint-slug>/README.md exists.
+once papers/<preprint-slug>/README.md is tracked by git (so drafts in progress
+are not linked); outside a git checkout, existence on disk is used instead.
 
 Usage:
     curl -sLO https://raw.githubusercontent.com/openai/math/main/CONTENTS.md
@@ -12,6 +13,7 @@ Usage:
 """
 
 import re
+import subprocess
 import sys
 from collections import OrderedDict
 from pathlib import Path
@@ -66,8 +68,23 @@ def cell(text):
     return text.replace("|", "\\|")
 
 
+def explained_slugs():
+    """Slugs whose explainer README is tracked by git (or on disk without git)."""
+    try:
+        out = subprocess.run(
+            ["git", "-C", str(REPO_ROOT), "ls-files", "papers/*/README.md"],
+            check=True, capture_output=True, text=True,
+        ).stdout
+        return {Path(line).parts[1] for line in out.splitlines() if line}
+    except (OSError, subprocess.CalledProcessError):
+        return {p.parent.name for p in (REPO_ROOT / "papers").glob("*/README.md")}
+
+
+EXPLAINED = explained_slugs()
+
+
 def status_cell(slug):
-    if (REPO_ROOT / "papers" / slug / "README.md").exists():
+    if slug in EXPLAINED:
         return f"✅ [read the explainer](papers/{slug}/)"
     return "⬜ not yet"
 
@@ -85,12 +102,7 @@ def main():
         disciplines["Other"] = unlisted
 
     total_papers = sum(len(f["papers"]) for f in families.values())
-    explained = sum(
-        1
-        for f in families.values()
-        for _, _, slug in f["papers"]
-        if (REPO_ROOT / "papers" / slug / "README.md").exists()
-    )
+    explained = sum(1 for f in families.values() for _, _, slug in f["papers"] if slug in EXPLAINED)
 
     out = []
     out.append("# Catalogue of papers")

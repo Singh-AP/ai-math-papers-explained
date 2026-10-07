@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 660" width="1000" height="660" font-family="Helvetica, Arial, sans-serif">
+  <title>How a rational-solvability algorithm would decide integer equations</title>
+  <desc>The logic of Theorem 1.1. Given an integer polynomial f, run two searches side by side: Search A looks for an integer zero, Search B builds finite rational tests from f and asks the hypothetical rational-solvability algorithm about each one until a test fails. The paper proves that exactly one of the two searches always stops, which would decide integer solvability, contradicting the Davis-Putnam-Robinson-Matiyasevich theorem.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#374151"/>
+    </marker>
+  </defs>
+  <rect x="0" y="0" width="1000" height="660" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="500" y="40" font-size="23" font-weight="bold" fill="#111827" text-anchor="middle">If a rational-solvability algorithm existed, it would solve integer equations</text>
+  <text x="500" y="68" font-size="15" fill="#4b5563" text-anchor="middle">The logic behind Theorem 1.1: run two searches side by side, and wait for one of them to stop</text>
+
+  <!-- Input box -->
+  <rect x="24" y="228" width="168" height="124" rx="10" fill="#f3f4f6" stroke="#374151" stroke-width="1.5"/>
+  <text x="108" y="258" font-size="16" font-weight="bold" fill="#111827" text-anchor="middle">Input</text>
+  <text x="108" y="282" font-size="14" fill="#111827" text-anchor="middle">a polynomial f</text>
+  <text x="108" y="301" font-size="14" fill="#111827" text-anchor="middle">with integer</text>
+  <text x="108" y="320" font-size="14" fill="#111827" text-anchor="middle">coefficients, in any</text>
+  <text x="108" y="339" font-size="14" fill="#111827" text-anchor="middle">number of variables</text>
+
+  <!-- Arrows to the lanes -->
+  <path d="M 192 270 C 210 270, 210 180, 236 180" fill="none" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+  <path d="M 192 310 C 210 310, 210 390, 236 390" fill="none" stroke="#374151" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Lane A -->
+  <rect x="240" y="96" width="736" height="160" rx="12" fill="#eff6ff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="258" y="124" font-size="17" font-weight="bold" fill="#1d4ed8">Search A: look for an integer zero</text>
+  <text x="258" y="146" font-size="14" fill="#1f2937">Plug in every integer tuple in turn: (0, 0, …), (1, 0, …), (−1, 0, …), (0, 1, …), …</text>
+  <g font-size="14" fill="#111827" text-anchor="middle">
+    <rect x="258" y="170" width="118" height="54" rx="8" fill="#ffffff" stroke="#93c5fd"/>
+    <text x="317" y="194">tuple 1</text><text x="317" y="213" fill="#6b7280">f ≠ 0</text>
+    <rect x="392" y="170" width="118" height="54" rx="8" fill="#ffffff" stroke="#93c5fd"/>
+    <text x="451" y="194">tuple 2</text><text x="451" y="213" fill="#6b7280">f ≠ 0</text>
+    <rect x="526" y="170" width="118" height="54" rx="8" fill="#ffffff" stroke="#93c5fd"/>
+    <text x="585" y="194">tuple 3</text><text x="585" y="213" fill="#6b7280">f ≠ 0</text>
+    <text x="680" y="203" font-size="22" fill="#6b7280">…</text>
+  </g>
+  <line x1="712" y1="197" x2="768" y2="197" stroke="#2563eb" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="774" y="164" width="186" height="66" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+  <text x="867" y="190" font-size="14" fill="#111827" text-anchor="middle">found a tuple with f = 0</text>
+  <text x="867" y="215" font-size="16" font-weight="bold" fill="#1d4ed8" text-anchor="middle">STOP: answer YES</text>
+
+  <!-- Lane B -->
+  <rect x="240" y="306" width="736" height="160" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="258" y="334" font-size="17" font-weight="bold" fill="#c2410c">Search B: look for a failed test</text>
+  <text x="258" y="356" font-size="14" fill="#1f2937">Build finite systems of rational equations (“tests”) from f, and ask the rational algorithm about each</text>
+  <g font-size="14" fill="#111827" text-anchor="middle">
+    <rect x="258" y="380" width="118" height="54" rx="8" fill="#ffffff" stroke="#fdba74"/>
+    <text x="317" y="404">test 1</text><text x="317" y="423" fill="#6b7280">passes</text>
+    <rect x="392" y="380" width="118" height="54" rx="8" fill="#ffffff" stroke="#fdba74"/>
+    <text x="451" y="404">test 2</text><text x="451" y="423" fill="#6b7280">passes</text>
+    <rect x="526" y="380" width="118" height="54" rx="8" fill="#ffffff" stroke="#fdba74"/>
+    <text x="585" y="404">test 3</text><text x="585" y="423" fill="#6b7280">passes</text>
+    <text x="680" y="413" font-size="22" fill="#6b7280">…</text>
+  </g>
+  <line x1="712" y1="407" x2="768" y2="407" stroke="#ea580c" stroke-width="2" marker-end="url(#arrow)"/>
+  <rect x="774" y="368" width="186" height="80" rx="10" fill="#ffedd5" stroke="#c2410c" stroke-width="2"/>
+  <text x="867" y="392" font-size="14" fill="#111827" text-anchor="middle">some test has no</text>
+  <text x="867" y="410" font-size="14" fill="#111827" text-anchor="middle">rational solution</text>
+  <text x="867" y="435" font-size="16" font-weight="bold" fill="#c2410c" text-anchor="middle">STOP: answer NO</text>
+
+  <!-- Explanation -->
+  <rect x="24" y="492" width="952" height="148" rx="12" fill="#f9fafb" stroke="#9ca3af"/>
+  <g font-size="15" fill="#111827">
+    <text x="44" y="522"><tspan font-weight="bold">Soundness</tspan> (Sections 2.3, 3, 5, 6): an integer zero of f makes every test pass, so a failed test really means “no integer zero”.</text>
+    <text x="44" y="550"><tspan font-weight="bold">Completeness</tspan> (Section 2, Proposition 2.12, the heart of the paper): if every test passes, then f has an integer zero.</text>
+    <text x="44" y="578">So for every f exactly one search stops, with the right answer. That would be an algorithm for integer equations,</text>
+    <text x="44" y="606">which Davis, Putnam, Robinson and Matiyasevich (1961–1970) proved cannot exist.</text>
+    <text x="44" y="630" font-weight="bold" fill="#047857">Conclusion: no algorithm decides whether an integer polynomial has a rational zero.</text>
+  </g>
+</svg>

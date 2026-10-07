@@ -21,6 +21,9 @@ Each explainer comes with visual material generated with **Google NotebookLM**: 
 | Field | Paper | Explainer |
 |---|---|---|
 | Number theory | **The Quasi-Riemann Hypothesis: a zero-free half-plane Re(s) > 7/8** (family 003). The Riemann zeta function and every Dirichlet $L$-function have no zeros with real part above 7/8 | [Read it](papers/The-Quasi-Riemann-Hypothesis-September-30-2026/) |
+| Number theory / logic | **Hilbert's tenth problem over the rational numbers** (family 004). No algorithm can decide whether a polynomial equation with integer coefficients has a rational solution | [Read it](papers/Hilberts-tenth-problem-over-the-rational-numbers-September-24-2026/) |
+| Convex geometry | **The symmetric Mahler conjecture** (family 087). Every origin-symmetric convex body $K$ in $n$ dimensions has volume product $\lvert K\rvert\ \lvert K^\circ\rvert \ge 4^n/n!$, with equality exactly for Hanner polytopes | [Read it](papers/The-symmetric-Mahler-conjecture-and-its-equality-cases-September-22-2026/) |
+| Dynamical systems | **Hilbert's sixteenth problem: uniform bounds for limit cycles** (family 143). A planar polynomial vector field of degree $d$ has at most $B(d)$ limit cycles, a bound depending only on the degree | [Read it](papers/uniform-bounds-for-planar-polynomial-limit-cycles-September-24-2026/) |
 
 The full list of all 722 papers and their status is in **[CATALOG.md](CATALOG.md)**.
 
