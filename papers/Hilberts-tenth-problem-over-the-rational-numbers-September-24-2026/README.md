@@ -364,14 +364,16 @@ A small check on the parity theme: every denominator in the table is a perfect s
 
 ## 9. Slides, audio and other assets
 
-The slides, infographics and report below were generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the companion and the Wikipedia article on Hilbert's tenth problem. The report used only the two papers. The outputs are kept exactly as NotebookLM produced them. They are AI-generated and contain mistakes, so see the [errata](assets/README.md#errata) before relying on any detail. In particular, **the report mostly describes the companion paper**. A mind map and an audio overview were not generated, because the shared NotebookLM quota ran out.
+Everything below except the two hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the companion and the Wikipedia article on Hilbert's tenth problem. The report and the mind map used only the two papers. The outputs are kept exactly as NotebookLM produced them. They are AI-generated and contain mistakes, so see the [errata](assets/README.md#errata) before relying on any detail.
 
 | Asset | What it is |
 |---|---|
 | [Slide deck (PDF)](assets/notebooklm/slides.pdf) · [PPTX](assets/notebooklm/slides.pptx) | 15-slide beginner deck. Several slides, notably 6, 8, 9, 10, 11 and 15, contain errors listed in the errata |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top. Several typos, including ℤ printed as "2" |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Hilbert (1900) to September 2026 |
-| [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer. **It presents the companion's 2-converse as the main result**; read it only alongside the errata |
+| [Audio overview (≈1.5 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not reviewed) |
+| [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer |
+| [Mind map](assets/notebooklm/mindmaps.md) | NotebookLM's map of the two papers. It is very sparse: four nodes, no proof steps |
 | [Two-searches figure](assets/figures/two-searches.svg) | Hand-made diagram of the reduction logic (section 5, level 1) |
 | [Squeeze figure](assets/figures/squeeze.svg) | Hand-made schematic of the final height contradiction (section 5, level 2) |
 
@@ -415,7 +417,7 @@ The slides, infographics and report below were generated with **Google NotebookL
 ## How this explainer was made
 
 1. The paper, its TeX source and the companion were downloaded from [openai/math](https://github.com/openai/math/tree/main/preprints). The Lean catalogue was checked for family 004 and nothing was found.
-2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI, together with the Wikipedia article on Hilbert's tenth problem for background. NotebookLM generated the slides, infographics and report in [`assets/notebooklm/`](assets/notebooklm/).
+2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI, together with the Wikipedia article on Hilbert's tenth problem for background. NotebookLM generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/).
 3. The text on this page was written by hand (with AI assistance) directly from the paper's introduction, its Section 2 reduction, the statements in Sections 3–7, and the companion's introduction. The worked example was computed exactly with Python fractions. NotebookLM's outputs contain mistakes, listed in the [errata](assets/README.md#errata), so they were used as visual and structural aids rather than as the source of truth.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.

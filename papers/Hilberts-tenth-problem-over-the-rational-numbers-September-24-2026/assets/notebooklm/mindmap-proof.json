@@ -1,0 +1,16 @@
+{
+  "name": "Arithmetical Decidability and Curves",
+  "children": [
+    {
+      "name": "Hilbert's Tenth Problem Over Rational Numbers"
+    },
+    {
+      "name": "Pointwise 2-Converse for Elliptic Curves",
+      "children": [
+        {
+          "name": "Rational Two-Torsion Pointwise 2-Converse"
+        }
+      ]
+    }
+  ]
+}
