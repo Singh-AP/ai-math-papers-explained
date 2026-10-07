@@ -374,11 +374,11 @@ using Proposition 6.3, which says $\nu(\sigma e) = -\tfrac32 v(g)$ for the Galoi
 
 ## 9. Slides, audio and other assets
 
-Everything in `assets/notebooklm/` was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the two companions and the Wikipedia article on the Hodge conjecture. The report and the mind map used only the three papers. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. In particular, slides 8, 12 and 15 contain the most serious errors, and no slide was revised.
+Everything in `assets/notebooklm/` was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the two companions and the Wikipedia article on the Hodge conjecture. The report and the mind map used only the three papers. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. Slides 8, 12, 14 and 15 were regenerated once to fix errors; the remaining issues are listed in the errata.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 15-slide beginner deck |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 15-slide beginner deck, revised once (slides 8, 12, 14 and 15) |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Lefschetz (1924) to October 2026 |
 | [Audio overview (about 1.7 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not reviewed) |

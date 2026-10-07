@@ -8,7 +8,7 @@ Supporting material for the [explainer](../README.md). Everything in `notebooklm
 |---|---|---|
 | `figures/hodge-conjecture.svg`, `figures/hodge-conjecture.png` | Hand-written SVG | The Hodge diamond of an abelian surface, and the nested sets of rational, Hodge and algebraic classes. The PNG is a 3× render |
 | `figures/four-factor-switch.svg`, `figures/four-factor-switch.png` | Hand-written SVG | A four-factor switch over $\mathbb{Q}(\zeta_7)$ with $v_1+v_2=v_3+v_4$, checked in all six Galois views. The PNG is a 3× render |
-| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), not revised | 15 beginner slides. Most slides have small errors and three have substantive ones (see errata); the one allowed revision was skipped to save shared quota |
+| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), revised once | 15 beginner slides. Slides 8, 12, 14 and 15 were regenerated to fix errors (see errata); the other 11 slides are unchanged from the first deck, and most have small errors |
 | `notebooklm/slides/slide-NN.png` | `pymupdf` at 200 DPI from `slides.pdf` | Per-slide images for inline viewing |
 | `notebooklm/infographic-overview.png` | NotebookLM infographic (portrait, detailed, instructional) | One-page overview |
 | `notebooklm/infographic-history-timeline.png` | NotebookLM infographic (landscape, sketch-note) | From Lefschetz (1924) to the October 2026 companion |
@@ -44,18 +44,19 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 - The title "From Formulation to Proof" and the "Q.E.D." stamp overstate the result. The preprint covers CM abelian varieties only, and it is unrefereed.
 - The formula doodle "(C, v_k) → (C, v_l) + …" near the 2002–2005 entry has no meaning.
 
-**`slides.pdf` / `slides.pptx`** (not revised)
+**`slides.pdf` / `slides.pptx`** (revised once)
+- The first deck had a misspelled theorem statement and an overclaiming "SETTLED" stamp on slide 8, garbled period formulas on slide 12, "automatically solves" on slide 14, and a wrong Hodge-class formula and a "Modular curves" label on slide 15. These four slides were regenerated with one `nlm slides revise`, and `scripts/diff_slides.py` confirmed that no other slide changed. The shipped deck is the revised one. The remaining issues are listed below.
 - Slide 1: the labels "ℚ: Continuous Topology: Smooth Manifolds" (twice) and "CM: Discrete Algebraic Geometry: Rigid Varieties" are decoration, not statements from the paper.
 - Slide 3: the subvariety is labelled with the blackboard-bold $\mathbb{Z}$ (the integers) instead of $Z$.
 - Slide 5: "Higher dimensions remained a total mystery" overstates it. The Lefschetz $(1,1)$ theorem together with hard Lefschetz also settles curves, so all varieties of dimension at most 3.
 - Slide 7: it credits Pohlmann (1968) with the splitting of $H^1$ into embedding lines. That splitting is standard CM theory; Pohlmann's contribution, as the paper cites it, is the balance criterion. The "Perfectly Balanced Tensor = Perfectly Balanced Tensor" graphic is circular.
-- **Slide 8:** the theorem box misspells "codimension" as "codimeision". The green "Millennium Problem sub-category: SETTLED" stamp overstates an unrefereed preprint.
+- Slide 8 (revised): the theorem statement and the "Theorem 1.1, unrefereed preprint" label are now correct. The subtitle still calls the result "a massive leap forward … settling the conjecture for an entire universe of symmetric spaces", which is promotional; the result covers CM abelian varieties and their products and powers.
 - Slide 9: the symbols "f ∈ S_k(Γ)" and "T_n" in the arithmetic panel are modular-form decoration. The paper's Hecke operators act on Albanese varieties of ball quotients.
 - Slide 10: the matrices of $u$'s and the "∅♂" symbol are decoration. The relation $v_1+v_2=v_3+v_4$ is correct.
-- **Slide 12:** the period formulas "∫θ∧θ₄)", "∫(α₁)·θ₄" and "∫θ∧θ" are garbled. The paper's nonzero mixed period has two holomorphic and two antiholomorphic factors, $\int\Theta_1\wedge\Theta_2\wedge\overline{\Theta_3}\wedge\overline{\Theta_4}$.
+- Slide 12 (revised): the period now reads "∫ Θ₁ ∧ Θ₂ ∧ conj(Θ₃) ∧ conj(Θ₄) ≠ 0", labelled "two holomorphic and two antiholomorphic factors", which matches the paper's $\int\Theta_1\wedge\Theta_2\wedge\overline{\Theta_3}\wedge\overline{\Theta_4}$. It puts a bar over the word "conj" as well, which is redundant notation: "conj" and the bar mean the same complex conjugation.
 - Slide 13: it uses $T_p$, $\mathrm{Frob}_p$, $H^1_p$, while the paper calls its auxiliary prime $q$.
-- Slide 14: "automatically solves" oversimplifies. The paper applies Milne's 1999 and 2002 theorems together with Milne's own addenda and a corrected choice of auxiliary fields (Corollaries 8.3 and 8.4).
-- **Slide 15:** Hodge classes are written as $H^k(X,\mathbb{Q})\cap H^{p,q}(X)$. They should be $H^{2p}(X,\mathbb{Q})\cap H^{p,p}(X)$. The "Modular curves" label inside the CM region is not from the paper. "The General Hodge Conjecture remains unproven" means the Hodge conjecture for general varieties; it should not be confused with the *generalized* Hodge conjecture, which the paper does prove for CM abelian varieties (Corollary 8.2).
+- Slide 14 (revised): the subtitle now reads "Combined with theorems of J. S. Milne (1999, 2002) and his later addenda, Theorem 1.1 gives two further results for abelian varieties", which matches Corollaries 8.3 and 8.4. (The paper also uses a corrected choice of auxiliary fields from those addenda.)
+- Slide 15 (revised): Hodge classes are now written correctly as $H^{2p}(X,\mathbb{Q})\cap H^{p,p}(X)$, the "Modular curves" label is gone, and the text says "The Hodge conjecture for general varieties remains unproven", so it no longer reads like the *generalized* Hodge conjecture (which the paper does prove for CM abelian varieties, Corollary 8.2). The superscript in "Hodge Conjecture^general" and the symbols "M(×)", "Hom_H(V,W)" are decoration.
 
 **`beginner-explainer-report.md`**
 - It writes the switch line and the two-factor lines in cohomology with $\mathbb{Q}$-coefficients, and the constants $k$ and $q_i$ as elements of $\mathbb{Q}^\times$. In the paper they live in cohomology with $\overline{\mathbb{Q}}$-coefficients, and $k, q_i\in\overline{\mathbb{Q}}^\times$.
