@@ -228,11 +228,11 @@ So a zero of any Dirichlet $L$-function, including $\zeta(s)$ (take $\chi$ trivi
 
 ### Level 3: the analytic engine, for readers who know complex analysis
 
-The 7/8 paper packages Steps 1–2 as a **continuation criterion** (the proposition *Continuation from a common signal* in its Section 2). Let $\beta^*$ be the largest real part of a zero over the *whole family* of primitive Hecke characters over $\mathbb{Q}(\sqrt{-3})$, and suppose $\beta^* > \sigma_0$. For each character $\eta$, the paper builds a sum $J_\eta(Z)$ that is compared with a Mellin integral of $1/L(s,\eta)$:
+The 7/8 paper packages Steps 1–2 as a **continuation criterion** (the proposition *Continuation from a common signal* in its Section 2). Let $\beta^{\ast}$ be the largest real part of a zero over the *whole family* of primitive Hecke characters over $\mathbb{Q}(\sqrt{-3})$, and suppose $\beta^{\ast} > \sigma_0$. For each character $\eta$, the paper builds a sum $J_\eta(Z)$ that is compared with a Mellin integral of $1/L(s,\eta)$:
 
 $$f_\eta(Z) = \frac{1}{2\pi i}\int_{\text{Re}\ s=2} Z^{C(s)}\ e^{(s-5/6)^2}\ \frac{H_\eta(s)}{L^{\mathcal S}(s,\eta)}\ ds .$$
 
-If $|J_\eta(Z)| \ll Z^{C(\sigma_0)+\omega}$ (the "low" estimate, from the theta reflection) and $|J_\eta - f_\eta| \ll Z^{C(\beta^*)-\sigma}$ (the "high" estimate, from Poisson summation), with margins $\omega,\sigma$ that do **not** depend on $\eta$, then $1/L(s,\eta)$ continues holomorphically a fixed distance to the left of $\beta^*$. That contradicts the existence of zeros near $\beta^*$. Two details matter. The whole family has to be handled at once, because Poisson summation produces Hecke twists of the original character. And the margins have to be uniform. Stage I uses $C(s) = s - 2/3$ with $\sigma_0 = 11/12$, and Stage II uses $C(s) = s - 11/16$ with $\sigma_0 = 7/8$.
+If $|J_\eta(Z)| \ll Z^{C(\sigma_0)+\omega}$ (the "low" estimate, from the theta reflection) and $|J_\eta - f_\eta| \ll Z^{C(\beta^{\ast})-\sigma}$ (the "high" estimate, from Poisson summation), with margins $\omega,\sigma$ that do **not** depend on $\eta$, then $1/L(s,\eta)$ continues holomorphically a fixed distance to the left of $\beta^{\ast}$. That contradicts the existence of zeros near $\beta^{\ast}$. Two details matter. The whole family has to be handled at once, because Poisson summation produces Hecke twists of the original character. And the margins have to be uniform. Stage I uses $C(s) = s - 2/3$ with $\sigma_0 = 11/12$, and Stage II uses $C(s) = s - 11/16$ with $\sigma_0 = 7/8$.
 
 ---
 
