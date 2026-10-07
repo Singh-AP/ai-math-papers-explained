@@ -1,0 +1,120 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" font-family="Helvetica, Arial, sans-serif">
+  <title>How good are the best fractions for pi?</title>
+  <desc>For each continued-fraction convergent p/q of pi (q from 7 to about 10^32), the exponent e with |pi - p/q| = q^(-e). All dots lie above 2. 22/7 and 355/113 stand out at small q; later dots crowd toward 2. Reference lines at 2 (Dirichlet) and 5/2 (Flint-Hills threshold).</desc>
+  <rect x="0" y="0" width="1000" height="600" fill="#ffffff"/>
+  <text x="96" y="38" font-size="22" font-weight="bold" fill="#111827">How good are the best fractions for π?</text>
+  <text x="96" y="62" font-size="14" fill="#374151">Each dot is a continued-fraction convergent p/q of π. Its height is the exponent e in <tspan font-family="Georgia, Times New Roman, serif">|</tspan>π − p/q<tspan font-family="Georgia, Times New Roman, serif">|</tspan> = q^(−e):</text>
+  <text x="96" y="80" font-size="14" fill="#374151">higher means "unusually close for the size of its denominator". First 61 convergents, computed with mpmath.</text>
+  <line x1="96" y1="239.0" x2="960" y2="239.0" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="96" y1="126.5" x2="960" y2="126.5" stroke="#e5e7eb" stroke-width="1"/>
+  <line x1="226.9" y1="104" x2="226.9" y2="500" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="357.8" y1="104" x2="357.8" y2="500" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="488.7" y1="104" x2="488.7" y2="500" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="619.6" y1="104" x2="619.6" y2="500" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="750.5" y1="104" x2="750.5" y2="500" stroke="#f3f4f6" stroke-width="1"/>
+  <line x1="881.5" y1="104" x2="881.5" y2="500" stroke="#f3f4f6" stroke-width="1"/>
+  <rect x="96" y="104" width="864" height="396" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="96" y1="464.0" x2="960" y2="464.0" stroke="#111827" stroke-width="2.5"/>
+  <line x1="96" y1="351.5" x2="960" y2="351.5" stroke="#d97706" stroke-width="2" stroke-dasharray="8 6"/>
+  <g font-size="14" fill="#111827" text-anchor="end">
+    <text x="88" y="469.0">2</text>
+    <text x="88" y="356.5">5/2</text>
+    <text x="88" y="244.0">3</text>
+    <text x="88" y="131.5">3.5</text>
+  </g>
+  <g font-size="14" fill="#111827" text-anchor="middle">
+    <text x="96.0" y="522">1</text>
+    <text x="226.9" y="522">10⁵</text>
+    <text x="357.8" y="522">10¹⁰</text>
+    <text x="488.7" y="522">10¹⁵</text>
+    <text x="619.6" y="522">10²⁰</text>
+    <text x="750.5" y="522">10²⁵</text>
+    <text x="881.5" y="522">10³⁰</text>
+  </g>
+  <text x="528" y="548" font-size="15" fill="#111827" text-anchor="middle">denominator q (log scale)</text>
+  <text transform="translate(28 302) rotate(-90)" font-size="15" fill="#111827" text-anchor="middle">exponent e, where error = q^(−e)</text>
+  <circle cx="118.1" cy="142.4" r="6.5" fill="#dc2626" fill-opacity="0.9"/>
+  <circle cx="149.0" cy="460.8" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="149.8" cy="193.6" r="6.5" fill="#dc2626" fill-opacity="0.9"/>
+  <circle cx="214.3" cy="454.1" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="214.4" cy="442.3" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="222.2" cy="451.4" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="226.9" cy="439.7" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="238.0" cy="455.2" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="241.6" cy="437.0" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="256.6" cy="459.4" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="259.3" cy="421.4" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="289.9" cy="451.1" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="298.2" cy="454.1" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="302.7" cy="454.9" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="308.5" cy="450.7" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="319.4" cy="452.2" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="329.3" cy="452.9" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="339.3" cy="451.1" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="349.3" cy="460.4" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="353.3" cy="419.8" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="403.7" cy="456.3" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="411.7" cy="456.8" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="416.3" cy="459.6" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="422.1" cy="442.3" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="453.3" cy="455.8" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="466.1" cy="445.7" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="495.5" cy="462.3" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="496.3" cy="453.2" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="514.5" cy="458.7" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="523.5" cy="452.7" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="544.7" cy="453.6" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="565.3" cy="438.9" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="617.6" cy="462.3" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="617.7" cy="457.9" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="630.2" cy="459.6" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="639.8" cy="455.0" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="661.0" cy="458.5" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="674.0" cy="456.2" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="693.0" cy="460.9" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="695.0" cy="461.0" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="701.9" cy="456.0" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="723.3" cy="455.0" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="747.1" cy="463.1" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="748.5" cy="455.6" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="771.9" cy="462.3" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="773.3" cy="459.6" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="785.4" cy="459.4" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="799.1" cy="456.4" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="821.7" cy="462.5" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="823.2" cy="459.7" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="835.2" cy="461.2" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="838.6" cy="461.9" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="844.9" cy="455.2" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="873.7" cy="462.4" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="874.5" cy="460.7" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="882.0" cy="462.1" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="886.8" cy="459.4" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="901.5" cy="461.5" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="904.2" cy="462.0" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="910.8" cy="457.1" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <circle cx="935.3" cy="462.1" r="4.5" fill="#2563eb" fill-opacity="0.9"/>
+  <g font-size="14">
+    <text x="130.1" y="138.4" fill="#b91c1c" font-weight="bold">22/7</text>
+    <text x="130.1" y="155.4" fill="#374151" font-size="12">e ≈ 3.43</text>
+    <text x="161.8" y="189.6" fill="#b91c1c" font-weight="bold">355/113</text>
+    <text x="161.8" y="206.6" fill="#374151" font-size="12">e ≈ 3.20 (next partial quotient: 292)</text>
+    <line x1="353.3" y1="412.8" x2="383.3" y2="377.8" stroke="#6b7280" stroke-width="1"/>
+    <text x="386.3" y="374.8" fill="#374151" font-size="12">next partial quotient 84</text>
+    <line x1="565.3" y1="431.9" x2="595.3" y2="396.9" stroke="#6b7280" stroke-width="1"/>
+    <text x="598.3" y="393.9" fill="#374151" font-size="12">next partial quotient 99</text>
+  </g>
+  <g font-size="13">
+    <text x="952" y="484.0" fill="#111827" text-anchor="end" font-weight="bold">e = 2: Dirichlet — every irrational number has infinitely many fractions at least this good</text>
+    <text x="952" y="343.5" fill="#b45309" text-anchor="end" font-weight="bold">e = 5/2: Flint–Hills threshold (μ(π) &lt; 5/2 is enough for convergence)</text>
+  </g>
+  <rect x="470" y="122" width="470" height="112" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <g font-size="14">
+    <text x="484" y="146" fill="#047857" font-weight="bold">This paper: μ(π) = 2</text>
+    <text x="484" y="168" fill="#111827">For every line drawn above 2 (at 2.1, at 2.01, …), only finitely</text>
+    <text x="484" y="186" fill="#111827">many dots lie above it. In the long run the dots must sink</text>
+    <text x="484" y="204" fill="#111827">into every thin band just above the line e = 2.</text>
+    <text x="484" y="224" fill="#6b7280" font-size="12">Before: only "finitely many above 7.103…" was known (Zeilberger–Zudilin, 2020).</text>
+  </g>
+  <text x="96" y="580" font-size="12" fill="#6b7280">A picture is not a proof: no finite list of dots can show μ(π) = 2. The theorem is about what happens forever, and its threshold is not explicit.</text>
+</svg>

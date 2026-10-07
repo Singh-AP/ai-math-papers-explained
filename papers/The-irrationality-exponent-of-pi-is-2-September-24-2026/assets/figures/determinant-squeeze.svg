@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" font-family="Helvetica, Arial, sans-serif">
+  <title>The squeeze at the heart of the proof</title>
+  <desc>Schematic. The size of one determinant is bounded from below by arithmetic (it is a nonzero Gaussian integer after clearing denominators) and from above by analysis (two alternatives, both forcing it to be tiny). When nu is greater than 2 the upper bound lies strictly below the lower bound, which is impossible.</desc>
+  <rect x="0" y="0" width="1000" height="500" fill="#ffffff"/>
+
+  <text x="60" y="38" font-size="22" font-weight="bold" fill="#111827">The squeeze at the heart of the proof (schematic)</text>
+  <text x="60" y="62" font-size="14" fill="#374151">Suppose π had fractions with <tspan font-family="Georgia, Times New Roman, serif">|</tspan>π − p/q<tspan font-family="Georgia, Times New Roman, serif">|</tspan> ≤ q^(−<tspan font-family="Georgia, Times New Roman, serif" font-style="italic">ν</tspan>) for some fixed <tspan font-family="Georgia, Times New Roman, serif" font-style="italic">ν</tspan> &gt; 2 and arbitrarily large q. Use several of them to build</text>
+  <text x="60" y="80" font-size="14" fill="#374151">one big determinant Δ, then measure its size in two independent ways. Not drawn to scale.</text>
+
+  <!-- Number line -->
+  <line x1="60" y1="272" x2="930" y2="272" stroke="#111827" stroke-width="2"/>
+  <polygon points="940,272 928,266 928,278" fill="#111827"/>
+  <text x="60" y="322" font-size="13" fill="#374151">smaller <tspan font-family="Georgia, Times New Roman, serif">|</tspan>Δ<tspan font-family="Georgia, Times New Roman, serif">|</tspan></text>
+  <text x="940" y="322" font-size="13" fill="#374151" text-anchor="end">larger <tspan font-family="Georgia, Times New Roman, serif">|</tspan>Δ<tspan font-family="Georgia, Times New Roman, serif">|</tspan></text>
+  <text x="500" y="322" font-size="13" fill="#374151" text-anchor="middle">size of the determinant, measured as log<tspan font-family="Georgia, Times New Roman, serif">|</tspan>Δ<tspan font-family="Georgia, Times New Roman, serif">|</tspan> / (M·H)</text>
+
+  <!-- Analytic region: everything left of the ceiling -->
+  <rect x="60" y="240" width="300" height="62" fill="#dbeafe" opacity="0.7"/>
+  <line x1="360" y1="212" x2="360" y2="302" stroke="#2563eb" stroke-width="3"/>
+  <!-- Arithmetic region: everything right of the floor -->
+  <rect x="600" y="240" width="330" height="62" fill="#d1fae5" opacity="0.7"/>
+  <line x1="600" y1="212" x2="600" y2="302" stroke="#059669" stroke-width="3"/>
+
+  <!-- Gap -->
+  <line x1="368" y1="256" x2="592" y2="256" stroke="#dc2626" stroke-width="2" stroke-dasharray="6 4"/>
+  <polygon points="366,256 376,251 376,261" fill="#dc2626"/>
+  <polygon points="594,256 584,251 584,261" fill="#dc2626"/>
+  <text x="480" y="244" font-size="14" fill="#b91c1c" font-weight="bold" text-anchor="middle">a gap: no room for Δ</text>
+  <text x="480" y="292" font-size="13" fill="#b91c1c" text-anchor="middle">contradiction</text>
+
+  <!-- Analytic callout -->
+  <rect x="60" y="100" width="410" height="112" rx="8" fill="#ffffff" stroke="#2563eb" stroke-width="1.5"/>
+  <text x="74" y="122" font-size="14" fill="#1d4ed8" font-weight="bold">Analysis says: <tspan font-family="Georgia, Times New Roman, serif">|</tspan>Δ<tspan font-family="Georgia, Times New Roman, serif">|</tspan> is at most this big</text>
+  <text x="74" y="142" font-size="13" fill="#111827">Shift every row from the almost-periods 2i·j·p/q to the</text>
+  <text x="74" y="159" font-size="13" fill="#111827">exact periods 2πi·j, where e^z repeats. Then, term by term,</text>
+  <text x="74" y="176" font-size="13" fill="#111827">either repeated Taylor degrees cancel (collision saving), or</text>
+  <text x="74" y="193" font-size="13" fill="#111827">many tiny factors <tspan font-family="Georgia, Times New Roman, serif">|</tspan>π − p/q<tspan font-family="Georgia, Times New Roman, serif">|</tspan> appear (error saving).</text>
+  <text x="74" y="208" font-size="11" fill="#6b7280">Lemmas 3.2–3.3, Proposition 3.4</text>
+
+  <!-- Arithmetic callout -->
+  <rect x="520" y="100" width="420" height="112" rx="8" fill="#ffffff" stroke="#059669" stroke-width="1.5"/>
+  <text x="534" y="122" font-size="14" fill="#047857" font-weight="bold">Arithmetic says: <tspan font-family="Georgia, Times New Roman, serif">|</tspan>Δ<tspan font-family="Georgia, Times New Roman, serif">|</tspan> is at least this big</text>
+  <text x="534" y="142" font-size="13" fill="#111827">A geometry theorem guarantees Δ ≠ 0. Its entries are</text>
+  <text x="534" y="159" font-size="13" fill="#111827">fractions with known denominators, so a known multiple</text>
+  <text x="534" y="176" font-size="13" fill="#111827">of Δ is a nonzero Gaussian integer a + bi, and a nonzero</text>
+  <text x="534" y="193" font-size="13" fill="#111827">Gaussian integer has size at least 1.</text>
+  <text x="534" y="208" font-size="11" fill="#6b7280">Theorem 2.1, Lemma 3.1</text>
+
+  <!-- Bottom explanation -->
+  <rect x="60" y="346" width="880" height="126" rx="8" fill="#f9fafb" stroke="#9ca3af"/>
+  <text x="76" y="370" font-size="14" fill="#111827" font-weight="bold">Why the gap opens exactly when <tspan font-family="Georgia, Times New Roman, serif" font-style="italic">ν</tspan> &gt; 2</text>
+  <text x="76" y="392" font-size="13" fill="#111827">The error saving must beat the arithmetic cost: <tspan font-family="Georgia, Times New Roman, serif" font-style="italic">ν</tspan>(A − θ) &gt; 1 − θ. The collision saving must grow with the</text>
+  <text x="76" y="410" font-size="13" fill="#111827">number of variables: A² &lt; θ. Writing θ = 1 − δ and A = 1 − bδ with δ small, the first needs b &lt; 1 − 1/<tspan font-family="Georgia, Times New Roman, serif" font-style="italic">ν</tspan> and the</text>
+  <text x="76" y="428" font-size="13" fill="#111827">second needs b &gt; 1/2. Such a b exists exactly when 1 − 1/<tspan font-family="Georgia, Times New Roman, serif" font-style="italic">ν</tspan> &gt; 1/2, that is, when <tspan font-family="Georgia, Times New Roman, serif" font-style="italic">ν</tspan> &gt; 2 (Lemma 4.1).</text>
+  <text x="76" y="454" font-size="12" fill="#6b7280">At <tspan font-family="Georgia, Times New Roman, serif" font-style="italic">ν</tspan> = 2 the window closes, as it must: Dirichlet's theorem gives infinitely many fractions with error below 1/q².</text>
+</svg>
