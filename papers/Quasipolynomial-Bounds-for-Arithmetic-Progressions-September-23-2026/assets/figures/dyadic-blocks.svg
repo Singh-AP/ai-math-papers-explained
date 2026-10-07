@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="670" viewBox="0 0 1100 670" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="670" fill="#ffffff"/>
+
+  <!-- Title -->
+  <text x="550" y="38" text-anchor="middle" font-size="23" font-weight="bold" fill="#1a1a1a">From a density bound to Erdős's conjecture: cut the integers into dyadic blocks</text>
+
+  <!-- Dyadic blocks -->
+  <g font-size="17" text-anchor="middle" fill="#1a1a1a">
+    <rect x="60"  y="66" width="140" height="46" rx="6" fill="#e8f0fb" stroke="#2f5d9e" stroke-width="2"/>
+    <text x="130" y="95">[1, 2)</text>
+    <rect x="215" y="66" width="140" height="46" rx="6" fill="#e8f0fb" stroke="#2f5d9e" stroke-width="2"/>
+    <text x="285" y="95">[2, 4)</text>
+    <rect x="370" y="66" width="140" height="46" rx="6" fill="#e8f0fb" stroke="#2f5d9e" stroke-width="2"/>
+    <text x="440" y="95">[4, 8)</text>
+    <rect x="525" y="66" width="140" height="46" rx="6" fill="#e8f0fb" stroke="#2f5d9e" stroke-width="2"/>
+    <text x="595" y="95">[8, 16)</text>
+    <text x="722" y="95" font-size="24">· · ·</text>
+    <rect x="780" y="66" width="260" height="46" rx="6" fill="#fff4dc" stroke="#b7791f" stroke-width="2.5"/>
+    <text x="910" y="95">[2<tspan dy="-7" font-size="12">m</tspan><tspan dy="7">, 2</tspan><tspan dy="-7" font-size="12">m+1</tspan><tspan dy="7">)</tspan></text>
+  </g>
+  <g font-size="14" text-anchor="middle" fill="#555555">
+    <text x="130" y="132">block 0</text>
+    <text x="285" y="132">block 1</text>
+    <text x="440" y="132">block 2</text>
+    <text x="595" y="132">block 3</text>
+    <text x="910" y="132">block m: an interval of length 2<tspan dy="-6" font-size="10">m</tspan></text>
+  </g>
+
+  <!-- Explanation of one block -->
+  <g font-size="16" fill="#1a1a1a">
+    <text x="60" y="172">Suppose A has no k-term arithmetic progression. Block m is an interval of length 2<tspan dy="-7" font-size="12">m</tspan><tspan dy="7">, so A has</tspan></text>
+    <text x="60" y="197" xml:space="preserve"><tspan font-weight="bold">at most r</tspan><tspan font-weight="bold" dy="5" font-size="12">k</tspan><tspan font-weight="bold" dy="-5">(2</tspan><tspan font-weight="bold" dy="-7" font-size="12">m</tspan><tspan font-weight="bold" dy="7">) elements</tspan> there. Each of them is at least 2<tspan dy="-7" font-size="12">m</tspan><tspan dy="7">, so their reciprocals add up to </tspan><tspan font-weight="bold">at most r</tspan><tspan font-weight="bold" dy="5" font-size="12">k</tspan><tspan font-weight="bold" dy="-5">(2</tspan><tspan font-weight="bold" dy="-7" font-size="12">m</tspan><tspan font-weight="bold" dy="7">) / 2</tspan><tspan font-weight="bold" dy="-7" font-size="12">m</tspan><tspan dy="7">.</tspan></text>
+    <text x="60" y="228">Adding up the blocks:    (sum of 1/a over A)   ≤   1  +  (sum over m ≥ 1 of  r<tspan dy="5" font-size="12">k</tspan><tspan dy="-5">(2</tspan><tspan dy="-7" font-size="12">m</tspan><tspan dy="7">) / 2</tspan><tspan dy="-7" font-size="12">m</tspan><tspan dy="7">).   Does the right side stay finite?</tspan></text>
+  </g>
+
+  <!-- Table header -->
+  <line x1="40" y1="258" x2="1060" y2="258" stroke="#999999" stroke-width="1"/>
+  <g font-size="16" font-weight="bold" fill="#1a1a1a">
+    <text x="55"  y="286">Upper bound on r<tspan dy="5" font-size="12">k</tspan><tspan dy="-5">(N)</tspan></text>
+    <text x="345" y="286">Who, and for which k</text>
+    <text x="620" y="286">Block m contributes about</text>
+    <text x="870" y="286">Sum over all m</text>
+  </g>
+  <line x1="40" y1="300" x2="1060" y2="300" stroke="#999999" stroke-width="1"/>
+
+  <!-- Row 1 -->
+  <rect x="40" y="304" width="1020" height="62" fill="#fdecec"/>
+  <g font-size="16" fill="#1a1a1a">
+    <text x="55"  y="341">N / (log log N)<tspan dy="-7" font-size="12">c</tspan></text>
+    <text x="345" y="331">Roth 1953 (k = 3, with c = 1);</text>
+    <text x="345" y="353">Gowers 2001 (every k, some c &gt; 0)</text>
+    <text x="620" y="341">1 / (log m)<tspan dy="-7" font-size="12">c</tspan></text>
+    <text x="870" y="331" fill="#b42318" font-weight="bold">diverges</text>
+    <text x="870" y="353" fill="#7a2a20" font-size="14">(not enough)</text>
+  </g>
+
+  <!-- Row 2 -->
+  <rect x="40" y="370" width="1020" height="62" fill="#fdecec"/>
+  <g font-size="16" fill="#1a1a1a">
+    <text x="55"  y="407">N · exp(−(log log N)<tspan dy="-7" font-size="12">c</tspan><tspan dy="7">),  0 &lt; c &lt; 1</tspan></text>
+    <text x="345" y="397">Leng–Sah–Sawhney 2024</text>
+    <text x="345" y="419">(every k ≥ 5)</text>
+    <text x="620" y="397">exp(−(log m)<tspan dy="-7" font-size="12">c</tspan><tspan dy="7">), which is</tspan></text>
+    <text x="620" y="419">eventually larger than 1/m</text>
+    <text x="870" y="397" fill="#b42318" font-weight="bold">diverges</text>
+    <text x="870" y="419" fill="#7a2a20" font-size="14">(not enough)</text>
+  </g>
+
+  <!-- Row 3 -->
+  <rect x="40" y="436" width="1020" height="62" fill="#e9f6ec"/>
+  <g font-size="16" fill="#1a1a1a">
+    <text x="55"  y="473">N / (log N)<tspan dy="-7" font-size="12">1+c</tspan></text>
+    <text x="345" y="463">Bloom–Sisask 2020</text>
+    <text x="345" y="485">(k = 3 only)</text>
+    <text x="620" y="473">1 / m<tspan dy="-7" font-size="12">1+c</tspan></text>
+    <text x="870" y="463" fill="#1e7a3a" font-weight="bold">converges</text>
+    <text x="870" y="485" fill="#245c34" font-size="14">(settles the k = 3 case)</text>
+  </g>
+
+  <!-- Row 4 -->
+  <rect x="40" y="502" width="1020" height="62" fill="#d4efdb" stroke="#1e7a3a" stroke-width="2"/>
+  <g font-size="16" fill="#1a1a1a">
+    <text x="55"  y="539" font-weight="bold">C · N · exp(−c (log N)<tspan dy="-7" font-size="12">ε</tspan><tspan dy="7">)</tspan></text>
+    <text x="345" y="529" font-weight="bold">This paper, 2026</text>
+    <text x="345" y="551" font-weight="bold">(every k ≥ 3)</text>
+    <text x="620" y="539">exp(−c′ m<tspan dy="-7" font-size="12">ε</tspan><tspan dy="7">)</tspan></text>
+    <text x="870" y="529" fill="#1e7a3a" font-weight="bold">converges</text>
+    <text x="870" y="551" fill="#245c34" font-size="14">(settles every k)</text>
+  </g>
+
+  <!-- Footer -->
+  <g font-size="15" fill="#333333">
+    <text x="55" y="598">Converges ⇒ every set with no k-term progression has a finite reciprocal sum ⇒ a set whose reciprocal sum diverges</text>
+    <text x="55" y="620">must contain a k-term progression, for every k. Constants are dropped and "about" means up to constant factors;</text>
+    <text x="55" y="642">log is the natural logarithm; c, c′, ε stand for positive constants (they may depend on k).</text>
+  </g>
+</svg>

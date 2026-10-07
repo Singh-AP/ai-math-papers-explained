@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="640" viewBox="0 0 1100 640" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="640" fill="#ffffff"/>
+
+  <text x="550" y="36" text-anchor="middle" font-size="23" font-weight="bold" fill="#1a1a1a">The density-increment ladder: every round, A gets denser by a fixed factor</text>
+
+  <!-- Left panel: staircase -->
+  <text x="60" y="84" font-size="15" font-weight="bold" fill="#333333">target density on the current region (log scale)</text>
+
+  <!-- axis -->
+  <line x1="140" y1="470" x2="600" y2="470" stroke="#333333" stroke-width="1.5"/>
+  <line x1="140" y1="470" x2="140" y2="104" stroke="#333333" stroke-width="1.5"/>
+
+  <!-- density 1 line -->
+  <line x1="140" y1="130" x2="600" y2="130" stroke="#b42318" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="150" y="121" font-size="14" fill="#b42318">density 1: no region can be denser than this</text>
+
+  <!-- y labels -->
+  <g font-size="15" fill="#1a1a1a" text-anchor="end">
+    <text x="132" y="445" xml:space="preserve">a<tspan dy="5" font-size="11">0</tspan><tspan dy="-5"> = α/2</tspan></text>
+    <text x="132" y="380">(1+η) a<tspan dy="5" font-size="11">0</tspan></text>
+    <text x="132" y="315" xml:space="preserve">(1+η)<tspan dy="-7" font-size="11">2</tspan><tspan dy="7"> a</tspan><tspan dy="5" font-size="11">0</tspan></text>
+    <text x="132" y="250" xml:space="preserve">(1+η)<tspan dy="-7" font-size="11">3</tspan><tspan dy="7"> a</tspan><tspan dy="5" font-size="11">0</tspan></text>
+    <text x="132" y="135" fill="#b42318">1</text>
+  </g>
+  <g stroke="#bbbbbb" stroke-width="1" stroke-dasharray="3 4">
+    <line x1="140" y1="440" x2="600" y2="440"/>
+    <line x1="140" y1="375" x2="600" y2="375"/>
+    <line x1="140" y1="310" x2="600" y2="310"/>
+    <line x1="140" y1="245" x2="600" y2="245"/>
+  </g>
+
+  <!-- bars -->
+  <g stroke="#2f5d9e" stroke-width="2">
+    <rect x="160" y="440" width="52" height="30" fill="#e8f0fb"/>
+    <rect x="232" y="375" width="52" height="95" fill="#d3e2f7"/>
+    <rect x="304" y="310" width="52" height="160" fill="#bcd3f2"/>
+    <rect x="376" y="245" width="52" height="225" fill="#a5c3ec"/>
+  </g>
+  <text x="474" y="300" font-size="26" fill="#2f5d9e" text-anchor="middle">· · ·</text>
+  <rect x="520" y="108" width="52" height="362" fill="#fbd5d1" stroke="#b42318" stroke-width="2.5"/>
+  <text x="546" y="98" font-size="15" font-weight="bold" fill="#b42318" text-anchor="middle">impossible</text>
+
+  <!-- x labels -->
+  <g font-size="14" fill="#333333" text-anchor="middle">
+    <text x="186" y="492">round 0</text>
+    <text x="258" y="492">1</text>
+    <text x="330" y="492">2</text>
+    <text x="402" y="492">3</text>
+    <text x="474" y="492">…</text>
+    <text x="546" y="492">T</text>
+  </g>
+  <text x="140" y="522" font-size="14" fill="#555555">Each bar lives on a smaller, more constrained region than the one before it.</text>
+
+  <!-- Right panel -->
+  <rect x="630" y="64" width="440" height="470" rx="10" fill="#fafafa" stroke="#999999" stroke-width="1.5"/>
+  <g font-size="15" fill="#1a1a1a">
+    <text x="650" y="96" font-size="17" font-weight="bold">What one round costs</text>
+    <text x="650" y="124">The new region is a polynomial "cell" that</text>
+    <text x="650" y="150">•  keeps every old defining equation exactly,</text>
+    <text x="650" y="176" xml:space="preserve">• adds at most (2+p)<tspan dy="-7" font-size="11">C</tspan><tspan dy="7"> new integer coordinates,</tspan></text>
+    <text x="650" y="202">•  loses precision at weight h by an amount</text>
+    <text x="672" y="224">bounded using only p, the dimensions and</text>
+    <text x="672" y="246">the precisions above h (the "triangular" rule).</text>
+
+    <text x="650" y="290" font-size="17" font-weight="bold">Adding up all the rounds</text>
+    <text x="650" y="318">•  T ≈ log(2/α) / log(1+η) rounds, which is at</text>
+    <text x="672" y="340">most a constant times p (and p ≈ log 1/α),</text>
+    <text x="650" y="366">•  together they use up only a polynomial in p</text>
+    <text x="672" y="388">of the available length log N,</text>
+    <text x="650" y="414" xml:space="preserve">• so log N ≥ A(2 + log 1/α)<tspan dy="-7" font-size="11">A</tspan><tspan dy="7"> is enough.</tspan></text>
+
+    <text x="650" y="458" fill="#333333">That is the quasipolynomial threshold in</text>
+    <text x="650" y="480" fill="#333333">Theorem 1.1, eq. (1.2). Here p is a fixed multiple</text>
+    <text x="650" y="502" fill="#333333">of 2 + log 1/α; C, A, η depend only on k.</text>
+  </g>
+
+  <!-- Bottom caption -->
+  <g font-size="15" fill="#333333">
+    <text x="60" y="574">Start: A ⊆ {1, …, N} has density α and no k-term progression. Each round finds a region where A beats the target by the</text>
+    <text x="60" y="596">fixed factor 1 + η. If N is long enough to pay for all T rounds, the target would pass 1, which is impossible. So no such A</text>
+    <text x="60" y="618">exists: every set of density α in a long enough interval contains a k-term progression. Schematic, not to scale.</text>
+  </g>
+</svg>
