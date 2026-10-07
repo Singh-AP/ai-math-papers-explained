@@ -13,8 +13,10 @@ Supporting material for the [explainer](../README.md). The files in `figures/` w
 | `notebooklm/infographic-overview.png` | NotebookLM infographic (portrait, detailed, instructional) | One-page overview |
 | `notebooklm/infographic-history-timeline.png` | NotebookLM infographic (landscape, sketch-note) | From Hilbert (1900) to the 2026 preprints |
 | `notebooklm/beginner-explainer-report.md` | NotebookLM "Create your own" report, restricted to the two papers and the Lean scope document | Long-form explainer |
+| `notebooklm/mindmaps.md`, `notebooklm/mindmap-proof.json` | NotebookLM mind map, restricted to the two papers and the Lean scope document | Requested title "How the proof works"; NotebookLM named it "Hilbert's Limit Cycles", with root "Hilbert's Sixteenth Problem: Limit Cycles in Planar Systems" (checked after download). `mindmaps.md` is rendered by `scripts/mindmap_to_markdown.py` |
+| `notebooklm/audio-overview-brief.m4a` | NotebookLM audio overview ("brief"), restricted to the two papers and the Lean scope document | About 94 seconds; not reviewed |
 
-**Not generated.** The standard set also includes a mind map ("How the proof works") and a brief audio overview. They were not created, and the slide deck was not revised. NotebookLM's shared rolling quota fell below 8% while this paper and two others were generating, so creation was stopped after the report. They can be added later from the same notebook.
+**Generated later.** The mind map and the audio overview were generated in a second session, after the shared NotebookLM quota had reset. The first session had stopped after the report, when the rolling quota fell below 8%. The slide deck has not been revised; the wrong slides are listed below.
 
 ### Notebook sources
 
@@ -23,13 +25,13 @@ Supporting material for the [explainer](../README.md). The files in `figures/` w
 3. [`lean/docs/143.md`](https://github.com/openai/math/blob/main/lean/docs/143.md): scope of the Lean formalization (companion only)
 4. [Wikipedia: Hilbert's sixteenth problem](https://en.wikipedia.org/wiki/Hilbert%27s_sixteenth_problem), for historical background (not used for the report)
 
-The prompts asked NotebookLM to say explicitly that no value of $B(d)$ or $H(n)$ is given, that only the companion is in Lean, that the companion's "two" is not $H(5)$, and that the paper's "monomial annuli" are not rings in the plane. Some outputs repeat these warnings almost word for word (overview panel 6, slides 7 and 15, report section 8). That wording comes from the prompt, not from the papers.
+The prompts asked NotebookLM to say explicitly that no value of $B(d)$ or $H(n)$ is given, that only the companion is in Lean, that the companion's "two" is not $H(5)$, and that the paper's "monomial annuli" are not rings in the plane. Some outputs repeat these warnings almost word for word (overview panel 6, slides 7 and 15, report section 8). That wording comes from the prompt, not from the papers. The mind map takes no prompt, and the audio focus was written as a list of plain facts taken from the papers.
 
 ## Errata
 
 NotebookLM is good at structure and visuals but sometimes invents or garbles mathematical detail. Known issues, found by reading each output against the papers:
 
-**`slides.pdf` / `slides.pptx`** (not revised; see "Not generated" above)
+**`slides.pdf` / `slides.pptx`** (not revised)
 - Slide 1 calls the result "A Resolution to Hilbert's 16th Problem". The paper resolves only the uniform-boundedness assertion of the second part: it gives no value of the bound and does not address the arrangement of cycles.
 - Slide 2: the white trajectory does not follow the drawn arrows, so it is not a solution of the pictured field.
 - Slide 3 says a perturbation "forces the trajectory to ultimately return to this specific Amber cycle". That describes an *attracting* cycle. A limit cycle is defined by isolation, and it can also repel.
@@ -37,7 +39,7 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 - Slide 6 dates the discovery of the gap in Dulac's proof to 1981. That date comes from the Wikipedia source and is **unverified** here; the paper cites Ilyashenko's 1985 survey. "Open until 2026" presents the unreviewed 2026 claim as settled.
 - **Slide 7 (typos in the theorem quote).** It reads "every real planar polynomial degree at most $d$ has at most $B(d)$…". The words "vector field of" are missing, and "most" is misspelled "nost".
 - Slide 8 glosses hyperbolic cycles as "(simple/isolated)". Hyperbolic means a *simple* zero of the displacement; isolation alone is weaker.
-- **Slide 9 (wrong picture and overstatement).** The drawn "limit cycle" is not closed: it runs off the top of the square. The text says "every continuous orbit is perfectly represented by a bounded, finite word". The paper says this of periodic orbits, apart from at most $T(d)$ exceptional orbits that contain tangential boundary arcs (Theorem 9.7). It also calls the cells "monomial pieces". Monomial annuli are one of the prepared forms of the rewritten scalar equation, not the cells themselves.
+- **Slide 9 (wrong picture and overstatement).** The drawn "limit cycle" is not closed: it runs off the top of the square. The text says "every continuous orbit is perfectly represented by a bounded, finite word". The paper says this of periodic orbits, apart from at most $T(d)$ exceptional orbits that contain tangential boundary arcs (Theorem 9.7).
 - **Slide 10 (wrong picture).** The curve is not a saddle trajectory, and $r$ and $r^{\lambda}$ are put on the wrong axes. In the paper's example, an orbit enters at $(r, 1)$ near the stable axis and leaves at $(1, r^{\lambda})$ near the unstable axis.
 - Slide 11 says exact local matching "implies a closed periodic orbit". The paper uses this only near actual cycles; a connected component may also contain points that are not physical orbits. It labels the component argument "the separation principle", which is easy to confuse with the paper's separation theorem (Theorem 3.2), a different statement.
 - **Slide 12 (wrong logic).** The projection count is drawn as an "IF AND ONLY IF" gate. Theorem 11.2 is a one-way implication: absolute isolated-zero finiteness implies a uniform component bound.
@@ -49,7 +51,7 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 - Panel 2 draws limit cycles as scattered red dots; they are closed curves. This is only a schematic.
 - Panel 3: the small formula "$\dot x = ✗(1)$" is garbled and means nothing.
 - Panel 4, box 1 says the rotation turns non-hyperbolic cycles into hyperbolic ones. The paper's Lemma 11.8 gives *at least as many* hyperbolic cycles nearby (a degenerate cycle may split into two or disappear, depending on the sign).
-- Panel 4, box 2 says the square is split into "boxes and monomial annuli", which contradicts panel 6. The annuli are forms of the rewritten scalar equation.
+- Panel 4, box 2 says the square is split into "boxes and monomial annuli". That is the paper's own shorthand (Section 1.2, Theorem 9.7), and it is not an error. "Annulus" names the prepared monomial form $Du = A\tau^{\lambda}u^m F(X)$ of the scalar equation on a piece, not a ring in the physical plane, as panel 6 says.
 - Panel 4, box 3 says each distinct limit cycle "corresponds to a connected component". The paper says distinct *hyperbolic* cycles lie in distinct components, within each chart; a component need not contain a cycle. There is also a typo, "cyclc".
 - Panel 4, box 4 mentions "transserial asymptotics". The paper uses its own packets (trees of expansions); transserial Ilyashenko algebras appear only as related work. Gevrey series do occur in the paper. The curve plot is decorative.
 - Panel 5 names `QuinticLienard.lean`. That file holds the Comparator challenge statement; the proof is in `OAI/Analysis/LienardCycles/Main.lean`.
@@ -69,7 +71,7 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 - Section 3, "Polynomial constraints vs. non-polynomial functions", is vague and not how the paper argues. The paper's $\sin x$ example concerns the equation $\sin x = 0$ on $0 < x < p$ in the counting closure (Remark 11.3), not a vector field.
 - Section 4, point 3, claims the companion "demonstrates that interactive proof assistants (Lean) can formalize … quadratic profile fits … without human calculation errors". Neither paper says this, and the sources do not describe how the formalization was done.
 - Section 5, step 1 gives the wrong motivation for rescaling: it does not "prevent parameter degenerations". It moves a finite set of cycles of one field into the fixed square.
-- **Section 5, step 2** says the "plane" is cut into "pole-free boxes and annuli". It is the fixed square, and the annuli are forms of the rewritten scalar equation, which the report's own section 8 says.
+- Section 5, step 2 says the "plane" is cut into pieces. It is the fixed square, after rescaling. "Pole-free boxes and annuli" is the paper's own shorthand (the title of Section 9.2): the annuli are pieces on which the rewritten scalar equation has monomial form, not rings in the plane.
 - **Section 5, step 3 lists the wrong four transfer types.** Theorem 10.1's four kinds are: ordinary analytic, additive (Theorem 6.1), one-rate regular or stable (Theorem 7.1), and mixed with two logarithmic scales (Theorem 8.1). The glosses "regular non-singular drifts", "near hyperbolic singularities" and "slow-fast parameter drifts" are invented.
 - **Section 5, step 6 garbles the contradiction.** It says the first nonzero term "provides a local chart isolating zero solutions". In the paper, a packet calculus and elimination produce a chart on which the equations vanish identically while a free large coordinate survives, so the solutions were *not* isolated (Theorem 5.7).
 - Section 6 writes the quadratic comparison profile as $\lambda u + \kappa u^2/2$. The paper centers it at the base height, $\lambda(u-h) + \kappa(u-h)^2/2$; the two agree only at $h = 0$.
@@ -78,5 +80,13 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 - Section 7 describes Odani's work as "explicit 2-cycle Liénard benchmark constructions". The companion uses Odani's Example 3 to show that a proposed four-cycle quintic example has exactly two cycles.
 - Section 8 says the main proof is "unreviewed by automated proof assistants". More precisely, it is unformalized, and it has not been reviewed by experts.
 
-**Audio overview and mind map**
-- Not generated (see "Not generated" above). If an audio overview is added later, it cannot be checked by reading and should be treated as an informal teaser.
+**`mindmap-proof.json` / `mindmaps.md`**
+- It leaves out the steps that make the bound *uniform*: the rescaling and rotation reduction (Lemma 11.8), the crossing argument that bounds word length (Lemma 9.6), and the projection count (Theorem 11.2). It also omits the final assembly of $B(d)$. A reader of the map alone would not see where uniformity comes from.
+- "Absolute Isolated-Zero Criterion: Dimensional reduction and elimination" is vague. Theorem 5.7 is proved by contradiction along a sequence of isolated solutions, using flags, packets, the separation theorem and an elimination induction on the ordinary variables.
+- The items under "Core Proof Strategy" are not in the paper's logical order: the matching equations (Section 11) are listed after the analysis (Sections 2–5) without showing that the analysis is what the counting step needs.
+- The passage-model branch omits the fourth kind of transfer, the ordinary analytic one (Theorem 10.1).
+- "Maximum Limit Cycles: Exactly two in R^2" means the *maximum* is two; an individual quintic Liénard system can have zero, one or two.
+- The requested title "How the proof works" was not applied by NotebookLM. The heading in `mindmaps.md` is the requested title.
+
+**`audio-overview-brief.m4a`**
+- Not checked against a transcript. Treat it as an informal teaser.

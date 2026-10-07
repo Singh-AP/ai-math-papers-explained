@@ -1,0 +1,106 @@
+{
+  "name": "Hilbert's Sixteenth Problem: Limit Cycles in Planar Systems",
+  "children": [
+    {
+      "name": "Quintic Liénard Systems Bound",
+      "children": [
+        {
+          "name": "System Definition",
+          "children": [
+            {
+              "name": "Scalar Equation: x'' + F'(x)x' + x = 0"
+            },
+            {
+              "name": "Primitive F: Polynomial of degree deg(F) <= 5"
+            },
+            {
+              "name": "No Restrictions: Signs, parity, hyperbolicity, or amplitude"
+            }
+          ]
+        },
+        {
+          "name": "Main Theorem Results",
+          "children": [
+            {
+              "name": "Maximum Limit Cycles: Exactly two in R^2"
+            },
+            {
+              "name": "Sharpness: Attained by degree-five polynomials"
+            },
+            {
+              "name": "Conjecture Proved: Solves Lins Neto–de Melo–Pugh for deg = 5"
+            }
+          ]
+        },
+        {
+          "name": "Methodology & Proof Steps",
+          "children": [
+            {
+              "name": "Arc Coordinates: Parametrized half-orbits by peak height and width r"
+            },
+            {
+              "name": "Quadratic Fitting: Global interpolation using quadratic profiles"
+            },
+            {
+              "name": "Model Inequality: Schwarzian identity and Riccati linearization"
+            },
+            {
+              "name": "Shape Comparisons: Curvature and slope-intercept monotonicity"
+            },
+            {
+              "name": "Sign Partition: Counting isolated zeros of matching function ∆(r)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Uniform Boundedness for Degree d",
+      "children": [
+        {
+          "name": "Main Theorem: Limit cycles bounded by finite constant B(d)"
+        },
+        {
+          "name": "Scope: Bounded globally in planar fields of maximum degree d"
+        },
+        {
+          "name": "Core Proof Strategy",
+          "children": [
+            {
+              "name": "Logarithmic Flags: Record ordered large scales and logarithmic ties"
+            },
+            {
+              "name": "Separation Theorem: Asymptotic expansion tree on nested complex domains"
+            },
+            {
+              "name": "Packet Calculus: Differentiated implicit and ordinary chart closure"
+            },
+            {
+              "name": "Matching Equations: Representation of returns across local passages"
+            },
+            {
+              "name": "Absolute Isolated-Zero Criterion: Dimensional reduction and elimination"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Passage Models & Analytic Tools",
+      "children": [
+        {
+          "name": "One-Rate Passages: Regular and stable transfers with one large clock"
+        },
+        {
+          "name": "Two-Scale Passages: Comparable or widely separated logarithmic scales"
+        },
+        {
+          "name": "Additive Passages: Damped transverse states and residual passage models"
+        },
+        {
+          "name": "Subanalytic Preparation: Subdivision into finite pole-free boxes and annuli"
+        }
+      ]
+    }
+  ]
+}

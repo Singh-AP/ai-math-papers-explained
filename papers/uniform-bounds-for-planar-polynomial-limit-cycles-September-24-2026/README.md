@@ -416,7 +416,7 @@ The two-cycle example above falls in exactly this last case (positive $x$ coeffi
 
 ## 9. Slides and other assets
 
-Everything in the first four rows below was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the companion, the Lean scope document and the Wikipedia article on Hilbert's sixteenth problem. The report used only the two papers and the Lean document. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, and seven of the fifteen slides contain errors, so see the [errata](assets/README.md#errata) before relying on any detail. The standard mind map and audio overview were not generated this time, because the shared NotebookLM quota ran low.
+Everything in the first six rows below was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the companion, the Lean scope document and the Wikipedia article on Hilbert's sixteenth problem. The report, the mind map and the audio used only the two papers and the Lean document. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, and seven of the fifteen slides contain errors, so see the [errata](assets/README.md#errata) before relying on any detail.
 
 | Asset | What it is |
 |---|---|
@@ -424,6 +424,8 @@ Everything in the first four rows below was generated with **Google NotebookLM**
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Hilbert (1900) to the 2026 preprints |
 | [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer, restricted to the paper sources |
+| [Mind map](assets/notebooklm/mindmaps.md) | How the two proofs fit together, as a nested list ([JSON](assets/notebooklm/mindmap-proof.json)). It leaves out the steps that make the bound uniform; see the errata |
+| [Audio overview (≈1.5 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary. Not reviewed |
 | [Assets README and errata](assets/README.md) | Inventory, notebook sources, and every error found |
 | [Limit cycles and the return map](assets/figures/limit-cycles-return-map.svg) ([PNG](assets/figures/limit-cycles-return-map.png)) | Hand-made figure, computed numerically: the companion's two-cycle example and its displacement function |
 | [Cycle words and a saddle passage](assets/figures/cycle-words-and-saddle.svg) ([PNG](assets/figures/cycle-words-and-saddle.png)) | Hand-made schematic of Steps 2–4 of the proof |
@@ -468,7 +470,7 @@ Everything in the first four rows below was generated with **Google NotebookLM**
 ## How this explainer was made
 
 1. The paper, its companion and their TeX sources were downloaded from [openai/math](https://github.com/openai/math/tree/main/preprints), together with the Lean scope document and `lean/formalization.yaml`.
-2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) CLI, along with the Wikipedia article on Hilbert's sixteenth problem for background. NotebookLM generated the slides, infographics and report in [`assets/notebooklm/`](assets/notebooklm/). Every slide, both infographics and the report were then checked against the papers; the deck was not revised.
+2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) CLI, along with the Wikipedia article on Hilbert's sixteenth problem for background. NotebookLM generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/). Every slide, both infographics, the report and the mind map were then checked against the papers; the audio was not reviewed, and the deck was not revised.
 3. The text on this page was written by hand (with AI assistance) directly from the papers: the principal paper's introduction and Section 11, the statements of its main theorems in Sections 3–10, and the companion's introduction and Sections 2, 6 and 7. NotebookLM's outputs contain mistakes, listed in the [errata](assets/README.md#errata), so they were used as visual and structural aids rather than as the source of truth. The two figures were made by hand. The phase portrait and displacement curve come from a short numerical integration (fourth-order Runge–Kutta) of the companion's example.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.
