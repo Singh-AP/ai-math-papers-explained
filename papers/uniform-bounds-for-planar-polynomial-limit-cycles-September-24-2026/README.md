@@ -282,7 +282,7 @@ a finite sum of numbers that depend only on the degree.
 
 **The rotation trick (Lemma 11.8).** Let $z(t)$ be a limit cycle with period $T$, and perturb to $V_\mu = V + \mu J V$ with $J(a,b) = (-b, a)$. The derivative $u = \partial_\mu z_\mu$ satisfies $u' = DV(z)\ u + JV(z)$. For $w(t) = \det(V(z(t)), u(t))$ one gets
 
-$$w' = (\operatorname{div} V)\ w + \lvert V \rvert^2, \qquad w(T) = \int_0^T e^{\int_s^T \operatorname{div} V}\ \lvert V(z(s)) \rvert^2\ ds > 0.$$
+$$w' = (\mathrm{div} V)\ w + \lvert V \rvert^2, \qquad w(T) = \int_0^T e^{\int_s^T \mathrm{div} V}\ \lvert V(z(s)) \rvert^2\ ds > 0.$$
 
 So the displacement $D(r, \mu)$ has $D_\mu(0,0) \neq 0$, and its zero set is a curve $\mu = \psi(r) = a r^m + O(r^{m+1})$ with $a \neq 0$. If $m$ is odd, each small sign of $\mu$ gives one simple zero nearby. If $m$ is even, one sign gives two. Choosing the better sign for a whole collection of cycles gives at least as many hyperbolic cycles as there were cycles. Rotating the field is a constant linear combination of $P$ and $Q$, so the degree does not go up.
 

@@ -6,6 +6,9 @@ $$...$$ math a backslash followed by punctuation (\\, \\; \\! \\{ \\} \\| \\\\) 
 its backslash, and `*` can start emphasis. Use $`...`$ for such inline math and a
 ```math fence for such display math (both are passed through untouched), or
 rewrite with \\ (backslash-space), \\quad, \\lbrace, \\rbrace, \\Vert, \\ast.
+GitHub also rejects \\operatorname (use \\mathrm). If a plain $...$ span still shows
+as raw TeX on github.com (this happens next to parentheses, subscripts or emphasis),
+rewrite it as $`...`$.
 Inside table rows, a bare `|` in math splits the cell: write \\| or use \\lvert, \\rvert.
 Raw NotebookLM outputs (any path containing a `notebooklm/` directory) are skipped.
 
@@ -73,6 +76,8 @@ def lint_file(md):
         for kind, text in math_spans(line):
             if ESCAPED.search(text):
                 problems.append((n, f"backslash-punctuation in {kind} math: {ESCAPED.search(text).group()}"))
+            if "\\operatorname" in text:
+                problems.append((n, "GitHub's math renderer rejects \\operatorname; use \\mathrm{...}"))
             if kind == "inline" and "*" in text:
                 problems.append((n, "`*` in inline math can trigger emphasis; use \\ast or $`...`$"))
             if is_table and "|" in text:

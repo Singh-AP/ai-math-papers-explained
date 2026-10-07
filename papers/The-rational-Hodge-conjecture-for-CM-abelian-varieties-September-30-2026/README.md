@@ -145,7 +145,7 @@ On CM abelian varieties, then, *deciding* whether a class is Hodge is bookkeepin
 
 ## 3. What the paper proves
 
-> **Main theorem (Theorem 1.1).** Let $A$ be a complex CM abelian variety. For every integer $p\ge 0$, the Betti cycle-class map $\mathrm{cl}_B$ from $\mathrm{CH}^p(A)_{\mathbb{Q}}$ to $H^{2p}(A,\mathbb{Q})\cap H^{p,p}(A)$ is surjective. In particular, the rational Hodge conjecture holds in every codimension on every finite product of complex CM abelian varieties and on every power of such a product.
+> **Main theorem (Theorem 1.1).** Let $`A`$ be a complex CM abelian variety. For every integer $`p\ge 0`$, the Betti cycle-class map $`\mathrm{cl}_B`$ from $`\mathrm{CH}^p(A)_{\mathbb{Q}}`$ to $`H^{2p}(A,\mathbb{Q})\cap H^{p,p}(A)`$ is surjective. In particular, the rational Hodge conjecture holds in every codimension on every finite product of complex CM abelian varieties and on every power of such a product.
 
 In plain words: take any abelian variety with complex multiplication, of any dimension. Pick any rational cohomology class of type $(p,p)$. Then some rational combination of $p$-codimensional subvarieties has exactly that class. Nothing about the dimension, the CM field or the CM type is assumed.
 

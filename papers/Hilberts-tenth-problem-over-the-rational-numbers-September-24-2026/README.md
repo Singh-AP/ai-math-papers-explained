@@ -70,7 +70,7 @@ No amount of computer searching could have told you this. A search can only ever
 
 ### 1.2 Algorithms and undecidable problems
 
-An **algorithm** is a finite recipe a computer can follow. To *decide* a yes/no question, it must **always stop** with the right answer. In 1936 Alan Turing gave a precise definition of algorithms and showed that some questions have no such recipe. The most famous one is the **halting problem**: given a program, will it ever stop?
+An **algorithm** is a finite recipe a computer can follow. To *decide* a yes/no question, it must **always stop** with the right answer. In 1936 Alonzo Church and Alan Turing, working independently, gave precise definitions of algorithms and showed that some questions have no such recipe. The most famous example, which grew out of Turing's work and was later named the **halting problem**, asks: given a program, will it ever stop?
 
 For both whole numbers and fractions, half of the job is easy. You can list all candidate solutions (for fractions, list every tuple whose numerators and denominators are at most 1, then at most 2, and so on) and plug each one in. If a solution exists, you eventually find it. If none exists, the search runs forever and never tells you. A problem like this, where "yes" answers can be confirmed but "no" answers may never be, is called **computably enumerable**. The question is whether something cleverer can also certify the "no" answers.
 
@@ -118,12 +118,12 @@ A conjecture of **Barry Mazur** on the topology of rational points says, roughly
 | When | Who | What happened |
 |---|---|---|
 | 1900 | **David Hilbert** | Problem 10 of his Paris list: find a procedure that decides whether an integer polynomial equation has an integer solution |
-| 1936 | **Alan Turing** | A precise notion of algorithm, and the first problems proved to have none (background, not from the paper) |
+| 1936 | **Alonzo Church; Alan Turing** | Independent precise notions of algorithm, and the first problems proved to have none. Church's proof appeared first, and the name "halting problem" came later (background, not from the paper) |
 | 1949 | **Julia Robinson** | $\mathbb{Z}$ is first-order definable in $\mathbb{Q}$; the first-order theory of $\mathbb{Q}$ is undecidable |
 | 1961 | **Martin Davis, Hilary Putnam, Julia Robinson** | Every computably enumerable relation is Diophantine if exponentiation is allowed. This reduced the problem to one growth condition |
 | 1970 | **Yuri Matiyasevich** | Supplied that growth through a Diophantine description of a Fibonacci relation. Integer solvability is undecidable |
 | 1973 | **Martin Davis** | The survey "Hilbert's tenth problem is unsolvable", whose degree-reduction trick the paper reuses over $\mathbb{Q}$ |
-| 1995 | **Barry Mazur** | Conjecture on the topology of rational points (in the form the paper cites), which would rule out a Diophantine definition of $\mathbb{Z}$ in $\mathbb{Q}$ |
+| 1992, 1995 | **Barry Mazur** | Conjecture on the topology of rational points, which would rule out a Diophantine definition of $\mathbb{Z}$ in $\mathbb{Q}$. First posed in 1992; the paper cites the 1995 update |
 | 2000 | **Gunther Cornelissen, Karim Zahidi** | Mazur's conjecture would also rule out Diophantine models of $\mathbb{Z}$ in any $\mathbb{Q}^k$ |
 | 2002, 2003 | **Bjorn Poonen** | Rank-one elliptic curves transfer undecidability between rings of integers; undecidability for very large subrings of $\mathbb{Q}$ (denominators allowed at a set of primes of density one) |
 | 2007 | **Cornelissen, Zahidi** | Elliptic divisibility sequences give undecidability of a fragment over $\mathbb{Q}$ with one "for all", assuming a conjecture |
@@ -165,7 +165,7 @@ $$(Y_1 - x^2)^2 + (Y_2 - Y_1 x)^2 + (Y_2 - 2)^2 = 0$$
 has a rational solution. That polynomial has degree 4. Section 7 does this for any $f$ with an arithmetic circuit, following Davis (1973).
 </details>
 
-The heart of the paper is a statement it calls the **finite-test interface**. For each nonconstant integer polynomial $f$ the paper constructs an effectively generated sequence of finite tests, each of which can be answered by finitely many rational-solvability queries, such that
+The heart of the paper is what it calls the **finite-test equivalence**. For each nonconstant integer polynomial $f$ the paper constructs an effectively generated sequence of finite tests, each of which can be answered by finitely many rational-solvability queries, such that
 
 $$f\ \text{has an integer zero} \quad\Longleftrightarrow\quad \text{every test succeeds}.$$
 
@@ -300,7 +300,7 @@ A small check on the parity theme: every denominator in the table is a perfect s
 | **Barry Mazur, Karl Rubin; Peter Koymans, Carlo Pagano; Alpöge, Bhargava, Ho, Shnidman** | Elliptic curves and twists for rings of integers | The number-field program the paper places itself next to |
 | **Jeroen Demeyer, Jan Van Geel** | Existential formulas controlling odd valuations | Precursor of the pole-parity formula $\Phi$ |
 | **J. W. S. Cassels, John Tate** (with Poonen–Stoll) | The Cassels–Tate pairing, and when it is alternating | Forces $\dim\ \mathrm{Sha}[2]$ to be even in Section 3 |
-| **László Rédei; Tao Wei, Xuejun Guo** | Rédei matrices; their 2-Selmer matrix formulation for the family $y^2 = x(x-n)(x+3n)$ | The Selmer-rank calculation in Section 3 |
+| **Paul Monsky; Tao Wei, Xuejun Guo** | Monsky's matrix description of 2-Selmer groups (appendix to Heath-Brown, 1994); Wei and Guo's 2-Selmer matrix formulation for the family $y^2 = x(x-n)(x+3n)$, with its Rédei-matrix reciprocity identity | The Selmer-rank calculation in Section 3 |
 | **Ben Green, Terence Tao, Tamar Ziegler** | Linear equations in primes; inverse theorem for Gowers norms | The prime-pattern Lemma 6.1 |
 | **Pierre Deligne** | Canonical models of Shimura varieties | The discriminant-210 Shimura curve and its abelian surfaces |
 | **Gerd Faltings** | Isogeny and semisimplicity theorems; Faltings height | Section 4, throughout |
