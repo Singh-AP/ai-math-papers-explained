@@ -9,13 +9,13 @@ Supporting material for the [explainer](../README.md). Everything in `notebooklm
 | `figures/pi-approximation-exponents.svg`, `figures/pi-approximation-exponents.png` | SVG written by a small Python script from computed data | For the first 61 continued-fraction convergents $p/q$ of π, the exponent $e$ with $\lvert \pi - p/q \rvert = q^{-e}$, computed with mpmath at 400 digits. Reference lines at 2 (Dirichlet) and 5/2 (Flint–Hills threshold). The PNG is a 3× render |
 | `figures/flint-hills-partial-sums.svg`, `figures/flint-hills-partial-sums.png` | SVG written by a small Python script from computed data | Partial sums of $\sum 1/(n^3 \sin^2 n)$ for $n \le 10^7$ in double precision with compensated summation; the large terms ($n = 1, 3, 22, 355, 710$) were cross-checked with mpmath. The paper itself gives no numerical value. The PNG is a 3× render |
 | `figures/determinant-squeeze.svg`, `figures/determinant-squeeze.png` | Hand-written SVG | Schematic, not to scale: the arithmetic lower bound and the analytic upper bound for the determinant, and the two inequalities from Lemma 4.1 that make them incompatible exactly when $\nu > 2$. The PNG is a 3× render |
-| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), not revised | 15 beginner slides. Slides 6, 9, 11 and 12 contain clear errors (see errata) |
+| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), revised once | 15 beginner slides. Slides 6, 9, 11 and 12 were regenerated to fix errors (see errata) |
 | `notebooklm/slides/slide-NN.png` | `pymupdf` at 200 DPI from `slides.pdf` | Per-slide images for inline viewing |
 | `notebooklm/infographic-overview.png` | NotebookLM infographic (portrait, detailed, instructional) | One-page overview, 1536 × 2752 pixels |
-
-### Not generated
-
-The standard set also includes a history-timeline infographic, a "Create Your Own" beginner report, a mind map of the proof and a brief audio overview. They were **not generated**: the NotebookLM quota window is shared with other papers, and it had dropped below the 8% stop threshold before the third item could be started. Only the slide deck and the overview infographic exist for this paper so far.
+| `notebooklm/infographic-history-timeline.png` | NotebookLM infographic (landscape, sketch-note) | From Archimedes to 2026, 2752 × 1536 pixels |
+| `notebooklm/audio-overview-brief.m4a` | NotebookLM audio overview ("brief") | About 91 seconds |
+| `notebooklm/beginner-explainer-report.md` | NotebookLM "Create Your Own" report | Long-form explainer; generated from the paper and the Lean scope document only |
+| `notebooklm/mindmaps.md`, `notebooklm/mindmap-proof.json` | NotebookLM mind map | Generated from the paper and the Lean scope document only. The JSON's root node is named "The Irrationality Exponent of Pi is 2" |
 
 ### Notebook sources
 
@@ -26,7 +26,7 @@ Notebook `e2393bcd-139f-45cb-86d6-1c7ba559bbd6`, *The irrationality exponent of 
 3. [`lean/docs/017.md`](https://github.com/openai/math/blob/main/lean/docs/017.md): scope of the Lean formalization
 4. [Wikipedia: Irrationality measure](https://en.wikipedia.org/wiki/Irrationality_measure), for background only
 
-The slide deck and the infographic were generated from all four sources.
+The slides, both infographics and the audio were generated from all four sources. The report and the mind map used only sources 1 and 3.
 
 ## Errata
 
@@ -34,33 +34,20 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 
 **`slides.pdf` / `slides.pptx`**
 
-Clear errors:
-
-- **Slide 6** says that for transcendental numbers such as $e$ and π "the exponent is entirely unknown". That is wrong for $e$, whose exponent is known to be 2. It also says mathematicians "could not prove if [π's] μ was 2, 2.5, or 40". Values above 20 had been ruled out for large denominators since Mignotte (1974), and everything above 7.103… since Zeilberger–Zudilin (2020). The open range before this paper was $2 \le \mu(\pi) \le 7.103\ldots$
-- **Slide 9** labels "ν > 2" as "The False Assumption". In the paper, $\nu > 2$ is just the fixed exponent. The assumption that leads to a contradiction is that there are infinitely many fractions with $\lvert \pi - p/q \rvert \le q^{-\nu}$ for that $\nu$. The diagram is decorative.
-- **Slide 11** heads the upper bound "Geometry". In the paper, the algebraic geometry (Theorem 2.1) only guarantees $\Delta \ne 0$. The upper bound is analytic (Lemmas 3.2–3.3, Proposition 3.4). The slide also merges the two cases of that argument into one sentence. Either many rows sample the same smooth functions and are nearly dependent (the Vandermonde-type collision saving), or most rows carry high powers of the tiny approximation errors. Rows "sampling a Vandermonde-like function" do not "carry the powers of our assumed tiny errors". The lower-bound panel (arithmetic, nonzero Gaussian integer) is correct.
-- **Slide 12** has an invented chart. Its spike at $n = 355$ reaches about $10^{12}$ on the vertical axis, but the actual term is about 24.6, as the slide's own text says. Ordinary terms are far below 1 (they shrink roughly like $1/n^3$), not oscillating around 1. The horizontal axis is not to scale near the spike. The three text boxes are correct.
-
-Smaller issues:
-
+- The first deck NotebookLM produced had four clearly wrong slides. They were regenerated with a single `nlm slides revise`, and the shipped deck is the revised one. `scripts/diff_slides.py` reported the other eleven slides as unchanged (difference score 0.000). The four fixes:
+  - Slide 6 said that the exponent of transcendental numbers such as $e$ and π "is entirely unknown" (wrong for $e$, whose exponent is 2). It also said mathematicians could not tell whether π's exponent "was 2, 2.5, or 40" (40 had been excluded since Mignotte's 1974 bound of 20). It now says that the best proven range before 2026 was $2 \le \mu(\pi) \le 7.103$.
+  - Slide 9 labelled "ν > 2" as "The False Assumption". It now states the actual assumption: infinitely many fractions with $\lvert \pi - p/q \rvert \le q^{-\nu}$ for a fixed $\nu > 2$.
+  - Slide 11 headed the upper bound "Geometry" and merged the two cases of the argument. It now says "Analysis" and separates the two cases correctly: near-dependent rows sampling the same smooth function, or rows carrying high powers of the approximation errors.
+  - Slide 12 had an invented chart with a spike near $10^{12}$. It now shows a bar chart with spikes at $n = 1, 3, 22$ and $355$.
+- **Slide 12 (still not to scale).** In the revised chart the bar at $n = 355$ reaches about $10^{2.5}$, roughly 300, on the logarithmic axis, though the actual term is about 24.6 (as the slide's own text says). The ordinary bars sit around 0.01–0.04, while the actual terms are mostly much smaller (for example about 0.0001 at $n = 50$). The early bars are not at their exact $n$.
 - **Slide 2** draws 22/7 to the *left* of π on the ruler, but $22/7 = 3.1428\ldots$ is larger than π. The two error values are correct.
 - **Slide 3** calls 355/113 "an exceptional mathematical roadblock, forcing extreme precision". The point is simply that the large partial quotient 292 makes 355/113 an exceptionally good approximation (its error is about $`1/(292 \cdot 113^2)`$). The "Step 1/2/3" boxes skip the convergent 3/1.
 - **Slide 4** calls $1/q^2$ a "universal speed limit" with an "allowable error" axis, and calls 355/113 beating it "the paradox". Dirichlet's $1/q^2$ is a guarantee, not a limit: infinitely many fractions beat it, and every convergent does. 355/113 beats it by a large factor (about 294), which is unusual but not paradoxical. The year 1842 does not come from the paper.
-- **Slide 5** prints the exponent ν as the letter "v". The picture is otherwise fine.
+- **Slides 5 and 11** print the exponent ν as the letter "v".
 - **Slide 7** calls 1953–2020 a "century-long race".
 - **Slide 8** says the result is "rigorously verified by the Lean 4 software system". According to `lean/docs/017.md` the main theorem is formalized, but the Flint–Hills corollary is outside the selected statement. The repository publishes the Comparator configuration, not a log of a run, and this explainer did not re-run it. The "code" in the background is decorative gibberish, not Lean.
 - **Slide 14** describes the mechanism as "the geometry of Taylor matrices" against the arithmetic of Gaussian integers. The smallness actually comes from analysis (Taylor expansion at the exact periods and the approximation errors); geometry supplies only the nonvanishing.
 - Slides 1, 10, 13 and 15 have no errors found. Slide 10's "the rows do not overlap" means that the rows are linearly independent.
-
-A single revision was not run, because the shared quota was below the 40% needed to allow one. The revision that would fix the clear errors is:
-
-```bash
-nlm slides revise 2dd5acf5-ba02-4344-8fb4-3f23a91c4b9f --profile amy --confirm \
-  --slide '6 Replace the red box text with: Before 2026 the best proven range was 2 ≤ μ(π) ≤ 7.103 (Zeilberger and Zudilin, 2020); the exact value was open. Replace the bottom line with: Because π is transcendental, Roth’s theorem does not apply, and the exact exponent of π was unknown.' \
-  --slide '9 Replace the red label “The False Assumption: v > 2” with: Assumption: infinitely many fractions with |π − p/q| ≤ q^(−ν), for a fixed ν > 2.' \
-  --slide '11 Rename “Upper Bound: Geometry” to “Upper Bound: Analysis”, and replace its text with: After the rows move to the exact periods 2πi·j, either many rows sample the same smooth function and are nearly dependent, like a Vandermonde table, or most rows carry high powers of the tiny approximation errors. Either way Δ is tiny.' \
-  --slide '12 Replace the chart with a bar chart of the actual terms 1/(n³ sin² n): about 1.41 at n = 1, 1.86 at n = 3, 1.20 at n = 22, 24.6 at n = 355, and values far below 1 elsewhere.'
-```
 
 **`infographic-overview.png`**
 
@@ -71,6 +58,33 @@ nlm slides revise 2dd5acf5-ba02-4344-8fb4-3f23a91c4b9f --profile amy --confirm \
 - "Fully formalized in Lean" and "The proof is AI-generated and machine-checked" overstate what can be confirmed. According to `lean/docs/017.md` the main theorem is formalized, but the Flint–Hills corollary is outside the selected statement. No Comparator run log is published, and this explainer did not re-run the build.
 - The rest (the question, Dirichlet's baseline, the definition of μ, the main result, the Flint–Hills payoff, and the floor-versus-ceiling squeeze with "powers of tiny approximation errors" and "near-dependence") matches the paper.
 
-**Audio overview**
+**`infographic-history-timeline.png`**
 
-- Not generated (see [Not generated](#not-generated)). If one is added later, note that the audio cannot be reviewed by reading, so it will be unreviewed.
+- Typo: "Melburg (2022)" should be "Meiburg".
+- "Alekseyev (2011) and Meiburg (2022) tied Flint–Hills series convergence to μ(π) < 5/2" compresses two different results. Alekseyev showed that convergence *requires* $\mu(\pi) \le 5/2$; Meiburg showed that $\mu(\pi) < 5/2$ is *sufficient*.
+- The panel "The Modern Race to μ(π) = 2 (1974 – 2026)" sits over a funnel that starts at Mahler's 42 from 1953. Bai's claimed 2026 bound (7.1019, preprint) is missing.
+- "Definitive Proof", "Flint–Hills Convergence Confirmed" and "Waldschmidt's 2004 Conjecture Confirmed" overstate the status: the result is an AI-generated preprint, not yet independently reviewed.
+- The dates and values shown (Archimedes, Zu Chongzhi, Lambert 1768, Liouville 1844, Lindemann 1882, Mahler 1953 at 42, Roth 1955, Mignotte 1974 at 20, Hata 1993 at 8.016, Salikhov 2008 at 7.606, Zeilberger–Zudilin 2020 at 7.103, OpenAI 24 Sept 2026) are correct.
+
+**`beginner-explainer-report.md`**
+
+- Section 5 calls the interpolation matrix "a giant square matrix $\Delta_H$". In the paper the matrix has more columns than rows, and $\Delta_H$ is a square minor that uses every row.
+- Section 5 and its flowchart say the scaled entries give "$`\lvert \Delta_H \rvert \ge 1`$" ("Clear Denominators in Z[i] ==> |Δ_H| >= 1"). It is the *scaled* determinant (a known multiple of $\Delta_H$) that is at least 1. For $\Delta_H$ itself, the paper's bound is $\log\lvert\Delta_H\rvert/(MH) \ge -(1-\bar b) - E_{\mathrm{ar}}$. The report writes this bound with denominator "$`M_H`$", which should be $MH$, the number of rows times the degree.
+- Section 5, step 3 writes the second volume condition as "$`K w_0 v_0 / \theta^m < 1`$". In the paper it is $K (w_0/v_0)\theta^m < 1$.
+- Section 5, step 1 and the flowchart say the coordinate weights are chosen before the approximations. In the paper $w_i = \lceil \log q_i \rceil$ is set by the chosen approximation $q_i$. What is fixed first is the dimension, the number of centers, $w_0$, $v_0$ and the threshold rule, and the paper stresses that those thresholds do not depend on the centers.
+- Section 5, step 2 writes $r_i = 2 i p_i / q_i$ and then says $i$ is the coordinate index. In the paper the leading $\mathrm{i}$ is the imaginary unit and the subscript $i$ is the index.
+- Section 5, step 7 says Lemma 4.1 shows the two inequalities hold "if and only if $\nu > 2$". The lemma proves only the "if" direction: for every $\nu > 2$ suitable constants exist. The converse is true but is not stated in the paper.
+- Section 7 says Corollary 1.2 "is explicitly outside the scope of the formalized Lean code" and calls the formalization "machine-checked". `lean/docs/017.md` says only that the Flint–Hills consequence is outside the *selected statement*, and the Lean solution file does contain a theorem named `flint_hills_summable`. No Comparator run log is published.
+- Section 2 says Mahler's bound was "eventually improved to 30". The paper says Mahler's own 1953 paper stated an eventual improvement to 30, meaning exponent 30 for large denominators, not a later result. It lists Chudnovsky as an "asymptotic bounds improvement", but the paper gives no bound for Chudnovsky.
+- Section 4 says the result "definitively" resolves Waldschmidt's problem and the Flint–Hills problem. It is a preprint that has not yet been independently reviewed.
+- The quoted statements (Theorem 1.1, Corollaries 1.2 and 5.2), the history table, the Carella footnote, the Laurent collision count $n_a(n_a - 1)/2$, the arithmetic error term $E_{\mathrm{ar}}$, the parameter choices and the dyadic argument match the paper.
+
+**`mindmaps.md` / `mindmap-proof.json`**
+
+- "Bai (2026 preprint): < 7.1018" should be $< 7.101862832357$ (about 7.1019).
+- "Mignotte (1974): 20" is Mignotte's bound for large denominators; for all denominators $q \ge 2$ it is 21.
+- Otherwise the map matches the paper and the Lean scope document, including "Flint–Hills series excluded from selected formalization statement".
+
+**`audio-overview-brief.m4a`**
+
+- Not checked against a transcript. The audio cannot be reviewed by reading, so it is unreviewed; treat it as an informal teaser.

@@ -1,0 +1,177 @@
+{
+  "name": "The Irrationality Exponent of Pi is 2",
+  "children": [
+    {
+      "name": "Main Result (Theorem 1.1)",
+      "children": [
+        {
+          "name": "Statement",
+          "children": [
+            {
+              "name": "µ(π) = 2"
+            },
+            {
+              "name": "|π - p/q| ≥ q^-ν for q ≥ Q(ν) and ν > 2"
+            }
+          ]
+        },
+        {
+          "name": "Key Characteristics",
+          "children": [
+            {
+              "name": "Applies to unreduced fractions"
+            },
+            {
+              "name": "Ineffective threshold Q(ν)"
+            },
+            {
+              "name": "Differs from bounded continued-fraction quotients"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Consequences & Corollaries",
+      "children": [
+        {
+          "name": "Flint–Hills Series (Corollary 1.2)",
+          "children": [
+            {
+              "name": "Proves convergence of ∑ 1/(n^3 sin^2 n)"
+            },
+            {
+              "name": "Satisfies Meiburg's condition µ(π) < 5/2"
+            }
+          ]
+        },
+        {
+          "name": "Generalized Flint–Hills Series (Corollary 5.2)",
+          "children": [
+            {
+              "name": "Series ∑ 1/(n^a |sin n|^b)"
+            },
+            {
+              "name": "Converges if and only if a > max{1, b}"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proof Methodology",
+      "children": [
+        {
+          "name": "Multivariable Interpolation (Theorem 2.1)",
+          "children": [
+            {
+              "name": "Prescribing polynomial jet coefficients"
+            },
+            {
+              "name": "Separated coordinate weights independent of centers"
+            },
+            {
+              "name": "Local multiplicity comparisons & normal bases"
+            },
+            {
+              "name": "Curve inequality bounding weighted contact"
+            },
+            {
+              "name": "Nef-plus-ample divisors on ordinary blowups"
+            }
+          ]
+        },
+        {
+          "name": "Determinant Mechanism",
+          "children": [
+            {
+              "name": "Nonzero determinant from independent rows"
+            },
+            {
+              "name": "Arithmetic lower bound clearing denominators"
+            },
+            {
+              "name": "Analytic upper bound via entire function translation"
+            },
+            {
+              "name": "Collision saving from repeated Taylor degrees"
+            },
+            {
+              "name": "Collision vs. approximation-error trade-off"
+            }
+          ]
+        },
+        {
+          "name": "Parameter Choice Strategy",
+          "children": [
+            {
+              "name": "Full-simplex volume advantage in dimension m+1"
+            },
+            {
+              "name": "Order of limits: dimension, weights, centers, then degree H → ∞"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Historical Context & Related Work",
+      "children": [
+        {
+          "name": "Previous Exponent Bounds",
+          "children": [
+            {
+              "name": "Mahler (1953): 42 (and 30)"
+            },
+            {
+              "name": "Mignotte (1974): 20"
+            },
+            {
+              "name": "Hata (1993): 8.016"
+            },
+            {
+              "name": "Salikhov (2008): 7.606"
+            },
+            {
+              "name": "Zeilberger & Zudilin (2020): 7.103"
+            },
+            {
+              "name": "Bai (2026 preprint): < 7.1018"
+            }
+          ]
+        },
+        {
+          "name": "Flint–Hills History",
+          "children": [
+            {
+              "name": "Alekseyev: Necessary condition µ(π) ≤ 5/2"
+            },
+            {
+              "name": "Meiburg: Sufficient condition µ(π) < 5/2"
+            },
+            {
+              "name": "Mantzakouras & López Zapata: Withdrawn 2026 claim"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lean Formalization Scope",
+      "children": [
+        {
+          "name": "Formalized proof that µ(π) = 2 in Lean"
+        },
+        {
+          "name": "Proves lower bound |π - p/q| ≥ q^-ν"
+        },
+        {
+          "name": "Flint–Hills series excluded from selected formalization statement"
+        },
+        {
+          "name": "Target code in PiExponent.lean"
+        }
+      ]
+    }
+  ]
+}

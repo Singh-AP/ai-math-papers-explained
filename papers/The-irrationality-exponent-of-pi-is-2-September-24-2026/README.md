@@ -163,7 +163,7 @@ With the best proven bound stuck above 7, the question was open.
 
 ## 2. A short history
 
-![Slide: the falling upper bounds for the irrationality exponent of π](assets/notebooklm/slides/slide-07.png)
+![Timeline infographic](assets/notebooklm/infographic-history-timeline.png)
 
 | When | Who | What happened |
 |---|---|---|
@@ -319,6 +319,8 @@ flowchart TD
 
 **Step 9: The squeeze.** Either way the determinant is smaller than the arithmetic floor allows, once $m$ is large, the chosen denominators $q_i$ are large, and then $H$ is large. That contradiction shows there are only finitely many fractions with error below $q^{-\nu}$, for every $\nu > 2$. With Dirichlet's $\mu(\pi) \ge 2$, this gives $\mu(\pi) = 2$.
 
+![Slide: the arithmetic lower bound and the analytic upper bound collide](assets/notebooklm/slides/slide-11.png)
+
 **Step 10: Flint–Hills.** Take $\nu$ between 2 and 5/2 and run the spacing argument from [section 4](#4-why-it-matters).
 
 <details>
@@ -473,18 +475,22 @@ Other things the paper does not do:
 
 ## 9. Slides, audio and other assets
 
-The slide deck and the overview infographic were generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the reasoning summary, the Lean scope document and the Wikipedia article on irrationality measures. They are kept exactly as NotebookLM produced them. They are AI-generated and contain errors, clear ones on slides 6, 9, 11 and 12, so see the [errata](assets/README.md#errata) before relying on any detail. The rest of the usual set (a history-timeline infographic, a written report, a mind map and an audio overview) was not generated, because the NotebookLM quota shared with other papers ran out ([details](assets/README.md#not-generated)).
+Everything below was generated with **Google NotebookLM** (now "Gemini Notebook"). The slides, both infographics and the audio used the paper, the reasoning summary, the Lean scope document and the Wikipedia article on irrationality measures. The report and the mind map used only the paper and the Lean scope document. The outputs are kept exactly as NotebookLM produced them, except that the slide deck was revised once to fix four wrong slides. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) | 15 beginner slides, also as [PowerPoint](assets/notebooklm/slides.pptx) |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) | 15 beginner slides, also as [PowerPoint](assets/notebooklm/slides.pptx); slides 6, 9, 11 and 12 regenerated once |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top |
+| [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Archimedes to 2026, shown in section 2 |
+| [Audio overview (≈1.5 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not reviewed) |
+| [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer |
+| [Mind map](assets/notebooklm/mindmaps.md) | How the proof fits together |
 | [Exponent figure](assets/figures/pi-approximation-exponents.svg) | Hand-made figure in section 1.4, from computed convergents |
 | [Flint–Hills figure](assets/figures/flint-hills-partial-sums.svg) | Hand-made figure in section 1.6, from computed partial sums |
 | [Squeeze figure](assets/figures/determinant-squeeze.svg) | Hand-made schematic in section 5 |
 
 <details>
-<summary><b>All 15 slides</b> (click to expand; slides 6, 9, 11 and 12 contain errors listed in the errata)</summary>
+<summary><b>All 15 slides</b> (click to expand; slide 12's chart is still not to scale, and some smaller slips are listed in the errata)</summary>
 
 ![Slide 1](assets/notebooklm/slides/slide-01.png)
 
@@ -523,7 +529,7 @@ The slide deck and the overview infographic were generated with **Google Noteboo
 ## How this explainer was made
 
 1. The paper, its TeX source, the reasoning summary, the Lean scope document and the Lean challenge files were downloaded from [openai/math](https://github.com/openai/math).
-2. The paper, the reasoning summary, the Lean scope document and the Wikipedia article on irrationality measures were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI, which generated the slide deck and the overview infographic in [`assets/notebooklm/`](assets/notebooklm/). The rest of the usual set (timeline infographic, report, mind map, audio) was not generated because the shared NotebookLM quota ran out. NotebookLM's outputs contain mistakes, listed in the [errata](assets/README.md#errata), so they were used as visual aids rather than as the source of truth.
+2. The paper, the reasoning summary, the Lean scope document and the Wikipedia article on irrationality measures were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI, which generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/). The report and the mind map were restricted to the paper and the Lean scope document. After every slide was checked against the paper, one `nlm slides revise` regenerated the four clearly wrong slides (6, 9, 11 and 12). `scripts/diff_slides.py` confirmed that no other slide changed. NotebookLM's outputs still contain smaller mistakes, listed in the [errata](assets/README.md#errata), so they were used as visual aids rather than as the source of truth.
 3. The text on this page was written by hand (with AI assistance) directly from the paper's TeX source: the introduction, the proof outline, and Sections 2–5. Historical dates were checked against the paper's bibliography, Wikipedia and MacTutor; the one date none of these confirms (Dirichlet, 1842) is marked as coming from my own knowledge. Every number in the tables and figures (continued fraction, convergents, errors, Flint–Hills partial sums) was computed for this explainer: with [mpmath](https://mpmath.org/) at high precision, and in double precision with compensated summation for the ten-million-term Flint–Hills sum, whose large terms were cross-checked with mpmath.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.
