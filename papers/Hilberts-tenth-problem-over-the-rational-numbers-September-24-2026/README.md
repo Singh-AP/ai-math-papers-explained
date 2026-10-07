@@ -378,7 +378,7 @@ Everything below except the two hand-made figures was generated with **Google No
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) · [PPTX](assets/notebooklm/slides.pptx) | 15-slide beginner deck. Several slides, notably 6, 8, 9, 10, 11 and 15, contain errors listed in the errata |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) · [PPTX](assets/notebooklm/slides.pptx) | 15-slide beginner deck, revised once to fix slides 6, 8, 10, 11 and 15. Some smaller errors remain (for example on slides 2, 9 and 10); see the errata |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top. Several typos, including ℤ printed as "2" |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Hilbert (1900) to September 2026 |
 | [Audio overview (≈1.5 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not reviewed) |
