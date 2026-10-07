@@ -1,0 +1,259 @@
+{
+  "name": "Exact Birch–Swinnerton-Dyer Formula from Low Selmer Corank",
+  "children": [
+    {
+      "name": "Main Result & Theorem",
+      "children": [
+        {
+          "name": "Theorem Statement",
+          "children": [
+            {
+              "name": "Full BSD leading-term formula for E/Q"
+            },
+            {
+              "name": "Applies when q-power Selmer corank sq(E) in {0, 1}"
+            },
+            {
+              "name": "Proves rank equality: r(E) = a(E) = sq(E)"
+            },
+            {
+              "name": "Proves Tate–Shafarevich group Sha(E/Q) is finite"
+            },
+            {
+              "name": "Holds for all odd primes p independent of q"
+            }
+          ]
+        },
+        {
+          "name": "Scope & Generality",
+          "children": [
+            {
+              "name": "No reduction hypotheses"
+            },
+            {
+              "name": "No rational torsion assumptions"
+            },
+            {
+              "name": "No isogeny or CM restrictions"
+            },
+            {
+              "name": "No residual Galois representation limits"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Core Proof Strategy & Discrepancy",
+      "children": [
+        {
+          "name": "Arithmetic Discrepancy Xp(E)",
+          "children": [
+            {
+              "name": "Defined as vp(QE) - vp(#Sha(E/Q))"
+            },
+            {
+              "name": "Goal: Prove Xp(E) = 0 for all odd p"
+            }
+          ]
+        },
+        {
+          "name": "Two-Step Strategy",
+          "children": [
+            {
+              "name": "Single-Curve Inequality",
+              "children": [
+                {
+                  "name": "Xp(E) >= 0 for non-CM and a(E) <= 1"
+                },
+                {
+                  "name": "Uses Kato modular symbols and integral diagrams"
+                }
+              ]
+            },
+            {
+              "name": "Pair Comparison (Twist Identity)",
+              "children": [
+                {
+                  "name": "Xp(E) + Xp(ED) = 0 for imaginary quadratic twist D"
+                },
+                {
+                  "name": "Requires unit equality in power-series ring"
+                },
+                {
+                  "name": "Combines with inequality to force Xp(E) = 0"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Integral Cohomology & Galois Diagrams",
+      "children": [
+        {
+          "name": "Deformation Rings & Models",
+          "children": [
+            {
+              "name": "Rings R = Zp[[t, u1, ..., um]]"
+            },
+            {
+              "name": "t = cyclotomic or anticyclotomic variable"
+            },
+            {
+              "name": "ui = tame variables at auxiliary moving primes"
+            },
+            {
+              "name": "Bounded finite free models retain maps, pairings, homotopies"
+            }
+          ]
+        },
+        {
+          "name": "Duality & Determinants",
+          "children": [
+            {
+              "name": "Poitou-Tate global duality"
+            },
+            {
+              "name": "Exact local orthogonality & Kummer local conditions"
+            },
+            {
+              "name": "Determinant coordinates preserve integral lattice structures"
+            }
+          ]
+        },
+        {
+          "name": "Residual Concentration",
+          "children": [
+            {
+              "name": "Adjoin new tame directions to clear residual Selmer classes"
+            },
+            {
+              "name": "First-order lift obstruction via Chebotarev & matrix span"
+            },
+            {
+              "name": "Makes determinants Lw, Lw_bar non-zero mod (p, t)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Single-Curve Comparison (Inequality)",
+      "children": [
+        {
+          "name": "Integral Siegel Classes",
+          "children": [
+            {
+              "name": "Constructed from Kato's functions on Y1(L0)"
+            },
+            {
+              "name": "Calibrated against modular symbols and L-functions"
+            }
+          ]
+        },
+        {
+          "name": "Central Value Identifications",
+          "children": [
+            {
+              "name": "Rank 0: Dual-exponential map calculation"
+            },
+            {
+              "name": "Rank 1: Exact tame height and Gross–Zagier height formula"
+            }
+          ]
+        },
+        {
+          "name": "Divisor Removal & Result",
+          "children": [
+            {
+              "name": "High character division removes fixed Euler & smoothing factors"
+            },
+            {
+              "name": "Proves normalized coordinate U is integral"
+            },
+            {
+              "name": "Yields vp(U(0)) = Xp(E) >= 0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Pair Comparison & Theta Implication",
+      "children": [
+        {
+          "name": "Analytic & Arithmetic Series",
+          "children": [
+            {
+              "name": "Constructed over K = Q(sqrt(D)) with p = w*w_bar"
+            },
+            {
+              "name": "Quotients Uw = Bw / Lw"
+            },
+            {
+              "name": "Integral character division proves Uw in R and p ∤ Uw"
+            }
+          ]
+        },
+        {
+          "name": "Removing Horizontal Divisors",
+          "children": [
+            {
+              "name": "Holomorphic Theta Series on GU(3,1) with growing p-level"
+            },
+            {
+              "name": "Theta congruences & non-augmentation moment estimates"
+            },
+            {
+              "name": "Cusp lifting & Galois representation extraction"
+            },
+            {
+              "name": "Vanishing analytic value forces one-sided Selmer jump"
+            },
+            {
+              "name": "New tame directions force quotient codimension >= 2"
+            },
+            {
+              "name": "Proves Uw, Uw_bar are integral units (Uw in R*)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Final Assembly & Specialization",
+      "children": [
+        {
+          "name": "Central Arithmetic Volume",
+          "children": [
+            {
+              "name": "Exact evaluation at t = 0"
+            },
+            {
+              "name": "Connects Lw(0) with point index nP, torsion, Sha, and local components"
+            },
+            {
+              "name": "Proves full-index discrepancy identity: Xp(E) + Xp(ED) = 0"
+            }
+          ]
+        },
+        {
+          "name": "Proof Completion",
+          "children": [
+            {
+              "name": "Non-CM curves: Xp(E) >= 0 and Xp(ED) >= 0 force Xp(E) = 0"
+            },
+            {
+              "name": "CM curves: Combine with Burungale–Flach rank-zero formula"
+            },
+            {
+              "name": "Full BSD formula holds at every prime factor"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
