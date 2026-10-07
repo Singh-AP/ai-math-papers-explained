@@ -1,0 +1,91 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 590" width="1000" height="590" font-family="Helvetica, Arial, sans-serif">
+  <title>The two standard generators A and B of Thompson's group F</title>
+  <desc>Graphs of the piecewise-linear maps A and B on [0,1]. A has breakpoints at 1/2 and 3/4 with slopes 1/2, 1, 2. B is the identity on [0,1/2] and has breakpoints at 1/2, 3/4 and 7/8 with slopes 1, 1/2, 1, 2. Every breakpoint is a dyadic rational and every slope is a power of 2.</desc>
+  <rect x="0" y="0" width="1000" height="590" fill="#fcfcfb"/>
+  <text x="40.0" y="42.0" font-size="22" fill="#0b0b0b" text-anchor="start" font-weight="bold">The two standard generators of Thompson’s group F</text>
+  <text x="40.0" y="68.0" font-size="13.5" fill="#52514e" text-anchor="start">Each is an increasing piecewise-linear bijection of [0,1] with dyadic breakpoints and slopes that are powers of 2.</text>
+  <text x="40.0" y="88.0" font-size="13.5" fill="#52514e" text-anchor="start">Every element of F is a finite product of A, B and their inverses.</text>
+  <line x1="90.0" y1="505" x2="90.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="90" y1="505.0" x2="450" y2="505.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="135.0" y1="505" x2="135.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="90" y1="460.0" x2="450" y2="460.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="180.0" y1="505" x2="180.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="90" y1="415.0" x2="450" y2="415.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="225.0" y1="505" x2="225.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="90" y1="370.0" x2="450" y2="370.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="270.0" y1="505" x2="270.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="90" y1="325.0" x2="450" y2="325.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="315.0" y1="505" x2="315.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="90" y1="280.0" x2="450" y2="280.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="360.0" y1="505" x2="360.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="90" y1="235.0" x2="450" y2="235.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="405.0" y1="505" x2="405.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="90" y1="190.0" x2="450" y2="190.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="450.0" y1="505" x2="450.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="90" y1="145.0" x2="450" y2="145.0" stroke="#e4e3df" stroke-width="1"/>
+  <rect x="90" y="145" width="360" height="360" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <line x1="90" y1="505" x2="450" y2="145" stroke="#a9a8a3" stroke-width="1.2" stroke-dasharray="5 5"/>
+  <text x="90.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">0</text>
+  <text x="80.0" y="509.0" font-size="13" fill="#52514e" text-anchor="end">0</text>
+  <text x="180.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">1/4</text>
+  <text x="80.0" y="419.0" font-size="13" fill="#52514e" text-anchor="end">1/4</text>
+  <text x="270.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">1/2</text>
+  <text x="80.0" y="329.0" font-size="13" fill="#52514e" text-anchor="end">1/2</text>
+  <text x="360.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">3/4</text>
+  <text x="80.0" y="239.0" font-size="13" fill="#52514e" text-anchor="end">3/4</text>
+  <text x="450.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">1</text>
+  <text x="80.0" y="149.0" font-size="13" fill="#52514e" text-anchor="end">1</text>
+  <polyline points="90.0,505.0 270.0,415.0 360.0,325.0 450.0,145.0" fill="none" stroke="#28698D" stroke-width="3.2" stroke-linejoin="round"/>
+  <circle cx="270.0" cy="415.0" r="5" fill="#B76223"/>
+  <text x="279.0" y="433.0" font-size="13" fill="#B76223" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke" font-weight="bold">(1/2, 1/4)</text>
+  <circle cx="360.0" cy="325.0" r="5" fill="#B76223"/>
+  <text x="369.0" y="343.0" font-size="13" fill="#B76223" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke" font-weight="bold">(3/4, 1/2)</text>
+  <text x="170.0" y="450.0" font-size="12.5" fill="#28698D" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">slope 1/2</text>
+  <text x="305.0" y="360.0" font-size="12.5" fill="#28698D" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">slope 1</text>
+  <text x="395.0" y="225.0" font-size="12.5" fill="#28698D" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">slope 2</text>
+  <text x="270.0" y="131.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="bold">A(x)</text>
+  <line x1="580.0" y1="505" x2="580.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="580" y1="505.0" x2="940" y2="505.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="625.0" y1="505" x2="625.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="580" y1="460.0" x2="940" y2="460.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="670.0" y1="505" x2="670.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="580" y1="415.0" x2="940" y2="415.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="715.0" y1="505" x2="715.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="580" y1="370.0" x2="940" y2="370.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="760.0" y1="505" x2="760.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="580" y1="325.0" x2="940" y2="325.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="805.0" y1="505" x2="805.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="580" y1="280.0" x2="940" y2="280.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="850.0" y1="505" x2="850.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="580" y1="235.0" x2="940" y2="235.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="895.0" y1="505" x2="895.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="580" y1="190.0" x2="940" y2="190.0" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="940.0" y1="505" x2="940.0" y2="145" stroke="#e4e3df" stroke-width="1"/>
+  <line x1="580" y1="145.0" x2="940" y2="145.0" stroke="#e4e3df" stroke-width="1"/>
+  <rect x="580" y="145" width="360" height="360" fill="none" stroke="#52514e" stroke-width="1.2"/>
+  <line x1="580" y1="505" x2="940" y2="145" stroke="#a9a8a3" stroke-width="1.2" stroke-dasharray="5 5"/>
+  <text x="580.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">0</text>
+  <text x="570.0" y="509.0" font-size="13" fill="#52514e" text-anchor="end">0</text>
+  <text x="670.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">1/4</text>
+  <text x="570.0" y="419.0" font-size="13" fill="#52514e" text-anchor="end">1/4</text>
+  <text x="760.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">1/2</text>
+  <text x="570.0" y="329.0" font-size="13" fill="#52514e" text-anchor="end">1/2</text>
+  <text x="850.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">3/4</text>
+  <text x="570.0" y="239.0" font-size="13" fill="#52514e" text-anchor="end">3/4</text>
+  <text x="940.0" y="525.0" font-size="13" fill="#52514e" text-anchor="middle">1</text>
+  <text x="570.0" y="149.0" font-size="13" fill="#52514e" text-anchor="end">1</text>
+  <polyline points="580.0,505.0 760.0,325.0 850.0,280.0 895.0,235.0 940.0,145.0" fill="none" stroke="#28698D" stroke-width="3.2" stroke-linejoin="round"/>
+  <circle cx="760.0" cy="325.0" r="5" fill="#B76223"/>
+  <text x="769.0" y="343.0" font-size="13" fill="#B76223" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke" font-weight="bold">(1/2, 1/2)</text>
+  <circle cx="850.0" cy="280.0" r="5" fill="#B76223"/>
+  <text x="859.0" y="298.0" font-size="13" fill="#B76223" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke" font-weight="bold">(3/4, 5/8)</text>
+  <circle cx="895.0" cy="235.0" r="5" fill="#B76223"/>
+  <text x="904.0" y="253.0" font-size="13" fill="#B76223" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke" font-weight="bold">(7/8, 3/4)</text>
+  <text x="660.0" y="405.0" font-size="12.5" fill="#28698D" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">slope 1</text>
+  <text x="795.0" y="292.5" font-size="12.5" fill="#28698D" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">slope 1/2</text>
+  <text x="862.5" y="247.5" font-size="12.5" fill="#28698D" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">slope 1</text>
+  <text x="907.5" y="180.0" font-size="12.5" fill="#28698D" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">slope 2</text>
+  <text x="760.0" y="131.0" font-size="18" fill="#0b0b0b" text-anchor="middle" font-weight="bold">B(x)</text>
+  <text x="40.0" y="556.0" font-size="12.5" fill="#52514e" text-anchor="start">Dashed line: the identity map. Orange dots: breakpoints (x, g(x)). The paper multiplies by composition, hg = h∘g.</text>
+  <text x="40.0" y="575.0" font-size="12.5" fill="#52514e" text-anchor="start">With that convention A and B satisfy the two relations of F’s finite presentation (checked with exact fractions by script).</text>
+</svg>

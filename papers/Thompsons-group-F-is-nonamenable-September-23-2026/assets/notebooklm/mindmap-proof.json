@@ -1,0 +1,210 @@
+{
+  "name": "Nonamenability of Thompson's Group F",
+  "children": [
+    {
+      "name": "Introduction & Background",
+      "children": [
+        {
+          "name": "Definition of Group F",
+          "children": [
+            {
+              "name": "Piecewise linear homeomorphisms of [0, 1]"
+            },
+            {
+              "name": "Dyadic rational breakpoints"
+            },
+            {
+              "name": "Slopes in 2^Z"
+            }
+          ]
+        },
+        {
+          "name": "Amenability Concept",
+          "children": [
+            {
+              "name": "Positive normalized left-invariant mean (von Neumann & Day)"
+            },
+            {
+              "name": "Følner criterion boundary ratio"
+            }
+          ]
+        },
+        {
+          "name": "Historical Context & Geoghegan's Conjecture",
+          "children": [
+            {
+              "name": "Introduced by Thompson (1965)"
+            },
+            {
+              "name": "Geoghegan's 1979 nonamenability conjecture"
+            },
+            {
+              "name": "No nonabelian free subgroup (Brin & Squier)"
+            },
+            {
+              "name": "Not elementary amenable"
+            },
+            {
+              "name": "Topological finiteness (Brown & Geoghegan)"
+            }
+          ]
+        },
+        {
+          "name": "Prior Approaches & Claims",
+          "children": [
+            {
+              "name": "Tower bounds & Ramsey properties (Moore)"
+            },
+            {
+              "name": "Cayley graph densities & diagrams (Guba)"
+            },
+            {
+              "name": "Reduced C*-algebra simplicity (Haagerup & Olesen)"
+            },
+            {
+              "name": "Withdrawn or flawed claims (Akhmedov, Shavgulidze, Moore)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proof Strategy & Key Tools",
+      "children": [
+        {
+          "name": "Benyamini–Sternfeld Lemma",
+          "children": [
+            {
+              "name": "Lipschitz map f on Hilbert unit ball B"
+            },
+            {
+              "name": "Uniform displacement ||f(x) - x|| >= delta"
+            },
+            {
+              "name": "Explicit construction on L2([0,1]; R2)"
+            }
+          ]
+        },
+        {
+          "name": "Dyadic Partitions & Affine Transport",
+          "children": [
+            {
+              "name": "Basic dyadic intervals & normalized restrictions"
+            },
+            {
+              "name": "Affine transport maps h in F between interval pairs"
+            },
+            {
+              "name": "Partition mesh tending to zero for large n"
+            }
+          ]
+        },
+        {
+          "name": "Recursive Coloring Scheme",
+          "children": [
+            {
+              "name": "Parents and descendant basic intervals"
+            },
+            {
+              "name": "Inductive definition of partition color p(T)"
+            },
+            {
+              "name": "B-valued global functions X_I(g)"
+            },
+            {
+              "name": "Scalar correlation comparison via finite set S"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Main Proof & Uniform Boundary Bound",
+      "children": [
+        {
+          "name": "Correlation Comparisons",
+          "children": [
+            {
+              "name": "Separated interval correlations match within eta"
+            },
+            {
+              "name": "Cancellation over hA vs A"
+            }
+          ]
+        },
+        {
+          "name": "Variance & Displacement Estimates",
+          "children": [
+            {
+              "name": "Parent mean m(g) and descendant mean zi(g)"
+            },
+            {
+              "name": "Off-diagonal separated pairs vs diagonal/nested exceptions"
+            },
+            {
+              "name": "Convexity and Lipschitz bounds on squared displacements"
+            },
+            {
+              "name": "Upper bound proportional to D^-1 + eta"
+            }
+          ]
+        },
+        {
+          "name": "Conclusion of Proof",
+          "children": [
+            {
+              "name": "Contradiction with uniform lower bound delta^2 for large D, small eta"
+            },
+            {
+              "name": "Uniform positive lower bound on relative S-boundary"
+            },
+            {
+              "name": "Violation of Følner criterion confirms nonamenability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Consequences & Applications",
+      "children": [
+        {
+          "name": "Uniformly Bounded Representations",
+          "children": [
+            {
+              "name": "Existence of non-unitarizable representation pi"
+            },
+            {
+              "name": "Norm bounded by 1 + epsilon on separable Hilbert space"
+            }
+          ]
+        },
+        {
+          "name": "Percolation on Cayley Graphs",
+          "children": [
+            {
+              "name": "Bernoulli bond percolation thresholds (pc < p2->2 <= pu)"
+            },
+            {
+              "name": "Infinitely many infinite open clusters for p in (pc, pu)"
+            },
+            {
+              "name": "Simultaneous nonuniqueness across parameter intervals"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Formalization & Scope",
+      "children": [
+        {
+          "name": "Lean formalization in openai/math repository"
+        },
+        {
+          "name": "Formalized nonamenability statement (ThompsonNonamenability.lean)"
+        }
+      ]
+    }
+  ]
+}
