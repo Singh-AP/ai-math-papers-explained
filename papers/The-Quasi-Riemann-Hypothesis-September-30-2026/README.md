@@ -1,10 +1,10 @@
 # The Quasi-Riemann Hypothesis, explained for beginners
 
-> **Paper:** [*The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s) > 7/8*](https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf), OpenAI, 30 September 2026
-> **openai/math family:** 003, *The quasi-Riemann hypothesis* · **Field:** analytic number theory
-> **Companions:** [an alternate, human-edited proof of the weaker 11/12 version](https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/paper2.pdf) (5 Oct 2026) · [Uniform exclusion of Landau–Siegel zeros](https://github.com/openai/math/blob/main/preprints/Uniform-exclusion-of-Landau-Siegel-zeros-October-1-2026/paper.pdf) (1 Oct 2026)
-> **Formal proof:** the headline statements are listed as formalized in Lean 4 ([scope](https://github.com/openai/math/blob/main/lean/docs/003.md))
-> **Who this is for:** anyone comfortable with high-school algebra and the idea of complex numbers. No number theory needed.
+> - **Paper:** [*The Quasi-Riemann Hypothesis: A Zero-Free Half-Plane Re(s) > 7/8*](https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-September-30-2026/paper.pdf), OpenAI, 30 September 2026
+> - **openai/math family:** 003, *The quasi-Riemann hypothesis* · **Field:** analytic number theory
+> - **Companions:** [an alternate, human-edited proof of the weaker 11/12 version](https://github.com/openai/math/blob/main/preprints/The-Quasi-Riemann-Hypothesis-October-5-2026/paper2.pdf) (5 Oct 2026) · [Uniform exclusion of Landau–Siegel zeros](https://github.com/openai/math/blob/main/preprints/Uniform-exclusion-of-Landau-Siegel-zeros-October-1-2026/paper.pdf) (1 Oct 2026)
+> - **Formal proof:** the headline statements are listed as formalized in Lean 4 ([scope](https://github.com/openai/math/blob/main/lean/docs/003.md))
+> - **Who this is for:** anyone comfortable with high-school algebra and the idea of complex numbers. No number theory needed.
 
 ![One-page infographic overview](assets/notebooklm/infographic-overview.png)
 
@@ -79,7 +79,7 @@ Riemann (1859) showed that $\zeta(s)$ makes sense for **complex** $s = \sigma + 
 
 Riemann's "explicit formula" writes the prime-counting error as a sum of waves, one per zero $\rho = \beta + i\gamma$:
 
-$$\text{error in counting primes up to }x \;\approx\; \sum_{\rho} \frac{x^{\rho}}{\rho}, \qquad |x^{\rho}| = x^{\beta}.$$
+$$\text{error in counting primes up to }x \quad \approx\quad  \sum_{\rho} \frac{x^{\rho}}{\rho}, \qquad |x^{\rho}| = x^{\beta}.$$
 
 Think of each zero as a musical note. Its height $\gamma$ sets the pitch, and its real part $\beta$ sets the **volume**. A zero with real part $\beta$ contributes noise of size about $x^{\beta}$. So:
 
@@ -157,7 +157,7 @@ The proof comes in two stages:
 
 | Consequence | Before | After |
 |---|---|---|
-| **Error in the Prime Number Theorem** | Only slightly better than $x$: roughly $x\,e^{-c(\log x)^{3/5}}$ | A power saving: about $x^{7/8}$. The 11/12 companion records the uniform version for primes in progressions: $\ll x^{11/12}\log x$ for every modulus $q \le x$ |
+| **Error in the Prime Number Theorem** | Only slightly better than $x$: roughly $x\ e^{-c(\log x)^{3/5}}$ | A power saving: about $x^{7/8}$. The 11/12 companion records the uniform version for primes in progressions: $\ll x^{11/12}\log x$ for every modulus $q \le x$ |
 | **Landau–Siegel zeros** | A possible exceptional zero near 1 that couldn't be excluded | **Gone.** No real zeros in $(7/8, 1)$ for any character |
 | **Least quadratic nonresidue** $n(p)$, the smallest number that is not a perfect square mod $p$ | $\le C(\log p)^2$ only *assuming GRH* (Ankeny) | $\le C(\log p)^{A}$ unconditionally. This proves **Vinogradov's conjecture** $n(p) \ll p^{\delta}$ |
 | **Square roots mod $p$** | Fast *randomized* algorithms; deterministic only under GRH | **Deterministic polynomial time** (Tonelli–Shanks with a guaranteed small nonresidue) |
@@ -203,7 +203,7 @@ flowchart TD
 
 The family has $H$ members with total "energy" $\sum_u |A_u(D)|^2 \lesssim D \cdot H$. The original sum appears about $Y = H^{1/6}$ times (once for each $p^6$ of size up to $H$), each time with an error of size about $D/Y$. So
 
-$$Y\,|A_1(D)|^2 \lesssim DH + Y\Big(\frac{D}{Y}\Big)^2 \quad\Longrightarrow\quad |A_1(D)|^2 \lesssim D\,H^{5/6} + D^2 H^{-1/3}.$$
+$$Y\ |A_1(D)|^2 \lesssim DH + Y\Big(\frac{D}{Y}\Big)^2 \quad\Longrightarrow\quad |A_1(D)|^2 \lesssim D\ H^{5/6} + D^2 H^{-1/3}.$$
 
 Choosing $H$ just above $D$ gives $|A_1(D)|^2 \lesssim D^{1 + 5/6} = D^{11/6}$, so $A_1(D) \lesssim D^{11/12}$. By Step 1, there are no zeros to the right of $11/12$.
 
@@ -220,7 +220,7 @@ Choosing $H$ just above $D$ gives $|A_1(D)|^2 \lesssim D^{1 + 5/6} = D^{11/6}$, 
 
 **Step 7: Transfer back to ordinary primes.** Why work over $\mathbb{Q}(\sqrt{-3})$, whose integers are $a + b\omega$ with $\omega = e^{2\pi i/3}$? Because cube and sixth roots of unity live there, so cubic and sextic residue symbols, cubic reciprocity, and the cubic theta function all make sense. To get back to $\zeta$, apart from finitely many factors that never vanish there, the Hecke $L$-function of $\chi\circ\text{Norm}$ factors as
 
-$$L_{\mathbb{Q}(\sqrt{-3})}(s, \chi\circ N) = L(s,\chi)\,L(s,\chi\chi_{-3}).$$
+$$L_{\mathbb{Q}(\sqrt{-3})}(s, \chi\circ N) = L(s,\chi)\ L(s,\chi\chi_{-3}).$$
 
 So a zero of any Dirichlet $L$-function, including $\zeta(s)$ (take $\chi$ trivial), would be a zero of a Hecke $L$-function over $\mathbb{Q}(\sqrt{-3})$. That has been ruled out.
 
@@ -230,7 +230,7 @@ So a zero of any Dirichlet $L$-function, including $\zeta(s)$ (take $\chi$ trivi
 
 The 7/8 paper packages Steps 1–2 as a **continuation criterion** (the proposition *Continuation from a common signal* in its Section 2). Let $\beta^*$ be the largest real part of a zero over the *whole family* of primitive Hecke characters over $\mathbb{Q}(\sqrt{-3})$, and suppose $\beta^* > \sigma_0$. For each character $\eta$, the paper builds a sum $J_\eta(Z)$ that is compared with a Mellin integral of $1/L(s,\eta)$:
 
-$$f_\eta(Z) = \frac{1}{2\pi i}\int_{\text{Re}\,s=2} Z^{C(s)}\,e^{(s-5/6)^2}\,\frac{H_\eta(s)}{L^{\mathcal S}(s,\eta)}\,ds .$$
+$$f_\eta(Z) = \frac{1}{2\pi i}\int_{\text{Re}\ s=2} Z^{C(s)}\ e^{(s-5/6)^2}\ \frac{H_\eta(s)}{L^{\mathcal S}(s,\eta)}\ ds .$$
 
 If $|J_\eta(Z)| \ll Z^{C(\sigma_0)+\omega}$ (the "low" estimate, from the theta reflection) and $|J_\eta - f_\eta| \ll Z^{C(\beta^*)-\sigma}$ (the "high" estimate, from Poisson summation), with margins $\omega,\sigma$ that do **not** depend on $\eta$, then $1/L(s,\eta)$ continues holomorphically a fixed distance to the left of $\beta^*$. That contradicts the existence of zeros near $\beta^*$. Two details matter. The whole family has to be handled at once, because Poisson summation produces Hecke twists of the original character. And the margins have to be uniform. Stage I uses $C(s) = s - 2/3$ with $\sigma_0 = 11/12$, and Stage II uses $C(s) = s - 11/16$ with $\sigma_0 = 7/8$.
 
