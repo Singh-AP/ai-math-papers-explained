@@ -1,0 +1,231 @@
+{
+  "name": "Every 4D Kakeya Set Has Full Hausdorff Dimension",
+  "children": [
+    {
+      "name": "Main Theorem and Context",
+      "children": [
+        {
+          "name": "Theorem 1.1",
+          "children": [
+            {
+              "name": "4D Hausdorff Dimension Kakeya Conjecture Proved"
+            },
+            {
+              "name": "dimH(K) = 4 for K in R4"
+            },
+            {
+              "name": "No Compactness or Regularity Assumed"
+            },
+            {
+              "name": "No Measurability Hypothesis Required"
+            }
+          ]
+        },
+        {
+          "name": "Historical Context & Bounds",
+          "children": [
+            {
+              "name": "Besicovitch & Davies (Plane)"
+            },
+            {
+              "name": "Wolff Hairbrush Bound (>= 3 in R4)"
+            },
+            {
+              "name": "Bourgain, Katz, Tao Sums-Differences"
+            },
+            {
+              "name": "Guth-Zahl & Katz-Zahl Bounds (3.059)"
+            },
+            {
+              "name": "Borges et al. Maximal Bound (~3.0543)"
+            },
+            {
+              "name": "Wang-Zahl 3D Kakeya Resolution"
+            }
+          ]
+        },
+        {
+          "name": "Geometric Consequences",
+          "children": [
+            {
+              "name": "Packing and Minkowski Dimensions"
+            },
+            {
+              "name": "Projections to 4D"
+            },
+            {
+              "name": "Extension of Segments to Lines"
+            },
+            {
+              "name": "Nikodym Sets on Curved Manifolds"
+            },
+            {
+              "name": "Curved Kakeya Sets"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proof Framework & Mechanics",
+      "children": [
+        {
+          "name": "Charts & True Systems",
+          "children": [
+            {
+              "name": "Chart: Moving Spatial Box & Time Interval"
+            },
+            {
+              "name": "Small Quadratic Polynomial Test"
+            },
+            {
+              "name": "True Chart Mass Floor (Incidence Density)"
+            },
+            {
+              "name": "Chart Normalization & Nesting"
+            }
+          ]
+        },
+        {
+          "name": "Horizon H(E)",
+          "children": [
+            {
+              "name": "Time Cost Exponent of True Terminal Systems"
+            },
+            {
+              "name": "H(E) > 0 Derived from Counterexample"
+            },
+            {
+              "name": "H(E) <= L Initial Horizon Bound"
+            }
+          ]
+        },
+        {
+          "name": "Weighted Models & Reduction",
+          "children": [
+            {
+              "name": "Reduction of Counterexample to Exact Problem"
+            },
+            {
+              "name": "Density Selection & Homogeneous Profiles"
+            },
+            {
+              "name": "Cap Class C(d) Properties (d < 1)"
+            }
+          ]
+        },
+        {
+          "name": "Comparison Principle",
+          "children": [
+            {
+              "name": "Algebraic Sheets & Norm Bounds"
+            },
+            {
+              "name": "Two-Color Matching Lemma"
+            },
+            {
+              "name": "Trading Terminal Thickness for Time"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Three Narrowness Regimes (l)",
+      "children": [
+        {
+          "name": "Isotropic Case (l = 0)",
+          "children": [
+            {
+              "name": "Polynomial Potential Construction"
+            },
+            {
+              "name": "Multilinear Kakeya & Field Interpolation"
+            },
+            {
+              "name": "Degree Restoration via Exceptional Conic"
+            }
+          ]
+        },
+        {
+          "name": "Finite Narrowness (0 < l < infinity)",
+          "children": [
+            {
+              "name": "Wide Projected Intervals"
+            },
+            {
+              "name": "Horizontal Model Transition (Y' = -Z + tv)"
+            },
+            {
+              "name": "Critical Time Rate (2k = 1 vs 2k != 1)"
+            }
+          ]
+        },
+        {
+          "name": "Unbounded Narrowness (l = infinity)",
+          "children": [
+            {
+              "name": "Full-Time Localization"
+            },
+            {
+              "name": "Balanced Localized Packets"
+            },
+            {
+              "name": "Scalar Projection Strategy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Key Analytic & Technical Tools",
+      "children": [
+        {
+          "name": "Planar & Geometric Tools",
+          "children": [
+            {
+              "name": "Weighted Full-Time Plank Bounds"
+            },
+            {
+              "name": "Retained-Edge Planar Rigidity"
+            },
+            {
+              "name": "Graph Balog-Szemeredi-Gowers Argument"
+            },
+            {
+              "name": "Planar Restricted-Triple Dot-Product Theorem"
+            }
+          ]
+        },
+        {
+          "name": "Scalar Concentration & Fitting",
+          "children": [
+            {
+              "name": "Concentration of Quadratic Coefficients"
+            },
+            {
+              "name": "First & Higher Jets Analysis"
+            },
+            {
+              "name": "Polynomial Fitting along Trajectories"
+            }
+          ]
+        },
+        {
+          "name": "Extremal Critical Paths",
+          "children": [
+            {
+              "name": "Linear Profile & Time Rate k > 0"
+            },
+            {
+              "name": "Optimized Narrowness Exponent"
+            },
+            {
+              "name": "Tangent Diagonal & Excluded Improvements"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

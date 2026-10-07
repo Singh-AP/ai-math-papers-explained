@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1140" height="560" viewBox="0 0 1140 560" font-family="DejaVu Sans, Helvetica, Arial, sans-serif">
+<defs><marker id="ar" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c53030"/></marker></defs>
+<rect width="1140" height="560" fill="white"/>
+<text x="570.0" y="34" text-anchor="middle" font-size="22" font-weight="bold" fill="#1d1d1f">Tubes and the Kakeya maximal function (a flat sketch of the 3D picture)</text>
+<text x="195" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d1d1f">1. Slide a tube in a fixed direction</text>
+<path d="M 120 250 C 140 190, 230 180, 260 220 C 290 260, 250 300, 280 340 C 300 370, 220 400, 180 370 C 140 340, 100 320, 120 250 Z" fill="#fbd38d" stroke="#c05621" stroke-width="1.5"/>
+<text x="268" y="402" font-size="14" fill="#c05621">f is large here</text>
+<polygon points="32.8,373.6 173.6,108.7 189.5,117.2 48.6,382.1" fill="none" fill-opacity="1" stroke="#888" stroke-width="1.6"/>
+<polygon points="76.9,397.1 217.7,132.2 233.6,140.7 92.8,405.5" fill="none" fill-opacity="1" stroke="#888" stroke-width="1.6"/>
+<polygon points="121.0,420.6 261.9,155.7 277.8,164.1 136.9,429.0" fill="#2b6cb0" fill-opacity="0.55" stroke="#2b6cb0" stroke-width="1.6"/>
+<polygon points="165.2,444.0 306.0,179.2 321.9,187.6 181.1,452.5" fill="none" fill-opacity="1" stroke="#888" stroke-width="1.6"/>
+<line x1="40" y1="470" x2="68.2" y2="417.0" stroke="#c53030" stroke-width="3" marker-end="url(#ar)"/>
+<text x="74" y="452" font-size="16" fill="#c53030" font-style="italic">ω</text>
+<text x="195" y="500" text-anchor="middle" font-size="14" fill="#1d1d1f">Each tube: length 1, radius δ, axis along ω.</text>
+<text x="195" y="520" text-anchor="middle" font-size="14" fill="#1d1d1f">K<tspan dy="4" font-size="10">δ</tspan><tspan dy="-4" dx="2">f(ω) = the best average of |f|</tspan></text>
+<text x="195" y="540" text-anchor="middle" font-size="14" fill="#1d1d1f">over all such tubes (blue = the best one).</text>
+<text x="565" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d1d1f">2. A shaded tube</text>
+<polygon points="473.4,428.2 628.3,136.8 656.6,151.8 501.7,443.2" fill="none" stroke="#2b6cb0" stroke-width="2"/>
+<polygon points="473.4,428.2 504.4,369.9 532.6,384.9 501.7,443.2" fill="#2b6cb0" fill-opacity="0.75" stroke="none"/>
+<polygon points="558.6,267.9 581.9,224.2 610.1,239.2 586.9,282.9" fill="#2b6cb0" fill-opacity="0.75" stroke="none"/>
+<text x="614" y="262" font-size="15" font-weight="bold" fill="#2b6cb0">Y(T)</text>
+<text x="536" y="414" font-size="15" font-weight="bold" fill="#2b6cb0">Y(T)</text>
+<text x="565" y="470" text-anchor="middle" font-size="14" fill="#1d1d1f">The shading Y(T) is the part of the tube</text>
+<text x="565" y="490" text-anchor="middle" font-size="14" fill="#1d1d1f">where f is large. Its density λ is the</text>
+<text x="565" y="510" text-anchor="middle" font-size="14" fill="#1d1d1f">fraction shaded (here λ = 0.35).</text>
+<text x="565" y="535" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d1d1f">Set versions: λ not too small. Maximal: every λ.</text>
+<text x="945" y="78" text-anchor="middle" font-size="17" font-weight="bold" fill="#1d1d1f">3. The bush: all tubes through one ball</text>
+<polygon points="785.0,282.0 1105.0,282.0 1105.0,298.0 785.0,298.0" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="786.8,315.4 1099.8,248.9 1103.2,264.6 790.2,331.1" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="795.6,347.8 1087.9,217.6 1094.4,232.2 802.1,362.4" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="810.9,377.6 1069.7,189.5 1079.1,202.4 820.3,390.5" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="832.0,403.6 1046.1,165.7 1058.0,176.4 843.9,414.3" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="858.1,424.6 1018.1,147.4 1031.9,155.4 871.9,432.6" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="887.9,439.7 986.8,135.4 1002.1,140.3 903.2,444.6" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="920.3,448.3 953.8,130.0 969.7,131.7 936.2,450.0" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="953.8,450.0 920.3,131.7 936.2,130.0 969.7,448.3" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="986.8,444.6 887.9,140.3 903.2,135.4 1002.1,439.7" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="1018.1,432.6 858.1,155.4 871.9,147.4 1031.9,424.6" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="1046.1,414.3 832.0,176.4 843.9,165.7 1058.0,403.6" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="1069.7,390.5 810.9,202.4 820.3,189.5 1079.1,377.6" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="1087.9,362.4 795.6,232.2 802.1,217.6 1094.4,347.8" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<polygon points="1099.8,331.1 786.8,264.6 790.2,248.9 1103.2,315.4" fill="#2b6cb0" fill-opacity="0.13" stroke="#2b6cb0" stroke-width="0.8"/>
+<circle cx="945" cy="290" r="8" fill="#e53e3e"/>
+<line x1="951" y1="284" x2="1070" y2="122" stroke="#e53e3e" stroke-width="1.5"/>
+<text x="1128" y="116" text-anchor="end" font-size="14" fill="#e53e3e">ball of radius δ</text>
+<text x="945" y="470" text-anchor="middle" font-size="14" fill="#1d1d1f">f = 1 on the ball. Every direction finds it,</text>
+<text x="945" y="490" text-anchor="middle" font-size="14" fill="#1d1d1f">so K<tspan dy="4" font-size="10">δ</tspan><tspan dy="-4" dx="2">f = 4δ/3 in every direction while</tspan></text>
+<text x="945" y="510" text-anchor="middle" font-size="14" fill="#1d1d1f">f is tiny. The ratio of L<tspan dy="-6" font-size="10">p</tspan><tspan dy="6" dx="2">norms is about δ</tspan><tspan dy="-6" font-size="10">1−3/p</tspan><tspan dy="6">,</tspan></text>
+<text x="945" y="535" text-anchor="middle" font-size="14" font-weight="bold" fill="#1d1d1f">bounded only when p ≥ 3 = the dimension.</text>
+</svg>
