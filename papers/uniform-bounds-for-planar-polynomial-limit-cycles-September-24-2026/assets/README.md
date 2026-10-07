@@ -8,7 +8,7 @@ Supporting material for the [explainer](../README.md). The files in `figures/` w
 |---|---|---|
 | `figures/limit-cycles-return-map.svg`, `figures/limit-cycles-return-map.png` | SVG written by a short Python script; trajectories from a fourth-order Runge–Kutta integration | The companion's Section 7 example $\dot x = y - \varepsilon f(x)$, $\dot y = -x$ with $f(x) = 4x - (20/3)x^3 + (8/5)x^5$ and $\varepsilon = 0.04$. Left: phase portrait with the repelling cycle (dashed) and attracting cycle (solid). Right: the computed displacement $\Pi(s) - s$ on the positive $y$-axis, with zeros at $s \approx 1.00$ and $s \approx 2.02$. The PNG is a 3× render |
 | `figures/cycle-words-and-saddle.svg`, `figures/cycle-words-and-saddle.png` | Hand-written SVG (schematic) | (a) A periodic orbit crossing a cylindrical subdivision, cut into links at the boundary crossings $e_1, \dots, e_7$. (b) The saddle passage $\dot x = x$, $\dot y = -\lambda y$ from Section 1.2 of the paper, drawn with $\lambda = 0.7$. The PNG is a 3× render |
-| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), not revised | 15 beginner slides. Seven slides contain errors (see errata) |
+| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), not revised | 15 beginner slides. Seven slides (4, 7, 9, 10, 12, 14, 15) contain serious errors and seven more have minor slips; only slide 5 has none listed (see errata) |
 | `notebooklm/slides/slide-NN.png` | `pymupdf` at 200 DPI from `slides.pdf` | Per-slide images for inline viewing |
 | `notebooklm/infographic-overview.png` | NotebookLM infographic (portrait, detailed, instructional) | One-page overview |
 | `notebooklm/infographic-history-timeline.png` | NotebookLM infographic (landscape, sketch-note) | From Hilbert (1900) to the 2026 preprints |
@@ -25,7 +25,7 @@ Supporting material for the [explainer](../README.md). The files in `figures/` w
 3. [`lean/docs/143.md`](https://github.com/openai/math/blob/main/lean/docs/143.md): scope of the Lean formalization (companion only)
 4. [Wikipedia: Hilbert's sixteenth problem](https://en.wikipedia.org/wiki/Hilbert%27s_sixteenth_problem), for historical background (not used for the report)
 
-The prompts asked NotebookLM to say explicitly that no value of $B(d)$ or $H(n)$ is given, that only the companion is in Lean, that the companion's "two" is not $H(5)$, and that the paper's "monomial annuli" are not rings in the plane. Some outputs repeat these warnings almost word for word (overview panel 6, slides 7 and 15, report section 8). That wording comes from the prompt, not from the papers. The mind map takes no prompt, and the audio focus was written as a list of plain facts taken from the papers.
+The prompts asked NotebookLM to say explicitly that no value of $B(d)$ or $H(n)$ is given, that only the companion is in Lean, that the companion's "two" is not $H(5)$, and that the paper's "monomial annuli" are not rings in the plane. Some outputs repeat these warnings almost word for word (overview panel 6, slides 7 and 15, report section 8). That wording comes from the prompt, not from the papers. The same holds for the lists of tools the main proof "does not rely on" (overview panel 6, slide 15): they paraphrase an accuracy rule in the prompt. A search of the principal paper's source finds no use of Melnikov functions, the Poincaré–Bendixson theorem or computer search, and Abelian integrals appear only in related work, but the paper itself makes no such statement. The mind map takes no prompt, and the audio focus was written as a list of plain facts taken from the papers.
 
 ## Errata
 
@@ -36,7 +36,7 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 - Slide 2: the white trajectory does not follow the drawn arrows, so it is not a solution of the pictured field.
 - Slide 3 says a perturbation "forces the trajectory to ultimately return to this specific Amber cycle". That describes an *attracting* cycle. A limit cycle is defined by isolation, and it can also repel.
 - **Slide 4 (wrong picture).** The section line crosses the closed orbit twice, and $r$ and $\Pi(r)$ sit on opposite branches. The return map $\Pi(r)$ is the next crossing of a short transverse section *in the same direction*. The text on the slide is correct.
-- Slide 6 dates the discovery of the gap in Dulac's proof to 1981. That date comes from the Wikipedia source and is **unverified** here; the paper cites Ilyashenko's 1985 survey. "Open until 2026" presents the unreviewed 2026 claim as settled.
+- Slide 6 dates the discovery of the gap in Dulac's proof to 1981. That date came from the Wikipedia source, and it is correct: Ilyashenko's own *Centennial history of Hilbert's 16th problem* (Bull. AMS 39, 2002, §2) says the gap was found in 1981, citing his 1982 preprint and 1985 survey. The paper cites only the 1985 survey. "Open until 2026" presents the unreviewed 2026 claim as settled.
 - **Slide 7 (typos in the theorem quote).** It reads "every real planar polynomial degree at most $d$ has at most $B(d)$…". The words "vector field of" are missing, and "most" is misspelled "nost".
 - Slide 8 glosses hyperbolic cycles as "(simple/isolated)". Hyperbolic means a *simple* zero of the displacement; isolation alone is weaker.
 - **Slide 9 (wrong picture and overstatement).** The drawn "limit cycle" is not closed: it runs off the top of the square. The text says "every continuous orbit is perfectly represented by a bounded, finite word". The paper says this of periodic orbits, apart from at most $T(d)$ exceptional orbits that contain tangential boundary arcs (Theorem 9.7).
@@ -50,8 +50,8 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 **`infographic-overview.png`**
 - Panel 2 draws limit cycles as scattered red dots; they are closed curves. This is only a schematic.
 - Panel 3: the small formula "$\dot x = ✗(1)$" is garbled and means nothing.
-- Panel 4, box 1 says the rotation turns non-hyperbolic cycles into hyperbolic ones. The paper's Lemma 11.8 gives *at least as many* hyperbolic cycles nearby (a degenerate cycle may split into two or disappear, depending on the sign).
-- Panel 4, box 2 says the square is split into "boxes and monomial annuli". That is the paper's own shorthand (Section 1.2, Theorem 9.7), and it is not an error. "Annulus" names the prepared monomial form $Du = A\tau^{\lambda}u^m F(X)$ of the scalar equation on a piece, not a ring in the physical plane, as panel 6 says.
+- Panel 4, box 1 says the rotation turns non-hyperbolic cycles into hyperbolic ones. The paper's Lemma 11.8 gives *at least as many* hyperbolic cycles nearby (a degenerate cycle may split into two or disappear, depending on the sign). It also says the dilation maps "all cycles" into the square; the paper moves any *finite* collection of cycles there, because it does not assume in advance that a field has finitely many.
+- Panel 4, box 2 says each *trajectory* becomes a bounded-length word. The paper says this of periodic orbits, apart from at most $T(d)$ exceptional orbits (Theorem 9.7); it uses no crossing bound for non-closed trajectories. The phrase "boxes and monomial annuli" is the paper's own shorthand (Section 1.2, Theorem 9.7), and it is not an error. "Annulus" names the prepared monomial form $Du = A\tau^{\lambda}u^m F(X)$ of the scalar equation on a piece, not a ring in the physical plane, as panel 6 says.
 - Panel 4, box 3 says each distinct limit cycle "corresponds to a connected component". The paper says distinct *hyperbolic* cycles lie in distinct components, within each chart; a component need not contain a cycle. There is also a typo, "cyclc".
 - Panel 4, box 4 mentions "transserial asymptotics". The paper uses its own packets (trees of expansions); transserial Ilyashenko algebras appear only as related work. Gevrey series do occur in the paper. The curve plot is decorative.
 - Panel 5 names `QuinticLienard.lean`. That file holds the Comparator challenge statement; the proof is in `OAI/Analysis/LienardCycles/Main.lean`.
@@ -59,7 +59,7 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 
 **`infographic-history-timeline.png`**
 - The entries match the dates given in the prompt. Kaloshin (2003) is left out, and "1975" is printed twice.
-- 1985 is the publication year of Ilyashenko's survey on Dulac's memoir, as cited by the paper. Wikipedia dates the discovery of the gap to 1981.
+- The "1985" entry follows the prompt: 1985 is the publication year of Ilyashenko's survey on Dulac's memoir, as cited by the paper. The gap itself was found in 1981 (Ilyashenko, Bull. AMS 2002).
 - The 2012 entry says Li and Llibre "establish the exact upper bound of one cycle". Their result is that quartic classical Liénard systems have at most one limit cycle.
 - The small formulas in the corners and the code snippet `confirm(cycles=2)` are decorative and meaningless; they are not Lean code.
 - The Lean entry says the formalization "confirms exactly two cycles". It confirms *at most* two, and that two occur.

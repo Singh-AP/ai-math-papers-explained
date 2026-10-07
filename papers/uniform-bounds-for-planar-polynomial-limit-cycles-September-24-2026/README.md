@@ -8,6 +8,8 @@
 
 ![One-page infographic overview](assets/notebooklm/infographic-overview.png)
 
+*AI-generated overview (NotebookLM). It gets the big picture right, but panel 4 overstates two proof steps (the rotation and the "word" for each trajectory), and there are typos such as "cyclc" and "Melnikox". See the [errata](assets/README.md#errata).*
+
 ## Contents
 
 - [TL;DR](#tldr)
@@ -28,10 +30,10 @@
 ## TL;DR
 
 - **The question.** A pair of polynomial equations $\dot x = P(x,y)$, $\dot y = Q(x,y)$ describes a flow in the plane. Some flows have **limit cycles**: isolated closed loops that nearby motions spiral towards or away from. In 1900 David Hilbert asked, in the second part of his 16th problem, how many limit cycles such a system of degree $n$ can have, and how they can be arranged.
-- **What was known.** Each *single* polynomial system has only finitely many limit cycles (claimed by Dulac in 1923; complete proofs by Écalle and Ilyashenko around 1991–92). But a ceiling that depends **only on the degree** was not known for any $n \ge 2$, not even for quadratic systems, where examples with 4 limit cycles have been known since 1979–80.
+- **What was known.** Each *single* polynomial system has only finitely many limit cycles (claimed by Dulac in 1923; proved by Écalle and by Ilyashenko around 1991–92, though in 2025 Yeung questioned one step of Ilyashenko's argument). But a ceiling that depends **only on the degree** was not known for any $n \ge 2$, not even for quadratic systems, where examples with 4 limit cycles have been known since 1979–80.
 - **What this paper proves.** For every degree $d$ there is a finite number $B(d)$ such that **every** real planar polynomial vector field of degree at most $d$ has at most $B(d)$ limit cycles in the whole plane. In the usual notation, the **Hilbert number** $H(d)$ is finite.
 - **What the companion proves.** For the classical Liénard systems $\dot x = y - F(x)$, $\dot y = -x$ with $F$ a polynomial of degree at most 5, the exact maximum is **two** limit cycles. This settles the degree-five case of a 1977 conjecture of Lins, de Melo and Pugh, and it is the part of the family that has been checked in Lean.
-- **What it doesn't do.** It gives **no formula or numerical value** for $B(d)$ or $H(d)$, not even for $d = 2$. It says nothing about how the cycles can be arranged. The 160-page argument was produced by an AI model, is not formalized, and has not yet been reviewed by experts.
+- **What it doesn't do.** It gives **no formula or numerical value** for $B(d)$ or $H(d)$, not even for $d = 2$. It says nothing about how the cycles can be arranged. The 160-page argument was produced by an AI model and is not formalized, and no independent expert review of it has been reported.
 
 ## How to read this
 
@@ -68,6 +70,8 @@ So the circles of a center are *not* limit cycles: every one of them has other c
 
 ![Slide: a center is not a limit cycle; the Van der Pol cycle is](assets/notebooklm/slides/slide-03.png)
 
+*(The slide's last line, that nearby motions "ultimately return" to the cycle, describes an attracting cycle only. A limit cycle can also repel; see the [errata](assets/README.md#errata).)*
+
 The classic example is the **Van der Pol oscillator** from the 1920s, a model of a self-sustaining electrical circuit:
 
 $$\ddot x - \mu(1 - x^2)\dot x + x = 0, \qquad \mu > 0.$$
@@ -98,7 +102,7 @@ Counting limit cycles therefore means **counting isolated zeros of functions def
 
 Without the polynomial restriction, even a single field can have infinitely many limit cycles. In polar coordinates, the system $\dot r = \sin r$, $\dot \theta = 1$ is a perfectly smooth (even analytic) vector field on the plane. Its limit cycles are the circles $r = \pi, 2\pi, 3\pi, \dots$, infinitely many.
 
-Polynomials can have many limit cycles too, but the number has to grow with the degree. Take a polynomial $p(u) = (u - 1)(u - 4)\cdots(u - k^2)$ and the system
+Polynomial fields can also have many limit cycles, if the degree is allowed to grow. Take a polynomial $p(u) = (u - 1)(u - 4)\cdots(u - k^2)$ and the system
 
 $$\dot x = x\ p(x^2 + y^2) - y, \qquad \dot y = y\ p(x^2 + y^2) + x.$$
 
@@ -117,9 +121,11 @@ The paper stresses that two different statements must be kept apart:
 
 ![Slide: individual finiteness versus uniform boundedness](assets/notebooklm/slides/slide-06.png)
 
+*(The slide's "Status: Open until 2026" treats the unreviewed 2026 claim as settled; see the [errata](assets/README.md#errata).)*
+
 The first does not imply the second. A toy example, which the paper itself uses in a remark: the equation $\sin x = 0$ on the interval $0 < x < p$ has only finitely many solutions for each value of $p$, but there are more and more of them as $p$ grows. Finiteness for every member of a family gives no single bound for the family.
 
-For vector fields, the "parameter" is the list of coefficients of $P$ and $Q$. It can be arbitrarily large, so there is no compactness to lean on. Cycles can be born from degenerate configurations (a center, a loop of trajectories joining saddle points, or "infinity") and can drift arbitrarily far from the origin as the coefficients change.
+For vector fields, the "parameter" is the list of coefficients of $P$ and $Q$. As the coefficients change, cycles can be born from degenerate configurations (a center, a loop of trajectories joining saddle points, or "infinity") and can drift arbitrarily far from the origin. Knowing that each single field has finitely many cycles says nothing about how many such degenerations can produce. (The paper's argument does not assume the coefficients stay in a bounded set.)
 
 The smallest number that works is called the **Hilbert number** $H(n)$:
 
@@ -143,16 +149,16 @@ Linear fields have none, so $H(1) = 0$. Quadratic fields with four limit cycles 
 | 1926 | **Balthasar van der Pol** | Self-sustained ("relaxation") oscillations in electrical circuits; the Van der Pol oscillator |
 | 1928 | **Alfred-Marie Liénard** | Studies the equations now named after him and gives conditions for a unique limit cycle |
 | 1952 | **N. N. Bautin** | At most three limit cycles can bifurcate from a nondegenerate weak focus or center of a quadratic field under quadratic perturbations, and three can occur |
-| 1950s | **I. G. Petrovskii, E. M. Landis** | Claim a bound for quadratic fields; the argument was later found to be wrong |
+| 1955–1957 | **I. G. Petrovskii, E. M. Landis** | Claim that $H(2) = 3$ and that $H(n)$ is at most a cubic polynomial in $n$. The argument was shown to be wrong in the early 1960s |
 | 1975 | **G. S. Rychkov** | Liénard systems with an *odd* quintic $F$ have at most two limit cycles |
 | 1977 | **A. Lins, W. de Melo, C. C. Pugh** | Conjecture: a classical Liénard system with $\deg F = n$ has at most $\lfloor (n-1)/2 \rfloor$ limit cycles |
 | 1979–1980 | **Chen Lansun and Wang Mingshu; Shi Songling** | Quadratic fields with four limit cycles, so $H(2) \ge 4$ |
-| 1980s | **Yulij Ilyashenko** | Finds a gap in Dulac's proof (survey published 1985) |
+| 1981 | **Yulij Ilyashenko** | Finds a serious gap in Dulac's proof (published in a 1982 preprint and his 1985 survey of Dulac's memoir) |
 | 1984 | **Askold Khovanskii** | A Rolle-type principle for planar trajectories, and component bounds through critical points in the Pfaffian setting |
 | 1991–1992 | **Yulij Ilyashenko; Jean Écalle** | Independent proofs of individual finiteness, using complex and asymptotic analysis of return maps |
 | 1995 | **Yulij Ilyashenko, Sergei Yakovenko** | Finite cyclicity of elementary polycycles in generic finite-parameter families |
 | 1998 | **Robert Roussarie** | Book on limiting periodic sets, desingularization and Hilbert's 16th problem |
-| 1998 | **Stephen Smale** | Puts Hilbert's 16th problem, in the form of Liénard systems, on his list of problems for the 21st century (problem 13) |
+| 1998 | **Stephen Smale** | Puts Hilbert's 16th problem on his list of problems for the 21st century (problem 13), asking for a bound polynomial in the degree, and singles out Liénard systems as a simpler version |
 | 2003 | **Vadim Kaloshin** | An explicit cyclicity bound for elementary polycycles, in terms of the number of parameters |
 | 2007–2015 | **F. Dumortier, D. Panazzolo, R. Roussarie; P. De Maesschalck, F. Dumortier; P. De Maesschalck, R. Huzak** | Counterexamples to the Lins–de Melo–Pugh bound: four cycles in degree 7, then in degree 6, then at least $n - 2$ cycles in every degree $n \ge 6$ |
 | 2009 | **T. Kaiser, J.-P. Rolin, P. Speissegger** | Transition maps at nonresonant hyperbolic singularities are definable in an o-minimal structure; uniform bounds near certain polycycles |
@@ -194,7 +200,7 @@ Here `IsLimitCycle F C` says that `C` is the image of a nonconstant periodic sol
 
 ## 4. Why it matters
 
-| Question | Before | After |
+| Question | Before | After (if the proofs are correct) |
 |---|---|---|
 | **Is $H(n)$ finite?** | Open for every $n \ge 2$ (Hilbert's question in its "existential" form) | **Yes, for every $n$**, though with no value |
 | **Quadratic fields** | At least 4 limit cycles possible; no upper bound proved | Some finite upper bound exists. Its value is still unknown |
@@ -202,7 +208,7 @@ Here `IsLimitCycle F C` says that `C` is the image of a nonconstant periodic sol
 | **Quintic classical Liénard systems** (companion) | The Lins–de Melo–Pugh bound was proved for odd quintic $F$ (Rychkov) and was false from degree 6 on. The general quintic case was reported open in August 2026 | Exact maximum **2**, with the upper bound and the example both checked in Lean |
 | **Method** | Uniform bounds were known in local, generic or restricted settings (Bautin, Ilyashenko–Yakovenko, Kaloshin, Kaiser–Rolin–Speissegger) and for the infinitesimal problem (Binyamini–Novikov–Yakovenko) | A general "absolute finiteness ⇒ uniform bound" counting principle that the paper says can be applied to other classes of equations |
 
-The deeper point is the switch from *one field at a time* to *all fields of a given degree at once*. Earlier finiteness proofs studied one return map very carefully. This paper sets up finitely many fixed systems of equations in which the coefficients of the vector field are just extra unknowns, and bounds their solutions all at once.
+The deeper point is the switch from *one field at a time* to *all fields of a given degree at once*. Earlier finiteness proofs studied one return map very carefully. This paper sets up finitely many fixed systems of equations in which the coefficients of the vector field enter only as parameters, and bounds the number of solution pieces for all values of those parameters at once.
 
 ---
 
@@ -228,7 +234,7 @@ flowchart TD
     D --> E["Each cycle = a closed word of bounded length<br/>(apart from at most T(d) exceptions)"]
     E --> F["For each word: one fixed matching system,<br/>coefficients of the field as parameters"]
     F --> G["Distinct hyperbolic cycles lie in distinct<br/>connected components of a solution set"]
-    H["Sections 2–8: packets of asymptotic expansions<br/>on nested complex domains ⇒ absolute<br/>isolated-zero finiteness"] --> I
+    H["Sections 2–8 and 11.3: packets of asymptotic<br/>expansions on nested complex domains ⇒ absolute<br/>isolated-zero finiteness of the matching systems"] --> I
     G --> I["Projection count: at most N components,<br/>uniformly in every parameter"]
     I --> J["B(d) = T(d) + sum of the N's<br/>over all words and charts"]
 ```
@@ -237,11 +243,13 @@ flowchart TD
 
 ![Slide: proof step 1, rescaling and rotation](assets/notebooklm/slides/slide-08.png)
 
+*(The slide glosses hyperbolic as "simple/isolated". Hyperbolic means a simple zero of the displacement; being isolated is weaker. See the [errata](assets/README.md#errata).)*
+
 **Step 2: A finite catalogue of pieces (Section 9).** Using a "preparation theorem" for globally subanalytic functions (due to Lion and Rolin), with the coefficients treated as parameters, the square is cut into finitely many cells. On each cell the orbit equation is rewritten as a single scalar equation (for example $dy/dx = Q/P$ away from $P = 0$) of one of a few prepared forms: a constant-state field, a box where it has no zero or a simple root, or a "monomial annulus" where it is a monomial times a nearly constant factor. The *list* of cell types and the bounds on their number depend only on the degree $d$, never on the particular coefficients.
 
-**Step 3: Bounded words (Lemma 9.6).** A periodic orbit is a closed curve without self-intersections. Every time it crosses a boundary arc it alternates between going "in" and going "out" of the region it encloses. So it can cross a boundary arc on which the flow always crosses in the same direction **at most once**. (This is the planar Rolle principle of Khovanskii.) Orbits that run *along* a boundary arc are at most $T(d)$ exceptions. Every other cycle is a cyclic list of at most $N_d$ passages through cells. Only finitely many such words exist.
+**Step 3: Bounded words (Lemma 9.6).** A periodic orbit is a closed curve without self-intersections, so it has an inside and an outside. Walk along a boundary arc. Each time the arc meets the orbit, the arc passes from outside the loop to inside, or back out, alternately. So the orbit would have to cross the arc in alternating directions. On an arc where the flow always crosses in the same direction that is impossible, so the orbit meets such an arc **at most once**. (This is the no-contact case of Khovanskii's planar Rolle principle.) Orbits that run *along* a boundary arc are at most $T(d)$ exceptions. Every other cycle is a cyclic list of at most $N_d$ passages through cells. Only finitely many such words exist.
 
-**Step 4: Standard passages (Sections 6–8 and 10).** Each piece of the orbit between two cuts is computed by one scalar differential equation, a **transfer**. There are only four kinds: an ordinary analytic transfer, an additive transfer, a transfer with one large "clock", and a mixed transfer with two clocks. The paper's motivating example is a saddle, $\dot x = x$, $\dot y = -\lambda y$ (panel (b) above). An orbit entering at $(r, 1)$ leaves at $(1, r^{\lambda})$ after time $L = \log(1/r)$, and its contraction exponent is $W = \lambda L$. As $r \to 0$ and $\lambda \to 0$ together, these two clocks can blow up at different rates. That is exactly the kind of degeneration a *uniform* bound must survive.
+**Step 4: Standard passages (Sections 6–8 and 10).** Each piece of the orbit between two cuts is computed by one scalar differential equation, a **transfer**. There are only four kinds: an ordinary analytic transfer, an additive transfer, a transfer with one large "clock", and a mixed transfer with two clocks. The paper's motivating example is a saddle, $\dot x = x$, $\dot y = -\lambda y$ (panel (b) above). An orbit entering at $(r, 1)$ leaves at $(1, r^{\lambda})$ after time $L = \log(1/r)$, and its contraction exponent is $W = \lambda L$. As $r \to 0$ the first clock $L$ blows up. If $\lambda \to 0$ at the same time, the second clock $W$ may stay bounded or blow up at a different rate. That is exactly the kind of degeneration a *uniform* bound must survive.
 
 **Step 5: Matching systems (Theorem 11.4).** For a word with $k$ links, the unknowns are the $k$ cut points $e_1, \dots, e_k$ (plus auxiliary variables), and there is one equation per link: "the transfer starting at $e_j$ arrives at $e_{j+1}$". Three facts make this system useful:
 
@@ -252,6 +260,8 @@ flowchart TD
 So bounding cycles reduces to bounding **connected components of solution sets**, uniformly in the parameters.
 
 ![Slide: proof step 4, matching equations](assets/notebooklm/slides/slide-11.png)
+
+*(The deck numbers the steps differently: its step 4 is Step 5 here. "Exact local matching implies a closed periodic orbit" holds only near actual cycles, since a component can also contain points that are not physical orbits. The slide's "separation principle" is not the paper's separation theorem. See the [errata](assets/README.md#errata).)*
 
 **Step 6: The projection count (Theorem 11.2).** Suppose a system $F(p, x) = 0$, with parameters $p$, has a strong property called **absolute isolated-zero finiteness**. This means that it, and every system built from it by taking derivatives, adding multiplier variables and so on, has only finitely many isolated solutions *when the parameters are treated as unknowns too*. Then the number of connected components of the solution set $\lbrace x : F(p,x) = 0 \rbrace$ is bounded by one constant $N$ for **all** $p$. The proof uses a bowl-shaped function that every component must have a lowest point of, plus Sard's theorem and an induction on the number of parameters (see Level 3).
 
@@ -315,7 +325,7 @@ which has a single simple zero at $s = 2$. That is the classical amplitude 2 of 
 
 Only the odd-degree terms of $F$ contribute: an even-degree term $x^{2j}$ turns $x f(x)$ into an odd power of $\sin t$, which integrates to zero over a full turn. After removing the factor $s^2$, a cubic $F$ therefore gives a polynomial of degree 1 in $s^2$, with at most one positive root. A quintic $F$ gives degree 2 in $s^2$, hence up to two. In general this count gives $\lfloor (n-1)/2 \rfloor$, the Lins–de Melo–Pugh number.
 
-(This first-order count only shows how many cycles can appear for *small* $\varepsilon$. From degree 6 on, the true maximum is larger, as the counterexamples in the history table show. Proving that no quintic $F$, small or large, gives more than two is the hard part of the companion.)
+(This first-order count only describes the cycles that branch off the circles of the center when $\varepsilon$ is *small*. From degree 6 on, the true maximum is larger, as the counterexamples in the history table show. Proving that no quintic $F$, small or large, gives more than two is the hard part of the companion.)
 </details>
 
 ### How the companion proves "at most two"
@@ -325,9 +335,9 @@ The upper bound is a different, self-contained argument (companion Sections 2–
 1. **Fold the plane.** On each half-plane $x > 0$ and $x < 0$, set $u = x^2/2$ and use $y$ as the coordinate along the orbit. An orbit becomes an "arch" solving $du/dy = \phi_\pm(u) - y$ with $\phi_\pm(u) = F(\pm\sqrt{2u})$. The even coefficients of $F$ give the same part in both profiles, and the odd coefficients change sign.
 2. **Match the halves.** A periodic orbit is a right arch and a left arch with the same endpoints on the $y$-axis. Measure each arch at height zero by its half-width $r$ and the midpoint $M_\pm(0,r)$ of its endpoints. Periodic orbits then correspond exactly to the zeros of one function $\Delta(r) = M_+(0,r) - M_-(0,r)$ on one interval (Proposition 2.5).
 3. **Fit by parabolas.** Every arch's data $(M, M_r)$ is matched by a unique quadratic profile $\lambda(u - h) + \kappa(u - h)^2/2$ (Theorem 3.6). Transport equations (Lemma 3.7) say how the fitted slope $\lambda$ and curvature $\kappa$ change along an arch. A model inequality, proved with endpoint variations, a Riccati linearization and a Schwarzian-derivative identity, controls their coefficients. Together they turn sign conditions on the profile $\phi_\pm$ into monotonicity statements for $\kappa$ and $\lambda$.
-4. **Four sign cases.** Normalize the top coefficient to be $\ge 0$ and split by the signs of the coefficients of $x$ and $x^3$. In three cases there is at most one cycle. In the remaining case the matching function satisfies $\Delta' = A\Delta + Bq$ with $B > 0$ and $q$ nondecreasing. A function whose derivative has the sign of a nondecreasing function first decreases, then increases, so it has **at most two isolated zeros**. This argument counts multiple and degenerate cycles directly, without perturbing them away.
+4. **Four sign cases.** Normalize the top coefficient to be $\ge 0$ and split by the signs of the coefficients of $x$ and $x^3$. In three cases there is at most one cycle. In the remaining case the matching function satisfies $\Delta' = A\Delta + Bq$ with $B > 0$ and $q$ nondecreasing. Multiplying $\Delta$ by a positive integrating factor removes the $A\Delta$ term, so the new function's derivative is a positive multiple of $q$. A function whose derivative has the sign of a nondecreasing function first decreases, then increases, so it has **at most two isolated zeros**, and so does $\Delta$. This argument counts multiple and degenerate cycles directly, without perturbing them away.
 
-The two-cycle example above falls in exactly this last case (positive $x$ coefficient, negative $x^3$ coefficient).
+The two-cycle example above falls in exactly this remaining case, Case 2 of the companion's Section 6 (positive $x$ coefficient, negative $x^3$ coefficient).
 
 ---
 
@@ -367,13 +377,13 @@ The two-cycle example above falls in exactly this last case (positive $x$ coeffi
 > **The companion is about one special class.** "At most two" holds for $\dot x = y - F(x)$, $\dot y = -x$ with $\deg F \le 5$. It does **not** say that $H(5) = 2$. A general field of degree 5 can have more: quadratic fields count as "degree at most 5", and they can already have four.
 
 > [!WARNING]
-> **An extraordinary claim that is not yet checked.** Uniform boundedness has been open since 1900, and the history includes a famous gap (Dulac's) and a recently identified obstruction in a classical argument (Yeung's). The principal paper's proof is 160 pages of new asymptotic machinery. It has **not** been formalized, and as of October 2026 it is a preprint without independent expert review. The openai/math README warns that "some of the unformalized results could have issues".
+> **An extraordinary claim that is not yet checked.** Uniform boundedness has been open since 1900, and the history includes a famous gap (Dulac's) and a recently identified obstruction in a classical argument (Yeung's). The principal paper's proof is 160 pages of new asymptotic machinery. It has **not** been formalized, and as of October 2026 it is a preprint with no independent expert review reported. The openai/math README warns that "some of the unformalized results could have issues".
 
 > [!NOTE]
 > **Provenance.** Both papers were produced by an unreleased internal OpenAI model as part of the [openai/math](https://github.com/openai/math) release. According to that repository's README, most results came from the same fixed procedure. This family is not among the listed exceptions, and no human editing is mentioned for it.
 
 > [!NOTE]
-> **Verification status.** The Lean scope document [`lean/docs/143.md`](https://github.com/openai/math/blob/main/lean/docs/143.md) covers **only the companion**: "every real polynomial $F$ of degree at most five yields at most two limit cycles, and that some such $F$ yields exactly two", with no sign, parity, hyperbolicity or amplitude restriction. [`lean/formalization.yaml`](https://github.com/openai/math/blob/main/lean/formalization.yaml) lists the companion among its sources and the declaration `OAI.QuinticLienard.main` (in `OAI/Analysis/LienardCycles/Main.lean`, Comparator configuration `ComparatorChallenges/QuinticLienard.json`, allowed axioms `propext`, `Quot.sound` and `Classical.choice`) among its main results. The principal paper does not appear in that file. This explainer did not re-run the Lean build or the Comparator check.
+> **Verification status.** The Lean scope document [`lean/docs/143.md`](https://github.com/openai/math/blob/main/lean/docs/143.md) covers **only the companion**: "every real polynomial $F$ of degree at most five yields at most two limit cycles, and that some such $F$ yields exactly two", with no sign, parity, hyperbolicity or amplitude restriction. [`lean/formalization.yaml`](https://github.com/openai/math/blob/main/lean/formalization.yaml) lists the companion among its sources and the declaration `OAI.QuinticLienard.main` (in `OAI/Analysis/LienardCycles/Main.lean`, Comparator configuration `ComparatorChallenges/QuinticLienard.json`, allowed axioms `propext`, `Quot.sound` and `Classical.choice`) among its main results. The principal paper does not appear in that file. The catalogue as a whole lists its formalization method as `agent` and its review status as `unchecked`. This explainer did not re-run the Lean build or the Comparator check.
 
 > [!TIP]
 > **Simplifications.** To stay readable, this explainer leaves out the preparation parameters, the minor charts, the exceptional tangential orbits, the precise closure operations, and nearly all of the asymptotic bookkeeping (bands, fringes, lateral determinations, safe columns). Every precise statement is in the paper.
@@ -416,12 +426,12 @@ The two-cycle example above falls in exactly this last case (positive $x$ coeffi
 
 ## 9. Slides and other assets
 
-Everything in the first six rows below was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the companion, the Lean scope document and the Wikipedia article on Hilbert's sixteenth problem. The report, the mind map and the audio used only the two papers and the Lean document. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, and seven of the fifteen slides contain errors, so see the [errata](assets/README.md#errata) before relying on any detail.
+Everything in the first six rows below was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the companion, the Lean scope document and the Wikipedia article on Hilbert's sixteenth problem. The report, the mind map and the audio used only the two papers and the Lean document. The outputs are kept exactly as NotebookLM produced them. They are AI-generated: seven of the fifteen slides contain serious errors, and all but one of the rest have smaller slips. See the [errata](assets/README.md#errata) before relying on any detail.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 15 beginner slides. Slides 4, 7, 9, 10, 12, 14 and 15 have errors listed in the errata |
-| [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 15 beginner slides. Slides 4, 7, 9, 10, 12, 14 and 15 have serious errors (wrong pictures, labels or statements); every other slide except slide 5 has a smaller slip. All are listed in the errata |
+| [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top. Panel 4 overstates two proof steps; several typos |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Hilbert (1900) to the 2026 preprints |
 | [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer, restricted to the paper sources |
 | [Mind map](assets/notebooklm/mindmaps.md) | How the two proofs fit together, as a nested list ([JSON](assets/notebooklm/mindmap-proof.json)). It leaves out the steps that make the bound uniform; see the errata |
@@ -431,7 +441,7 @@ Everything in the first six rows below was generated with **Google NotebookLM** 
 | [Cycle words and a saddle passage](assets/figures/cycle-words-and-saddle.svg) ([PNG](assets/figures/cycle-words-and-saddle.png)) | Hand-made schematic of Steps 2–4 of the proof |
 
 <details>
-<summary><b>All 15 slides</b> (click to expand; slides 4, 7, 9, 10, 12, 14 and 15 contain errors, see the errata)</summary>
+<summary><b>All 15 slides</b> (click to expand; slides 4, 7, 9, 10, 12, 14 and 15 contain serious errors and most others minor slips, see the errata)</summary>
 
 ![Slide 1](assets/notebooklm/slides/slide-01.png)
 
