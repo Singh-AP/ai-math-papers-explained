@@ -1,0 +1,222 @@
+{
+  "name": "Riemann Hypothesis",
+  "children": [
+    {
+      "name": "Core Concept & Definition",
+      "children": [
+        {
+          "name": "Conjecture on Riemann Zeta Function Zeros"
+        },
+        {
+          "name": "Proposed by Bernhard Riemann (1859)"
+        },
+        {
+          "name": "Trivial Zeros: Negative even integers (-2, -4, -6, ...)"
+        },
+        {
+          "name": "Non-trivial Zeros: Lie on the Critical Line Re(s) = 1/2"
+        },
+        {
+          "name": "Critical Strip: 0 < Re(s) < 1"
+        },
+        {
+          "name": "Status: Hilbert's 8th Problem & Millennium Prize Problem ($1M)"
+        }
+      ]
+    },
+    {
+      "name": "Riemann Zeta Function ζ(s)",
+      "children": [
+        {
+          "name": "Sum Definition: ∑ (1/n^s) for Re(s) > 1"
+        },
+        {
+          "name": "Euler Product: ∏ (1 - p^-s)^-1 over all primes p"
+        },
+        {
+          "name": "Analytic Continuation: Meromorphic function over C (pole at s=1)"
+        },
+        {
+          "name": "Dirichlet Eta Function: Extends domain to Re(s) > 0"
+        },
+        {
+          "name": "Functional Equation: Relates ζ(s) to ζ(1-s)"
+        }
+      ]
+    },
+    {
+      "name": "Mathematical Origin & Purpose",
+      "children": [
+        {
+          "name": "Prime Number Distribution"
+        },
+        {
+          "name": "Explicit Formula for π(x) (Prime-counting function)"
+        },
+        {
+          "name": "Prime Power Function Π(x) & Möbius Inversion"
+        },
+        {
+          "name": "Zeros Control Oscillations of Primes"
+        },
+        {
+          "name": "Bridge: Discrete Number Theory & Continuous Complex Analysis"
+        }
+      ]
+    },
+    {
+      "name": "Consequences & Equivalences",
+      "children": [
+        {
+          "name": "Distribution of Primes",
+          "children": [
+            {
+              "name": "Error Bound: |π(x) - li(x)| < (1/8π) √x log(x) (Schoenfeld/von Koch)"
+            },
+            {
+              "name": "Cramér's Prime Gap Bounds"
+            }
+          ]
+        },
+        {
+          "name": "Growth of Arithmetic Functions",
+          "children": [
+            {
+              "name": "Mertens Function: M(x) = O(x^(1/2+ε))"
+            },
+            {
+              "name": "Robin's Theorem: σ(n) < e^γ n log log n (n > 5040)"
+            },
+            {
+              "name": "Lagarias Equivalent: Bound via Harmonic Numbers"
+            }
+          ]
+        },
+        {
+          "name": "Other Conjectures & Criteria",
+          "children": [
+            {
+              "name": "Lindelöf Hypothesis (Growth on Critical Line)"
+            },
+            {
+              "name": "Riesz & Nyman-Beurling Criteria"
+            },
+            {
+              "name": "de Bruijn–Newman Constant (Λ = 0)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Location of Zeros & Verification",
+      "children": [
+        {
+          "name": "Density & Number of Zeros",
+          "children": [
+            {
+              "name": "N(T) ~ (T/2π) log(T/2π)"
+            },
+            {
+              "name": "Hadamard & de la Vallée-Poussin: No zeros on Re(s) = 1"
+            }
+          ]
+        },
+        {
+          "name": "Zeros on Critical Line",
+          "children": [
+            {
+              "name": "Hardy (1914): Infinitely many zeros on Re(s) = 1/2"
+            },
+            {
+              "name": "Selberg, Levinson, Conrey: Incremental proportion bounds"
+            },
+            {
+              "name": "Anthropic Claude (2026): Proved > 66.6% (and ~67.25%) on critical line"
+            },
+            {
+              "name": "Lamzouri (2026): Simplified Hilbert space proof for >2/3"
+            }
+          ]
+        },
+        {
+          "name": "Zero-Free Regions",
+          "children": [
+            {
+              "name": "Platt & Trudgian (2021): Verified up to t = 3 * 10^12"
+            },
+            {
+              "name": "Mossinghoff, Trudgian, Yang (2022): Improved bounds"
+            },
+            {
+              "name": "OpenAI (2026): Claimed proof for Re(s) > 7/8 (Quasi-RH)"
+            }
+          ]
+        },
+        {
+          "name": "Numerical Calculations & Phenomena",
+          "children": [
+            {
+              "name": "Gram Points & Gram's Law"
+            },
+            {
+              "name": "Rosser's Rule"
+            },
+            {
+              "name": "Lehmer's Phenomenon (Very close zero pairs)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Generalizations & Analogues",
+      "children": [
+        {
+          "name": "Generalized Riemann Hypothesis (GRH) for Dirichlet L-functions"
+        },
+        {
+          "name": "Extended RH (Dedekind Zeta Functions)"
+        },
+        {
+          "name": "Grand RH (Automorphic L-functions / Selberg Class)"
+        },
+        {
+          "name": "Weil Conjectures (Curves/Varieties over Finite Fields - Proved by Weil/Deligne)"
+        },
+        {
+          "name": "Selberg & Ihara Zeta Functions"
+        },
+        {
+          "name": "Quasi-Riemann Hypothesis (Zero-free half-plane Re(s) > θ < 1)"
+        }
+      ]
+    },
+    {
+      "name": "Attempted Proofs & Approaches",
+      "children": [
+        {
+          "name": "Hilbert–Pólya Conjecture (Self-adjoint Operators)"
+        },
+        {
+          "name": "Random Matrix Theory & Quantum Chaos (GUE Alignment)"
+        },
+        {
+          "name": "Lee–Yang Theorem (Statistical Mechanics)"
+        },
+        {
+          "name": "Noncommutative Geometry (Alain Connes)"
+        },
+        {
+          "name": "Hilbert Spaces of Entire Functions (de Branges)"
+        },
+        {
+          "name": "1D Quasicrystals (Dyson)"
+        },
+        {
+          "name": "OpenAI Lean 4 Formalizations (Quasi-RH at 7/8)"
+        }
+      ]
+    }
+  ]
+}

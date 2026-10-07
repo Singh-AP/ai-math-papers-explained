@@ -1,0 +1,160 @@
+{
+  "name": "Math & Lean Docs: Quasi-Riemann Hypothesis",
+  "children": [
+    {
+      "name": "Main Document Overview",
+      "children": [
+        {
+          "name": "Lean Formalization Scope",
+          "children": [
+            {
+              "name": "Riemann Zeta Function (7/8 Bound)"
+            },
+            {
+              "name": "Dirichlet L-Functions (Uniform 7/8 Bound)"
+            },
+            {
+              "name": "Finite-Order Hecke L-Functions over Q(√-3)"
+            },
+            {
+              "name": "Logarithmic Exclusion of Landau-Siegel Zeros"
+            }
+          ]
+        },
+        {
+          "name": "Comparator Challenges",
+          "children": [
+            {
+              "name": "QuasiRiemannHypothesis.lean"
+            },
+            {
+              "name": "DirichletSevenEighths.lean"
+            },
+            {
+              "name": "HeckeSevenEighths.lean"
+            },
+            {
+              "name": "SiegelZeros.lean"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Paper: The Quasi-Riemann Hypothesis",
+      "children": [
+        {
+          "name": "Key Theorems & Results",
+          "children": [
+            {
+              "name": "Theorem 1.1 (Zero-Free Half-Plane)",
+              "children": [
+                {
+                  "name": "Zero-free in Re(s) > 7/8"
+                },
+                {
+                  "name": "Includes Zeta, Dirichlet L-functions, Hecke L-functions"
+                },
+                {
+                  "name": "Principal pole at s=1 allowed"
+                }
+              ]
+            },
+            {
+              "name": "Corollary 1.2 (Number Theory Consequences)",
+              "children": [
+                {
+                  "name": "Least quadratic nonresidue n(p) ≤ C(log p)^A"
+                },
+                {
+                  "name": "Vinogradov's Conjecture proved unconditionally"
+                },
+                {
+                  "name": "Deterministic polynomial-time algorithm for square roots in Fp"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Proof Strategy & Structure",
+          "children": [
+            {
+              "name": "Analytic Continuation Principle",
+              "children": [
+                {
+                  "name": "Mellin integral comparison with target reciprocal"
+                },
+                {
+                  "name": "Power-saving continuation across supremum zero line"
+                }
+              ]
+            },
+            {
+              "name": "Part I: Balanced First Stage (11/12 Bound)",
+              "children": [
+                {
+                  "name": "Cubic reflection & quadratic large sieve for low estimates"
+                },
+                {
+                  "name": "Poisson representation & sextic sieve for high estimates"
+                },
+                {
+                  "name": "Establishes baseline zero-free region Re(s) > 11/12"
+                }
+              ]
+            },
+            {
+              "name": "Part II: Refined Second Stage (7/8 Bound)",
+              "children": [
+                {
+                  "name": "Compensated probe with prime scale asymmetry"
+                },
+                {
+                  "name": "Marked reflection & quadratic-cubic norm bounds"
+                },
+                {
+                  "name": "Saturated witnesses zero detector"
+                },
+                {
+                  "name": "Recursive moments (2nd & 4th) via finite Poisson transforms"
+                }
+              ]
+            },
+            {
+              "name": "Quadratic Transfer",
+              "children": [
+                {
+                  "name": "Relates Hecke L-functions over Q(√-3) to Dirichlet L-functions"
+                },
+                {
+                  "name": "Transfers strict zero-free half-plane unconditionally"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Key Mathematical Preliminaries",
+          "children": [
+            {
+              "name": "Eisenstein Integers Z[ω] & Primary Generators"
+            },
+            {
+              "name": "Sextic Residue Symbols & Reciprocity Laws"
+            },
+            {
+              "name": "Gauss & Jacobi Sum Identities"
+            },
+            {
+              "name": "Automorphic Theta Expansions (Patterson, Dunn-Radziwiłł)"
+            },
+            {
+              "name": "Logarithmic Control & Strip Growth Bounds"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
