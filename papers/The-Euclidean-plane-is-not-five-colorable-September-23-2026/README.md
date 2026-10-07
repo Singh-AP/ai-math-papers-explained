@@ -6,6 +6,10 @@
 > - **Formal proof:** both "five colors are not enough" and "seven colors are enough" are listed as formalized in Lean 4 ([scope](https://github.com/openai/math/blob/main/lean/docs/158.md))
 > - **Who this is for:** anyone who knows what a circle, a triangle and a function are. No graph theory needed for sections 1–4; section 5 gets gradually more technical.
 
+![One-page infographic overview](assets/notebooklm/infographic-overview.png)
+
+*NotebookLM infographic. Two details are wrong: the 1,581-vertex graph is misprinted as "1,881", and the formula in "Proof Part 1" is invented. See the [errata](assets/README.md#errata).*
+
 ## Contents
 
 - [TL;DR](#tldr)
@@ -35,7 +39,7 @@
 
 | You have… | Read |
 |---|---|
-| 2 minutes | The TL;DR and the [Moser spindle picture](#13-why-at-least-four-colors-the-moser-spindle) |
+| 2 minutes | The TL;DR, the infographic above and the [Moser spindle picture](#13-why-at-least-four-colors-the-moser-spindle) |
 | 15 minutes | Sections 1–4 and 7 |
 | An hour, and you like analysis or topology | Everything, including [section 5](#5-the-main-idea-of-the-proof) |
 
@@ -108,6 +112,10 @@ This paper's theorem is about arbitrary colorings: any function from the plane t
 ---
 
 ## 2. A short history
+
+![Timeline infographic](assets/notebooklm/infographic-history-timeline.png)
+
+*NotebookLM timeline. Its "2025–2026" panel wrongly says Sokolov and Voronov proved that five colors fail. They proved that **polygonal** colorings need at least 7. The table below is the checked version.*
 
 | When | Who | What happened |
 |---|---|---|
@@ -336,11 +344,16 @@ in sector coordinates $z = \xi + i\upsilon$ around $x$. Every point satisfying i
 
 ## 9. Slides, audio and other assets
 
-The slide deck below was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the Lean scope document and the Wikipedia article on the Hadwiger–Nelson problem. It is kept exactly as NotebookLM produced it. It is AI-generated, and several slides have errors: slides 4, 5, 10 and 14 in particular have wrong pictures or invented details, and slide 7 has garbled text. See the [errata](assets/README.md#errata) before relying on any of it. The other planned NotebookLM assets (two infographics, a report, a mind map and an audio overview) have not been generated yet, because the shared NotebookLM quota ran out.
+Everything below marked "NotebookLM" was generated with **Google NotebookLM** (now "Gemini Notebook"). The slides, infographics and audio used the paper, the Lean scope document and the Wikipedia article on the Hadwiger–Nelson problem. The report and mind map used only the paper and the Lean scope document. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, and several have errors: slides 4, 5, 10 and 14 in particular have wrong pictures or invented details, slide 7 has garbled text, and the timeline misattributes the five-color result. See the [errata](assets/README.md#errata) before relying on any detail.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 15-slide beginner deck, unrevised |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | NotebookLM: 15-slide beginner deck (original version; a revision was tried and rejected) |
+| [Infographic: overview](assets/notebooklm/infographic-overview.png) | NotebookLM: the one-page summary shown at the top |
+| [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | NotebookLM: from Hadwiger (1945) to 2026 |
+| [Audio overview (≈2 min)](assets/notebooklm/audio-overview-brief.m4a) | NotebookLM: a short podcast-style summary (not reviewed) |
+| [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM: long-form written explainer, from the paper and Lean doc only |
+| [Mind map](assets/notebooklm/mindmaps.md) | NotebookLM: the paper's results, history and proof architecture as a nested list ([JSON](assets/notebooklm/mindmap-proof.json)) |
 | [Moser spindle](assets/figures/moser-spindle.svg) ([PNG](assets/figures/moser-spindle.png)) | Hand-made: the 7-point graph, with the forced three-coloring and the monochromatic unit edge |
 | [Hexagon seven-coloring](assets/figures/hexagon-seven-coloring.svg) ([PNG](assets/figures/hexagon-seven-coloring.png)) | Hand-made: the paper's version of Isbell's coloring, with $r = 2/5$ and colors $(a+2b) \bmod 7$ |
 | [Sixty-degree rule](assets/figures/sixty-degree-rule.svg) ([PNG](assets/figures/sixty-degree-rule.png)) | Hand-made: why directions 60° apart on a unit circle see different colors |
@@ -386,7 +399,7 @@ The slide deck below was generated with **Google NotebookLM** (now "Gemini Noteb
 ## How this explainer was made
 
 1. The paper, its TeX source, and the Lean scope document were downloaded from [openai/math](https://github.com/openai/math/tree/main/preprints/The-Euclidean-plane-is-not-five-colorable-September-23-2026).
-2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI, together with the Wikipedia article on the Hadwiger–Nelson problem as background. The NotebookLM assets come from a notebook on a second NotebookLM account. Only the slide deck in [`assets/notebooklm/`](assets/notebooklm/) has been generated so far. Every slide was compared with the paper, and the errors are listed in the [errata](assets/README.md#errata). The planned single revision of the deck was not run, for lack of quota.
+2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI, together with the Wikipedia article on the Hadwiger–Nelson problem as background. The NotebookLM assets in [`assets/notebooklm/`](assets/notebooklm/) come from a notebook on a second NotebookLM account. Every slide, both infographics, the report and the mind map were compared with the paper, and the errors are listed in the [errata](assets/README.md#errata); the audio was not reviewed. One revision of slides 4, 5, 7, 10 and 14 was tried. It was rejected, because it made slide 4 worse and left slide 5 garbled.
 3. The text on this page was written by hand (with AI assistance) directly from the paper's TeX source, not from NotebookLM output: the introduction and proof overview, the statements in every section, and the transfer, palette, interface and angular arguments. The Lean status comes from `lean/docs/158.md`, `lean/formalization.yaml` and the Comparator statement files. The figures were drawn as SVG from coordinates computed numerically. Every unit edge was checked, and the paper's seven-point Moser placement was re-checked against its certificate table.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.

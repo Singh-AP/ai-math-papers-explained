@@ -1,0 +1,174 @@
+{
+  "name": "Euclidean Plane Chromatic Number",
+  "children": [
+    {
+      "name": "Core Result",
+      "children": [
+        {
+          "name": "Not Five-Colorable (χ(R²) ≥ 6)"
+        },
+        {
+          "name": "Bounds: 6 ≤ χ(R²) ≤ 7"
+        },
+        {
+          "name": "No Regularity Assumptions (ZFC)"
+        }
+      ]
+    },
+    {
+      "name": "Historical Context",
+      "children": [
+        {
+          "name": "Origins & Early Bounds",
+          "children": [
+            {
+              "name": "Nelson (1950): Lower bound 4"
+            },
+            {
+              "name": "Isbell & Hadwiger: Upper bound 7 (Hexagonal)"
+            },
+            {
+              "name": "Moser Spindle: 7-vertex obstruction to 3 colors"
+            }
+          ]
+        },
+        {
+          "name": "Finite Obstructions to 4 Colors",
+          "children": [
+            {
+              "name": "de Grey (2018): 1,581 vertices"
+            },
+            {
+              "name": "Heule: 553 vertices"
+            },
+            {
+              "name": "Parts: 509 vertices & human-verifiable proof"
+            },
+            {
+              "name": "de Bruijn–Erdős Theorem: Compactness link"
+            }
+          ]
+        },
+        {
+          "name": "Measurable Colorings (χm(R²))",
+          "children": [
+            {
+              "name": "Falconer & Payne: χm(R²) ≥ 5 via density points"
+            },
+            {
+              "name": "Sokolov & Voronov: Polygonal lower bound 7"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proof Architecture",
+      "children": [
+        {
+          "name": "Part 1: Transfer Principle",
+          "children": [
+            {
+              "name": "Unrestricted Proper k-Coloring ⇐⇒ Weak Measurable k-Coloring"
+            },
+            {
+              "name": "Amenable Averaging over Følner Sequences"
+            },
+            {
+              "name": "Character Group D & Borel Subgroup C"
+            },
+            {
+              "name": "Furstenberg–Zimmer Compact Extension Tower"
+            },
+            {
+              "name": "Haar Rigidity of Wild Character Laws (Theorem 2.3)"
+            },
+            {
+              "name": "Density Points & Graph Compactness (Converse)"
+            }
+          ]
+        },
+        {
+          "name": "Part 2: Geometric Obstruction to 5 Colors",
+          "children": [
+            {
+              "name": "Angular Palettes",
+              "children": [
+                {
+                  "name": "Size at most two almost everywhere"
+                },
+                {
+                  "name": "60-degree exclusion & binary-center separation"
+                }
+              ]
+            },
+            {
+              "name": "Cyclic Centers & Transitions",
+              "children": [
+                {
+                  "name": "Transition graphs (Γx)"
+                },
+                {
+                  "name": "Locus L of cyclic centers is closed & locally finite"
+                }
+              ]
+            },
+            {
+              "name": "Exclusion Continua",
+              "children": [
+                {
+                  "name": "Smoothing via disk averages (p^ϵ_i)"
+                },
+                {
+                  "name": "Planar cover obstruction forces non-null core loops"
+                },
+                {
+                  "name": "Compact connected sets Kj in straddling regions Δ(Kj)"
+                }
+              ]
+            },
+            {
+              "name": "Elimination of Cycle Lengths",
+              "children": [
+                {
+                  "name": "Length 5: Incompatible 6-step words"
+                },
+                {
+                  "name": "Length 4: Parity obstruction on 4 split rays"
+                },
+                {
+                  "name": "Length 3: 6 alternating sectors & Moser graph embedding"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Probabilistic Consequence",
+      "children": [
+        {
+          "name": "Positive Badness Constant (δ > 0)"
+        },
+        {
+          "name": "Invariant-Mean Monochromatic Edge Fraction ≥ δ"
+        },
+        {
+          "name": "Asymptotic Needle Frequencies Bounded Below"
+        }
+      ]
+    },
+    {
+      "name": "Formalization & Verification",
+      "children": [
+        {
+          "name": "Lean Formalization (OpenAI)"
+        },
+        {
+          "name": "7-Point Rational Certificate (Moser Graph Placement)"
+        }
+      ]
+    }
+  ]
+}
