@@ -383,7 +383,7 @@ The proof compares $\int_{\lbrace\tau<s\rbrace}(dd^c\tau)^d$ with the flux of $d
 
 ## 9. Slides, audio and other assets
 
-The slide deck and infographics below were generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the general companion, the reasoning summary, the Lean scope document and the Wikipedia article on the Mahler volume. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. Slides 2, 10 and 12 contain real mistakes: a non-convex "convex" example, a rotated lens, and a "unique" median.
+Everything below was generated with **Google NotebookLM** (now "Gemini Notebook"). The slides, infographics and audio come from the paper, the general companion, the reasoning summary, the Lean scope document and the Wikipedia article on the Mahler volume. The report and mind map come from the two papers and the Lean scope document only. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. Slides 2, 10 and 12 contain real mistakes: a non-convex "convex" example, a rotated lens, and a "unique" median. The report mostly explains the *general* companion's proof, with several wrong dates.
 
 | Asset | What it is |
 |---|---|
@@ -392,7 +392,9 @@ The slide deck and infographics below were generated with **Google NotebookLM** 
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Blaschke and Mahler to 2026 |
 | [Polar-pairs figure](assets/figures/polar-pairs.svg) ([PNG](assets/figures/polar-pairs.png)) | Hand-made: square/diamond, hexagon/hexagon and disk/disk, with volume products 8, 9 and $\pi^2$ (section 1.3) |
 | [Lens figure](assets/figures/lens.svg) ([PNG](assets/figures/lens.png)) | Hand-made from the paper's series for $F$: equal angle steps land at equal heights (section 5) |
-| Report, mind map, audio overview | Not generated in this round (shared quota); see [`assets/README.md`](assets/README.md) |
+| [Audio overview (≈1.8 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not reviewed) |
+| [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer. It centres on the general companion; read with the errata |
+| [Mind map](assets/notebooklm/mindmaps.md) | How the two proofs and their history fit together |
 
 <details>
 <summary><b>All 13 slides</b> (click to expand)</summary>
@@ -430,7 +432,7 @@ The slide deck and infographics below were generated with **Google NotebookLM** 
 ## How this explainer was made
 
 1. The paper's TeX source and PDF, both companions, the reasoning summary, the Lean scope document and the Comparator statements were downloaded from [openai/math](https://github.com/openai/math).
-2. A NotebookLM notebook was built through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) CLI from the principal paper, the general companion, the reasoning summary, the Lean scope document and the Wikipedia article on the [Mahler volume](https://en.wikipedia.org/wiki/Mahler_volume). It generated the slide deck and the two infographics in [`assets/notebooklm/`](assets/notebooklm/). The report, mind map and audio overview of the standard set were not generated, because the shared NotebookLM quota ran low.
+2. A NotebookLM notebook was built through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) CLI from the principal paper, the general companion, the reasoning summary, the Lean scope document and the Wikipedia article on the [Mahler volume](https://en.wikipedia.org/wiki/Mahler_volume). It generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/).
 3. The text on this page was written by hand (with AI assistance) directly from the paper's introduction, proof overview and Sections 2–8, and from the companions' introductions. Historical dates come from the papers' bibliographies, cross-checked against Wikipedia. The two figures were drawn by hand; the lens is plotted from the paper's own series for $F$. The NotebookLM outputs contain mistakes, listed in the [errata](assets/README.md#errata), so they were used only as visual aids, not as the source of truth.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.

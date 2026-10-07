@@ -1,0 +1,128 @@
+{
+  "name": "Mahler Conjecture Proofs (OpenAI 2026)",
+  "children": [
+    {
+      "name": "General Convex Bodies",
+      "children": [
+        {
+          "name": "Main Theorem",
+          "children": [
+            {
+              "name": "Inequality: P(K) >= (n+1)^(n+1) / (n!)^2"
+            },
+            {
+              "name": "Santaló Point Center"
+            },
+            {
+              "name": "Equality Case: Simplices Only"
+            }
+          ]
+        },
+        {
+          "name": "Proof Strategy",
+          "children": [
+            {
+              "name": "Cone / Laplace Correspondence"
+            },
+            {
+              "name": "Biased Projections & Gaussian Integration"
+            },
+            {
+              "name": "Entropy & Log-Jacobian Estimates"
+            },
+            {
+              "name": "Matrix Divided-Difference & Linear Field"
+            },
+            {
+              "name": "Independent Scalar Input Bounds"
+            }
+          ]
+        },
+        {
+          "name": "Consequences",
+          "children": [
+            {
+              "name": "Functional Mahler: integral e^(-phi) * e^(-phi*) >= e^n"
+            },
+            {
+              "name": "Entropy-Transport Bounds"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Centrally Symmetric Bodies",
+      "children": [
+        {
+          "name": "Main Theorem",
+          "children": [
+            {
+              "name": "Inequality: |K||K°| >= 4^n / n!"
+            },
+            {
+              "name": "Origin-Symmetric Bodies"
+            },
+            {
+              "name": "Equality Case: Linear Hanner Bodies"
+            }
+          ]
+        },
+        {
+          "name": "Proof Strategy",
+          "children": [
+            {
+              "name": "Conformal Lens Map & Boundary Coordinate"
+            },
+            {
+              "name": "Holomorphic Mass & Lelong Number Bounds"
+            },
+            {
+              "name": "Feasible Simplex Volumes & Polar Missing Volume"
+            },
+            {
+              "name": "Metric Medians & 3.2 Ball Intersection"
+            },
+            {
+              "name": "Hansen-Lima Banach Space Classification"
+            }
+          ]
+        },
+        {
+          "name": "Consequences",
+          "children": [
+            {
+              "name": "Even Functional Mahler Bound: >= 4^n"
+            },
+            {
+              "name": "Symmetric Entropy-Transport Bound"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Historical Context & Precedents",
+      "children": [
+        {
+          "name": "Mahler (1938/1939): Planar & Transference"
+        },
+        {
+          "name": "Bourgain-Milman: Reverse Blaschke-Santaló"
+        },
+        {
+          "name": "Kuperberg: Linking Integrals"
+        },
+        {
+          "name": "Nazarov / Berndtsson: Complex Analysis & Hörmander Methods"
+        },
+        {
+          "name": "Iriyeh-Shibata & Chen et al.: 3D Cases"
+        },
+        {
+          "name": "Meyer, Reisner, Kim: Local & Special Class Minimality"
+        }
+      ]
+    }
+  ]
+}

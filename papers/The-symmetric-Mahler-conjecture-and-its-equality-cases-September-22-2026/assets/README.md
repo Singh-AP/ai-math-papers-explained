@@ -12,8 +12,13 @@ Supporting material for the [explainer](../README.md). Everything in `notebooklm
 | `notebooklm/slides/slide-NN.png` | `pymupdf` at 200 DPI from `slides.pdf` | Per-slide images for inline viewing |
 | `notebooklm/infographic-overview.png` | NotebookLM infographic (portrait, detailed, instructional) | One-page overview |
 | `notebooklm/infographic-history-timeline.png` | NotebookLM infographic (landscape, sketch-note) | From Blaschke and Mahler to 2026 |
+| `notebooklm/beginner-explainer-report.md` | NotebookLM "Create Your Own" report, restricted to the two papers and the Lean scope document | Long-form explainer. Despite the prompt, it centres on the *general* companion's proof (see errata) |
+| `notebooklm/mindmap-proof.json`, `notebooklm/mindmaps.md` | NotebookLM mind map, restricted to the two papers and the Lean scope document | Root node "Mahler Conjecture Proofs (OpenAI 2026)". NotebookLM ignored the requested title "How the proof works" |
+| `notebooklm/audio-overview-brief.m4a` | NotebookLM audio overview ("brief") | About 110 seconds. Not reviewed |
 
-**Not generated.** The standard set also includes a "Create Your Own" report, a mind map of the proof and a brief audio overview. These were not created: the NotebookLM quota window shared with two other papers fell below the agreed 8% threshold after the two infographics had been started. For the same reason the slide deck was not revised.
+**Rejected regeneration.** A second overview infographic was generated with a fact-style prompt to remove the π³ typo and the Lean overstatement. It drew the lens correctly, with tips at ±i, but introduced worse errors. It gave the hexagon's product as 9.80 instead of 9, wrote "4³/2!" for the square's 4²/2! and "χ² = 9.87" for π², and said the inequality "holds strictly", which contradicts the equality cases. It also gave the general constant as "(n+1)^(n+2)/(ni)²" and carried the title "Solved by AI". It is not shipped, and `infographic-overview.png` is the first version.
+
+The slide deck has not been revised. A single revision of slides 2, 10, 11, 12 and 13 has been proposed but not run.
 
 ### Notebook sources
 
@@ -23,7 +28,7 @@ Supporting material for the [explainer](../README.md). Everything in `notebooklm
 4. [`lean/docs/087.md`](https://github.com/openai/math/blob/main/lean/docs/087.md): scope of the Lean formalization
 5. [Wikipedia: Mahler volume](https://en.wikipedia.org/wiki/Mahler_volume), for historical background
 
-The slide deck and infographics were generated from all five sources, with focus prompts that listed the paper's actual mechanism and asked NotebookLM not to invent one. The symplectic companion was not a source.
+The slide deck, infographics and audio were generated from all five sources. The report and mind map used only sources 1, 2 and 4. The focus prompts listed the paper's actual mechanism. The symplectic companion was not a source.
 
 ## Errata
 
@@ -54,7 +59,21 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 - **Slide 11:** the directions of the two bounds are right (analytic lower bound $S\ge1$, geometric upper bound). "Their total missing volume dictates the maximum bound" is garbled, though: the upper bound holds because the simplices sit inside the polar, and the missing volume is the slack in that bound. The inset is a copy of the paper's Figure 2, with a garbled caption reading $\Sigma_X=\mathrm{conv}\lbrace\pm b_1,\pm b_5\rbrace$ instead of $\mathrm{conv}\lbrace\pm b_1,\pm b_2\rbrace$. The line "CRITICAL: Never swap these bounds" is an instruction from the generation prompt that leaked onto the slide.
 - **Slide 12:** "The geometry forces a unique metric median structure" is wrong. The paper says explicitly that "the median need not be unique". The slide also equates medians with the three-ball property; in the paper, medians *imply* that property (Lemma 8.2). The lifted body $K\oplus_1[-1,1]$ is a double cone over $K$, not the blob drawn. The lift does not by itself force the missing volume to vanish: because the lift is still an equality case, the missing volume of its polytope approximations tends to zero.
 - **Slide 13:** the "What the proof does not use" column repeats the generation prompt. Its claim that Steiner symmetrization "belongs to Santaló's maximum proof" came into the prompt from the Wikipedia source and is **unverified** against the papers. On "induction on dimension", see the note under the overview infographic. "The Gromov width of $K\times K^\circ$ is exactly 4" needs $n\ge2$; the symplectic companion states it for the interiors $\mathrm{int}\ K\times\mathrm{int}\ K^\circ$.
-- No revision was made (see "Not generated" above), so all of the above ships as generated.
+- No revision has been made, so all of the above ships as generated.
 
-**Report, mind map and audio**
-- Not generated in this round, so not reviewed.
+**`beginner-explainer-report.md`**
+- **Wrong focus.** The prompt asked for the symmetric paper's proof, but the report treats *The Mahler Conjecture for General Convex Bodies* as "the primary preprint" and the symmetric paper as "companion [24]". Its section 5 walks through the general companion's cone, Laplace and Gaussian-projection proof, not the lens, probability-sum and simplex argument of this paper. For the symmetric proof, read [section 5 of the explainer](../README.md#5-the-main-idea-of-the-proof). The technical constants in that section (0.80, 1.8, −0.14 and so on) were not checked against the general paper.
+- The "cube sanity check" is wrong. It says the cone over the cube is the non-negative orthant, but in the general paper's reduction the orthant corresponds to a *simplex*; the cube's cone has cube cross-sections. It then mixes in "simplices tiling the cross-polytope", which belongs to the symmetric paper's argument. In that argument, the check is that $S=1$ and the simplices $\mathrm{conv}(0,\pm e_i)$ tile the cross-polytope.
+- Step 8 says the symmetric companion reaches Hanner bodies by the same cone-splitting rigidity. It does not: the symmetric paper uses a lift, metric medians, the three-ball property and Hansen–Lima. "Absence of smooth minimizers … dual cones split into one-dimensional factors" likewise describes only the general case.
+- **History table dates.** These are wrong according to the papers' bibliographies: Bourgain–Milman "1986" (1987), Kuperberg "2000" (2008), Nazarov "2008" (2012), Meyer–Reisner shadow systems "1988, 1990" (2006), Kim–Reisner "2014" (2011). "Mathieu Meyer (1986) completed full planar equality characterization" mixes up two papers. Meyer 1986 concerns unconditional bodies, and the planar non-symmetric equality case (triangles) is Meyer 1991. The planar symmetric equality cases are parallelograms, not only squares (Reisner). Mastrantonis–Rubinstein is cited by the general paper as 2024, not "2021". Mahler's planar polygon paper is dated 1938 in that bibliography.
+- Iriyeh–Shibata's method is described as "topological deformations of minimal surfaces". The papers say nothing like this. **Unverified**, and probably invented.
+- Names: "Nikolaos Mastrantonis" should be Vlassis Mastrantonis, and "Masanori Shibata" should be Masataka Shibata.
+- Section 4 claims consequences that neither paper states: strengthening "dual Sobolev, Prékopa–Leindler, and logarithmic Sobolev inequalities", "Gaussian measure concentration", and "sharp transference bounds for dual lattices … successive minima". **Unverified.**
+- Section 7 calls the symmetric results "fully formalized". The scope document lists them as formalized, with the functional results excluded and the catalogue review status `unchecked`. The report does record the `unchecked` status correctly.
+
+**`mindmap-proof.json` / `mindmaps.md`**
+- Broadly accurate for both papers. Minor issues: the functional bound is written as "integral e^(-phi) * e^(-phi*) >= e^n", where it should be the *product of two integrals*. "Holomorphic Mass & Lelong Number Bounds" suggests that Lelong numbers are used. The paper proves the mass lemma directly and cites Lelong-number theory only as background.
+- The root is "Mahler Conjecture Proofs (OpenAI 2026)", not the requested "How the proof works". The JSON was checked to be this notebook's map.
+
+**`audio-overview-brief.m4a`**
+- Not checked against a transcript. Treat it as an informal teaser.
