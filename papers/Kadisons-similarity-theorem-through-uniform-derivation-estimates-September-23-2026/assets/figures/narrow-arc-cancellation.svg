@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="940" height="470" viewBox="0 0 940 470">
+<rect width="940" height="470" fill="white"/>
+<text x="470.0" y="30.0" font-family="Helvetica, Arial, sans-serif" font-size="19" text-anchor="middle" fill="#222" font-weight="bold" font-style="normal">The narrow-arc test: both sides shrink like the corner trace, so it cancels</text>
+<circle cx="175.0" cy="225.0" r="120.0" fill="none" stroke="#1f5fa8" stroke-width="3"/>
+<path d="M175.0,225.0 L294.40,213.02 A120.0,120.0 0 0 0 294.40,236.98 Z" fill="#f5b7b1" stroke="none"/>
+<path d="M294.40,213.02 A120.0,120.0 0 0 1 294.40,236.98" fill="none" stroke="#c0392b" stroke-width="7"/>
+<circle cx="175.0" cy="225.0" r="3" fill="#222"/>
+<text x="307.0" y="230.0" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="start" fill="#c0392b" font-weight="normal" font-style="normal">arc |α| ≤ θ</text>
+<text x="175.0" y="70.0" font-family="Helvetica, Arial, sans-serif" font-size="14" text-anchor="middle" fill="#222" font-weight="normal" font-style="normal">f = 1 − θ/π on the red arc, −θ/π elsewhere</text>
+<text x="175.0" y="90.0" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#555" font-weight="normal" font-style="normal">θ = 1/(2N), drawn here for N = 5</text>
+<text x="175.0" y="372.0" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#222"><tspan dy="0" font-size="13">Fourier coefficients γ</tspan><tspan dy="4" font-size="10">l</tspan><tspan dy="-4" dx="3" font-size="13">= sin(lθ)/(πl).</tspan></text>
+<text x="175.0" y="392.0" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#222"><tspan dy="0" font-size="13">Hankel matrix H</tspan><tspan dy="4" font-size="10">f</tspan><tspan dy="-4" dx="3" font-size="13">= (γ</tspan><tspan dy="4" font-size="10">j+k+1</tspan><tspan dy="-4" font-size="13">), j, k ≥ 0.</tspan></text>
+<text x="175.0" y="412.0" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#222" font-weight="normal" font-style="normal">Every entry with j, k &lt; N is ≥ 2θ/π².</text>
+<rect x="430.0" y="80.0" width="470.0" height="300.0" fill="none" stroke="#bbb"/>
+<line x1="452.0" y1="380.0" x2="452.0" y2="385.0" stroke="#555"/>
+<text x="452.0" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#444" font-weight="normal" font-style="normal">2</text>
+<line x1="522.1" y1="380.0" x2="522.1" y2="385.0" stroke="#555"/>
+<text x="522.1" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#444" font-weight="normal" font-style="normal">5</text>
+<line x1="575.1" y1="380.0" x2="575.1" y2="385.0" stroke="#555"/>
+<text x="575.1" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#444" font-weight="normal" font-style="normal">10</text>
+<line x1="698.2" y1="380.0" x2="698.2" y2="385.0" stroke="#555"/>
+<text x="698.2" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#444" font-weight="normal" font-style="normal">50</text>
+<line x1="751.2" y1="380.0" x2="751.2" y2="385.0" stroke="#555"/>
+<text x="751.2" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#444" font-weight="normal" font-style="normal">100</text>
+<line x1="874.3" y1="380.0" x2="874.3" y2="385.0" stroke="#555"/>
+<text x="874.3" y="400.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="middle" fill="#444" font-weight="normal" font-style="normal">500</text>
+<line x1="425.0" y1="380.0" x2="430.0" y2="380.0" stroke="#555"/>
+<line x1="430.0" y1="380.0" x2="900.0" y2="380.0" stroke="#eee"/>
+<text x="422.0" y="384.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" fill="#444" font-weight="normal" font-style="normal">0.0001</text>
+<line x1="425.0" y1="320.0" x2="430.0" y2="320.0" stroke="#555"/>
+<line x1="430.0" y1="320.0" x2="900.0" y2="320.0" stroke="#eee"/>
+<text x="422.0" y="324.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" fill="#444" font-weight="normal" font-style="normal">0.001</text>
+<line x1="425.0" y1="260.0" x2="430.0" y2="260.0" stroke="#555"/>
+<line x1="430.0" y1="260.0" x2="900.0" y2="260.0" stroke="#eee"/>
+<text x="422.0" y="264.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" fill="#444" font-weight="normal" font-style="normal">0.01</text>
+<line x1="425.0" y1="200.0" x2="430.0" y2="200.0" stroke="#555"/>
+<line x1="430.0" y1="200.0" x2="900.0" y2="200.0" stroke="#eee"/>
+<text x="422.0" y="204.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" fill="#444" font-weight="normal" font-style="normal">0.1</text>
+<line x1="425.0" y1="140.0" x2="430.0" y2="140.0" stroke="#555"/>
+<line x1="430.0" y1="140.0" x2="900.0" y2="140.0" stroke="#eee"/>
+<text x="422.0" y="144.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" fill="#444" font-weight="normal" font-style="normal">1</text>
+<line x1="425.0" y1="80.0" x2="430.0" y2="80.0" stroke="#555"/>
+<line x1="430.0" y1="80.0" x2="900.0" y2="80.0" stroke="#eee"/>
+<text x="422.0" y="84.0" font-family="Helvetica, Arial, sans-serif" font-size="12" text-anchor="end" fill="#444" font-weight="normal" font-style="normal">10</text>
+<text x="665.0" y="422.0" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#222" font-weight="normal" font-style="normal">N   (the corner has trace t = 1/N; u = 2t)</text>
+<polyline points="452.0,111.4 483.0,121.9 522.1,135.2 575.1,153.3 698.2,195.2 751.2,213.3 874.3,255.2" fill="none" stroke="#c0392b" stroke-width="2.4"/>
+<circle cx="452.0" cy="111.4" r="3.6" fill="#c0392b"/>
+<circle cx="483.0" cy="121.9" r="3.6" fill="#c0392b"/>
+<circle cx="522.1" cy="135.2" r="3.6" fill="#c0392b"/>
+<circle cx="575.1" cy="153.3" r="3.6" fill="#c0392b"/>
+<circle cx="698.2" cy="195.2" r="3.6" fill="#c0392b"/>
+<circle cx="751.2" cy="213.3" r="3.6" fill="#c0392b"/>
+<circle cx="874.3" cy="255.2" r="3.6" fill="#c0392b"/>
+<line x1="600.0" y1="98.0" x2="622.0" y2="98.0" stroke="#c0392b" stroke-width="3"/>
+<text x="628.0" y="102.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" fill="#c0392b" font-weight="normal" font-style="normal">upper bound for ‖h‖:  3u</text>
+<polyline points="452.0,189.1 483.0,199.7 522.1,213.0 575.1,231.1 698.2,273.0 751.2,291.1 874.3,333.0" fill="none" stroke="#1e8449" stroke-width="2.4"/>
+<circle cx="452.0" cy="189.1" r="3.6" fill="#1e8449"/>
+<circle cx="483.0" cy="199.7" r="3.6" fill="#1e8449"/>
+<circle cx="522.1" cy="213.0" r="3.6" fill="#1e8449"/>
+<circle cx="575.1" cy="231.1" r="3.6" fill="#1e8449"/>
+<circle cx="698.2" cy="273.0" r="3.6" fill="#1e8449"/>
+<circle cx="751.2" cy="291.1" r="3.6" fill="#1e8449"/>
+<circle cx="874.3" cy="333.0" r="3.6" fill="#1e8449"/>
+<line x1="600.0" y1="118.0" x2="622.0" y2="118.0" stroke="#1e8449" stroke-width="3"/>
+<text x="628.0" y="122.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" fill="#1e8449"><tspan dy="0" font-size="12.5">u × (constant-vector test of H</tspan><tspan dy="4" font-size="9.5">f</tspan><tspan dy="-4" font-size="12.5">), computed</tspan></text>
+<polyline points="452.0,217.7 483.0,228.3 522.1,241.6 575.1,259.7 698.2,301.6 751.2,319.7 874.3,361.6" fill="none" stroke="#1f5fa8" stroke-width="2.4"/>
+<circle cx="452.0" cy="217.7" r="3.6" fill="#1f5fa8"/>
+<circle cx="483.0" cy="228.3" r="3.6" fill="#1f5fa8"/>
+<circle cx="522.1" cy="241.6" r="3.6" fill="#1f5fa8"/>
+<circle cx="575.1" cy="259.7" r="3.6" fill="#1f5fa8"/>
+<circle cx="698.2" cy="301.6" r="3.6" fill="#1f5fa8"/>
+<circle cx="751.2" cy="319.7" r="3.6" fill="#1f5fa8"/>
+<circle cx="874.3" cy="361.6" r="3.6" fill="#1f5fa8"/>
+<line x1="600.0" y1="138.0" x2="622.0" y2="138.0" stroke="#1f5fa8" stroke-width="3"/>
+<text x="628.0" y="142.0" font-family="Helvetica, Arial, sans-serif" font-size="12.5" text-anchor="start" fill="#1f5fa8" font-weight="normal" font-style="normal">paper's lower bound:  u/(2π²)</text>
+<text x="665.0" y="445.0" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#222" font-weight="normal" font-style="normal">All three lines have slope −1. Their ratio does not depend on N: 3u ÷ (u/2π²) = 6π² ≈ 59.2,</text>
+<text x="665.0" y="463.0" font-family="Helvetica, Arial, sans-serif" font-size="13" text-anchor="middle" fill="#222"><tspan dy="0" font-size="13">which is the factor 6π² in the paper's constant c</tspan><tspan dy="4" font-size="10">1</tspan><tspan dy="-4" dx="3" font-size="13">= 6π²(1 + 4c</tspan><tspan dy="4" font-size="10">0</tspan><tspan dy="-4" font-size="13">).</tspan></text>
+</svg>

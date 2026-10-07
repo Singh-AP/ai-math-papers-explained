@@ -1,0 +1,165 @@
+{
+  "name": "Kadison's Similarity Theorem",
+  "children": [
+    {
+      "name": "Main Results",
+      "children": [
+        {
+          "name": "Similarity Theorem (Theorem 1.1)",
+          "children": [
+            {
+              "name": "Resolves Kadison's Conjecture positively"
+            },
+            {
+              "name": "Bounded algebra homomorphism π: A → B(H) is similar to a *-homomorphism"
+            },
+            {
+              "name": "Exists bounded invertible S such that ρ(a) = Sπ(a)S⁻¹ is a *-homomorphism"
+            },
+            {
+              "name": "No separability, nuclearity, or normality conditions required"
+            }
+          ]
+        },
+        {
+          "name": "Uniform Commutator Estimate (Theorem 1.2)",
+          "children": [
+            {
+              "name": "Absolute constant C controls matrix amplifications"
+            },
+            {
+              "name": "Bound: ||[Y(h), X]|| ≤ C * gP(Y) * ||X||"
+            },
+            {
+              "name": "Uniform in matrix size h, algebra P, and Hilbert space K"
+            }
+          ]
+        },
+        {
+          "name": "Universal Hyperreflexivity (Corollary 1.3)",
+          "children": [
+            {
+              "name": "Every unital von Neumann algebra is hyperreflexive"
+            },
+            {
+              "name": "Universal constant at most 2C"
+            },
+            {
+              "name": "dist(T, M) ≤ 2C * αM(T)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proof Strategy & Techniques",
+      "children": [
+        {
+          "name": "Rows, Columns & Derivations",
+          "children": [
+            {
+              "name": "Dickson's row estimate and Christensen's bounds"
+            },
+            {
+              "name": "Paulsen's completely bounded similarity theorem"
+            },
+            {
+              "name": "Cyclic domain implementation (Lemma 2.4)"
+            },
+            {
+              "name": "Kirchberg's similarity-derivation equivalence"
+            }
+          ]
+        },
+        {
+          "name": "Free-Product Geometry",
+          "children": [
+            {
+              "name": "Tracial free product L = D ∗ A0"
+            },
+            {
+              "name": "Orthogonal decomposition into reduced words"
+            },
+            {
+              "name": "Symmetrization over matrix unitary groups"
+            },
+            {
+              "name": "Invariant intertwiners via Schur-Weyl duality"
+            }
+          ]
+        },
+        {
+          "name": "Propagation & Compression",
+          "children": [
+            {
+              "name": "Full columns from small corners (Lemma 4.1)"
+            },
+            {
+              "name": "Propagation along repeated letters (Lemma 4.2)"
+            },
+            {
+              "name": "Hankel matrix test on infinite dihedral corner"
+            },
+            {
+              "name": "Cancellation of trace factors"
+            }
+          ]
+        },
+        {
+          "name": "Transfer & Ultrapowers",
+          "children": [
+            {
+              "name": "Irreducible hyperfinite subfactors (Popa)"
+            },
+            {
+              "name": "Free independence in tracial ultrapower P_ω"
+            },
+            {
+              "name": "Extension from finite factor representations to arbitrary ones"
+            },
+            {
+              "name": "Central decomposition to remove separability"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Historical Context & Framework",
+      "children": [
+        {
+          "name": "Kadison (1955) formulation on orthogonalization"
+        },
+        {
+          "name": "Nuclear case solved by Bunce, Christensen, Haagerup"
+        },
+        {
+          "name": "Haagerup: Complete boundedness as criterion for similarity"
+        },
+        {
+          "name": "Christensen & Paulsen: Derivations and optimal condition numbers"
+        },
+        {
+          "name": "Eleftherakis & Paulsen: Equivalence with hyperreflexivity"
+        },
+        {
+          "name": "Pisier: Similarity degree and matrix factorizations"
+        }
+      ]
+    },
+    {
+      "name": "Lean Formalization Scope",
+      "children": [
+        {
+          "name": "Formalized in Lean by OpenAI (2026)"
+        },
+        {
+          "name": "Proves KadisonSimilarity.lean for arbitrary Hilbert spaces"
+        },
+        {
+          "name": "Formalizes UniformCommutator.lean across finite matrix amplifications"
+        }
+      ]
+    }
+  ]
+}
