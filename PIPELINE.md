@@ -47,17 +47,23 @@ nlm source add $NB --url https://en.wikipedia.org/wiki/<Background_topic> --wait
 
 Write each prompt for **beginners in the paper's field**, and name the topics that must be covered: problem, history, significance, main idea, people, and what the result does not prove.
 
+**Budget the quota first.** Studio work is metered against a rolling window of about five hours (`nlm usage`). One paper with the standard set below uses roughly 20–25% of that window; every slide-deck revision costs about as much as a new deck. Check `nlm usage` before generating, and don't start a set if less than about 25% remains.
+
+Standard set (one of each):
+
 ```bash
-nlm slides create      $NB --format detailed_deck --focus "<beginner brief>" --confirm
-nlm infographic create $NB --orientation portrait  --detail detailed --style instructional --focus "<overview brief>" --confirm
-nlm infographic create $NB --orientation landscape --style sketch_note --focus "<history timeline brief>" --confirm
-nlm report create      $NB --format "Create Your Own" --prompt "<sectioned beginner explainer>" --confirm
-nlm report create      $NB --format "Study Guide" --confirm
-nlm mindmap create     $NB --title "How the proof works" --source-ids <paper source ids> --confirm
-nlm audio create       $NB --format brief --focus "<beginner brief>" --confirm
-nlm studio status      $NB          # wait until everything is "completed"; slide decks take longest
+nlm slides create      $NB --format detailed_deck --focus "<beginner brief>" --confirm --json
+nlm infographic create $NB --orientation portrait  --detail detailed --style instructional --focus "<overview brief>" --confirm --json
+nlm infographic create $NB --orientation landscape --style sketch_note --focus "<history timeline brief>" --confirm --json
+nlm report create      $NB --format "Create Your Own" --prompt "<sectioned beginner explainer>" --source-ids <paper ids> --confirm --json
+nlm mindmap create     $NB --title "How the proof works" --source-ids <paper ids> --confirm --json
+nlm audio create       $NB --format brief --focus "<beginner brief>" --confirm --json
+nlm studio status      $NB --json   # wait until everything is "completed"; slide decks take 10–15 minutes
 ```
 
+Save every artifact ID together with its **type and title** when it is created (the `--json` output). Never pair IDs with outputs by list position: `nlm studio status` does not list artifacts in creation order. After downloading a mind map, check its root `name` to confirm it is the map you meant.
+
+Restrict reports and mind maps to the paper sources (`--source-ids`). Background sources such as Wikipedia pull in unrelated and unverifiable claims.
 ## 4. Download, keeping full quality
 
 ```bash
@@ -70,21 +76,48 @@ nlm download mind-map    $NB --id <id> --output $A/mindmap-proof.json
 nlm download audio       $NB --id <id> --output $A/audio-overview-brief.m4a
 ```
 
-Do not recompress images. Render slides as per-page PNGs at 200 DPI, for example with `pymupdf`. Turn mind maps into Markdown with `scripts/mindmap_to_markdown.py`.
+Do not recompress or downscale anything; GitHub handles the file sizes. Render slides as per-page PNGs and turn mind maps into Markdown:
+
+```bash
+uv run --with pymupdf python scripts/render_slides.py $A/slides.pdf $A/slides 200
+python3 scripts/mindmap_to_markdown.py "How the proof works" $A/mindmap-proof.json > $A/mindmaps.md
+```
 
 ## 5. Review every generated asset against the paper
 
-Read every slide, infographic and report, and compare it with the paper. NotebookLM reliably gets the big picture right and sometimes gets details wrong, for example by shading the wrong side of a boundary or inventing a proof mechanism. Then:
+Look at **every** slide image, both infographics and the report, and compare each with the paper. NotebookLM reliably gets the big picture right and sometimes gets details wrong. Errors seen so far:
 
-- Fix slides with `nlm slides revise <deck-id> --slide '<n> <instruction>' --confirm` and re-download.
-- Record anything that stays wrong in `assets/README.md` under **Errata**.
+- shading the wrong side of a boundary (a "zero-free zone" drawn on the side where zeros are still possible);
+- swapping which half of an argument gives the upper bound and which gives the lower bound;
+- inventing a proof mechanism (for example a positivity argument the paper never uses);
+- typos inside formulas in images ($n^{-\varepsilon}$ for $n^{-s}$);
+- importing unverified claims from background sources.
+
+Then:
+
+- Fix only clearly wrong slides with **one** `nlm slides revise <deck-id> --slide '<n> <instruction>' --confirm`, naming only the broken slides. A revision regenerates the whole deck and can garble slides it wasn't asked to touch, so download it and check with `uv run --with pymupdf python scripts/diff_slides.py old.pdf new.pdf`. Ship it only if the intended slides changed for the better and nothing else did.
+- Record everything that stays wrong in `assets/README.md` under **Errata**, file by file.
 - Mark claims that come only from background sources and can't be checked as **unverified**.
+- The audio can't be reviewed by reading. Say so in the errata.
 
 ## 6. Write the explainer by hand
 
-Write `papers/$SLUG/README.md` **from the paper itself**, using NotebookLM output only for structure and visuals. Use the same sections as the existing explainers:
+Write `papers/$SLUG/README.md` **from the paper itself**, using NotebookLM output only for structure and visuals. [The quasi-Riemann hypothesis explainer](papers/The-Quasi-Riemann-Hypothesis-September-30-2026/) is the reference: copy its structure and tone.
 
-TL;DR → how to read → the problem → history → what the paper proves → why it matters → main idea (several zoom levels) → people → what it does not prove and caveats → glossary → assets → how it was made.
+TL;DR → how to read → the problem → history → what the paper proves → why it matters → main idea (several zoom levels, with a Mermaid flowchart and one worked calculation where possible) → people → what it does not prove and caveats (provenance, Lean status, preprint status) → glossary → assets (with a collapsible slide gallery) → how it was made.
+
+Rules that keep it trustworthy:
+
+- Every factual claim about the paper must be traceable to the paper or its openai/math README / Lean docs. Check dates and attributions of historical results; leave out what you can't verify.
+- State the Lean status exactly as `lean/docs/<family>.md` and `lean/formalization.yaml` describe it, and say that you did not re-run the build.
+- Embed the most useful slides inline and put all of them in a `<details>` gallery.
+
+GitHub math pitfalls (run `python3 scripts/lint_markdown.py papers/$SLUG` and fix everything it reports):
+
+- Inside `$…$` / `$$…$$`, Markdown eats backslash-punctuation: `\,` `\;` `\!` `\{` `\}` `\\`. Use `\ ` (backslash-space), `\quad`, `\lbrace`/`\rbrace`, or write the formula as `` $`…`$ `` (inline) or in a ```` ```math ```` fence (display).
+- `*` inside inline math can start emphasis. Write `^{\ast}`.
+- In table rows, write `|` inside math as `\|`, `\lvert`/`\rvert` or `\mid`.
+- A multi-line `>` header block needs a list (`> - **Paper:** …`), otherwise its lines run together.
 
 ## 7. Update the catalogue and publish
 
@@ -94,4 +127,4 @@ curl -sLO https://raw.githubusercontent.com/openai/math/main/overview.tex
 python3 scripts/build_catalog.py CONTENTS.md overview.tex > CATALOG.md
 ```
 
-Add the paper to the table in the top-level `README.md`, then commit and push.
+Add the paper to the table in the top-level `README.md`, run `python3 scripts/lint_markdown.py papers README.md`, then commit and push. Finally, open the explainer on github.com and check that the math, Mermaid diagram, alerts and images render.
