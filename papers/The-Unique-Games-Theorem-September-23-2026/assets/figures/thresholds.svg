@@ -1,0 +1,113 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 640" width="1000" height="640" font-family="Helvetica, Arial, sans-serif">
+  <defs>
+    <pattern id="hatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+      <rect width="10" height="10" fill="#eeeeee"/>
+      <line x1="0" y1="0" x2="0" y2="10" stroke="#bdbdbd" stroke-width="4"/>
+    </pattern>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#555"/>
+    </marker>
+  </defs>
+
+  <rect x="0" y="0" width="1000" height="640" fill="#ffffff"/>
+
+  <text x="500" y="34" text-anchor="middle" font-size="21" font-weight="bold" fill="#222">Where "easy" ends and "NP-hard" begins</text>
+  <text x="500" y="58" text-anchor="middle" font-size="14" fill="#555">Each bar runs from crude answers (left) to exact answers (right).</text>
+
+  <!-- ===================== Max-Cut panel ===================== -->
+  <text x="20" y="98" font-size="17" font-weight="bold" fill="#222">Max-Cut: what fraction of the best cut can a fast algorithm guarantee?</text>
+
+  <!-- before row -->
+  <text x="108" y="134" text-anchor="end" font-size="14" font-weight="bold" fill="#333">Before</text>
+  <rect x="120" y="113" width="620.9" height="32" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="430" y="134" text-anchor="middle" font-size="14" fill="#1b5e20">polynomial time: random cut 0.5 → Goemans–Williamson 0.878</text>
+  <rect x="740.9" y="113" width="102.6" height="32" fill="url(#hatch)" stroke="#757575" stroke-width="1.5"/>
+  <text x="792.2" y="134" text-anchor="middle" font-size="14" font-weight="bold" fill="#424242">open</text>
+  <rect x="843.5" y="113" width="96.5" height="32" fill="#ffcdd2" stroke="#c62828" stroke-width="1.5"/>
+  <text x="891.7" y="134" text-anchor="middle" font-size="14" fill="#b71c1c">NP-hard</text>
+
+  <!-- after row -->
+  <text x="108" y="184" text-anchor="end" font-size="14" font-weight="bold" fill="#333">After</text>
+  <rect x="120" y="163" width="620.9" height="32" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="430" y="184" text-anchor="middle" font-size="14" fill="#1b5e20">polynomial time (unchanged)</text>
+  <rect x="740.9" y="163" width="199.1" height="32" fill="#ffcdd2" stroke="#c62828" stroke-width="1.5"/>
+  <text x="840.5" y="184" text-anchor="middle" font-size="14" font-weight="bold" fill="#b71c1c">NP-hard (new)</text>
+
+  <!-- axis -->
+  <line x1="120" y1="212" x2="946" y2="212" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <g stroke="#555" stroke-width="1.5">
+    <line x1="120" y1="207" x2="120" y2="217"/>
+    <line x1="284" y1="207" x2="284" y2="217"/>
+    <line x1="448" y1="207" x2="448" y2="217"/>
+    <line x1="612" y1="207" x2="612" y2="217"/>
+    <line x1="740.9" y1="205" x2="740.9" y2="219"/>
+    <line x1="843.5" y1="205" x2="843.5" y2="219"/>
+    <line x1="940" y1="207" x2="940" y2="217"/>
+  </g>
+  <line x1="740.9" y1="110" x2="740.9" y2="205" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <g font-size="13" fill="#333" text-anchor="middle">
+    <text x="120" y="234">0.5</text>
+    <text x="284" y="234">0.6</text>
+    <text x="448" y="234">0.7</text>
+    <text x="612" y="234">0.8</text>
+    <text x="740.9" y="234" font-weight="bold" fill="#1b5e20">0.878</text>
+    <text x="843.5" y="234">16/17 ≈ 0.941</text>
+    <text x="940" y="234">1</text>
+  </g>
+  <text x="736" y="252" text-anchor="end" font-size="12" fill="#555">Goemans–Williamson constant</text>
+  <text x="843.5" y="252" text-anchor="middle" font-size="12" fill="#555">Håstad 1997; Trevisan et al.</text>
+  <text x="120" y="270" font-size="12" fill="#666">ratio = (size of cut found) / (size of the best cut); bigger is more accurate</text>
+
+  <!-- ===================== Vertex Cover panel ===================== -->
+  <text x="20" y="318" font-size="17" font-weight="bold" fill="#222">Vertex Cover: how close to the smallest cover can a fast algorithm get?</text>
+
+  <!-- before row -->
+  <text x="108" y="354" text-anchor="end" font-size="14" font-weight="bold" fill="#333">Before</text>
+  <rect x="120" y="333" width="164" height="32" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="202" y="354" text-anchor="middle" font-size="14" fill="#1b5e20">factor 2: matching</text>
+  <rect x="284" y="333" width="384.3" height="32" fill="url(#hatch)" stroke="#757575" stroke-width="1.5"/>
+  <text x="476" y="354" text-anchor="middle" font-size="14" font-weight="bold" fill="#424242">open (hard if the UGC holds)</text>
+  <rect x="668.3" y="333" width="271.7" height="32" fill="#ffcdd2" stroke="#c62828" stroke-width="1.5"/>
+  <text x="804" y="354" text-anchor="middle" font-size="14" fill="#b71c1c">NP-hard (2018)</text>
+
+  <!-- after row -->
+  <text x="108" y="404" text-anchor="end" font-size="14" font-weight="bold" fill="#333">After</text>
+  <rect x="120" y="383" width="164" height="32" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="202" y="404" text-anchor="middle" font-size="14" fill="#1b5e20">factor 2: matching</text>
+  <rect x="284" y="383" width="656" height="32" fill="#ffcdd2" stroke="#c62828" stroke-width="1.5"/>
+  <text x="612" y="404" text-anchor="middle" font-size="14" font-weight="bold" fill="#b71c1c">NP-hard for every fixed factor below 2 (new)</text>
+
+  <!-- axis -->
+  <line x1="120" y1="432" x2="946" y2="432" stroke="#555" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <g stroke="#555" stroke-width="1.5">
+    <line x1="120" y1="427" x2="120" y2="437"/>
+    <line x1="284" y1="425" x2="284" y2="439"/>
+    <line x1="448" y1="427" x2="448" y2="437"/>
+    <line x1="668.3" y1="425" x2="668.3" y2="439"/>
+    <line x1="703.4" y1="427" x2="703.4" y2="437"/>
+    <line x1="830.7" y1="427" x2="830.7" y2="437"/>
+    <line x1="940" y1="427" x2="940" y2="437"/>
+  </g>
+  <line x1="284" y1="330" x2="284" y2="425" stroke="#2e7d32" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <g font-size="13" fill="#333" text-anchor="middle">
+    <text x="120" y="454">2.25</text>
+    <text x="284" y="454" font-weight="bold" fill="#1b5e20">2</text>
+    <text x="448" y="454">1.75</text>
+    <text x="668.3" y="454">√2 ≈ 1.414</text>
+    <text x="830.7" y="454">7/6</text>
+    <text x="940" y="454">1</text>
+  </g>
+  <text x="650" y="472" text-anchor="middle" font-size="12" fill="#555">Khot–Minzer–Safra 2018</text>
+  <text x="830.7" y="472" text-anchor="middle" font-size="12" fill="#555">Håstad 1997</text>
+  <text x="697" y="492" font-size="12" fill="#555">↑ 1.361: Dinur–Safra 2002</text>
+  <text x="120" y="530" font-size="12" fill="#666">factor = (size of cover found) / (size of the smallest cover); smaller is more accurate, so the axis runs from 2.25 down to 1</text>
+
+  <!-- legend -->
+  <rect x="120" y="562" width="22" height="16" fill="#c8e6c9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="150" y="575" font-size="14" fill="#333">achieved by a polynomial-time algorithm</text>
+  <rect x="440" y="562" width="22" height="16" fill="url(#hatch)" stroke="#757575" stroke-width="1.5"/>
+  <text x="470" y="575" font-size="14" fill="#333">unknown before 2026</text>
+  <rect x="650" y="562" width="22" height="16" fill="#ffcdd2" stroke="#c62828" stroke-width="1.5"/>
+  <text x="680" y="575" font-size="14" fill="#333">NP-hard (no fast algorithm unless P = NP)</text>
+  <text x="500" y="616" text-anchor="middle" font-size="13" fill="#555">"New" = proved in openai/math family 102, both through the Unique Games Theorem and by direct companion papers.</text>
+</svg>

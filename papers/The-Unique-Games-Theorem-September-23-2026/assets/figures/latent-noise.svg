@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="1000" height="500" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1000" height="500" fill="#ffffff"/>
+  <text x="500" y="32" text-anchor="middle" font-size="20" font-weight="bold" fill="#222">The completeness problem, and the paper's fix</text>
+  <text x="500" y="54" text-anchor="middle" font-size="14" fill="#555">Both tests compare the answer on a random table with the answer on a slightly changed table.</text>
+
+  <!-- left box -->
+  <rect x="20" y="72" width="470" height="268" rx="10" fill="#fafafa" stroke="#9e9e9e" stroke-width="1.5"/>
+  <text x="255" y="100" text-anchor="middle" font-size="17" font-weight="bold" fill="#333">Ordinary rank-one test</text>
+  <text x="255" y="120" text-anchor="middle" font-size="13" fill="#666">(the matrix shortcode of Barak–Kothari–Steurer)</text>
+  <g font-size="14" fill="#222">
+    <text x="40" y="152">table: a binary matrix M</text>
+    <text x="40" y="176">honest answer for a true answer z:  f(M) = M z</text>
+    <text x="40" y="200">change: M → M + a lᵀ  (a, l uniformly random)</text>
+    <text x="40" y="224">the honest answer moves by  a · (lᵀ z)</text>
+    <text x="40" y="248">lᵀ z is a fair coin, so it moves about half the time</text>
+  </g>
+  <rect x="60" y="270" width="390" height="50" rx="8" fill="#ffebee" stroke="#c62828" stroke-width="1.5"/>
+  <text x="255" y="292" text-anchor="middle" font-size="16" font-weight="bold" fill="#b71c1c">honest pass rate = (1 + 2<tspan dy="-7" font-size="12">−ℓ</tspan><tspan dy="7">)/2 ≈ 1/2</tspan></text>
+  <text x="255" y="311" text-anchor="middle" font-size="12" fill="#b71c1c">(ℓ = number of rows; completeness stuck near one half)</text>
+
+  <!-- right box -->
+  <rect x="510" y="72" width="470" height="268" rx="10" fill="#f1f8e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="745" y="100" text-anchor="middle" font-size="17" font-weight="bold" fill="#1b5e20">Latent test (this paper)</text>
+  <text x="745" y="120" text-anchor="middle" font-size="13" fill="#555">(Lemma 3.1 and Section 4.4)</text>
+  <g font-size="14" fill="#222">
+    <text x="530" y="152">table: a map P into a bigger space V ⊇ K</text>
+    <text x="530" y="176">honest answer:  F(P) = C(P z), where the decoder</text>
+    <text x="530" y="200">C : V → K is nonlinear and C(x + h) = C(x) + h for h in K</text>
+    <text x="530" y="224">change: P → P + a lᵀ, with a from a special noise law μ</text>
+    <text x="530" y="248">C almost never notices a:  Pr[ C(x + a) ≠ C(x) ] ≤ p</text>
+  </g>
+  <rect x="550" y="270" width="390" height="50" rx="8" fill="#e8f5e9" stroke="#2e7d32" stroke-width="1.5"/>
+  <text x="745" y="292" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b5e20">honest pass rate ≥ 1 − p/2</text>
+  <text x="745" y="311" text-anchor="middle" font-size="12" fill="#1b5e20">(p can be chosen as small as you like)</text>
+
+  <!-- bottom band -->
+  <rect x="20" y="356" width="960" height="128" rx="10" fill="#fff8e1" stroke="#f9a825" stroke-width="1.5"/>
+  <text x="500" y="382" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">Why cheaters are still caught</text>
+  <g font-size="14" fill="#333" text-anchor="middle">
+    <text x="500" y="408">The same noise is easy to see for anything linear: every family of linear observations whose restriction to K</text>
+    <text x="500" y="428">has rank at least a fixed r* detects a with probability at least 1/8. So a labeling that passes 99% of the</text>
+    <text x="500" y="448">latent tests must concentrate its Fourier weight on low-rank patterns, and those already pass the ordinary</text>
+    <text x="500" y="468">test often enough (Lemma 5.4) for the Khot–Minzer–Safra inverse theorem (Theorem 5.1) to find structure.</text>
+  </g>
+</svg>
