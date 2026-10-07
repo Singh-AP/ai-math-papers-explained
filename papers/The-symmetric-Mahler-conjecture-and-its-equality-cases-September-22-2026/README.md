@@ -386,7 +386,7 @@ The proof compares $\int_{\lbrace\tau<s\rbrace}(dd^c\tau)^d$ with the flux of $d
 
 ## 9. Slides, audio and other assets
 
-Everything below except the two hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook"). The slides, infographics and audio come from the paper, the general companion, the reasoning summary, the Lean scope document and the Wikipedia article on the Mahler volume. The report and mind map come from the two papers and the Lean scope document only. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. Slides 2, 10 and 12 contain real mistakes: a non-convex "convex" example, a rotated lens, and a "unique" median. The report mostly explains the *general* companion's proof, with several wrong dates.
+Everything below except the two hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook"). The slides, infographics and audio come from the paper, the general companion, the reasoning summary, the Lean scope document and the Wikipedia article on the Mahler volume. The mind map comes from the two papers and the Lean scope document only, and the report from this paper and the Lean scope document only. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. Slides 2, 10 and 12 contain real mistakes: a non-convex "convex" example, a rotated lens, and a "unique" median. A revision was tried, but it made slide 11 worse, so the original deck is kept. The report follows this paper's lens argument but has a few wrong numbers, such as 27/2 for the triangle.
 
 | Asset | What it is |
 |---|---|
@@ -396,7 +396,7 @@ Everything below except the two hand-made figures was generated with **Google No
 | [Polar-pairs figure](assets/figures/polar-pairs.svg) ([PNG](assets/figures/polar-pairs.png)) | Hand-made: square/diamond, hexagon/hexagon and disk/disk, with volume products 8, 9 and $\pi^2$ (section 1.3) |
 | [Lens figure](assets/figures/lens.svg) ([PNG](assets/figures/lens.png)) | Hand-made from the paper's series for $F$: equal angle steps land at equal heights (section 5) |
 | [Audio overview (≈1.8 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not reviewed) |
-| [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer. It centres on the general companion; read with the errata |
+| [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer of this paper's proof; read with the errata |
 | [Mind map](assets/notebooklm/mindmaps.md) | How the two proofs and their history fit together |
 
 <details>
