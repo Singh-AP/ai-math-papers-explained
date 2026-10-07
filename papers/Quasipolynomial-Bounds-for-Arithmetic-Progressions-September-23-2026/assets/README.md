@@ -8,18 +8,13 @@ Supporting material for the [explainer](../README.md). Everything in `notebooklm
 |---|---|---|
 | `figures/dyadic-blocks.svg`, `figures/dyadic-blocks.png` | Hand-written SVG | Dyadic blocks, and which bounds on $r_k(N)$ are summable (Roth/Gowers, Leng–Sah–Sawhney, Bloom–Sisask, this paper). The PNG is a 3× render |
 | `figures/density-increment.svg`, `figures/density-increment.png` | Hand-written SVG | The density-increment ladder, and the per-round costs from Theorem 2.1 and Section 10. Schematic, not to scale. The PNG is a 3× render |
-| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), not revised | 14 beginner slides. Slides 3, 9 and 13 contain clear errors (see errata) |
+| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), revised once | 14 beginner slides. Slides 3, 9 and 13 were regenerated to fix errors; some residual errors remain (see errata) |
 | `notebooklm/slides/slide-NN.png` | `pymupdf` at 200 DPI from `slides.pdf` | Per-slide images for inline viewing |
 | `notebooklm/infographic-overview.png` | NotebookLM infographic (portrait, detailed, instructional) | One-page overview, 1536 × 2752 |
 | `notebooklm/infographic-history-timeline.png` | NotebookLM infographic (landscape, sketch-note) | From Euler (1737) to 2026, 2752 × 1536 |
-
-**Not generated.** The NotebookLM quota is shared with other papers, and it fell below the agreed cutoff before these could be created:
-
-- the "Create Your Own" beginner report;
-- the mind map of the proof;
-- the brief audio overview.
-
-None of them exists for this paper yet. The prompts drafted for them are kept with the working notes and can be used if they are generated later.
+| `notebooklm/beginner-explainer-report.md` | NotebookLM "Create Your Own" report | Long-form sectioned explainer |
+| `notebooklm/mindmaps.md`, `notebooklm/mindmap-proof.json` | NotebookLM mind map | How the proof fits together. The root node is "Quasipolynomial Bounds for Arithmetic Progressions" |
+| `notebooklm/audio-overview-brief.m4a` | NotebookLM audio overview ("brief") | About 96 seconds |
 
 ### Notebook sources
 
@@ -28,7 +23,7 @@ None of them exists for this paper yet. The prompts drafted for them are kept wi
 3. [`lean/docs/159.md`](https://github.com/openai/math/blob/main/lean/docs/159.md): scope of the Lean formalization
 4. [Wikipedia: Erdős conjecture on arithmetic progressions](https://en.wikipedia.org/wiki/Erd%C5%91s_conjecture_on_arithmetic_progressions), for historical background
 
-The slides and both infographics were generated from all four sources.
+The slides, both infographics and the audio were generated from all four sources. The report and the mind map use only sources 1 and 3 (the paper and the Lean scope document).
 
 ## Errata
 
@@ -36,21 +31,20 @@ NotebookLM gets the big picture right but sometimes garbles or invents details. 
 
 **`slides.pdf` / `slides.pptx`**
 
-The deck was **not** revised. A revision costs about as much quota as a new deck, and too little shared quota was left. Slides 3, 9 and 13 are the clearly wrong ones.
+The first deck had three clearly wrong slides (3, 9 and 13). They were regenerated once with `nlm slides revise`, and the shipped deck is the revised one. `scripts/diff_slides.py` confirmed that only slides 3, 9 and 13 changed. The revised text of all three is correct, but slides 3 and 9 still have errors in their drawings (below).
 
 - **All slides from 2 on:** the decorative title block says "DATE: OCT 2023". The paper is dated 23 September 2026. The "drawn by" labels ("Measuring avoidance", "Meaning avoidance") are decoration.
 - **Slide 1:** the title "Breaking the Logarithmic Barrier" is the title of Bloom and Sisask's 2020 paper on 3-term progressions, not of this paper. "Nearly century-old problem" is loose: Erdős and Turán asked about density in 1936, and the paper cites Erdős's 1974 problem list for the reciprocal-sum question. The drawing has garbled labels.
-- **Slide 3 (wrong):**
-  - It says "In 1936, Paul Erdős posited" the reciprocal-sum test. In 1936 Erdős and Turán asked about density and 3-term progressions. The paper cites Erdős's 1974 problem list for the reciprocal-sum question.
-  - The prime grid has mistakes. 21 is drawn as "31". 42 is drawn as a second "43" and shaded. 44, 82 and 92 are shaded although they are not prime. 83 is not shaded although it is prime.
+- **Slide 3 (revised):**
+  - The first deck said "In 1936, Paul Erdős posited" the reciprocal-sum test. The revised text correctly separates Erdős and Turán's 1936 density question from the 1974 problem list. It closely echoes the revision instruction ("the paper cites…").
+  - The prime grid is still wrong after the revision. 21 is drawn as "31", and 42 as a second "43". The real 43 is no longer shaded. 44 is drawn as a second "46". 82 and 92 are shaded although they are not prime, and 83 is not shaded although it is prime.
 - **Slide 5:** the small plots label the vertical axis "r" and draw a falling curve. The quantity that has to decay is $r_k(N)/N$; $r_k(N)$ itself grows with $N$. Every block carries the same label $[2^m, 2^{m+1})$.
 - **Slide 6:** "century-long" is loose (the table runs from 1953 to 2026). The rows themselves match the paper.
 - **Slide 7:** "officially proving the Erdős conjecture" overstates the status. This is an unreviewed preprint (see section 7 of the explainer).
 - **Slide 8:** "meaning the assumed progression must exist" garbles the logic. The assumption that $A$ has *no* progression is what fails.
-- **Slide 9 (wrong):**
-  - "Historically, this precision cost compounds logarithmically" is not what the paper says. The paper's point is that a loss bound depending polynomially on *all* current precisions, including the level's own, would raise the polynomial degree at every round, so the costs would blow up. The triangular rule avoids this.
-  - The chart labels the exploding curve "Coordinate Complexity". In the paper, the number of new coordinates per round stays polynomial (at most $(2+p)^C$); precision is what has to be controlled.
-  - "Historically" has no basis in the paper.
+- **Slide 9 (revised):**
+  - The first deck said "Historically, this precision cost compounds logarithmically". The revised caption is correct: a loss depending polynomially on a level's own precision would raise the degree every round, and the paper bounds the loss at each level by $p$, the dimensions and the higher levels only.
+  - The chart still labels the exploding curve "Coordinate Complexity". That contradicts the caption: the number of new coordinates per round stays polynomial (at most $(2+p)^C$), and precision is what would explode.
 - **Slide 10:**
   - "Integer blocks ($b_h$) are pinned exactly to polynomials in earlier blocks" is wrong. Each block lies within a width $w_h \le 1/32$ of a polynomial. What is exact is that the old equations are kept, by exact integer substitution.
   - The right-hand box ("precision lost at level $h$ relies only on higher levels, shielding it from its own current precision") is consistent with Theorem 2.1, though the paper's bound also uses $p$ and the dimensions.
@@ -61,12 +55,13 @@ The deck was **not** revised. A revision costs about as much quota as a new deck
 - **Slide 12:**
   - "Kelley–Meka's 2023 bound still holds" is odd. The paper lists later 3-term improvements (Bloom–Sisask's exponent 1/9; Raghavan's $1/6 - o(1)$). Its own point is only that it claims no 3-term improvement.
   - "The ultimate summable bound" overstates; the exponent is not optimized.
-- **Slide 13 (wrong):**
-  - The Lean code is invented. It is not the formal statement, and its `sorry` wrongly suggests the proof is missing. The real Comparator statement is `ReciprocalProgressionTheorem`, quoted in section 3 of the explainer.
+- **Slide 13 (revised):**
+  - The first deck showed invented Lean code ending in `sorry`. The revised code panel states the real Comparator statement `ReciprocalProgressionTheorem` correctly, though in prose ("for every A : Set ℕ …") rather than Lean syntax.
   - The bottom-right text ("Lean formally covers the reciprocal-sum statement, but the full … quantitative bound remains outside the formalized scope") is correct.
+  - "Utilizing extensive internal mathematical reasoning trails" is vague.
 - **Slide 14:** "of of" typo. "It must contain the universe of arithmetic progressions" overstates the result: the theorem gives progressions of every finite length. The first-person "we" is NotebookLM's.
 
-Proposed fix, not run (a revision needs more than 40% of the shared quota; 6.4% was left):
+The revision was run once, with this command (instructions written as statements of fact). The first deck is kept outside the repository with the working notes:
 
 ```bash
 nlm slides revise 26904fce-afd0-496f-9b44-f21bb55528f2 --profile amy --confirm \
@@ -105,9 +100,41 @@ nlm slides revise 26904fce-afd0-496f-9b44-f21bb55528f2 --profile amy --confirm \
 - "Gowers introduced uniformity norms, enabling Green and Tao to find long progressions in primes" is a causal link that is not in the paper. It is **unverified** here.
 - "September 2026: Erdős's Conjecture Fully Settled", and the tablet marked "SETTLED", overstate the status of an unreviewed preprint. The formula on the tablet is meaningless.
 
-**Audio**
+**`beginner-explainer-report.md`**
 
-- No audio overview was generated. If one is added later, note that audio can't be reviewed by reading; treat it as an informal teaser.
+The report is generated from the paper and the Lean scope document only. Its outline (problem, Corollary 1.2, history, results, architecture, tools, limits, Lean) follows the paper well. The issues:
+
+- **Section 3:**
+  - The table dates Raghavan's 3-term bound to **2024**. The paper cites an arXiv preprint from 2026 (2603.27045).
+  - It adds bounds that are in neither source. Bourgain's $N(\log\log N/\log N)^{1/2}$, listed under "1999, 2008", is **unverified** here. Bloom's 2016 bound, given as "$N(\log\log\log N)^2/\log N$", looks wrong and is **unverified**; the paper only says Bloom "improved the remaining logarithmic factors".
+  - It says Bloom and Sisask (2020) "applied Schoen–Sisask almost-periodicity". The paper credits Bloom and Sisask with an almost-periodicity approach (2019) and then a 2020 bound, without that attribution.
+  - "Mapping spheres in high-dimensional integer lattices" (Behrend's construction) is background that is not in the sources.
+  - "The present work establishes a quasipolynomial bound in $\log N$" mixes up the terms. The *saving* is stretched-exponential in $\log N$; the *threshold* is quasipolynomial in $1/\alpha$.
+- **Section 1:** the example of zero-density sets with divergent reciprocal sum ("sequences growing slightly faster than linear scales") is vague. The primes are the standard example.
+- **Section 4:** "Section 11 extends Theorem 1.1 to weighted arithmetic progressions" should say weighted reciprocal sums.
+- **Section 5:**
+  - Lemma 2.2 does not define $p = \log(1/a)$. It assumes $a \ge e^{-p}$, and in the iteration $p$ is a constant multiple of $2+\log(1/\alpha)$.
+  - The "precision independence rule" leaves out that the bound also uses $p$.
+- **Section 6 (tools table):**
+  - Theorem C.1 (shift comparison) is described as turning correlation into "positive progression counts". In the paper it lowers the degree of a positive comparison after multiplying by a translate. Positive counting is Proposition D.2.
+  - Lemma D.1 and Proposition D.2 are described as "lifting low-degree polynomial patch correlations". In the paper they turn the *absence* of a density surplus on niltests into grid upper bounds and progression counts close to the expected value.
+  - Theorem A.7 gives correlation at least $\mathcal B(p)^{-1}$, which is small, not "strong". The norm is $U^{s+1}$.
+  - Lemma 5.1 is "Bounded-grid moments", not cube comparison.
+  - Lemma 6.1 works over a finite ring modulo $M$, not "over finite fields".
+- **Section 8 (Lean):**
+  - "The reciprocal-sum statement (Corollary 1.2) as derived from the quantitative density bound in Theorem 1.1" is wrong. The scope document says Theorem 1.1's bound is outside the formal statement. The Lean library reaches the reciprocal-sum statement through its own weaker bound (see section 7 of the explainer).
+  - "The deep underlying analytic increment engine … is established via standard analytical paper proofs" is not supported by the scope document, which says nothing about which parts of the machinery are formalized.
+
+**`mindmaps.md` / `mindmap-proof.json`**
+
+- NotebookLM titled the map "Quasipolynomial Bounds" instead of the requested "How the proof works". The root node is correct.
+- "Passive Layers (Degree > Weight)" and "Active Globalization (Degree <= Weight)" have the condition reversed. Passive layers are those whose weight exceeds the testing degree ($j > s$), and active layers are the last $s$ layers ($j \le s$). The children listed under each are right: Conlon–Fox–Zhao densification is used for tests of degree below the layer weight.
+- "Finite-Horizon Closure (O_k(1/α) steps)" should be $O_k(1+\log(1/\alpha))$ rounds.
+- "Proof Proofing Flow" is a typo. "Sampling & Algebraic Geometry" is NotebookLM's label: the paper uses sampling, lattices and rational symbol calculus, not algebraic geometry. "Dimension Redistribution" is vague for the paper's downward preparation copies.
+
+**`audio-overview-brief.m4a`**
+
+- Not checked against a transcript. Audio can't be reviewed by reading, so treat it as an informal teaser.
 
 **Background facts used in the explainer**
 

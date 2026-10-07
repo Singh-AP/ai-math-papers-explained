@@ -380,17 +380,18 @@ The *return* to the original cell (Sections 3–9, about 60 pages) takes up most
 
 ## 9. Slides, audio and other assets
 
-The slides and infographics below were generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the reasoning summary, the Lean scope document and the Wikipedia article on Erdős's conjecture. They are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. Slides 3, 9 and 13 contain clear errors: a wrong date, a misstated mechanism, and invented Lean code.
+Everything below was generated with **Google NotebookLM** (now "Gemini Notebook"). The slides, infographics and audio come from the paper, the reasoning summary, the Lean scope document and the Wikipedia article on Erdős's conjecture. The report and mind map come from the paper and the Lean scope document only. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. The first deck had three wrong slides (3, 9 and 13); they were regenerated once, and the revised text of all three is correct. The drawings on slides 3 and 9 still contain errors: the prime grid on slide 3, and the "Coordinate Complexity" label on slide 9.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 14 beginner slides |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 14 beginner slides, revised once (slides 3, 9 and 13) |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Euler (1737) to 2026 |
+| [Audio overview (≈1.5 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not checked against a transcript) |
+| [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer |
+| [Mind map](assets/notebooklm/mindmaps.md) | How the proof fits together |
 | [Dyadic-blocks figure](assets/figures/dyadic-blocks.svg) ([PNG](assets/figures/dyadic-blocks.png)) | Hand-made diagram used in section 1.4: which density bounds are summable |
 | [Density-increment figure](assets/figures/density-increment.svg) ([PNG](assets/figures/density-increment.png)) | Hand-made diagram used in section 5: the ladder of rounds and what each round costs |
-
-The NotebookLM beginner report, the mind map and the audio overview were **not** generated for this paper, because the shared quota ran out (see [`assets/README.md`](assets/README.md)).
 
 <details>
 <summary><b>All 14 slides</b> (click to expand)</summary>
@@ -430,7 +431,7 @@ The NotebookLM beginner report, the mind map and the audio overview were **not**
 ## How this explainer was made
 
 1. The paper, its TeX source, the reasoning summary, the Lean scope document and the Lean sources were downloaded from [openai/math](https://github.com/openai/math).
-2. The paper, the reasoning summary, the Lean scope document and the Wikipedia article on [Erdős's conjecture on arithmetic progressions](https://en.wikipedia.org/wiki/Erd%C5%91s_conjecture_on_arithmetic_progressions) were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) CLI. It generated the slides and the two infographics in [`assets/notebooklm/`](assets/notebooklm/). Each was read against the paper, and the mistakes are listed in the [errata](assets/README.md#errata). The report, mind map and audio overview were not generated, because the shared quota ran out.
+2. The paper, the reasoning summary, the Lean scope document and the Wikipedia article on [Erdős's conjecture on arithmetic progressions](https://en.wikipedia.org/wiki/Erd%C5%91s_conjecture_on_arithmetic_progressions) were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) CLI. It generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/). The report and mind map were restricted to the paper and the Lean scope document. Every slide, both infographics, the report and the mind map were read against the paper, and the mistakes are listed in the [errata](assets/README.md#errata). The slide deck was revised once, to fix slides 3, 9 and 13. The audio was not reviewed.
 3. The text on this page was written by hand (with AI assistance) directly from the paper's TeX source. That means the introduction, Section 2 (cells and the triangular increment), Section 10 (the iteration), Section 11 (consequences) and the appendix overview. Historical dates were checked against the paper's bibliography where it covers them. Euler's 1737 result and the 2004 preprint date of Green–Tao are standard background not in that bibliography. The two prize amounts come from Wikipedia (erdosproblems.com confirms the current 5,000 US dollars, but not the dates) and are marked as such. Raghavan's 2026 preprint was checked on arXiv.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.

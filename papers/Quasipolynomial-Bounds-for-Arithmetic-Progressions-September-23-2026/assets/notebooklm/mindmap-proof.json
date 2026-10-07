@@ -1,0 +1,260 @@
+{
+  "name": "Quasipolynomial Bounds for Arithmetic Progressions",
+  "children": [
+    {
+      "name": "Main Results",
+      "children": [
+        {
+          "name": "Theorem 1.1 (Density Bound)",
+          "children": [
+            {
+              "name": "Quantitative Form",
+              "children": [
+                {
+                  "name": "rk(N) <= Ck * N * exp(-ck(log N)^εk)"
+                }
+              ]
+            },
+            {
+              "name": "Threshold Form",
+              "children": [
+                {
+                  "name": "log N >= Ak * (2 + log(1/α))^Ak"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Erdős Conjecture (Corollary 1.2)",
+          "children": [
+            {
+              "name": "Divergent Reciprocal Sums",
+              "children": [
+                {
+                  "name": "Sum(1/a) = ∞ implies APs of all lengths"
+                }
+              ]
+            },
+            {
+              "name": "Dyadic Summability",
+              "children": [
+                {
+                  "name": "Sum(rk(2^m) / 2^m) < ∞"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Van der Waerden Bounds",
+          "children": [
+            {
+              "name": "Coloring Thresholds",
+              "children": [
+                {
+                  "name": "Wr(k) <= exp(Ak(2 + log r)^Ak)"
+                },
+                {
+                  "name": "Quasipolynomial growth in colors"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Weighted Consequences",
+          "children": [
+            {
+              "name": "Logarithmic Weights"
+            },
+            {
+              "name": "Dense Subsets of Primes (Green-Tao)"
+            },
+            {
+              "name": "Uniform Harmonic Tails"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Core Methodology & Increments",
+      "children": [
+        {
+          "name": "Density Increment Strategy",
+          "children": [
+            {
+              "name": "Preserving Structure",
+              "children": [
+                {
+                  "name": "Triangular Polynomial Cells"
+                },
+                {
+                  "name": "Exact integer substitutions"
+                }
+              ]
+            },
+            {
+              "name": "Precision & Dimension Control",
+              "children": [
+                {
+                  "name": "Descending Precision Budgets"
+                },
+                {
+                  "name": "Width losses independent of current width"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Absolute Increment",
+          "children": [
+            {
+              "name": "Degree-s Polynomial Patches"
+            },
+            {
+              "name": "Dimension-Independent Rank Bound (d0)"
+            },
+            {
+              "name": "Relative Lifting Theorem"
+            }
+          ]
+        },
+        {
+          "name": "Return to Original Cell",
+          "children": [
+            {
+              "name": "Exact Integer Slot Retention"
+            },
+            {
+              "name": "Passive Layers (Degree > Weight)",
+              "children": [
+                {
+                  "name": "Conlon-Fox-Zhao Densification"
+                },
+                {
+                  "name": "Cube Comparison"
+                }
+              ]
+            },
+            {
+              "name": "Active Globalization (Degree <= Weight)",
+              "children": [
+                {
+                  "name": "Exact Marking"
+                },
+                {
+                  "name": "Group Representations"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Analytic Techniques & Tools",
+      "children": [
+        {
+          "name": "Inverse & Uniformity Norms",
+          "children": [
+            {
+              "name": "Gowers Norms (U^s+1)"
+            },
+            {
+              "name": "Higher-Order Inverse Theorem (Leng-Sah-Sawhney)"
+            },
+            {
+              "name": "Nilsequences & Filtered Nilmanifolds"
+            }
+          ]
+        },
+        {
+          "name": "Shift & Cube Comparison",
+          "children": [
+            {
+              "name": "Degree-1 Comparison (Schoen-Sisask Almost-Periodicity)"
+            },
+            {
+              "name": "Higher-Degree Comparison (Step Drop & Symbol Removal)"
+            },
+            {
+              "name": "Normalized Cube Norms"
+            }
+          ]
+        },
+        {
+          "name": "Sampling & Algebraic Geometry",
+          "children": [
+            {
+              "name": "Constrained Path Ensembles"
+            },
+            {
+              "name": "Rank Cuts & Preparation"
+            },
+            {
+              "name": "Selected Affine Planes & Bad Flags"
+            },
+            {
+              "name": "Rational Symbol Calculus"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Iteration & Proof Proofing Flow",
+      "children": [
+        {
+          "name": "Cell Preparation",
+          "children": [
+            {
+              "name": "Rank Cut Transactions"
+            },
+            {
+              "name": "Dimension Redistribution"
+            }
+          ]
+        },
+        {
+          "name": "Forward Sampling",
+          "children": [
+            {
+              "name": "Descent along Constrained Paths"
+            },
+            {
+              "name": "Terminal Box Absolute Increment"
+            }
+          ]
+        },
+        {
+          "name": "Backward Return",
+          "children": [
+            {
+              "name": "Passive Replacement & Micro Return"
+            },
+            {
+              "name": "Active Replacement & Macro Extraction"
+            }
+          ]
+        },
+        {
+          "name": "Triangular Iteration",
+          "children": [
+            {
+              "name": "Parameter Extraction"
+            },
+            {
+              "name": "Closing Budget Recurrences"
+            },
+            {
+              "name": "Finite-Horizon Closure (O_k(1/α) steps)"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
