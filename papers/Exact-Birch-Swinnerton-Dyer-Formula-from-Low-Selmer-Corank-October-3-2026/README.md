@@ -427,11 +427,11 @@ The strict/full determinant at the centre is computed in the full Tate lattice: 
 
 ## 9. Slides, audio and other assets
 
-Everything below except the two hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the two companions and the Wikipedia article on the Birch and Swinnerton-Dyer conjecture. The report and the mind map use the three papers only. The outputs are kept exactly as NotebookLM produced them. They are AI-generated and contain real mistakes, so see the [errata](assets/README.md#errata) before relying on any detail. In particular, slides 2, 3, 7, 8, 10 and 11 have factual errors.
+Everything below except the two hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the two companions and the Wikipedia article on the Birch and Swinnerton-Dyer conjecture. The report and the mind map use the three papers only. The outputs are kept exactly as NotebookLM produced them. They are AI-generated and contain real mistakes, so see the [errata](assets/README.md#errata) before relying on any detail. In particular, slides 2, 3 and 10 have factual errors.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) · [PPTX](assets/notebooklm/slides.pptx) | 15-slide beginner deck |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) · [PPTX](assets/notebooklm/slides.pptx) | 15-slide beginner deck, revised once |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Mordell (1922) to October 2026 |
 | [Audio overview (≈1.8 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not reviewed) |
@@ -480,7 +480,7 @@ Everything below except the two hand-made figures was generated with **Google No
 ## How this explainer was made
 
 1. The paper, its two companions, and the family-006 introduction were downloaded from [openai/math](https://github.com/openai/math/tree/main/preprints), including their TeX sources.
-2. The papers and the Wikipedia article on the conjecture were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI. The notebook that generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/) was on a second NotebookLM account, because the first account's generation quota was reserved for other papers. Every slide, both infographics, the report and the mind map were then read against the papers. Errors that remain are listed in the [errata](assets/README.md#errata); no slide revision was made.
+2. The papers and the Wikipedia article on the conjecture were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI. The notebook that generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/) was on a second NotebookLM account, because the first account's generation quota was reserved for other papers. Every slide, both infographics, the report and the mind map were then read against the papers. Errors that remain are listed in the [errata](assets/README.md#errata). One slide revision regenerated slides 2, 3, 7, 8 and 11. It fixed slides 7, 8 and 11 but not the curve drawings on slides 2 and 3, and the revised deck is the one shipped here.
 3. The text on this page was written by hand (with AI assistance) directly from the paper's TeX source: the introduction, Sections 2 and 10, and the statements in Sections 4–9. The companions' introductions were also used. NotebookLM's outputs were used only as visual and structural aids, not as the source of truth. The worked example was computed with PARI/GP, and the two figures were drawn as SVG by hand.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.
