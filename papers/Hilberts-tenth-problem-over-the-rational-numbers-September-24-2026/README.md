@@ -8,7 +8,7 @@
 
 ![One-page infographic overview](assets/notebooklm/infographic-overview.png)
 
-*AI-generated overview (NotebookLM). It has a few typos; for example, ℤ is printed as "2". See the [errata](assets/README.md#errata).*
+*AI-generated overview (NotebookLM). It has typos and some garbled details: ℤ is printed as "2", the badge formula should read $T_a = \eta(a)P$, and the quadratic growth should be $B^2$. See the [errata](assets/README.md#errata).*
 
 ## Contents
 
@@ -76,6 +76,8 @@ For both whole numbers and fractions, half of the job is easy. You can list all 
 
 ![Slide: searching confirms presence, never absence](assets/notebooklm/slides/slide-03.png)
 
+*AI-generated slide. Its last line is loose: the halting problem is the question of whether a given program stops, not "an inability to guarantee a stop".*
+
 ### 1.3 Over the integers: settled in 1970
 
 The integer version was answered by a theorem the paper calls the Davis–Putnam–Robinson–Matiyasevich theorem (often abbreviated **MRDP**):
@@ -85,6 +87,8 @@ The integer version was answered by a theorem the paper calls the Davis–Putnam
 "Diophantine" means it can be described as the set of parameter values $a$ for which some fixed polynomial equation $P(a, y_1, \dots, y_m) = 0$ has a solution in the unknowns $y_i$. A simple example: $a$ is composite exactly when $a = (y_1 + 2)(y_2 + 2)$ has a solution in natural numbers. MRDP says that *every* list a computer can generate, however complicated, has a description like this. That includes the list of programs that halt, suitably coded as numbers. Since no algorithm can decide halting, no algorithm can decide integer solvability.
 
 ![Slide: the 1900–1970 road to the MRDP theorem](assets/notebooklm/slides/slide-04.png)
+
+*AI-generated slide. What is undecidable is integer solvability of polynomial equations, not "the integers". Hilbert asked only about integers, so there was no "second half" of his problem.*
 
 ### 1.4 Why the rationals are harder
 
@@ -101,6 +105,8 @@ A conjecture of **Barry Mazur** on the topology of rational points says, roughly
 
 ![Slide: why the integers are hard to capture inside the rationals](assets/notebooklm/slides/slide-05.png)
 
+*AI-generated slide. The unbroken line for ℚ only pictures density: ℚ is countable and full of gaps. Mazur's conjecture is unproved; if true, it would rule out a Diophantine definition of ℤ in ℚ.*
+
 > **Another way to see the difficulty.** A rational solution of $f(x_1,\dots,x_n)=0$ is the same thing as an integer solution of a *homogeneous* equation (clear denominators with a new variable $x_0$) in which $x_0 \neq 0$. So the rational problem is the integer problem restricted to a special kind of equation. A restricted problem could, in principle, be easier, which is why the 1970 theorem does not settle it automatically.
 
 ### 1.5 The precise question
@@ -114,6 +120,8 @@ A conjecture of **Barry Mazur** on the topology of rational points says, roughly
 ## 2. A short history
 
 ![Timeline infographic](assets/notebooklm/infographic-history-timeline.png)
+
+*AI-generated timeline (NotebookLM). Its September 2026 entry states the preprint's claim as settled; the result is unformalized and not yet independently checked. Mazur first posed his conjecture in 1992, and the 1995 paper is an update. Church also proved an unsolvability result in 1936. See the [errata](assets/README.md#errata) and the table below.*
 
 | When | Who | What happened |
 |---|---|---|
@@ -223,7 +231,7 @@ flowchart TD
     L --> M
 ```
 
-**Step 1: Turn the question into finite tests (Section 2.4).** The paper writes down a recursive list of axioms $\mathcal{T}$ about a ring $R$ with extra functions, adds constants $a_1,\dots,a_n$ with $f(a_1,\dots,a_n) = 0$, and replaces every "there exists" by a function symbol (Skolemization). Each finite piece of the resulting list is a finite system of polynomial equations and "$\neq$" conditions over $\mathbb{Q}$. A condition $g \neq 0$ becomes $gy = 1$ with a new variable, and a system $g_1 = \dots = g_s = 0$ becomes $\sum g_i^2 = 0$. So each test is a finite set of rational-solvability questions. Every test also demands that every element satisfy the pole-parity formula $\Phi$ of Step 6.
+**Step 1: Turn the question into finite tests (Sections 2.3–2.4).** The paper writes down a recursive list of axioms $\mathcal{T}$ about a ring $R$ with extra functions, adds constants $a_1,\dots,a_n$ with $f(a_1,\dots,a_n) = 0$, and replaces every "there exists" by a function symbol (Skolemization). Each finite piece of the resulting list is a finite system of polynomial equations and "$\neq$" conditions over $\mathbb{Q}$. A condition $g \neq 0$ becomes $gy = 1$ with a new variable, and a system $g_1 = \dots = g_s = 0$ becomes $\sum g_i^2 = 0$. So each test is a finite set of rational-solvability questions. Every test also demands that every element satisfy the pole-parity formula $\Phi$ of Step 6.
 
 **Step 2: The integers pass every test (Lemma 2.7).** In the "honest" model, $R = \mathbb{Z}$ and each integer $a$ wears the badge $T_a = aP$. Showing that all axioms hold needs real number theory. The prime patterns of Step 5 come from the Green–Tao–Ziegler theory of linear equations in primes (Lemma 6.1), and the formula $\Phi$ must hold on every integer (Section 3, which uses the companion paper).
 
@@ -237,7 +245,7 @@ and proves by a 2-isogeny descent that $E(F)$ has **rank one**. So, after multip
 
 $$\widetilde a \ \text{is } q\text{-integral and}\quad v_q\big(\widetilde a - \eta(a)\big) \ge K \qquad\text{for every } a \in R .$$
 
-In words, each element agrees with its index in the last $K$ base-$q$ "digits".
+Here $\widetilde a$ is the value of $a$ inside the enlarged copy of $\mathbb{Q}$ that compactness provides (see Level 3), and "$q$-integral" means that $q$ does not divide its denominator. In words, each element agrees with its index in the last $K$ base-$q$ "digits".
 
 **Step 5: Where to read: contact primes and the height estimate (Theorem 2.4).** The paper fixes five rational points of the projective line, with linear forms $L_b$ vanishing at them. For a fraction $s = u/v$, a prime $q$ is a **contact prime** if, at $q$, some $L_b(u,v)$ has odd order, after removing the common factor of $u$ and $v$. Let $M(s)$ be the product of the contact primes outside a fixed finite set. The new **five-point height estimate** says
 
@@ -245,12 +253,12 @@ $$h(s) \le H\cdot M(s)^c$$
 
 for fixed constants $H, c$, where $h$ is the logarithmic height (roughly proportional to the number of digits of $u$ and $v$). A fraction can only be complicated if it touches the five points to odd order at large primes. The tests write every ring element as a sum of three fractions $A = u_1/v + u_2/v + u_3/v$ (the "slopes") and require each of the 13 contact values to be $\pm k\cdot r$, with $k$ from a fixed finite set and $r$ prime-like. For actual integers, such representations exist by the prime-pattern Lemma 6.1.
 
-**Step 6: Control the denominators (Proposition 2.8, Section 3).** The imaginary ring $R$ from Step 1 can contain fractions. To make the local tests line up with genuine primes, the paper needs a **positive existential formula** $\Phi(b)$ that every integer satisfies, and that forces every prime-power denominator of $b$ outside a finite set $S_1$ to have *even* exponent. The formula asks for rational points, with $x$-coordinate in a prescribed square class, on two curves of the form $E_l: y^2 = x(x - l)(x + 3l)$. Even exponents then let a valuation-coarsening argument (Lemma 2.10) match each contact prime with one of the two tested branches.
+**Step 6: Control the denominators (Proposition 2.8, Section 3).** If every test passes, compactness produces a ring $R$ of possibly nonstandard numbers (box E of the flowchart), and that ring can contain fractions. To make the local tests line up with genuine primes, the paper needs a **positive existential formula** $\Phi(b)$ that every integer satisfies, and that forces every prime-power denominator of $b$ outside a finite set $S_1$ to have *even* exponent. The formula asks for rational points, with $x$-coordinate in a prescribed square class, on two curves of the form $E_l: y^2 = x(x - l)(x + 3l)$. Even exponents then let a valuation-coarsening argument (Lemma 2.10) match each contact prime with one of the two tested branches.
 
 **Step 7: The squeeze (Proposition 2.12).** Put $\delta = f(\eta(a_1),\dots,\eta(a_n))$ and $B = \max(1, \lvert\eta(a_j)\rvert)$.
 
 - If $\delta = 0$, the indices already form an integer zero, and by elementarity an ordinary one exists.
-- Otherwise $\delta$ is a nonzero integer of size at most $C_f B^D$, where $D$ is the degree of $f$. By Step 4, $\delta \equiv f(\widetilde a) = 0$ modulo $q^K$ at every contact prime, so $M(s_i)^K$ divides $\delta$ for every slope. Choosing $K \ge cD$ makes $M(s_i)^c \le \lvert\delta\rvert^{c/K} \ll B$. The height estimate then gives $h(\widetilde A) \ll B$ **for every element $A$ of $R$**, with one constant.
+- Otherwise $\delta$ is a nonzero (possibly nonstandard) integer of size at most $C_f B^D$, where $D$ is the degree of $f$. By Step 4, $\delta \equiv f(\widetilde a) = 0$ modulo $q^K$ at every contact prime, so $M(s_i)^K$ divides $\delta$ for every slope. Choosing $K \ge cD$ makes $M(s_i)^c \le \lvert\delta\rvert^{c/K} \ll B$. The height estimate then gives $h(\widetilde A) \ll B$ **for every element $A$ of $R$**, with one constant.
 - Apply this to the coordinates of the badge of the largest root entry: $h\big(x(\eta(a_j)P)\big) \ll B$. But canonical-height theory says $h(x(nP)) = 2\hat h(P)\ n^2 + O(1)$. So $B^2 \ll B$, and $B$ is bounded by an ordinary number.
 
 ![The squeeze: a linear upper bound against a quadratic lower bound](assets/figures/squeeze.svg)
@@ -278,11 +286,11 @@ A small check on the parity theme: every denominator in the table is a perfect s
 
 ### Level 3: the arithmetic engine, for readers with background
 
-**Logic.** The ambient structure is many-sorted: $\mathbb{Q},\mathbb{Z},\mathbb{R},F$ with prime and valuation relations, height functions, the elliptic multiple maps and finite-product functions. If every finite test succeeds, compactness (Lemma 2.9) embeds a model $R$ of $\mathcal{T}$ with a root of $f$ into the rational sort of an elementary extension. Its integer sort $^{\ast}\mathbb{Z}$ may contain nonstandard integers, and the indices $\eta(a)$ live there. Facts about integer multiples of the fixed points $P, P^\sigma$ and evaluations of the polynomials $\ell_K$ transfer to the extension; no infinite series is evaluated there. The pole-parity condition is what makes Lemma 2.10 work. It coarsens the $q$-adic valuation by the convex subgroup generated by the negative values on $R$. Every such value is even, so the odd value of the factor $r$ survives positively. The center of the coarsened valuation is then one of the two tested branch ideals $\mathfrak p_\pm$, because $R_F/rR_F \simeq (R/rR)^2$.
+**Logic.** The ambient structure is many-sorted: $\mathbb{Q},\mathbb{Z},\mathbb{R},F$ with prime and valuation relations, height functions, the elliptic multiple maps and finite-product functions. If every finite test succeeds, compactness (Lemma 2.9) embeds a model $R$ of $\mathcal{T}$ with a root of $f$ into the rational sort of an elementary extension. Its integer sort $^{\ast}\mathbb{Z}$ may contain nonstandard integers, and the indices $\eta(a)$ live there. Facts about integer multiples of the fixed points $P, P^\sigma$ and evaluations of the polynomials $\ell_K$ transfer to the extension; no infinite series is evaluated there. The pole-parity condition is what makes Lemma 2.10 work. It coarsens the $q$-adic valuation by the convex subgroup generated by the negative values on $R$. By pole parity, every ring value lying in that subgroup is even, so the odd value of the factor $r$ lies outside it and survives positively. The center of the coarsened valuation is then one of the two tested branch ideals $\mathfrak p_\pm$, because $R_F/rR_F \simeq (R/rR)^2$.
 
 **The five-point height estimate (Section 4).** The five points are the branch values of a quotient map. Start with the Shimura curve $X$ (of genus 5) attached to the indefinite quaternion algebra $B/\mathbb{Q}$ of discriminant $210 = 2\cdot3\cdot5\cdot7$, and divide by its Atkin–Lehner group $(\mathbb{Z}/2)^4$. The quotient is $\mathbb{P}^1$ over $\mathbb{Q}$, with exactly five branch values, labelled $30, 42, 70, 105, 210$. A finite cover $Y \to \mathbb{P}^1$, ramified to index two exactly above them, carries principally polarized abelian surfaces with quaternionic multiplication. Outside fixed primes, the local equation is $t = z^2$, so only *odd* contact can ramify the field of definition of a fiber (Lemma 4.1). Fibers above a rational point are isogenous to their Galois conjugates. CM fibers have bounded height. Otherwise a controlled splitting of the isogeny obstruction yields a two-dimensional odd $2$-adic Galois representation. The OpenAI preprint *Fontaine–Mazur modularity at the prime 2* (family 010) makes it modular, with a weight-two newform whose level is at most a fixed power of $M(s)$ (Lemma 4.7). The surface is then an isogeny factor of $J_1(N)$ over a field of degree $O(M(s))$ (Lemma 4.8). Following a strategy of von Känel, Faltings-height bounds and the Gaudron–Rémond isogeny theorem give $h_F(A) \le CM^C$. Comparing Faltings height with base height (Lemma 4.2) gives $h(s) \le HM(s)^c$.
 
-**Pole parity and the companion (Section 3).** For an integer $b$, the paper must produce rational points on $E_e$ and $E_{eH'}$ with prescribed $x$-coordinate square class $\beta$. A full 2-descent with Rédei-matrix conditions makes $\dim_{\mathbb{F}_2}\mathrm{Sel}_2(E_l/\mathbb{Q}) = 3$ (Lemma 3.3). With full rational two-torsion this means $\mathrm{rank}\ E_l(\mathbb{Q}) + \dim\ \mathrm{Sha}(E_l/\mathbb{Q})[2] = 1$, so the $2^\infty$-Selmer corank is at most one. **This is where the companion enters (Lemma 3.4).** Its Theorem 1.1 says: if $E/\mathbb{Q}$ has a rational point of order 2 and $2^\infty$-Selmer corank 0 or 1, then the analytic rank and the Mordell–Weil rank both equal that corank, and $\mathrm{Sha}(E/\mathbb{Q})$ is finite. With $\mathrm{Sha}$ finite, the Cassels–Tate pairing is perfect and alternating, so $\dim\ \mathrm{Sha}[2]$ is even, hence zero, and the rank is one. The Selmer class $(\beta,1)$ then comes from a genuine rational point. (Remark 3.5: the unrestricted 2-converse of family 006 could be used instead.) The companion itself combines Kato's zeta classes, Heegner points with Kolyvagin–Howard Euler-system arguments, Selmer complexes and Waldspurger-type coefficient tests, using integral interpolation over binary families of quadratic twists to control the prime 2 without residual-irreducibility hypotheses.
+**Pole parity and the companion (Section 3).** For an integer $b$, the paper must produce rational points on $E_e$ and $E_{eH'}$ with prescribed $x$-coordinate square class $\beta$. A full 2-descent with Monsky-style matrix conditions makes $\dim_{\mathbb{F}_2}\mathrm{Sel}_2(E_l/\mathbb{Q}) = 3$ (Lemma 3.3). With full rational two-torsion this means $\mathrm{rank}\ E_l(\mathbb{Q}) + \dim\ \mathrm{Sha}(E_l/\mathbb{Q})[2] = 1$, so the $2^\infty$-Selmer corank is at most one. **This is where the companion enters (Lemma 3.4).** Its Theorem 1.1 says: if $E/\mathbb{Q}$ has a rational point of order 2 and $2^\infty$-Selmer corank 0 or 1, then the analytic rank and the Mordell–Weil rank both equal that corank, and $\mathrm{Sha}(E/\mathbb{Q})$ is finite. With $\mathrm{Sha}$ finite, the Cassels–Tate pairing is perfect and alternating, so $\dim\ \mathrm{Sha}[2]$ is even, hence zero, and the rank is one. The Selmer class $(\beta,1)$ then comes from a genuine rational point. (Remark 3.5: the unrestricted 2-converse of family 006 could be used instead.) The companion itself combines Kato's zeta classes, Heegner points with Kolyvagin–Howard Euler-system arguments, Selmer complexes and Waldspurger-type coefficient tests, using integral interpolation over binary families of quadratic twists to control the prime 2 without residual-irreducibility hypotheses.
 
 **Prime patterns (Section 6).** For every integer $A$, the paper needs $u_1, u_2, v$ with all 13 numbers $v$ and $L_b(u_i, v)$ equal to $\pm k\cdot r$ with large primes $r$ that split in $\mathbb{Q}(\sqrt2)$, have good reduction for $E$ and $E^\sigma$, and satisfy $\gcd(d_1,d_2) \mid 4$ and $r \nmid d_1d_2$ for the two reduction orders $d_1, d_2$. That gcd condition is what lets the Chinese remainder theorem pick $h \equiv 0 \pmod{d_1}$ and $h \equiv 4 \pmod{d_2 r^K}$ for the paired tests (Corollary 6.2). Existence comes from Green–Tao's linear equations in primes, with the Möbius–nilsequence theorem and the Green–Tao–Ziegler inverse theorem, plus explicit sieves.
 
@@ -318,6 +326,8 @@ A small check on the parity theme: every denominator in the table is a perfect s
 
 ![Slide: what remains open](assets/notebooklm/slides/slide-13.png)
 
+*AI-generated slide. Two boxes need precise readings. "No many-one reduction" means that no many-one reduction from integer solvability is given, so the paper does not establish many-one completeness; the degree-4 forms do use many-one reductions from H10(ℚ). "No variable bound" means that the construction gives no bound on the number of variables.*
+
 > [!NOTE]
 > **Provenance.** The paper and its companion were produced by an unreleased internal OpenAI model as part of the [openai/math](https://github.com/openai/math) release. According to that repository's README, the vast majority of results came from one fixed procedure, using on average about three hours of ChatGPT Pro thinking compute per result. The exceptions it names are the zeta zero-free work and the Hodge conjecture for CM abelian varieties; this paper is not among them.
 
@@ -337,7 +347,7 @@ A small check on the parity theme: every denominator in the table is a perfect s
 | **Rational number** $\mathbb{Q}$ | A fraction $u/v$ of integers with $v\neq0$ |
 | **Algorithm; decidable** | A finite recipe that always stops; a yes/no question is decidable if some algorithm always answers it correctly |
 | **Computably enumerable** | A set whose members can be listed by a program. "Yes" answers can be confirmed by search |
-| **Halting problem** | Deciding whether a given program ever stops. Turing proved it undecidable |
+| **Halting problem** | Deciding whether a given program ever stops. Its undecidability goes back to Turing (1936); the name came later |
 | **Turing reduction; Turing degree $0'$** | Solving one problem with an oracle for another. $0'$ is the difficulty of the halting problem |
 | **Diophantine set / definition** | A set described as "the parameters for which some polynomial equation has a solution", using only "there exists" |
 | **Diophantine model** | A copy of integer arithmetic built from Diophantine subsets of some $\mathbb{Q}^k$ |
