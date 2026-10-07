@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 530" width="1100" height="530" font-family="Helvetica, Arial, sans-serif">
+  <title>Shifted tripling: one polynomial product contains three smaller ones</title>
+  <desc>The polynomial-multiplication tensor C(2,4) drawn as a grid: rows are the second input y0..y3, columns are the output z0..z4, and a cell holds x_i when z = y + i. Middle y coordinates get weight +1 and the middle z coordinate gets weight -1. Two terms have weight +1 and are dropped; the weight-0 terms form three blocks with separate y and z variables that still share x0 and x1. The outer blocks are copies of C(2,1); the middle block is C(2,1) with its second and third legs exchanged. Redrawn from Figure 1 of the paper.</desc>
+  <rect x="0" y="0" width="1100" height="530" fill="#fcfcfb"/>
+  <text x="40" y="42" font-size="22" font-weight="bold" fill="#0b0b0b">Shifted tripling: one polynomial product hides three smaller ones</text>
+  <text x="40" y="68" font-size="14" fill="#52514e">Smallest case of the paper’s Lemma 4.2 (its Figure 1): a = 2, h = 1, so C(2, 3h+a−1) = C(2,4), the product of a 2-coefficient and a 4-coefficient polynomial.</text>
+  <text x="186" y="136" font-size="16" fill="#52514e" text-anchor="middle">z0</text>
+  <text x="258" y="136" font-size="16" fill="#52514e" text-anchor="middle">z1</text>
+  <text x="330" y="136" font-size="16" fill="#52514e" text-anchor="middle">z2</text>
+  <text x="402" y="136" font-size="16" fill="#52514e" text-anchor="middle">z3</text>
+  <text x="474" y="136" font-size="16" fill="#52514e" text-anchor="middle">z4</text>
+  <text x="136" y="192" font-size="16" fill="#52514e" text-anchor="end">y0</text>
+  <text x="136" y="264" font-size="16" fill="#52514e" text-anchor="end">y1</text>
+  <text x="136" y="336" font-size="16" fill="#52514e" text-anchor="end">y2</text>
+  <text x="136" y="408" font-size="16" fill="#52514e" text-anchor="end">y3</text>
+  <text x="330" y="110" font-size="14" fill="#52514e" text-anchor="middle">output coefficient index z (third leg)</text>
+  <text x="88" y="294" font-size="14" fill="#52514e" text-anchor="middle" transform="rotate(-90 88 294)">second input index y</text>
+  <rect x="150" y="150" width="72" height="72" fill="#cde2fb" stroke="#d9d8d3" stroke-width="1"/>
+  <text x="186" y="193" font-size="20" fill="#0b0b0b" text-anchor="middle">x0</text>
+  <rect x="222" y="150" width="72" height="72" fill="#cde2fb" stroke="#d9d8d3" stroke-width="1"/>
+  <text x="258" y="193" font-size="20" fill="#0b0b0b" text-anchor="middle">x1</text>
+  <rect x="294" y="150" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="366" y="150" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="438" y="150" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="150" y="222" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="222" y="222" width="72" height="72" fill="#efeeea" stroke="#d9d8d3" stroke-width="1"/>
+  <text x="258" y="265" font-size="20" fill="#8a8984" text-anchor="middle">x0</text>
+  <line x1="236" y1="280" x2="280" y2="236" stroke="#52514e" stroke-width="2"/>
+  <rect x="294" y="222" width="72" height="72" fill="#cde2fb" stroke="#d9d8d3" stroke-width="1"/>
+  <text x="330" y="265" font-size="20" fill="#0b0b0b" text-anchor="middle">x1</text>
+  <rect x="366" y="222" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="438" y="222" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="150" y="294" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="222" y="294" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="294" y="294" width="72" height="72" fill="#cde2fb" stroke="#d9d8d3" stroke-width="1"/>
+  <text x="330" y="337" font-size="20" fill="#0b0b0b" text-anchor="middle">x0</text>
+  <rect x="366" y="294" width="72" height="72" fill="#efeeea" stroke="#d9d8d3" stroke-width="1"/>
+  <text x="402" y="337" font-size="20" fill="#8a8984" text-anchor="middle">x1</text>
+  <line x1="380" y1="352" x2="424" y2="308" stroke="#52514e" stroke-width="2"/>
+  <rect x="438" y="294" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="150" y="366" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="222" y="366" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="294" y="366" width="72" height="72" fill="#fcfcfb" stroke="#d9d8d3" stroke-width="1"/>
+  <rect x="366" y="366" width="72" height="72" fill="#cde2fb" stroke="#d9d8d3" stroke-width="1"/>
+  <text x="402" y="409" font-size="20" fill="#0b0b0b" text-anchor="middle">x0</text>
+  <rect x="438" y="366" width="72" height="72" fill="#cde2fb" stroke="#d9d8d3" stroke-width="1"/>
+  <text x="474" y="409" font-size="20" fill="#0b0b0b" text-anchor="middle">x1</text>
+  <rect x="150" y="150" width="144" height="72" fill="none" stroke="#2a78d6" stroke-width="3" rx="4"/>
+  <rect x="294" y="222" width="72" height="144" fill="none" stroke="#2a78d6" stroke-width="3" rx="4"/>
+  <rect x="366" y="366" width="144" height="72" fill="none" stroke="#2a78d6" stroke-width="3" rx="4"/>
+  <text x="522" y="263" font-size="14" fill="#52514e">weight +1</text>
+  <text x="522" y="335" font-size="14" fill="#52514e">weight +1</text>
+  <text x="330" y="462" font-size="14" fill="#52514e" text-anchor="middle">weight −1</text>
+  <text x="660" y="150" font-size="15" fill="#0b0b0b" font-weight="bold">How to read it</text>
+  <text x="660" y="172" font-size="14" fill="#52514e" font-weight="normal">Each filled cell is one term x_i · y_j · z_(i+j) of the</text>
+  <text x="660" y="194" font-size="14" fill="#52514e" font-weight="normal">product (x0 + x1·t)(y0 + y1·t + y2·t² + y3·t³).</text>
+  <text x="660" y="238" font-size="15" fill="#0b0b0b" font-weight="bold">The degeneration</text>
+  <text x="660" y="260" font-size="14" fill="#52514e" font-weight="normal">Middle rows y1, y2 get weight +1; middle column z2</text>
+  <text x="660" y="282" font-size="14" fill="#52514e" font-weight="normal">gets weight −1. Keep only the terms of total weight 0.</text>
+  <text x="660" y="304" font-size="14" fill="#52514e" font-weight="normal">The two struck-out terms have weight +1 and vanish.</text>
+  <text x="660" y="348" font-size="15" fill="#0b0b0b" font-weight="bold">What survives</text>
+  <text x="660" y="370" font-size="14" fill="#52514e" font-weight="normal">Three blue blocks with separate y and z variables:</text>
+  <text x="660" y="392" font-size="14" fill="#52514e" font-weight="normal">two copies of C(2,1), and one C(2,1) with its y and z</text>
+  <text x="660" y="414" font-size="14" fill="#52514e" font-weight="normal">roles swapped. All three still share x0 and x1, so</text>
+  <text x="660" y="436" font-size="14" fill="#52514e" font-weight="normal">they are not yet independent. The separation step</text>
+  <text x="660" y="458" font-size="14" fill="#52514e" font-weight="normal">(Proposition 3.1) fixes that, and the result is</text>
+  <text x="660" y="480" font-size="14" fill="#52514e" font-weight="normal">P(a, 3h+a−1) ≥ 3·P(a, h).</text>
+  <rect x="150" y="484" width="18" height="18" fill="#cde2fb" stroke="#2a78d6" stroke-width="2" rx="3"/>
+  <text x="176" y="498" font-size="14" fill="#0b0b0b">kept (weight 0)</text>
+  <rect x="320" y="484" width="18" height="18" fill="#efeeea" stroke="#d9d8d3" stroke-width="1"/>
+  <line x1="323" y1="499" x2="335" y2="487" stroke="#52514e" stroke-width="2"/>
+  <text x="346" y="498" font-size="14" fill="#0b0b0b">dropped (weight +1)</text>
+</svg>

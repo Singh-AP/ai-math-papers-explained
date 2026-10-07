@@ -1,0 +1,158 @@
+{
+  "name": "Matrix Multiplication Exponent Bounds",
+  "children": [
+    {
+      "name": "Upper Bound Theorem",
+      "children": [
+        {
+          "name": "Complex Exponent Bound",
+          "children": [
+            {
+              "name": "ω ≤ 9/4 (2.25)"
+            }
+          ]
+        },
+        {
+          "name": "Arithmetic Model",
+          "children": [
+            {
+              "name": "Complex arithmetic complexity"
+            },
+            {
+              "name": "Finite division-free programs"
+            }
+          ]
+        },
+        {
+          "name": "General Field Bound",
+          "children": [
+            {
+              "name": "ω(F) < 2.371054886006746 for all fields"
+            }
+          ]
+        },
+        {
+          "name": "Rectangular & Dual Exponents",
+          "children": [
+            {
+              "name": "Dual exponent α > 0.465"
+            },
+            {
+              "name": "Rectangular exponent ω(C; 1, 0.709, 1) < 2.092"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Core Proof Concepts",
+      "children": [
+        {
+          "name": "Separation of Shared Legs",
+          "children": [
+            {
+              "name": "Trilinear form legs (X, Y, Z)"
+            },
+            {
+              "name": "Finite Fourier projection"
+            },
+            {
+              "name": "Degeneration via weight mismatch"
+            },
+            {
+              "name": "Entropy inequality gain"
+            }
+          ]
+        },
+        {
+          "name": "Polynomial Multiplication Tensor",
+          "children": [
+            {
+              "name": "Profile P(a, b) symmetrization"
+            },
+            {
+              "name": "Determinant filtration (discrete concavity)"
+            },
+            {
+              "name": "Three-sector decomposition (shifted tripling)"
+            }
+          ]
+        },
+        {
+          "name": "Spectral Framework",
+          "children": [
+            {
+              "name": "Tensor characters λ"
+            },
+            {
+              "name": "Detecting characters existence"
+            },
+            {
+              "name": "Dot-product exponents (pX, pY, pZ)"
+            }
+          ]
+        },
+        {
+          "name": "Discrete Growth Analysis",
+          "children": [
+            {
+              "name": "Diagonal growth P(a, a) ≥ a^(4/3)"
+            },
+            {
+              "name": "Parameter bound t ≤ 3/4"
+            },
+            {
+              "name": "Exponent conversion ν ≤ 9/4"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Context & Prior Work",
+      "children": [
+        {
+          "name": "Strassen Algorithms",
+          "children": [
+            {
+              "name": "Seven-product algorithm"
+            },
+            {
+              "name": "Laser method & Asymptotic spectrum"
+            }
+          ]
+        },
+        {
+          "name": "Bini Approximate Algorithms",
+          "children": [
+            {
+              "name": "Interpolation argument"
+            }
+          ]
+        },
+        {
+          "name": "Coppersmith-Winograd Method",
+          "children": [
+            {
+              "name": "Progression-free sets"
+            },
+            {
+              "name": "Convex optimization & asymmetric refinements"
+            }
+          ]
+        },
+        {
+          "name": "Lean Formalization",
+          "children": [
+            {
+              "name": "GitHub repository openai/math"
+            },
+            {
+              "name": "Unconditional field bounds formalized"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 650" width="1100" height="650" font-family="Helvetica, Arial, sans-serif">
+  <title>Best proven upper bound on the matrix multiplication exponent, 1969 to 2026</title>
+  <desc>Step chart of the record upper bound on omega. Blue: earlier records from Strassen 1969 (2.8074) to Dupont et al. 2026 (2.371177), taken from the Wikipedia timeline. Orange: the openai/math family 107 preprints of September and October 2026: omega below 2.371054886 over every field, below 2.258 in characteristic zero, and at most 9/4 = 2.25 over the complex numbers. The last two orange markers are dodged horizontally because their dates are 8 days apart. The dashed line at omega = 2 is the trivial lower bound.</desc>
+  <rect x="0" y="0" width="1100" height="650" fill="#fcfcfb"/>
+  <text x="90" y="42" font-size="22" font-weight="bold" fill="#0b0b0b">The best proven upper bound on ω, 1969–2026</text>
+  <text x="90" y="68" font-size="14" fill="#52514e">Multiplying two n×n matrices takes about n^ω operations. Lower is faster. Each step is a new record.</text>
+  <text x="90" y="88" font-size="14" fill="#52514e">Orange: openai/math family 107 preprints (not yet peer reviewed). Blue: earlier records from the literature.</text>
+  <line x1="90" y1="560.0" x2="1060" y2="560.0" stroke="#e4e3df" stroke-width="1"/>
+  <text x="80" y="565.0" font-size="14" fill="#52514e" text-anchor="end">2.0</text>
+  <line x1="90" y1="472.0" x2="1060" y2="472.0" stroke="#e4e3df" stroke-width="1"/>
+  <text x="80" y="477.0" font-size="14" fill="#52514e" text-anchor="end">2.2</text>
+  <line x1="90" y1="384.0" x2="1060" y2="384.0" stroke="#e4e3df" stroke-width="1"/>
+  <text x="80" y="389.0" font-size="14" fill="#52514e" text-anchor="end">2.4</text>
+  <line x1="90" y1="296.0" x2="1060" y2="296.0" stroke="#e4e3df" stroke-width="1"/>
+  <text x="80" y="301.0" font-size="14" fill="#52514e" text-anchor="end">2.6</text>
+  <line x1="90" y1="208.0" x2="1060" y2="208.0" stroke="#e4e3df" stroke-width="1"/>
+  <text x="80" y="213.0" font-size="14" fill="#52514e" text-anchor="end">2.8</text>
+  <line x1="90" y1="120.0" x2="1060" y2="120.0" stroke="#e4e3df" stroke-width="1"/>
+  <text x="80" y="125.0" font-size="14" fill="#52514e" text-anchor="end">3.0</text>
+  <line x1="152.6" y1="560" x2="152.6" y2="566" stroke="#8a8984" stroke-width="1"/>
+  <text x="152.6" y="584" font-size="14" fill="#52514e" text-anchor="middle">1970</text>
+  <line x1="309.0" y1="560" x2="309.0" y2="566" stroke="#8a8984" stroke-width="1"/>
+  <text x="309.0" y="584" font-size="14" fill="#52514e" text-anchor="middle">1980</text>
+  <line x1="465.5" y1="560" x2="465.5" y2="566" stroke="#8a8984" stroke-width="1"/>
+  <text x="465.5" y="584" font-size="14" fill="#52514e" text-anchor="middle">1990</text>
+  <line x1="621.9" y1="560" x2="621.9" y2="566" stroke="#8a8984" stroke-width="1"/>
+  <text x="621.9" y="584" font-size="14" fill="#52514e" text-anchor="middle">2000</text>
+  <line x1="778.4" y1="560" x2="778.4" y2="566" stroke="#8a8984" stroke-width="1"/>
+  <text x="778.4" y="584" font-size="14" fill="#52514e" text-anchor="middle">2010</text>
+  <line x1="934.8" y1="560" x2="934.8" y2="566" stroke="#8a8984" stroke-width="1"/>
+  <text x="934.8" y="584" font-size="14" fill="#52514e" text-anchor="middle">2020</text>
+  <line x1="90" y1="560" x2="1060" y2="560" stroke="#8a8984" stroke-width="1"/>
+  <text x="575" y="612" font-size="14" fill="#52514e" text-anchor="middle">Year</text>
+  <text x="28" y="340" font-size="14" fill="#52514e" text-anchor="middle" transform="rotate(-90 28 340)">Upper bound on ω</text>
+  <line x1="90" y1="560.0" x2="1060" y2="560.0" stroke="#52514e" stroke-width="1.5" stroke-dasharray="6 5"/>
+  <text x="100" y="550.0" font-size="13" fill="#52514e">ω ≥ 2: every algorithm must at least read all 2n² inputs. Most researchers expect ω = 2 (still open).</text>
+  <text x="100" y="140.0" font-size="13" fill="#52514e">ω = 3: the schoolbook algorithm (n³ multiplications)</text>
+  <path d="M 136.9 204.7 L 277.7 204.7 L 277.7 209.8 L 293.4 209.8 L 293.4 216.8 L 324.7 216.8 L 324.7 330.3 L 324.7 330.3 L 324.7 332.5 L 324.7 332.5 L 324.7 341.8 L 402.9 341.8 L 402.9 349.2 L 465.5 349.2 L 465.5 394.8 L 778.4 394.8 L 778.4 395.6 L 809.7 395.6 L 809.7 395.9 L 841.0 395.9 L 841.0 395.9 L 934.8 395.9 L 934.8 395.9 L 966.1 395.9 L 966.1 396.4 L 997.4 396.4 L 997.4 396.5 L 1002.1 396.5 L 1002.1 396.6 L 1038.1 396.6 L 1038.1 396.7 L 1042.8 396.7" fill="none" stroke="#2a78d6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+  <circle cx="136.9" cy="204.7" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="277.7" cy="209.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="293.4" cy="216.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="324.7" cy="330.3" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="324.7" cy="332.5" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="324.7" cy="341.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="402.9" cy="349.2" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="465.5" cy="394.8" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="778.4" cy="395.6" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="809.7" cy="395.9" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="841.0" cy="395.9" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="934.8" cy="395.9" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="966.1" cy="396.4" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="997.4" cy="396.5" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="1002.1" cy="396.6" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="1038.1" cy="396.7" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <text x="138.9" y="190.7" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="normal">Strassen 1969: 2.807 (7 products for 2×2)</text>
+  <line x1="274.7" y1="214.8" x2="270.7" y2="222.8" stroke="#8a8984" stroke-width="1"/>
+  <text x="269.7" y="235.8" font-size="13" fill="#0b0b0b" text-anchor="end" font-weight="normal">Pan 1978: 2.796</text>
+  <line x1="290.4" y1="221.8" x2="286.4" y2="247.8" stroke="#8a8984" stroke-width="1"/>
+  <text x="285.4" y="260.8" font-size="13" fill="#0b0b0b" text-anchor="end" font-weight="normal">Bini et al. 1979: 2.780</text>
+  <text x="314.7" y="332.3" font-size="13" fill="#0b0b0b" text-anchor="end" font-weight="normal">Schönhage 1981: 2.522</text>
+  <text x="314.7" y="363.8" font-size="13" fill="#0b0b0b" text-anchor="end" font-weight="normal">Coppersmith–Winograd 1981: 2.496</text>
+  <text x="408.9" y="337.2" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="normal">Strassen 1986 (laser method): 2.479</text>
+  <text x="471.5" y="420.8" font-size="13" fill="#0b0b0b" text-anchor="start" font-weight="normal">Coppersmith–Winograd 1990: 2.3755</text>
+  <text x="471.5" y="438.8" font-size="13" fill="#52514e" text-anchor="start" font-weight="normal">then eight small records near 2.37,</text>
+  <text x="471.5" y="456.8" font-size="13" fill="#52514e" text-anchor="start" font-weight="normal">ending with Dupont et al. 2026: 2.371177</text>
+  <circle cx="1040.1" cy="396.7" r="6" fill="none" stroke="#eb6834" stroke-width="2.5"/>
+  <circle cx="1033.1" cy="446.5" r="5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+  <circle cx="1047.1" cy="450.0" r="6.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+  <line x1="1036.1" y1="390.7" x2="1010.1" y2="362.7" stroke="#8a8984" stroke-width="1"/>
+  <text x="1006.1" y="358.7" font-size="13" fill="#0b0b0b" text-anchor="end" font-weight="normal">Sep 2026: ω &lt; 2.371055 over every field</text>
+  <line x1="1028.1" y1="449.5" x2="1010.1" y2="476.5" stroke="#8a8984" stroke-width="1"/>
+  <text x="1006.1" y="482.5" font-size="13" fill="#0b0b0b" text-anchor="end" font-weight="normal">Sep 2026: ω &lt; 2.258 (characteristic 0)</text>
+  <line x1="1045.1" y1="457.0" x2="1010.1" y2="506.0" stroke="#8a8984" stroke-width="1"/>
+  <text x="1006.1" y="512.0" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="bold">Oct 2026, this paper: ω ≤ 9/4 = 2.25 over ℂ</text>
+  <line x1="660" y1="150" x2="688" y2="150" stroke="#2a78d6" stroke-width="2"/>
+  <circle cx="674" cy="150" r="4.5" fill="#2a78d6" stroke="#fcfcfb" stroke-width="2"/>
+  <text x="698.0" y="155.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal">Earlier records (Wikipedia timeline)</text>
+  <circle cx="674" cy="176" r="5.5" fill="#eb6834" stroke="#fcfcfb" stroke-width="2"/>
+  <text x="698.0" y="181.0" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="normal">openai/math family 107 preprints</text>
+  <text x="90" y="640" font-size="11" fill="#8a8984">The two lowest orange dots are 8 days apart and are drawn side by side. Exact values and sources: history table in the explainer.</text>
+</svg>
