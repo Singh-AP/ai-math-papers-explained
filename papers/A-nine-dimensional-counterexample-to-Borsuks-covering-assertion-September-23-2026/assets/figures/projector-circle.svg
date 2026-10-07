@@ -1,0 +1,58 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='640' viewBox='0 0 1200 640'>
+<rect width='1200' height='640' fill='white'/>
+<text x='600.0' y='40.0' font-family='Helvetica, Arial, sans-serif' font-size='24' text-anchor='middle' fill='#1a202c' font-weight='bold'>Warm-up in the plane: lines through the origin become points on a circle</text>
+<text x='270.0' y='85.0' font-family='Helvetica, Arial, sans-serif' font-size='19' text-anchor='middle' fill='#1a202c' font-weight='bold'>Lines through the origin of ℝ²</text>
+<circle cx='270' cy='330' r='190' fill='none' stroke='#e2e8f0' stroke-width='1.5'/>
+<line x1='460.0' y1='330.0' x2='80.0' y2='330.0' stroke='#2b6cb0' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<line x1='453.5' y1='280.8' x2='86.5' y2='379.2' stroke='#2b6cb0' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<line x1='434.5' y1='235.0' x2='105.5' y2='425.0' stroke='#2b6cb0' stroke-width='4' stroke-linecap='round' opacity='1'/>
+<line x1='404.4' y1='195.6' x2='135.6' y2='464.4' stroke='#2b6cb0' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<line x1='365.0' y1='165.5' x2='175.0' y2='494.5' stroke='#dd6b20' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<line x1='319.2' y1='146.5' x2='220.8' y2='513.5' stroke='#dd6b20' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<line x1='270.0' y1='140.0' x2='270.0' y2='520.0' stroke='#dd6b20' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<line x1='220.8' y1='146.5' x2='319.2' y2='513.5' stroke='#dd6b20' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<line x1='175.0' y1='165.5' x2='365.0' y2='494.5' stroke='#2f855a' stroke-width='4' stroke-linecap='round' opacity='1'/>
+<line x1='135.6' y1='195.6' x2='404.4' y2='464.4' stroke='#2f855a' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<line x1='105.5' y1='235.0' x2='434.5' y2='425.0' stroke='#2f855a' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<line x1='86.5' y1='280.8' x2='453.5' y2='379.2' stroke='#2f855a' stroke-width='2' stroke-linecap='round' opacity='0.55'/>
+<text x='486.0' y='336.0' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='middle' fill='#2b6cb0' font-weight='bold'>0°</text>
+<text x='457.1' y='228.0' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='middle' fill='#2b6cb0' font-weight='bold'>30°</text>
+<text x='378.0' y='148.9' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='middle' fill='#dd6b20' font-weight='bold'>60°</text>
+<text x='270.0' y='120.0' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='middle' fill='#dd6b20' font-weight='bold'>90°</text>
+<text x='162.0' y='148.9' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='middle' fill='#2f855a' font-weight='bold'>120°</text>
+<text x='82.9' y='228.0' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='middle' fill='#2f855a' font-weight='bold'>150°</text>
+<polyline points='289.1,319.0 278.1,299.9 259.0,310.9' fill='none' stroke='#c53030' stroke-width='2'/>
+<circle cx='270' cy='330' r='4' fill='#1a202c'/>
+<text x='270.0' y='570.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#4a5568' font-weight='normal'>Colour = piece: angle in [0°,60°), [60°,120°), [120°,180°)</text>
+<text x='270.0' y='592.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#c53030' font-weight='normal'>The 30° and 120° lines (thick) are perpendicular</text>
+<defs><marker id='ah' markerUnits='userSpaceOnUse' markerWidth='16' markerHeight='16' refX='14' refY='8' orient='auto'><path d='M0,0 L16,8 L0,16 z' fill='#4a5568'/></marker></defs>
+<line x1='505' y1='330' x2='625' y2='330' stroke='#4a5568' stroke-width='3' marker-end='url(#ah)'/>
+<text x='565.0' y='290.0' font-family='Helvetica, Arial, sans-serif' font-size='19' text-anchor='middle' fill='#1a202c' font-weight='bold'>u → uuᵀ</text>
+<text x='565.0' y='314.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#4a5568' font-weight='normal'>angle θ → angle 2θ</text>
+<text x='565.0' y='360.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#4a5568' font-weight='normal'>dist = √2·|sin(θ−φ)|</text>
+<text x='900.0' y='85.0' font-family='Helvetica, Arial, sans-serif' font-size='19' text-anchor='middle' fill='#1a202c' font-weight='bold'>Their projectors: a circle of radius 1/√2</text>
+<path d='M1090.0,330.0 A190,190 0 0 0 806.7,164.5' fill='none' stroke='#2b6cb0' stroke-width='9' stroke-linecap='butt' opacity='0.85'/>
+<path d='M803.3,166.5 A190,190 0 0 0 803.3,493.5' fill='none' stroke='#dd6b20' stroke-width='9' stroke-linecap='butt' opacity='0.85'/>
+<path d='M806.7,495.5 A190,190 0 0 0 1090.0,332.0' fill='none' stroke='#2f855a' stroke-width='9' stroke-linecap='butt' opacity='0.85'/>
+<circle cx='1090.0' cy='330.0' r='8' fill='#2b6cb0' stroke='white' stroke-width='2'/>
+<text x='1124.0' y='336.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#2b6cb0' font-weight='bold'>0° line</text>
+<circle cx='995.0' cy='165.5' r='8' fill='#2b6cb0' stroke='white' stroke-width='2'/>
+<text x='1012.0' y='142.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#2b6cb0' font-weight='bold'>30° line</text>
+<circle cx='805.0' cy='165.5' r='8' fill='#dd6b20' stroke='white' stroke-width='2'/>
+<text x='788.0' y='142.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#dd6b20' font-weight='bold'>60° line</text>
+<circle cx='710.0' cy='330.0' r='8' fill='#dd6b20' stroke='white' stroke-width='2'/>
+<text x='676.0' y='336.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#dd6b20' font-weight='bold'>90° line</text>
+<circle cx='805.0' cy='494.5' r='8' fill='#2f855a' stroke='white' stroke-width='2'/>
+<text x='788.0' y='530.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#2f855a' font-weight='bold'>120° line</text>
+<circle cx='995.0' cy='494.5' r='8' fill='#2f855a' stroke='white' stroke-width='2'/>
+<text x='1012.0' y='530.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#2f855a' font-weight='bold'>150° line</text>
+<line x1='995.0' y1='165.5' x2='805.0' y2='494.5' stroke='#c53030' stroke-width='3' stroke-dasharray='9,6'/>
+<text x='848.0' y='374.0' font-family='Helvetica, Arial, sans-serif' font-size='17' text-anchor='end' fill='#c53030' font-weight='bold'>√2 ≈ 1.414</text>
+<text x='848.0' y='394.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#c53030' font-weight='normal'>(the diameter)</text>
+<line x1='1090.0' y1='330.0' x2='805.0' y2='165.5' stroke='#2b6cb0' stroke-width='2' stroke-dasharray='4,4'/>
+<g transform='translate(1024.8,278.5) rotate(30.0)'><text x='0.0' y='0.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#2b6cb0' font-weight='bold'>√1.5 ≈ 1.225</text></g>
+<circle cx='900' cy='330' r='3' fill='#4a5568'/>
+<text x='900.0' y='570.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#4a5568' font-weight='normal'>Each coloured arc has diameter √1.5 &lt; √2, so 3 pieces suffice</text>
+<text x='900.0' y='592.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#c53030' font-weight='normal'>Perpendicular lines land at opposite points</text>
+<text x='600.0' y='622.0' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='middle' fill='#1a202c' font-weight='normal' font-style='italic'>In ℝ⁴ the same map u → uuᵀ gives the paper's set X in ℝ⁹; there, ten pieces are not enough.</text>
+</svg>

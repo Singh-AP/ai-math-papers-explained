@@ -1,0 +1,85 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='1200' height='700' viewBox='0 0 1200 700'>
+<rect width='1200' height='700' fill='white'/>
+<text x='600.0' y='40.0' font-family='Helvetica, Arial, sans-serif' font-size='24' text-anchor='middle' fill='#1a202c' font-weight='bold'>The lowest dimension where Borsuk's conjecture is known to fail</text>
+<text x='600.0' y='66.0' font-family='Helvetica, Arial, sans-serif' font-size='15' text-anchor='middle' fill='#4a5568' font-weight='normal'>Logarithmic vertical scale. Filled dots: records cited in the paper's introduction; hollow: an announced bound</text>
+<rect x='120' y='536.8' width='1030' height='53.2' fill='#c6f6d5' opacity='0.7'/>
+<text x='132.0' y='567.4' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#22543d' font-weight='bold'>dimensions 2 and 3: the conjecture is TRUE (Borsuk 1933; Perkal 1947, Eggleston 1955)</text>
+<rect x='120' y='476.5' width='1030' height='60.3' fill='#fefcbf' opacity='0.9'/>
+<text x='132.0' y='512.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#744210' font-weight='bold'>dimensions 4 to 8: still open</text>
+<line x1='120' y1='574.8' x2='1150' y2='574.8' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='579.8' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>2</text>
+<line x1='120' y1='547.3' x2='1150' y2='547.3' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='552.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>3</text>
+<line x1='120' y1='512.5' x2='1150' y2='512.5' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='517.5' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>5</text>
+<line x1='120' y1='465.4' x2='1150' y2='465.4' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='470.4' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>10</text>
+<line x1='120' y1='418.3' x2='1150' y2='418.3' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='423.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>20</text>
+<line x1='120' y1='356.0' x2='1150' y2='356.0' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='361.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>50</text>
+<line x1='120' y1='308.9' x2='1150' y2='308.9' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='313.9' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>100</text>
+<line x1='120' y1='261.7' x2='1150' y2='261.7' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='266.7' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>200</text>
+<line x1='120' y1='199.4' x2='1150' y2='199.4' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='204.4' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>500</text>
+<line x1='120' y1='152.3' x2='1150' y2='152.3' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='157.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>1000</text>
+<line x1='120' y1='105.2' x2='1150' y2='105.2' stroke='#edf2f7' stroke-width='1'/>
+<text x='110.0' y='110.2' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#4a5568' font-weight='normal'>2000</text>
+<line x1='120.0' y1='590' x2='120.0' y2='596' stroke='#4a5568'/>
+<text x='120.0' y='616.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle' fill='#4a5568' font-weight='normal'>1990</text>
+<line x1='257.3' y1='590' x2='257.3' y2='596' stroke='#4a5568'/>
+<text x='257.3' y='616.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle' fill='#4a5568' font-weight='normal'>1995</text>
+<line x1='394.7' y1='590' x2='394.7' y2='596' stroke='#4a5568'/>
+<text x='394.7' y='616.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle' fill='#4a5568' font-weight='normal'>2000</text>
+<line x1='532.0' y1='590' x2='532.0' y2='596' stroke='#4a5568'/>
+<text x='532.0' y='616.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle' fill='#4a5568' font-weight='normal'>2005</text>
+<line x1='669.3' y1='590' x2='669.3' y2='596' stroke='#4a5568'/>
+<text x='669.3' y='616.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle' fill='#4a5568' font-weight='normal'>2010</text>
+<line x1='806.7' y1='590' x2='806.7' y2='596' stroke='#4a5568'/>
+<text x='806.7' y='616.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle' fill='#4a5568' font-weight='normal'>2015</text>
+<line x1='944.0' y1='590' x2='944.0' y2='596' stroke='#4a5568'/>
+<text x='944.0' y='616.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle' fill='#4a5568' font-weight='normal'>2020</text>
+<line x1='1081.3' y1='590' x2='1081.3' y2='596' stroke='#4a5568'/>
+<text x='1081.3' y='616.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle' fill='#4a5568' font-weight='normal'>2025</text>
+<line x1='120' y1='590' x2='1150' y2='590' stroke='#4a5568' stroke-width='1.5'/>
+<line x1='120' y1='90' x2='120' y2='590' stroke='#4a5568' stroke-width='1.5'/>
+<text transform='translate(40,340.0) rotate(-90)' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='middle' fill='#4a5568'>dimension n</text>
+<text x='635.0' y='646.0' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='middle' fill='#4a5568' font-weight='normal'>year</text>
+<path d='M216.1,133.2 H243.6 V156.1 H338.6 V191.6 H408.4 V191.7 H452.3 V229.1 H460.6 V229.6 H490.8 V234.6 H762.7 V338.1 H768.2 V339.2 H1119.2 V340.3 H1128.6 V472.6 H1144.5' fill='none' stroke='#2b6cb0' stroke-width='2.5' opacity='0.6'/>
+<line x1='216.1' y1='133.2' x2='526.0' y2='112.3' stroke='#a0aec0' stroke-width='1' stroke-dasharray='3,3'/>
+<line x1='243.6' y1='156.1' x2='526.0' y2='132.4' stroke='#a0aec0' stroke-width='1' stroke-dasharray='3,3'/>
+<line x1='337.0' y1='159.2' x2='526.0' y2='152.3' stroke='#a0aec0' stroke-width='1' stroke-dasharray='3,3'/>
+<line x1='338.6' y1='191.6' x2='526.0' y2='172.3' stroke='#a0aec0' stroke-width='1' stroke-dasharray='3,3'/>
+<line x1='408.4' y1='191.7' x2='526.0' y2='192.3' stroke='#a0aec0' stroke-width='1' stroke-dasharray='3,3'/>
+<line x1='452.3' y1='229.1' x2='526.0' y2='212.3' stroke='#a0aec0' stroke-width='1' stroke-dasharray='3,3'/>
+<line x1='460.6' y1='229.6' x2='526.0' y2='226.7' stroke='#a0aec0' stroke-width='1' stroke-dasharray='3,3'/>
+<line x1='490.8' y1='234.6' x2='526.0' y2='252.8' stroke='#a0aec0' stroke-width='1' stroke-dasharray='3,3'/>
+<circle cx='216.1' cy='133.2' r='6' fill='#2b6cb0'/>
+<text x='532.0' y='117.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#2b6cb0' font-weight='bold'>1993  Kahn–Kalai: 1325 (see text)</text>
+<circle cx='243.6' cy='156.1' r='6' fill='#2b6cb0'/>
+<text x='532.0' y='137.4' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#2b6cb0' font-weight='normal'>1994  Nilli: 946</text>
+<circle cx='337.0' cy='159.2' r='6' fill='white' stroke='#2b6cb0' stroke-width='2'/>
+<text x='532.0' y='157.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#4a5568' font-weight='normal'>1997  Grey–Weißbach (announced): 903</text>
+<circle cx='338.6' cy='191.6' r='6' fill='#2b6cb0'/>
+<text x='532.0' y='177.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#2b6cb0' font-weight='normal'>1997  Raigorodskii: 561</text>
+<circle cx='408.4' cy='191.7' r='6' fill='#2b6cb0'/>
+<text x='532.0' y='197.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#2b6cb0' font-weight='normal'>2000  Weißbach: 560</text>
+<circle cx='452.3' cy='229.1' r='6' fill='#2b6cb0'/>
+<text x='532.0' y='217.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#2b6cb0' font-weight='normal'>2002  Hinrichs: 323</text>
+<circle cx='460.6' cy='229.6' r='6' fill='#2b6cb0'/>
+<text x='532.0' y='231.7' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#2b6cb0' font-weight='normal'>2002  Pikhurko: 321</text>
+<circle cx='490.8' cy='234.6' r='6' fill='#2b6cb0'/>
+<text x='532.0' y='257.8' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#2b6cb0' font-weight='normal'>2003  Hinrichs–Richter: 298</text>
+<circle cx='762.7' cy='338.1' r='6' fill='#2b6cb0'/>
+<text x='750.7' y='324.1' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#2b6cb0' font-weight='bold'>2013  Bondarenko: 65</text>
+<circle cx='768.2' cy='339.2' r='6' fill='#2b6cb0'/>
+<text x='780.2' y='363.2' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='start' fill='#2b6cb0' font-weight='normal'>2013–14  Jenrich; Jenrich–Brouwer: 64</text>
+<circle cx='1119.2' cy='340.3' r='6' fill='#2b6cb0'/>
+<text x='1107.2' y='328.3' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='end' fill='#2b6cb0' font-weight='normal'>May 2026  Grinsztajn: 63</text>
+<circle cx='1128.6' cy='472.6' r='8' fill='#c53030'/>
+<text x='1114.6' y='478.6' font-family='Helvetica, Arial, sans-serif' font-size='16' text-anchor='end' fill='#c53030' font-weight='bold'>Sept 2026  this paper: 9</text>
+<text x='600.0' y='678.0' font-family='Helvetica, Arial, sans-serif' font-size='14' text-anchor='middle' fill='#4a5568' font-weight='normal' font-style='italic'>Sources: the paper's introduction; Kahn–Kalai (1993); Wikipedia, "Borsuk's conjecture" (checked 7 Oct 2026).</text>
+</svg>

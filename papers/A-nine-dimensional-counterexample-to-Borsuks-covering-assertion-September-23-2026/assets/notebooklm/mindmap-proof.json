@@ -1,0 +1,147 @@
+{
+  "name": "Borsuk's Conjecture Counterexample in Dimension Nine",
+  "children": [
+    {
+      "name": "Core Result",
+      "children": [
+        {
+          "name": "Disproof of Borsuk's conjecture in R9"
+        },
+        {
+          "name": "Set X requires > 10 sets of smaller diameter"
+        },
+        {
+          "name": "Extension to all dimensions d >= 9"
+        }
+      ]
+    },
+    {
+      "name": "Geometric Witness (Set X)",
+      "children": [
+        {
+          "name": "Rank-one orthogonal projectors in R4"
+        },
+        {
+          "name": "Embedded in Sym4(R) trace-one hyperplane"
+        },
+        {
+          "name": "Dimension is 9 (N4 - 1)"
+        },
+        {
+          "name": "Metric: Frobenius norm"
+        },
+        {
+          "name": "Diameter: sqrt(2)"
+        },
+        {
+          "name": "Max distance occurs between orthogonal lines"
+        }
+      ]
+    },
+    {
+      "name": "Proof Strategy & Method",
+      "children": [
+        {
+          "name": "1. Reduction to Projective Maps",
+          "children": [
+            {
+              "name": "Smaller-diameter cover to smooth partition of unity"
+            },
+            {
+              "name": "Admissible map f: RP3 -> Delta9"
+            },
+            {
+              "name": "Orthogonal lines get disjoint positive coordinates"
+            }
+          ]
+        },
+        {
+          "name": "2. Symmetric Matrix Extension",
+          "children": [
+            {
+              "name": "Extend f to positive semidefinite cone by integration"
+            },
+            {
+              "name": "Extend to odd map F on all symmetric matrices"
+            },
+            {
+              "name": "Produces odd map between spheres"
+            }
+          ]
+        },
+        {
+          "name": "3. Topological Obstruction",
+          "children": [
+            {
+              "name": "Mod-two degree forces m >= Nk"
+            },
+            {
+              "name": "Maximal supports (facets) must have k=4 labels"
+            },
+            {
+              "name": "Sum of tetrahedral facets forms F2 simplicial cycle"
+            }
+          ]
+        },
+        {
+          "name": "4. Combinatorial Reduction",
+          "children": [
+            {
+              "name": "Facet complements induce 6-label triangle systems"
+            },
+            {
+              "name": "Edge links are short cycles (length 3 or 4)"
+            },
+            {
+              "name": "Block structure of labels forces contradiction"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Historical Context & Reductions",
+      "children": [
+        {
+          "name": "Origins",
+          "children": [
+            {
+              "name": "Borsuk (1933): Partition problem"
+            },
+            {
+              "name": "Kahn & Kalai (1993): Disproved in high dimensions"
+            }
+          ]
+        },
+        {
+          "name": "Dimension Bounds History",
+          "children": [
+            {
+              "name": "Early bounds: 946 (Nilli), 561 (Raigorodskii)"
+            },
+            {
+              "name": "Spherical codes: 323 (Hinrichs), 298 (Hinrichs & Richter)"
+            },
+            {
+              "name": "Strongly regular graphs: 65 (Bondarenko), 64 (Jenrich & Brouwer), 63 (Grinsztajn)"
+            },
+            {
+              "name": "Current record: 9 (OpenAI, 2026)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Formalization & Resources",
+      "children": [
+        {
+          "name": "Lean formalization in BorsukNine.lean"
+        },
+        {
+          "name": "OpenAI math repository"
+        }
+      ]
+    }
+  ]
+}
