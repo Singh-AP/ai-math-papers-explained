@@ -426,11 +426,11 @@ The two-cycle example above falls in exactly this remaining case, Case 2 of the 
 
 ## 9. Slides and other assets
 
-Everything in the first six rows below was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the companion, the Lean scope document and the Wikipedia article on Hilbert's sixteenth problem. The report, the mind map and the audio used only the two papers and the Lean document. The outputs are kept exactly as NotebookLM produced them. They are AI-generated: seven of the fifteen slides contain serious errors, and all but one of the rest have smaller slips. See the [errata](assets/README.md#errata) before relying on any detail.
+Everything in the first six rows below was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the companion, the Lean scope document and the Wikipedia article on Hilbert's sixteenth problem. The report, the mind map and the audio used only the two papers and the Lean document. The outputs are kept exactly as NotebookLM produced them. They are AI-generated. The deck was revised once to fix seven wrong slides; six were fixed, but slide 4 still has a wrong picture, and ten slides have smaller slips. See the [errata](assets/README.md#errata) before relying on any detail.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 15 beginner slides. Slides 4, 7, 9, 10, 12, 14 and 15 have serious errors (wrong pictures, labels or statements); every other slide except slide 5 has a smaller slip. All are listed in the errata |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 15 beginner slides, revised once. Slide 4 still has a serious error (a wrong return-map picture). Slides 1–3, 6–11 and 13 have smaller slips, some introduced by the revision. Slides 5, 12, 14 and 15 have none listed. All are in the errata |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top. Panel 4 overstates two proof steps; several typos |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Hilbert (1900) to the 2026 preprints |
 | [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer, restricted to the paper sources |
@@ -441,7 +441,7 @@ Everything in the first six rows below was generated with **Google NotebookLM** 
 | [Cycle words and a saddle passage](assets/figures/cycle-words-and-saddle.svg) ([PNG](assets/figures/cycle-words-and-saddle.png)) | Hand-made schematic of Steps 2–4 of the proof |
 
 <details>
-<summary><b>All 15 slides</b> (click to expand; slides 4, 7, 9, 10, 12, 14 and 15 contain serious errors and most others minor slips, see the errata)</summary>
+<summary><b>All 15 slides</b> (click to expand; slide 4 has a wrong picture and most others minor slips, see the errata)</summary>
 
 ![Slide 1](assets/notebooklm/slides/slide-01.png)
 
@@ -480,7 +480,7 @@ Everything in the first six rows below was generated with **Google NotebookLM** 
 ## How this explainer was made
 
 1. The paper, its companion and their TeX sources were downloaded from [openai/math](https://github.com/openai/math/tree/main/preprints), together with the Lean scope document and `lean/formalization.yaml`.
-2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) CLI, along with the Wikipedia article on Hilbert's sixteenth problem for background. NotebookLM generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/). Every slide, both infographics, the report and the mind map were then checked against the papers; the audio was not reviewed, and the deck was not revised.
+2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) CLI, along with the Wikipedia article on Hilbert's sixteenth problem for background. NotebookLM generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/). Every slide, both infographics, the report and the mind map were then checked against the papers; the audio was not reviewed. The deck was revised once, naming only the seven wrong slides (4, 7, 9, 10, 12, 14 and 15), and shipped after `scripts/diff_slides.py` confirmed that no other slide changed.
 3. The text on this page was written by hand (with AI assistance) directly from the papers: the principal paper's introduction and Section 11, the statements of its main theorems in Sections 3–10, and the companion's introduction and Sections 2, 6 and 7. NotebookLM's outputs contain mistakes, listed in the [errata](assets/README.md#errata), so they were used as visual and structural aids rather than as the source of truth. The two figures were made by hand. The phase portrait and displacement curve come from a short numerical integration (fourth-order Runge–Kutta) of the companion's example.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.
