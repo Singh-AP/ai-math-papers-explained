@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="770" viewBox="0 0 1100 770" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="770" fill="#ffffff"/>
+  <text x="550" y="42" text-anchor="middle" font-size="26" font-weight="bold" fill="#1f2937">A four-factor switch, checked view by view</text>
+  <text x="550" y="70" text-anchor="middle" font-size="15" fill="#4b5563">Example field E = ℚ(ζ₇). Its 6 embeddings are labelled by g = 1, …, 6 (mod 7); complex conjugation c sends g to 7 − g.</text>
+
+  <!-- Panel A: the four sign functions -->
+  <rect x="20" y="90" width="510" height="320" rx="14" fill="#fafafa" stroke="#d1d5db"/>
+  <text x="275" y="120" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937">1. Four CM types (odd sign functions)</text>
+  <text x="45" y="152" font-size="15" fill="#374151">value at g =</text>
+  <g font-size="15" font-weight="bold" text-anchor="middle" fill="#374151">
+    <text x="205" y="152">1</text>
+    <text x="275" y="152">2</text>
+    <text x="345" y="152">4</text>
+  </g>
+  <!-- rows -->
+  <g font-size="16" fill="#111827">
+    <text x="45" y="183">v₁</text>
+    <text x="45" y="219">v₂</text>
+    <text x="45" y="255" font-weight="bold">v₁ + v₂</text>
+    <text x="45" y="305">v₃</text>
+    <text x="45" y="341">v₄</text>
+    <text x="45" y="377" font-weight="bold">v₃ + v₄</text>
+  </g>
+  <g stroke="#ffffff" stroke-width="2">
+    <!-- v1: + + - -->
+    <rect x="175" y="162" width="60" height="32" fill="#bbf7d0"/>
+    <rect x="245" y="162" width="60" height="32" fill="#bbf7d0"/>
+    <rect x="315" y="162" width="60" height="32" fill="#e9d5ff"/>
+    <!-- v2: + - + -->
+    <rect x="175" y="198" width="60" height="32" fill="#bbf7d0"/>
+    <rect x="245" y="198" width="60" height="32" fill="#e9d5ff"/>
+    <rect x="315" y="198" width="60" height="32" fill="#bbf7d0"/>
+    <!-- sum -->
+    <rect x="175" y="234" width="60" height="32" fill="#e5e7eb"/>
+    <rect x="245" y="234" width="60" height="32" fill="#e5e7eb"/>
+    <rect x="315" y="234" width="60" height="32" fill="#e5e7eb"/>
+    <!-- v3: + + + -->
+    <rect x="175" y="284" width="60" height="32" fill="#bbf7d0"/>
+    <rect x="245" y="284" width="60" height="32" fill="#bbf7d0"/>
+    <rect x="315" y="284" width="60" height="32" fill="#bbf7d0"/>
+    <!-- v4: + - - -->
+    <rect x="175" y="320" width="60" height="32" fill="#bbf7d0"/>
+    <rect x="245" y="320" width="60" height="32" fill="#e9d5ff"/>
+    <rect x="315" y="320" width="60" height="32" fill="#e9d5ff"/>
+    <!-- sum -->
+    <rect x="175" y="356" width="60" height="32" fill="#e5e7eb"/>
+    <rect x="245" y="356" width="60" height="32" fill="#e5e7eb"/>
+    <rect x="315" y="356" width="60" height="32" fill="#e5e7eb"/>
+  </g>
+  <g font-size="20" font-weight="bold" text-anchor="middle">
+    <text x="205" y="185" fill="#14532d">+</text><text x="275" y="185" fill="#14532d">+</text><text x="345" y="185" fill="#581c87">−</text>
+    <text x="205" y="221" fill="#14532d">+</text><text x="275" y="221" fill="#581c87">−</text><text x="345" y="221" fill="#14532d">+</text>
+    <text x="205" y="257" fill="#111827">2</text><text x="275" y="257" fill="#111827">0</text><text x="345" y="257" fill="#111827">0</text>
+    <text x="205" y="307" fill="#14532d">+</text><text x="275" y="307" fill="#14532d">+</text><text x="345" y="307" fill="#14532d">+</text>
+    <text x="205" y="343" fill="#14532d">+</text><text x="275" y="343" fill="#581c87">−</text><text x="345" y="343" fill="#581c87">−</text>
+    <text x="205" y="379" fill="#111827">2</text><text x="275" y="379" fill="#111827">0</text><text x="345" y="379" fill="#111827">0</text>
+  </g>
+  <g font-size="13" fill="#374151">
+    <text x="392" y="200">Both pairs add up</text>
+    <text x="392" y="218">to (2, 0, 0):</text>
+    <text x="392" y="236">the relation</text>
+    <text x="392" y="254" font-weight="bold">v₁ + v₂ = v₃ + v₄.</text>
+    <text x="392" y="296">At g = 6, 5, 3 every</text>
+    <text x="392" y="314">value flips sign</text>
+    <text x="392" y="332">(oddness), so the</text>
+    <text x="392" y="350">relation holds there too.</text>
+  </g>
+
+  <!-- Panel B: how to read the signs -->
+  <rect x="550" y="90" width="530" height="320" rx="14" fill="#fafafa" stroke="#d1d5db"/>
+  <text x="815" y="120" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937">2. What the signs mean</text>
+  <g font-size="14" fill="#374151">
+    <text x="572" y="152">• <tspan font-weight="bold" fill="#14532d">v(g) = +1</tspan>: the g-th embedding line of H¹(B(v)) is</text>
+    <text x="586" y="173">holomorphic, of type (1,0).</text>
+    <text x="572" y="198">• <tspan font-weight="bold" fill="#581c87">v(g) = −1</tspan>: that line is antiholomorphic, type (0,1).</text>
+    <text x="572" y="223">• Odd: v(cg) = −v(g). Each conjugate pair has one of each,</text>
+    <text x="586" y="244">so v is exactly a CM type of E.</text>
+    <text x="572" y="269">• Each v gives a 3-dimensional CM abelian variety B(v)</text>
+    <text x="586" y="290">whose H¹ is the Hodge structure U(v) (paper, Section 2).</text>
+    <text x="572" y="315">• Theorem 2.5 (four-factor switch) says the line</text>
+    <text x="586" y="340" font-weight="bold" fill="#1f2937" xml:space="preserve">U(v₁)₁ ⊗ U(v₂)₁ ⊗ U(v₃)<tspan dy="4" font-size="11">c</tspan><tspan dy="-4"> ⊗ U(v₄)</tspan><tspan dy="4" font-size="11">c</tspan></text>
+    <text x="586" y="363">in H⁴ of B(v₁) × B(v₂) × B(v₃) × B(v₄) is algebraic.</text>
+    <text x="586" y="386">(Subscript 1 or c: which embedding line is used.)</text>
+  </g>
+
+  <!-- Panel C: the six views -->
+  <rect x="20" y="430" width="1060" height="325" rx="14" fill="#fafafa" stroke="#d1d5db"/>
+  <text x="550" y="460" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937">3. The switch line seen in each of the 6 views (Galois conjugates)</text>
+  <text x="560" y="486" text-anchor="middle" font-size="14" fill="#4b5563">one embedding from each pair</text>
+  <text x="890" y="486" text-anchor="middle" font-size="14" fill="#4b5563">their complex conjugates</text>
+  <line x1="725" y1="474" x2="725" y2="690" stroke="#9ca3af" stroke-dasharray="5,4"/>
+  <g font-size="15" font-weight="bold" text-anchor="middle" fill="#374151">
+    <text x="450" y="510">g = 1</text>
+    <text x="560" y="510">g = 2</text>
+    <text x="670" y="510">g = 4</text>
+    <text x="780" y="510">g = 6</text>
+    <text x="890" y="510">g = 5</text>
+    <text x="1000" y="510">g = 3</text>
+  </g>
+  <g font-size="15" fill="#111827">
+    <text x="40" y="543">factor 1: U(v₁)₁, sign v₁(g)</text>
+    <text x="40" y="581">factor 2: U(v₂)₁, sign v₂(g)</text>
+    <text x="40" y="619">factor 3: U(v₃)<tspan dy="4" font-size="11">c</tspan><tspan dy="-4">, sign −v₃(g)</tspan></text>
+    <text x="40" y="657">factor 4: U(v₄)<tspan dy="4" font-size="11">c</tspan><tspan dy="-4">, sign −v₄(g)</tspan></text>
+  </g>
+  <g stroke="#ffffff" stroke-width="2">
+    <!-- columns: x centers 450 560 670 780 890 1000, width 84 -->
+    <!-- row 1 = v1: + + - - - + -->
+    <rect x="408" y="522" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="518" y="522" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="628" y="522" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="738" y="522" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="848" y="522" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="958" y="522" width="84" height="34" fill="#bbf7d0"/>
+    <!-- row 2 = v2: + - + - + - -->
+    <rect x="408" y="560" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="518" y="560" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="628" y="560" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="738" y="560" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="848" y="560" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="958" y="560" width="84" height="34" fill="#e9d5ff"/>
+    <!-- row 3 = -v3: - - - + + + -->
+    <rect x="408" y="598" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="518" y="598" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="628" y="598" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="738" y="598" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="848" y="598" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="958" y="598" width="84" height="34" fill="#bbf7d0"/>
+    <!-- row 4 = -v4: - + + + - - -->
+    <rect x="408" y="636" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="518" y="636" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="628" y="636" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="738" y="636" width="84" height="34" fill="#bbf7d0"/>
+    <rect x="848" y="636" width="84" height="34" fill="#e9d5ff"/>
+    <rect x="958" y="636" width="84" height="34" fill="#e9d5ff"/>
+  </g>
+  <g font-size="20" font-weight="bold" text-anchor="middle">
+    <text x="450" y="546" fill="#14532d">+</text><text x="560" y="546" fill="#14532d">+</text><text x="670" y="546" fill="#581c87">−</text><text x="780" y="546" fill="#581c87">−</text><text x="890" y="546" fill="#581c87">−</text><text x="1000" y="546" fill="#14532d">+</text>
+    <text x="450" y="584" fill="#14532d">+</text><text x="560" y="584" fill="#581c87">−</text><text x="670" y="584" fill="#14532d">+</text><text x="780" y="584" fill="#581c87">−</text><text x="890" y="584" fill="#14532d">+</text><text x="1000" y="584" fill="#581c87">−</text>
+    <text x="450" y="622" fill="#581c87">−</text><text x="560" y="622" fill="#581c87">−</text><text x="670" y="622" fill="#581c87">−</text><text x="780" y="622" fill="#14532d">+</text><text x="890" y="622" fill="#14532d">+</text><text x="1000" y="622" fill="#14532d">+</text>
+    <text x="450" y="660" fill="#581c87">−</text><text x="560" y="660" fill="#14532d">+</text><text x="670" y="660" fill="#14532d">+</text><text x="780" y="660" fill="#14532d">+</text><text x="890" y="660" fill="#581c87">−</text><text x="1000" y="660" fill="#581c87">−</text>
+  </g>
+  <text x="40" y="696" font-size="15" font-weight="bold" fill="#111827">count in each view</text>
+  <g font-size="15" font-weight="bold" text-anchor="middle" fill="#065f46">
+    <text x="450" y="696">2+ 2− ✓</text>
+    <text x="560" y="696">2+ 2− ✓</text>
+    <text x="670" y="696">2+ 2− ✓</text>
+    <text x="780" y="696">2+ 2− ✓</text>
+    <text x="890" y="696">2+ 2− ✓</text>
+    <text x="1000" y="696">2+ 2− ✓</text>
+  </g>
+  <text x="550" y="726" text-anchor="middle" font-size="14" fill="#374151">Two holomorphic and two antiholomorphic factors in every view: the line has Hodge type (2,2) in every conjugate.</text>
+  <text x="550" y="745" text-anchor="middle" font-size="14" fill="#374151" font-style="italic">That balance is easy to check. Proving the line is <tspan font-weight="bold">algebraic</tspan> is the hard part, done by the surface and theta construction.</text>
+</svg>

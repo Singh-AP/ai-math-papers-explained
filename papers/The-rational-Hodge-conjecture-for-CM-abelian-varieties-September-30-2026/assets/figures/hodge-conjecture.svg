@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="600" viewBox="0 0 1100 600" font-family="Helvetica, Arial, sans-serif">
+  <rect x="0" y="0" width="1100" height="600" fill="#ffffff"/>
+  <text x="550" y="44" text-anchor="middle" font-size="26" font-weight="bold" fill="#1f2937">What the Hodge conjecture asks</text>
+
+  <!-- Left panel: Hodge diamond -->
+  <rect x="20" y="70" width="520" height="505" rx="14" fill="#fafafa" stroke="#d1d5db"/>
+  <text x="280" y="104" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937">1. Cohomology splits into Hodge types</text>
+  <text x="280" y="128" text-anchor="middle" font-size="15" fill="#4b5563">Hodge diamond of an abelian surface (complex dimension 2)</text>
+
+  <!-- highlighted (p,p) column -->
+  <rect x="272" y="150" width="56" height="330" rx="28" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+
+  <!-- row labels -->
+  <g font-size="18" fill="#374151">
+    <text x="70" y="181">H<tspan dy="-8" font-size="13">0</tspan></text>
+    <text x="70" y="251">H<tspan dy="-8" font-size="13">1</tspan></text>
+    <text x="70" y="321">H<tspan dy="-8" font-size="13">2</tspan></text>
+    <text x="70" y="391">H<tspan dy="-8" font-size="13">3</tspan></text>
+    <text x="70" y="461">H<tspan dy="-8" font-size="13">4</tspan></text>
+  </g>
+  <g stroke="#e5e7eb" stroke-width="1">
+    <line x1="105" y1="175" x2="190" y2="175"/>
+    <line x1="105" y1="245" x2="190" y2="245"/>
+    <line x1="105" y1="315" x2="150" y2="315"/>
+    <line x1="105" y1="385" x2="190" y2="385"/>
+    <line x1="105" y1="455" x2="190" y2="455"/>
+  </g>
+
+  <!-- diamond entries -->
+  <g fill="#ffffff" stroke="#4b5563" stroke-width="1.5">
+    <circle cx="300" cy="175" r="22"/>
+    <circle cx="245" cy="245" r="22"/>
+    <circle cx="355" cy="245" r="22"/>
+    <circle cx="190" cy="315" r="22"/>
+    <circle cx="300" cy="315" r="22"/>
+    <circle cx="410" cy="315" r="22"/>
+    <circle cx="245" cy="385" r="22"/>
+    <circle cx="355" cy="385" r="22"/>
+    <circle cx="300" cy="455" r="22"/>
+  </g>
+  <g font-size="19" font-weight="bold" text-anchor="middle" fill="#111827">
+    <text x="300" y="182">1</text>
+    <text x="245" y="252">2</text>
+    <text x="355" y="252">2</text>
+    <text x="190" y="322">1</text>
+    <text x="300" y="322">4</text>
+    <text x="410" y="322">1</text>
+    <text x="245" y="392">2</text>
+    <text x="355" y="392">2</text>
+    <text x="300" y="462">1</text>
+  </g>
+  <!-- (a,b) labels on the H^2 row -->
+  <g font-size="12" text-anchor="middle" fill="#6b7280">
+    <text x="190" y="287">(2,0)</text>
+    <text x="300" y="287">(1,1)</text>
+    <text x="410" y="287">(0,2)</text>
+  </g>
+  <!-- right-hand annotation of the H^2 row -->
+  <text x="442" y="306" font-size="13" fill="#374151" xml:space="preserve">H<tspan dy="-6" font-size="10">2</tspan><tspan dy="6"> has</tspan></text>
+  <text x="442" y="324" font-size="13" fill="#374151">1 + 4 + 1 = 6</text>
+  <text x="442" y="342" font-size="13" fill="#374151">dimensions</text>
+  <!-- column label -->
+  <text x="300" y="500" text-anchor="middle" font-size="14" font-weight="bold" fill="#92400e">type (p,p)</text>
+
+  <text x="280" y="532" text-anchor="middle" font-size="14" fill="#374151">Each circle is the dimension of one piece H<tspan dy="-6" font-size="11">a,b</tspan><tspan dy="6">: forms with a holomorphic</tspan></text>
+  <text x="280" y="554" text-anchor="middle" font-size="14" fill="#374151">and b antiholomorphic directions. Subvarieties land in the gold column.</text>
+
+  <!-- Right panel: nested sets -->
+  <rect x="560" y="70" width="520" height="505" rx="14" fill="#fafafa" stroke="#d1d5db"/>
+  <text x="820" y="104" text-anchor="middle" font-size="18" font-weight="bold" fill="#1f2937">2. Which classes come from geometry?</text>
+
+  <rect x="585" y="125" width="470" height="300" rx="24" fill="#f1f5f9" stroke="#94a3b8" stroke-width="1.5"/>
+  <text x="605" y="153" font-size="16" fill="#334155">All rational classes in H<tspan dy="-7" font-size="12">2p</tspan><tspan dy="7">(X, ℚ)</tspan></text>
+
+  <rect x="608" y="168" width="424" height="240" rx="22" fill="#fde68a" stroke="#d97706" stroke-width="1.5"/>
+  <text x="628" y="196" font-size="16" fill="#78350f"><tspan font-weight="bold">Hodge classes</tspan>: rational and of type (p,p)</text>
+
+  <rect x="631" y="211" width="378" height="180" rx="20" fill="#bbf7d0" stroke="#16a34a" stroke-width="1.5"/>
+  <text x="651" y="242" font-size="16" font-weight="bold" fill="#14532d">Algebraic classes</text>
+  <text x="651" y="266" font-size="15" fill="#14532d">ℚ-combinations of the classes [Z]</text>
+  <text x="651" y="288" font-size="15" fill="#14532d">of subvarieties Z of codimension p</text>
+  <!-- small sketch: a curve on a surface -->
+  <ellipse cx="930" cy="340" rx="58" ry="30" fill="#dcfce7" stroke="#15803d" stroke-width="1.2"/>
+  <path d="M 884 346 C 905 322, 935 360, 975 332" fill="none" stroke="#b91c1c" stroke-width="2.5"/>
+  <text x="986" y="330" font-size="13" fill="#b91c1c">Z</text>
+  <text x="930" y="386" text-anchor="middle" font-size="12" fill="#166534">a curve Z on a surface X</text>
+  <text x="651" y="322" font-size="13" font-style="italic" fill="#166534">Always true: every algebraic</text>
+  <text x="651" y="340" font-size="13" font-style="italic" fill="#166534">class is a Hodge class.</text>
+
+  <rect x="585" y="440" width="470" height="54" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="820" y="464" text-anchor="middle" font-size="15" fill="#7c2d12"><tspan font-weight="bold">Hodge conjecture (1950):</tspan> on every smooth projective X,</text>
+  <text x="820" y="484" text-anchor="middle" font-size="15" fill="#7c2d12">the gold and green regions coincide.</text>
+
+  <rect x="585" y="505" width="470" height="54" rx="12" fill="#ecfdf5" stroke="#059669" stroke-width="1.5"/>
+  <text x="820" y="529" text-anchor="middle" font-size="15" fill="#064e3b"><tspan font-weight="bold">This paper:</tspan> they coincide on every CM abelian</text>
+  <text x="820" y="549" text-anchor="middle" font-size="15" fill="#064e3b">variety, for every p (and on all products and powers).</text>
+</svg>

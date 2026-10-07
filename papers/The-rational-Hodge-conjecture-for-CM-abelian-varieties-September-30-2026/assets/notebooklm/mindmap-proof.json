@@ -1,0 +1,138 @@
+{
+  "name": "Hodge Conjecture & Related Tensors",
+  "children": [
+    {
+      "name": "CM Abelian Varieties",
+      "children": [
+        {
+          "name": "Rational Hodge Conjecture Proof",
+          "children": [
+            {
+              "name": "Betti cycle-class map clB is surjective"
+            },
+            {
+              "name": "Holds for products and powers of CM abelian varieties"
+            }
+          ]
+        },
+        {
+          "name": "Core Proof Strategy",
+          "children": [
+            {
+              "name": "Reduction to four-factor relations (v1 + v2 = v3 + v4)"
+            },
+            {
+              "name": "Surface period criterion (degree-one Hodge maps)"
+            },
+            {
+              "name": "Theta differentials on compact arithmetic quotients of complex two-ball"
+            },
+            {
+              "name": "Weak approximation of Hermitian plane decompositions"
+            },
+            {
+              "name": "Arithmetic Hecke endomorphisms and Frobenius relations"
+            }
+          ]
+        },
+        {
+          "name": "Consequences",
+          "children": [
+            {
+              "name": "Generalized Hodge Conjecture for CM abelian varieties"
+            },
+            {
+              "name": "Tate Conjecture for abelian varieties over finite fields"
+            },
+            {
+              "name": "Hodge Standard Conjecture in arbitrary characteristic"
+            },
+            {
+              "name": "Specialization of Hodge classes on good reduction varieties"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Products of K3 Surfaces",
+      "children": [
+        {
+          "name": "Main Result",
+          "children": [
+            {
+              "name": "Rational Hodge conjecture holds for finite products of projective K3 surfaces"
+            },
+            {
+              "name": "Applies to distinct or repeated factors with any Picard number/periods"
+            }
+          ]
+        },
+        {
+          "name": "Key Theoretical Tools",
+          "children": [
+            {
+              "name": "Kuga-Satake correspondences (weight-two to weight-one translation)"
+            },
+            {
+              "name": "Homological Mirror Symmetry (Fukaya categories and mirror quartics/stori)"
+            },
+            {
+              "name": "Graded Lagrangian immersions and disk-moduli Stokes identity"
+            },
+            {
+              "name": "Hochschild cap-action and semiregularity deformation (Buchweitz-Flenner/Pridham)"
+            },
+            {
+              "name": "Degree-four spin tensors and grid transport"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Weil Classes & Abelian Powers",
+      "children": [
+        {
+          "name": "Split Weil Sixfolds",
+          "children": [
+            {
+              "name": "Imaginary quadratic action with hyperbolic signature (3,3)"
+            },
+            {
+              "name": "Rational Hodge conjecture holds in every codimension on all self-powers"
+            }
+          ]
+        },
+        {
+          "name": "Abelian Varieties ≤ 5 Dimensions",
+          "children": [
+            {
+              "name": "Admitting an imaginary-quadratic action"
+            },
+            {
+              "name": "Rational Hodge conjecture holds on all self-powers"
+            }
+          ]
+        },
+        {
+          "name": "Methodological Steps",
+          "children": [
+            {
+              "name": "Determinant criterion for derived Hodge groups"
+            },
+            {
+              "name": "Supply of quadratic determinants via auxiliary CM elliptic factors"
+            },
+            {
+              "name": "Secant-sheaf constructions and Fourier-Mukai transforms"
+            },
+            {
+              "name": "Algebraicity of the hyperbolic Weil plane"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
