@@ -386,11 +386,11 @@ The proof compares $\int_{\lbrace\tau<s\rbrace}(dd^c\tau)^d$ with the flux of $d
 
 ## 9. Slides, audio and other assets
 
-Everything below except the two hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook"). The slides, infographics and audio come from the paper, the general companion, the reasoning summary, the Lean scope document and the Wikipedia article on the Mahler volume. The mind map comes from the two papers and the Lean scope document only, and the report from this paper and the Lean scope document only. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. Slides 2, 10 and 12 contain real mistakes: a non-convex "convex" example, a rotated lens, and a "unique" median. A revision was tried, but it made slide 11 worse, so the original deck is kept. The report follows this paper's lens argument but has a few wrong numbers, such as 27/2 for the triangle.
+Everything below except the two hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook"). The slides, infographics and audio come from the paper, the general companion, the reasoning summary, the Lean scope document and the Wikipedia article on the Mahler volume. The mind map comes from the two papers and the Lean scope document only, and the report from this paper and the Lean scope document only. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. Slides 2, 10 and 13 were revised once to fix a non-convex "convex" example, a rotated lens and text leaked from the prompt. Slide 12 still says the median is "unique", and slide 11 still carries a leaked instruction; a revision that also targeted those two slides made slide 11 worse and was not shipped. The report follows this paper's lens argument but has a few wrong numbers, such as 27/2 for the triangle.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 13 beginner slides |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) ([PPTX](assets/notebooklm/slides.pptx)) | 13 beginner slides (slides 2, 10 and 13 revised once) |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Blaschke and Mahler to 2026 |
 | [Polar-pairs figure](assets/figures/polar-pairs.svg) ([PNG](assets/figures/polar-pairs.png)) | Hand-made: square/diamond, hexagon/hexagon and disk/disk, with volume products 8, 9 and $\pi^2$ (section 1.3) |
