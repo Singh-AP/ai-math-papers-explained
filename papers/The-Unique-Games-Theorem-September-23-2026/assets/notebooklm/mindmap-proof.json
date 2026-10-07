@@ -1,0 +1,157 @@
+{
+  "name": "Hardness of Approximation Theorems",
+  "children": [
+    {
+      "name": "Optimal Max-Cut Hardness",
+      "children": [
+        {
+          "name": "Main Result",
+          "children": [
+            {
+              "name": "NP-hard for factor greater than Goemans-Williamson constant"
+            },
+            {
+              "name": "Holds for simple unweighted graphs"
+            }
+          ]
+        },
+        {
+          "name": "Methodology",
+          "children": [
+            {
+              "name": "Tree code with complementary traversals"
+            },
+            {
+              "name": "Majority Is Stablest theorem"
+            },
+            {
+              "name": "Vector-valued affine hashing lemma"
+            },
+            {
+              "name": "Hidden coordinate decoding"
+            }
+          ]
+        },
+        {
+          "name": "Foundational Inputs",
+          "children": [
+            {
+              "name": "Affine 2-to-1 games theorem"
+            },
+            {
+              "name": "Grassmann-graph approach"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Factor-Two Hardness for Vertex Cover",
+      "children": [
+        {
+          "name": "Main Result",
+          "children": [
+            {
+              "name": "NP-hard for any factor below 2"
+            },
+            {
+              "name": "Explicit cover gap thresholds"
+            },
+            {
+              "name": "Unweighted simple graphs"
+            }
+          ]
+        },
+        {
+          "name": "Key Techniques",
+          "children": [
+            {
+              "name": "Lipschitz derivatives from large independent sets"
+            },
+            {
+              "name": "Efron-Stein orthogonal decomposition"
+            },
+            {
+              "name": "Resampling estimate for own-question variance"
+            },
+            {
+              "name": "Candidate label list extraction"
+            }
+          ]
+        },
+        {
+          "name": "Base Hardness Input",
+          "children": [
+            {
+              "name": "Label Cover promise with perfect completeness"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "The Unique Games Theorem",
+      "children": [
+        {
+          "name": "Formalization Scope",
+          "children": [
+            {
+              "name": "Formalized in Lean 4"
+            }
+          ]
+        },
+        {
+          "name": "Core Statement",
+          "children": [
+            {
+              "name": "Resolution of Unique Games Conjecture"
+            },
+            {
+              "name": "Arbitrary completeness 1-ε and soundness δ"
+            },
+            {
+              "name": "Binary translation constraints on F2^s"
+            },
+            {
+              "name": "Deterministic polynomial-time reduction from 3SAT"
+            }
+          ]
+        },
+        {
+          "name": "Proof Architecture",
+          "children": [
+            {
+              "name": "Latent alphabet gadget with quadratic blocks"
+            },
+            {
+              "name": "Inverse shortcode theorem on matrix domains"
+            },
+            {
+              "name": "Advice experiment & Fourier decoding"
+            },
+            {
+              "name": "Clean coordinates & parallel repetition"
+            }
+          ]
+        },
+        {
+          "name": "Major Consequences",
+          "children": [
+            {
+              "name": "Optimal CSP hardness (Raghavendra's threshold)"
+            },
+            {
+              "name": "Optimal ordering CSPs hardness"
+            },
+            {
+              "name": "Constant-factor hardness for Multicut and Correlation Clustering"
+            },
+            {
+              "name": "Kernel clustering thresholds"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

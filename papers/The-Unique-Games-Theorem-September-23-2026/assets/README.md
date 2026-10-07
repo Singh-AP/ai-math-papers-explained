@@ -9,13 +9,13 @@ Supporting material for the [explainer](../README.md). Everything in `notebooklm
 | `figures/thresholds.svg`, `figures/thresholds.png` | Hand-written SVG | Max-Cut and Vertex Cover: achievable, open and NP-hard ranges before and after family 102. The PNG is a 3× render |
 | `figures/tiny-unique-game.svg`, `figures/tiny-unique-game.png` | Hand-written SVG | A unique (translation) constraint over 2-bit labels, a 2-to-1 constraint for contrast, and a 3-vertex unique game of value 2/3. The PNG is a 3× render |
 | `figures/latent-noise.svg`, `figures/latent-noise.png` | Hand-written SVG | The one-half completeness barrier of the ordinary rank-one test versus the latent test (Lemma 3.1, Section 4.4, Lemma 5.4). The PNG is a 3× render |
-| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), not revised | 15 beginner slides. Slides 9, 11 and 14 contain clear errors (see errata). A revision was not run because the shared quota was below the 40% needed |
+| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), revised once | 15 beginner slides. Slides 9, 11 and 14 were regenerated to fix errors (see errata) |
 | `notebooklm/slides/slide-NN.png` | `pymupdf` at 200 DPI from `slides.pdf` | Per-slide images for inline viewing |
 | `notebooklm/infographic-overview.png` | NotebookLM infographic (portrait, detailed, instructional) | One-page overview, 1536 × 2752 |
 | `notebooklm/infographic-history-timeline.png` | NotebookLM infographic (landscape, sketch-note) | From Cook–Levin to 2026, 2752 × 1536 |
 | `notebooklm/beginner-explainer-report.md` | NotebookLM "Create Your Own" report, restricted to the three paper PDFs and the Lean scope document | Long-form explainer |
-
-No mind map and no audio overview were generated. The NotebookLM quota is shared with other papers, and it had dropped below the agreed 8% floor before these two could be started.
+| `notebooklm/mindmap-proof.json`, `notebooklm/mindmaps.md` | NotebookLM mind map, restricted to the three paper PDFs and the Lean scope document | Requested title "How the proof works". NotebookLM titled it "Hardness of Approximation" with root "Hardness of Approximation Theorems" and made it an overview of the whole family |
+| `notebooklm/audio-overview-brief.m4a` | NotebookLM audio overview ("brief") | About 101 seconds; not reviewed (see errata) |
 
 ### Notebook sources
 
@@ -27,7 +27,7 @@ Notebook `a1af1d56-52dd-445a-b993-6a9e0d20817b`:
 4. [`lean/docs/102.md`](https://github.com/openai/math/blob/main/lean/docs/102.md): scope of the Lean formalization
 5. [Wikipedia: Unique games conjecture](https://en.wikipedia.org/wiki/Unique_games_conjecture), for historical background
 
-The report used sources 1–4 only. The slides and infographics used all five.
+The report and the mind map used sources 1–4 only. The slides, infographics and audio used all five.
 
 The abridged [reasoning summary](https://github.com/openai/math/blob/main/reasoning_traces/basic-semidefinite-threshold-np-hardness.pdf) was read for the explainer but not added to the notebook. It describes many abandoned proof attempts that NotebookLM could mistake for the paper's argument.
 
@@ -50,17 +50,18 @@ NotebookLM is good at structure and visuals but sometimes invents or garbles mat
 - The "HARDNESS RESOLVED" badge overstates the result. These are NP-hardness statements; P vs NP is untouched.
 - The 2002 Dinur–Safra bound for Vertex Cover (1.36) is missing, though the prompt listed it.
 
-**`slides.pdf` / `slides.pptx`** (not revised; see below for the revision that would fix the worst slides)
+**`slides.pdf` / `slides.pptx`** (revised once)
+- The first deck NotebookLM produced had three clearly wrong slides. Slide 9 called the soundness analysis "Extracting Structure (The YES Case)" and drew a "Decoder C Boundary". In the paper this step starts from an *arbitrary* labeling that passes 99% of tests and is used to rule out the NO case; the decoder C belongs only to the honest labeling. Slide 11 placed Vertex Cover inside Raghavendra's theorem for constraint satisfaction problems, but the paper derives it from Khot–Regev's separate reduction ("The Vertex Cover result uses its own reduction"). Slide 14 showed invented formulas and "Lean code" (a rank-one test with $v^{\top}Mv\ge\alpha$, power iteration, `Eigenvalues.PowerIteration`) with a "100% Verified in Lean" badge. All three were regenerated with one `nlm slides revise` naming only those slides. `scripts/diff_slides.py` confirmed that no other slide changed, and the shipped deck is the revised one.
 - Slide 3 shows a stray colour name, "Vermilion", twice. Its Vertex Cover axis runs from 2.0 down to 1.0 but draws √2 ≈ 1.414 on the wrong side of the 1.75 tick. Neither axis is to scale.
 - Slide 7 suggests that each 3SAT clause is mapped to one parity equation. Håstad's reduction is a PCP-based construction, not a clause-by-clause translation.
 - Slide 8's footer says the gadget "perfectly isolates the signal from the noise". Honest answers still fail up to $p/2$ of the time. "Non-Linear Matrix Filter" is the slide's own name for what the paper calls the latent alphabet gadget.
-- **Slide 9 is wrong.** It is titled "Extracting Structure (The YES Case)" and draws a "Decoder C Boundary". In the paper this step is the soundness analysis. It starts from an *arbitrary* labeling that passes 99% of tests and is used to rule out the NO case. The decoder C belongs only to the honest labeling. The three bullet points themselves are correct.
-- **Slide 11 is wrong.** It places Vertex Cover inside Raghavendra's theorem for constraint satisfaction problems. The paper derives the Vertex Cover threshold from Khot–Regev's separate reduction ("The Vertex Cover result uses its own reduction"). The footer text is cut off at the right edge, and "permanently defined" overstates.
+- Slide 9 (revised) is now titled "Step 3: Soundness. Extracting structure from any labeling that passes 99% of tests", and its bullets are correct. The noisy-wave-to-sine-wave drawing is decoration.
+- Slide 11 (revised) now places Vertex Cover outside the CSP circle, labelled "Khot–Regev reduction". The footer is still cut off at the right edge, and "permanently defined" overstates.
 - Slide 12 says the two algorithms are "proven absolutely optimal". They are optimal among polynomial-time algorithms *if P ≠ NP*. The struck-through 16/17 appears twice.
-- **Slide 14 is wrong.** Its formulas and "Lean code" (a rank-one test with $v^{\top}Mv\ge\alpha$, power iteration, `Eigenvalues.PowerIteration`, `sum_le_C`) are invented and have nothing to do with the paper or with openai/math's Lean files. The real formal statement is `theorem11 (ε δ : ℝ) … : Nonempty (Explicit.MachineOutputContract.BinaryGapReduction ε δ)`. The "100% Verified in Lean" badge also overstates. openai/math lists the theorem as formalized, the catalogue's review status is "unchecked", and this explainer did not re-run the check.
+- Slide 14 (revised) now shows the real Lean statement `theorem11 (ε δ : ℝ) … : Nonempty (BinaryGapReduction ε δ)` in its left panel, with the badge "Listed as formalized in openai/math (Comparator statement)". Its right-hand code panel is still partly garbled pseudo-code ("import Lean as math", "chat ε = ∗.ε << 1", "GapReduiaε"), and a stray "Ger" appears next to the watermark. The footer's "rigorously formalized and verified" goes beyond what this explainer checked: openai/math lists the theorem as formalized, the catalogue's review status is "unchecked", and the check was not re-run.
 - Slide 15 says P vs NP stays open "because the result relies on reductions". More precisely, NP-hardness says that a fast algorithm for these thresholds would give one for 3SAT; it does not say whether 3SAT itself is easy.
 
-A revision would have been the following single command, naming only the three clearly wrong slides. It was **not** run, because the shared quota was at about 20%, below the 40% this pipeline requires before a revision:
+The revision command that was run (new deck `10b0a690-caaf-457c-bb23-95d3687b40fe`, from `20dd5dee-5c75-4f02-bce8-645a19398fdf`):
 
 ```bash
 nlm slides revise 20dd5dee-5c75-4f02-bce8-645a19398fdf --profile amy --confirm \
@@ -81,5 +82,10 @@ nlm slides revise 20dd5dee-5c75-4f02-bce8-645a19398fdf --profile amy --confirm \
 - The people table credits Dinur and Steurer with "clean coordinate techniques". The clean-coordinate argument is the paper's own (following Khot–Minzer–Safra's vanishing-advice framework); Dinur–Steurer supply the repetition bound. The table also says Khot–Minzer–Safra "developed the inverse shortcode framework". The paper derives its inverse shortcode theorem (Theorem 5.1) from their Grassmann expansion theorem through Barak–Kothari–Steurer's matrix chart.
 - Section 7, item 1 says the theorem "establishes NP-hardness statements under the standard assumption that P ≠ NP". This is wrong: NP-hardness is proved outright, and P ≠ NP is needed only to conclude that no polynomial-time algorithm exists. Item 4 calls the Lean formalization an "ongoing technical process". openai/math lists the main theorem as formalized with a Comparator statement; the catalogue's review status reads "unchecked".
 
-**Audio and mind map**
-- Not generated in this pass (see the inventory). If an audio overview is added later, note that audio can't be reviewed by reading, so treat it as an informal teaser.
+**`mindmaps.md` / `mindmap-proof.json`**
+- The map covers the whole family (Max-Cut, Vertex Cover, Unique Games Theorem), not just "how the proof works". Its proof branch skips the starting point (Håstad's parity gap) and the final rounding, subdivision and repetition steps.
+- The node "Formalized in Lean 4" has no qualifier. openai/math lists the main theorem as formalized; the Section 8 consequences, which appear in the same branch, are not formalized, and this explainer did not re-run the check.
+- "Constant-factor hardness for Multicut and Correlation Clustering" means hardness for *every* constant factor (Corollary 8.3), not hardness for one constant.
+
+**`audio-overview-brief.m4a`**
+- Not checked against a transcript. Audio can't be reviewed by reading, so treat it as an informal teaser.

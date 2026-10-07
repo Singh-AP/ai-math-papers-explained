@@ -387,14 +387,16 @@ Latent detection says $\Lambda_g\le 7/8$ whenever $`\dim\mathrm{span}\{g_i|_K\}\
 
 ## 9. Slides, audio and other assets
 
-The slides, infographics and report below were generated with **Google NotebookLM** (now "Gemini Notebook"). The notebook held the paper, the Max-Cut and Vertex Cover companions, the Lean scope document and the Wikipedia article on the Unique Games Conjecture; the report used only the papers and the Lean document. The outputs are kept exactly as NotebookLM produced them. They are AI-generated: slides 9, 11 and 14 contain clear errors, and the other files have smaller slips, all listed in the [errata](assets/README.md#errata). A mind map and an audio overview were not generated, because the shared NotebookLM quota ran low.
+Everything below except the hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook"). The notebook held the paper, the Max-Cut and Vertex Cover companions, the Lean scope document and the Wikipedia article on the Unique Games Conjecture; the report and the mind map used only the papers and the Lean document. The outputs are kept exactly as NotebookLM produced them. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. The slide deck was revised once, to fix three slides that were clearly wrong.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) · [PPTX](assets/notebooklm/slides.pptx) | 15 beginner slides (not revised; see errata) |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) · [PPTX](assets/notebooklm/slides.pptx) | 15 beginner slides (slides 9, 11 and 14 revised) |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Cook–Levin to 2026 |
+| [Audio overview (≈1.7 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not reviewed) |
 | [Beginner report](assets/notebooklm/beginner-explainer-report.md) | NotebookLM's long-form written explainer |
+| [Mind map](assets/notebooklm/mindmaps.md) | An overview of the family: the Max-Cut, Vertex Cover and Unique Games papers |
 | [Thresholds figure](assets/figures/thresholds.svg) | Hand-made: Max-Cut and Vertex Cover, achievable, open and NP-hard ranges before and after (section 4) |
 | [Tiny unique game](assets/figures/tiny-unique-game.svg) | Hand-made: a unique constraint, a 2-to-1 constraint, and a 3-vertex game of value 2/3 (section 1.6) |
 | [Latent-noise figure](assets/figures/latent-noise.svg) | Hand-made: the one-half barrier of the ordinary rank-one test and the paper's fix (section 5) |
@@ -439,7 +441,7 @@ The slides, infographics and report below were generated with **Google NotebookL
 ## How this explainer was made
 
 1. The paper, its companions, the Lean scope document and the reasoning summary were downloaded from [openai/math](https://github.com/openai/math/tree/main/preprints), and the paper's LaTeX source was read directly.
-2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI, together with the Wikipedia article on the Unique Games Conjecture for background. NotebookLM generated the slides, infographics and report in [`assets/notebooklm/`](assets/notebooklm/).
+2. They were loaded into a NotebookLM notebook through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI, together with the Wikipedia article on the Unique Games Conjecture for background. NotebookLM generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/).
 3. The text on this page was written by hand (with AI assistance) directly from the paper's introduction, its Sections 3–8, and the introductions of the Max-Cut and Vertex Cover companions. NotebookLM's outputs contain mistakes, listed in the [errata](assets/README.md#errata), so they were used as visual and structural aids rather than as the source of truth. Historical attributions follow the papers' own accounts. Dates are those the papers give (1992 for the PCP theorem, 2002 for the UGC, 2018 for the 2-to-2 theorem) or the standard conference dates of the cited works, which are earlier than the journal years in the bibliographies.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.
