@@ -1,0 +1,270 @@
+{
+  "name": "Exact Derandomization of Logarithmic Space (L = RL = BPL)",
+  "children": [
+    {
+      "name": "Main Theorems",
+      "children": [
+        {
+          "name": "Theorem 1.1: Exact Derandomization",
+          "children": [
+            {
+              "name": "L = RL = BPL"
+            },
+            {
+              "name": "Resolves log-space derandomization problem"
+            }
+          ]
+        },
+        {
+          "name": "Theorem 1.2: Acceptance-Probability Approximation",
+          "children": [
+            {
+              "name": "Uniform deterministic algorithm"
+            },
+            {
+              "name": "Approximates pM(x) within 2^-q"
+            },
+            {
+              "name": "Work space: O(log(n + 2) + q)"
+            },
+            {
+              "name": "Time: (n + 2)^O(1) * 2^O(q)"
+            }
+          ]
+        },
+        {
+          "name": "Promise Problems & Compiler",
+          "children": [
+            {
+              "name": "PromiseBPL = PromiseL"
+            },
+            {
+              "name": "Certified accepting computations"
+            },
+            {
+              "name": "Effective compiler (Theorem 13.1)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Historical Context & Prior Work",
+      "children": [
+        {
+          "name": "Foundational Complexity",
+          "children": [
+            {
+              "name": "Probabilistic TMs (Gill)"
+            },
+            {
+              "name": "Random walks & undirected connectivity (Aleliunas et al.)"
+            },
+            {
+              "name": "Quadratic space simulation (Borodin, Cook, Pippenger)"
+            }
+          ]
+        },
+        {
+          "name": "Pseudorandom Generators (PRGs)",
+          "children": [
+            {
+              "name": "Early log-space constructions (Ajtai et al., Babai et al.)"
+            },
+            {
+              "name": "Nisan's PRG: O(log^2 n) seed/space"
+            },
+            {
+              "name": "Nisan-Zuckerman: poly(S) to O(S) random bits"
+            }
+          ]
+        },
+        {
+          "name": "Sub-quadratic Space Containments",
+          "children": [
+            {
+              "name": "Saks-Zhou: O(log^1.5 n) space"
+            },
+            {
+              "name": "Cai et al.: Time-space tradeoffs"
+            },
+            {
+              "name": "Hoza: O(log^1.5 n / sqrt(log log n)) & weighted PRGs"
+            }
+          ]
+        },
+        {
+          "name": "Structural Restrictions & Graph Search",
+          "children": [
+            {
+              "name": "Undirected connectivity in L (Reingold)"
+            },
+            {
+              "name": "Eulerian/regular directed graphs (Reingold et al.)"
+            },
+            {
+              "name": "Read-once branching programs (ROBPs) & Hitting sets (Cheng-Hoza)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Proof Strategy & Architecture",
+      "children": [
+        {
+          "name": "Configuration Reduction (Section 2)",
+          "children": [
+            {
+              "name": "Nilpotent, strictly forward substochastic matrix S"
+            },
+            {
+              "name": "Polynomial-size vertex set V0"
+            },
+            {
+              "name": "Target acceptance probability p0 = (I - S)^-1 e"
+            }
+          ]
+        },
+        {
+          "name": "Correction & Copy Hierarchy (Section 4)",
+          "children": [
+            {
+              "name": "Identity: I - D = (I + E)(I - C)"
+            },
+            {
+              "name": "Transfers removed transitions into reward W"
+            },
+            {
+              "name": "Factorial truncation bounds iteration count k*"
+            },
+            {
+              "name": "Copies distribute large entries & limit active vertices"
+            },
+            {
+              "name": "Achieves error |p0(x0) - WL(zL)| <= |V0| 2^-(H-1)L"
+            }
+          ]
+        },
+        {
+          "name": "Stochastic Atoms & Rank Channels (Sections 3 & 5)",
+          "children": [
+            {
+              "name": "Independent rank channels (pairwise independence)"
+            },
+            {
+              "name": "Detectors identify overloaded columns"
+            },
+            {
+              "name": "Bins, corrections, and score tables"
+            }
+          ]
+        },
+        {
+          "name": "Estimation & Compression (Sections 6-8)",
+          "children": [
+            {
+              "name": "Conditional averaging walks (Property T gap)"
+            },
+            {
+              "name": "Additive schedule trades slack M - m for walk length"
+            },
+            {
+              "name": "Exception lists with common default"
+            },
+            {
+              "name": "Charging overflow & noise bounds"
+            }
+          ]
+        },
+        {
+          "name": "Adaptive Fingerprints & Coupling (Section 9)",
+          "children": [
+            {
+              "name": "Short fingerprint keys for small slacks"
+            },
+            {
+              "name": "Coupled induction bounds collision error"
+            },
+            {
+              "name": "Catalytic key equality (Lemma 9.9)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Space-Preserving Implementation",
+      "children": [
+        {
+          "name": "Numerical Precision (Section 10)",
+          "children": [
+            {
+              "name": "Digit queries on exact signed streams"
+            },
+            {
+              "name": "Residue arithmetic & finite Boolean circuits"
+            },
+            {
+              "name": "Telescoping storage across nested operations"
+            }
+          ]
+        },
+        {
+          "name": "Uniform Controller (Section 11)",
+          "children": [
+            {
+              "name": "Single vertex cursor & shared catalytic vector"
+            },
+            {
+              "name": "Reversible inverse traversal (Cook-McKenzie contours)"
+            },
+            {
+              "name": "Decreasing allowance w and clock t"
+            },
+            {
+              "name": "Guarded local graphs prevent stack overflow"
+            },
+            {
+              "name": "Total deterministic work space: O(B)"
+            }
+          ]
+        },
+        {
+          "name": "Median Aggregation (Section 12)",
+          "children": [
+            {
+              "name": "Integrated L8 norm bound"
+            },
+            {
+              "name": "Conditioning on specified start zL"
+            },
+            {
+              "name": "Exhaustive environment enumeration & median selection"
+            },
+            {
+              "name": "Polynomial running time, O(log n) space"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Effective Compiler (Section 13)",
+      "children": [
+        {
+          "name": "Universal resource-capped interpreter U"
+        },
+        {
+          "name": "Fixed deterministic separator library A"
+        },
+        {
+          "name": "Syntactic specialization via virtual padding Npad"
+        },
+        {
+          "name": "Explicit resource bounds (K, H, c) computed from source"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1100 698" width="1100" height="698" font-family="Helvetica, Arial, sans-serif">
+<title>Deterministic space needed to simulate randomized logarithmic space, 1970 to 2026</title>
+<desc>Step chart of the exponent a in deterministic space O((log n)^a). Blue: general bounded-error randomized log space (BPL): a = 2 from the quadratic-space simulation of Borodin, Cook and Pippenger 1983, Nisan 1994 with polynomial time, Saks and Zhou 1999 a = 3/2, Hoza 2021 log^(3/2) n divided by the square root of log log n, and the OpenAI preprint of 23 September 2026 claiming a = 1. Purple dashed: the special case of undirected connectivity: Savitch 1970 a = 2, Nisan, Szemeredi and Wigderson 1992 a = 3/2, Armoni, Ta-Shma, Wigderson and Zhou 2000 a = 4/3, Reingold 2005 a = 1.</desc>
+<rect x="0" y="0" width="1100" height="698" fill="#fcfcfb"/>
+<text x="70" y="42" font-size="22" font-weight="bold" fill="#0b0b0b">How much memory does a deterministic machine need to replace the coins?</text>
+<text x="70" y="68" font-size="14" fill="#52514e">Best known deterministic space O((log n)ᵃ) for simulating randomized log-space computation. a = 1 means L = BPL.</text>
+<text x="70" y="88" font-size="14" fill="#52514e">Blue: all of BPL. Purple dashed: the special case of undirected connectivity. Orange: the September 2026 OpenAI preprint (not yet peer reviewed).</text>
+<line x1="110" y1="492.7" x2="1050" y2="492.7" stroke="#e4e3df" stroke-width="1"/>
+<text x="100" y="497.7" font-size="14" fill="#52514e" text-anchor="end">1</text>
+<line x1="110" y1="387.6" x2="1050" y2="387.6" stroke="#e4e3df" stroke-width="1"/>
+<text x="100" y="392.6" font-size="14" fill="#52514e" text-anchor="end">4/3</text>
+<line x1="110" y1="335.0" x2="1050" y2="335.0" stroke="#e4e3df" stroke-width="1"/>
+<text x="100" y="340.0" font-size="14" fill="#52514e" text-anchor="end">3/2</text>
+<line x1="110" y1="177.3" x2="1050" y2="177.3" stroke="#e4e3df" stroke-width="1"/>
+<text x="100" y="182.3" font-size="14" fill="#52514e" text-anchor="end">2</text>
+<text x="34" y="335" font-size="14" fill="#52514e" text-anchor="middle" transform="rotate(-90 34 335)">exponent a in space O((log n)ᵃ)</text>
+<line x1="141.3" y1="540" x2="141.3" y2="546" stroke="#8a8984"/>
+<text x="141.3" y="564" font-size="14" fill="#52514e" text-anchor="middle">1970</text>
+<line x1="298.0" y1="540" x2="298.0" y2="546" stroke="#8a8984"/>
+<text x="298.0" y="564" font-size="14" fill="#52514e" text-anchor="middle">1980</text>
+<line x1="454.7" y1="540" x2="454.7" y2="546" stroke="#8a8984"/>
+<text x="454.7" y="564" font-size="14" fill="#52514e" text-anchor="middle">1990</text>
+<line x1="611.3" y1="540" x2="611.3" y2="546" stroke="#8a8984"/>
+<text x="611.3" y="564" font-size="14" fill="#52514e" text-anchor="middle">2000</text>
+<line x1="768.0" y1="540" x2="768.0" y2="546" stroke="#8a8984"/>
+<text x="768.0" y="564" font-size="14" fill="#52514e" text-anchor="middle">2010</text>
+<line x1="924.7" y1="540" x2="924.7" y2="546" stroke="#8a8984"/>
+<text x="924.7" y="564" font-size="14" fill="#52514e" text-anchor="middle">2020</text>
+<line x1="110" y1="540" x2="1050" y2="540" stroke="#8a8984"/>
+<path d="M 141.3 177.3 H 486.0 V 335.0 H 611.3 V 387.6 H 689.7 V 492.7 H 1029.6" fill="none" stroke="#7a4fa3" stroke-width="2.2" stroke-dasharray="7 5"/>
+<circle cx="141.3" cy="177.3" r="5" fill="#7a4fa3"/>
+<circle cx="486.0" cy="335.0" r="5" fill="#7a4fa3"/>
+<circle cx="611.3" cy="387.6" r="5" fill="#7a4fa3"/>
+<circle cx="689.7" cy="492.7" r="5" fill="#7a4fa3"/>
+<path d="M 345.0 177.3 H 595.7 V 335.0 H 1029.9" fill="none" stroke="#2f6db5" stroke-width="3"/>
+<circle cx="345.0" cy="177.3" r="6" fill="#2f6db5"/>
+<circle cx="595.7" cy="335.0" r="6" fill="#2f6db5"/>
+<rect x="511.3" y="171.3" width="12" height="12" fill="#fcfcfb" stroke="#2f6db5" stroke-width="2.5"/>
+<path d="M 933.3 330.0 L 947.3 330.0 L 940.3 343.0 Z" fill="#2f6db5"/>
+<line x1="1029.9" y1="335.0" x2="1029.9" y2="483.7" stroke="#d9822b" stroke-width="3" stroke-dasharray="4 4"/>
+<circle cx="1029.9" cy="492.7" r="8" fill="#d9822b" stroke="#fcfcfb" stroke-width="2"/>
+<text x="145.3" y="147.3" font-size="13" fill="#7a4fa3" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">Savitch 1970: NL, hence undirected</text>
+<text x="145.3" y="164.3" font-size="13" fill="#7a4fa3" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">connectivity, in log² n space</text>
+<text x="157.0" y="207.3" font-size="13" fill="#2f6db5" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">Borodin–Cook–Pippenger 1983:</text>
+<text x="157.0" y="224.3" font-size="13" fill="#2f6db5" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">BPL in log² n space</text>
+<text x="529.3" y="147.3" font-size="13" fill="#2f6db5" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">Nisan 1992/1994: log² n space</text>
+<text x="529.3" y="164.3" font-size="13" fill="#2f6db5" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">and polynomial time (RL ⊆ SC)</text>
+<text x="478.0" y="321.0" font-size="13" fill="#7a4fa3" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">Nisan–Szemerédi–Wigderson 1992</text>
+<text x="603.7" y="305.0" font-size="13" fill="#2f6db5" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">Saks–Zhou 1999:</text>
+<text x="603.7" y="322.0" font-size="13" fill="#2f6db5" text-anchor="start" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">log^(3/2) n</text>
+<text x="601.3" y="411.6" font-size="13" fill="#7a4fa3" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">Armoni–Ta-Shma–Wigderson–Zhou 2000</text>
+<text x="932.3" y="305.0" font-size="13" fill="#2f6db5" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">Hoza 2021:</text>
+<text x="932.3" y="322.0" font-size="13" fill="#2f6db5" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">log^(3/2) n / √(log log n)</text>
+<text x="679.7" y="516.7" font-size="13" fill="#7a4fa3" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">Reingold 2005: undirected connectivity in L (SL = L)</text>
+<text x="1015.9" y="452.7" font-size="14" fill="#d9822b" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">OpenAI preprint,</text>
+<text x="1015.9" y="469.7" font-size="14" fill="#d9822b" text-anchor="end" stroke="#fcfcfb" stroke-width="4" paint-order="stroke">23 Sep 2026: L = BPL</text>
+<text x="70" y="610" font-size="13" fill="#52514e">Exponents are of log n. Hoza’s 2021 bound keeps exponent 3/2 but divides by √(log log n).</text>
+<text x="70" y="628" font-size="13" fill="#52514e">Savitch’s 1970 theorem is about nondeterministic log space (NL), which contains undirected connectivity.</text>
+<text x="70" y="646" font-size="13" fill="#52514e">The paper credits the quadratic bound for BPL to Borodin–Cook–Pippenger (1983); Hoza (2021) also cites Jung (1981) among the early quadratic-space results.</text>
+<text x="70" y="664" font-size="13" fill="#52514e">Bounds above log n need not run in polynomial time; Nisan’s 1994 bound (square) does, and every halting log-space algorithm does.</text>
+<text x="70" y="682" font-size="13" fill="#52514e">Sources: the paper’s Section 1.1, Hoza (2021), Wikipedia (Savitch’s theorem; SL).</text>
+</svg>
