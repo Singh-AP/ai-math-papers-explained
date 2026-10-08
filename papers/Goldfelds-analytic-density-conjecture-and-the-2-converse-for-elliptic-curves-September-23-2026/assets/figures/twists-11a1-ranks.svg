@@ -1,0 +1,290 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1180" height="688" viewBox="0 0 1180 688" font-family="system-ui, -apple-system, Segoe UI, Helvetica, Arial, sans-serif">
+<rect x="0" y="0" width="1180" height="688" fill="#fcfcfb"/>
+<text x="30" y="40" font-size="21" fill="#0b0b0b" text-anchor="start" font-weight="600" >Quadratic twists of one elliptic curve: E = 11a1,  y² + y = x³ − x² − 10x − 20</text>
+<text x="30" y="66" font-size="14.5" fill="#52514e" text-anchor="start" font-weight="normal" >Each tile is a squarefree twist parameter d with |d| ≤ 100. Its colour is the analytic rank of the twist E⁽ᵈ⁾ (order of vanishing of L at s = 1).</text>
+<text x="30" y="100" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600" >d &gt; 0  (61 values)</text>
+<rect x="30" y="112" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 1: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >1</text>
+<rect x="74" y="112" width="40" height="30" rx="4" fill="#eb6834"><title>d = 2: root number -1, analytic rank 1</title></rect>
+<text x="94.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >2</text>
+<rect x="118" y="112" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 3: root number +1, analytic rank 0</title></rect>
+<text x="138.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >3</text>
+<rect x="162" y="112" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 5: root number +1, analytic rank 0</title></rect>
+<text x="182.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >5</text>
+<rect x="206" y="112" width="40" height="30" rx="4" fill="#eb6834"><title>d = 6: root number -1, analytic rank 1</title></rect>
+<text x="226.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >6</text>
+<rect x="250" y="112" width="40" height="30" rx="4" fill="#eb6834"><title>d = 7: root number -1, analytic rank 1</title></rect>
+<text x="270.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >7</text>
+<rect x="294" y="112" width="40" height="30" rx="4" fill="#eb6834"><title>d = 10: root number -1, analytic rank 1</title></rect>
+<text x="314.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >10</text>
+<rect x="338" y="112" width="40" height="30" rx="4" fill="#eb6834"><title>d = 11: root number -1, analytic rank 1</title></rect>
+<text x="358.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >11</text>
+<rect x="382" y="112" width="40" height="30" rx="4" fill="#eb6834"><title>d = 13: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >13</text>
+<rect x="426" y="112" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 14: root number +1, analytic rank 0</title></rect>
+<text x="446.0" y="132.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >14</text>
+<rect x="30" y="146" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 15: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >15</text>
+<rect x="74" y="146" width="40" height="30" rx="4" fill="#eb6834"><title>d = 17: root number -1, analytic rank 1</title></rect>
+<text x="94.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >17</text>
+<rect x="118" y="146" width="40" height="30" rx="4" fill="#eb6834"><title>d = 19: root number -1, analytic rank 1</title></rect>
+<text x="138.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >19</text>
+<rect x="162" y="146" width="40" height="30" rx="4" fill="#eb6834"><title>d = 21: root number -1, analytic rank 1</title></rect>
+<text x="182.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >21</text>
+<rect x="206" y="146" width="40" height="30" rx="4" fill="#eb6834"><title>d = 22: root number -1, analytic rank 1</title></rect>
+<text x="226.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >22</text>
+<rect x="250" y="146" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 23: root number +1, analytic rank 0</title></rect>
+<text x="270.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >23</text>
+<rect x="294" y="146" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 26: root number +1, analytic rank 0</title></rect>
+<text x="314.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >26</text>
+<rect x="338" y="146" width="40" height="30" rx="4" fill="#eb6834"><title>d = 29: root number -1, analytic rank 1</title></rect>
+<text x="358.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >29</text>
+<rect x="382" y="146" width="40" height="30" rx="4" fill="#eb6834"><title>d = 30: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >30</text>
+<rect x="426" y="146" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 31: root number +1, analytic rank 0</title></rect>
+<text x="446.0" y="166.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >31</text>
+<rect x="30" y="180" width="40" height="30" rx="4" fill="#eb6834"><title>d = 33: root number -1, analytic rank 1</title></rect>
+<text x="50.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >33</text>
+<rect x="74" y="180" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 34: root number +1, analytic rank 0</title></rect>
+<text x="94.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >34</text>
+<rect x="118" y="180" width="40" height="30" rx="4" fill="#eb6834"><title>d = 35: root number -1, analytic rank 1</title></rect>
+<text x="138.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >35</text>
+<rect x="162" y="180" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 37: root number +1, analytic rank 0</title></rect>
+<text x="182.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >37</text>
+<rect x="206" y="180" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 38: root number +1, analytic rank 0</title></rect>
+<text x="226.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >38</text>
+<rect x="250" y="180" width="40" height="30" rx="4" fill="#eb6834"><title>d = 39: root number -1, analytic rank 1</title></rect>
+<text x="270.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >39</text>
+<rect x="294" y="180" width="40" height="30" rx="4" fill="#eb6834"><title>d = 41: root number -1, analytic rank 1</title></rect>
+<text x="314.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >41</text>
+<rect x="338" y="180" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 42: root number +1, analytic rank 0</title></rect>
+<text x="358.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >42</text>
+<rect x="382" y="180" width="40" height="30" rx="4" fill="#eb6834"><title>d = 43: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >43</text>
+<rect x="426" y="180" width="40" height="30" rx="4" fill="#eb6834"><title>d = 46: root number -1, analytic rank 1</title></rect>
+<text x="446.0" y="200.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >46</text>
+<rect x="30" y="214" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 47: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >47</text>
+<rect x="74" y="214" width="40" height="30" rx="4" fill="#eb6834"><title>d = 51: root number -1, analytic rank 1</title></rect>
+<text x="94.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >51</text>
+<rect x="118" y="214" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 53: root number +1, analytic rank 0</title></rect>
+<text x="138.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >53</text>
+<rect x="162" y="214" width="40" height="30" rx="4" fill="#eb6834"><title>d = 55: root number -1, analytic rank 1</title></rect>
+<text x="182.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >55</text>
+<rect x="206" y="214" width="40" height="30" rx="4" fill="#eb6834"><title>d = 57: root number -1, analytic rank 1</title></rect>
+<text x="226.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >57</text>
+<rect x="250" y="214" width="40" height="30" rx="4" fill="#1baf7a"><title>d = 58: root number +1, analytic rank 2</title></rect>
+<text x="270.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >58</text>
+<rect x="294" y="214" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 59: root number +1, analytic rank 0</title></rect>
+<text x="314.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >59</text>
+<rect x="338" y="214" width="40" height="30" rx="4" fill="#eb6834"><title>d = 61: root number -1, analytic rank 1</title></rect>
+<text x="358.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >61</text>
+<rect x="382" y="214" width="40" height="30" rx="4" fill="#eb6834"><title>d = 62: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >62</text>
+<rect x="426" y="214" width="40" height="30" rx="4" fill="#eb6834"><title>d = 65: root number -1, analytic rank 1</title></rect>
+<text x="446.0" y="234.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >65</text>
+<rect x="30" y="248" width="40" height="30" rx="4" fill="#eb6834"><title>d = 66: root number -1, analytic rank 1</title></rect>
+<text x="50.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >66</text>
+<rect x="74" y="248" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 67: root number +1, analytic rank 0</title></rect>
+<text x="94.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >67</text>
+<rect x="118" y="248" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 69: root number +1, analytic rank 0</title></rect>
+<text x="138.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >69</text>
+<rect x="162" y="248" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 70: root number +1, analytic rank 0</title></rect>
+<text x="182.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >70</text>
+<rect x="206" y="248" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 71: root number +1, analytic rank 0</title></rect>
+<text x="226.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >71</text>
+<rect x="250" y="248" width="40" height="30" rx="4" fill="#eb6834"><title>d = 73: root number -1, analytic rank 1</title></rect>
+<text x="270.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >73</text>
+<rect x="294" y="248" width="40" height="30" rx="4" fill="#eb6834"><title>d = 74: root number -1, analytic rank 1</title></rect>
+<text x="314.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >74</text>
+<rect x="338" y="248" width="40" height="30" rx="4" fill="#eb6834"><title>d = 77: root number -1, analytic rank 1</title></rect>
+<text x="358.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >77</text>
+<rect x="382" y="248" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 78: root number +1, analytic rank 0</title></rect>
+<text x="402.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >78</text>
+<rect x="426" y="248" width="40" height="30" rx="4" fill="#eb6834"><title>d = 79: root number -1, analytic rank 1</title></rect>
+<text x="446.0" y="268.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >79</text>
+<rect x="30" y="282" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 82: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >82</text>
+<rect x="74" y="282" width="40" height="30" rx="4" fill="#eb6834"><title>d = 83: root number -1, analytic rank 1</title></rect>
+<text x="94.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >83</text>
+<rect x="118" y="282" width="40" height="30" rx="4" fill="#eb6834"><title>d = 85: root number -1, analytic rank 1</title></rect>
+<text x="138.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >85</text>
+<rect x="162" y="282" width="40" height="30" rx="4" fill="#1baf7a"><title>d = 86: root number +1, analytic rank 2</title></rect>
+<text x="182.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >86</text>
+<rect x="206" y="282" width="40" height="30" rx="4" fill="#eb6834"><title>d = 87: root number -1, analytic rank 1</title></rect>
+<text x="226.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >87</text>
+<rect x="250" y="282" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 89: root number +1, analytic rank 0</title></rect>
+<text x="270.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >89</text>
+<rect x="294" y="282" width="40" height="30" rx="4" fill="#1baf7a"><title>d = 91: root number +1, analytic rank 2</title></rect>
+<text x="314.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >91</text>
+<rect x="338" y="282" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 93: root number +1, analytic rank 0</title></rect>
+<text x="358.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >93</text>
+<rect x="382" y="282" width="40" height="30" rx="4" fill="#eb6834"><title>d = 94: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >94</text>
+<rect x="426" y="282" width="40" height="30" rx="4" fill="#eb6834"><title>d = 95: root number -1, analytic rank 1</title></rect>
+<text x="446.0" y="302.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >95</text>
+<rect x="30" y="316" width="40" height="30" rx="4" fill="#2a78d6"><title>d = 97: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="336.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >97</text>
+<text x="30" y="388" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600" >d &lt; 0  (61 values)</text>
+<rect x="30" y="400" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -1: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-1</text>
+<rect x="74" y="400" width="40" height="30" rx="4" fill="#eb6834"><title>d = -2: root number -1, analytic rank 1</title></rect>
+<text x="94.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-2</text>
+<rect x="118" y="400" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -3: root number +1, analytic rank 0</title></rect>
+<text x="138.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-3</text>
+<rect x="162" y="400" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -5: root number +1, analytic rank 0</title></rect>
+<text x="182.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-5</text>
+<rect x="206" y="400" width="40" height="30" rx="4" fill="#eb6834"><title>d = -6: root number -1, analytic rank 1</title></rect>
+<text x="226.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-6</text>
+<rect x="250" y="400" width="40" height="30" rx="4" fill="#eb6834"><title>d = -7: root number -1, analytic rank 1</title></rect>
+<text x="270.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-7</text>
+<rect x="294" y="400" width="40" height="30" rx="4" fill="#eb6834"><title>d = -10: root number -1, analytic rank 1</title></rect>
+<text x="314.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-10</text>
+<rect x="338" y="400" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -11: root number +1, analytic rank 0</title></rect>
+<text x="358.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-11</text>
+<rect x="382" y="400" width="40" height="30" rx="4" fill="#eb6834"><title>d = -13: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-13</text>
+<rect x="426" y="400" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -14: root number +1, analytic rank 0</title></rect>
+<text x="446.0" y="420.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-14</text>
+<rect x="30" y="434" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -15: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-15</text>
+<rect x="74" y="434" width="40" height="30" rx="4" fill="#eb6834"><title>d = -17: root number -1, analytic rank 1</title></rect>
+<text x="94.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-17</text>
+<rect x="118" y="434" width="40" height="30" rx="4" fill="#eb6834"><title>d = -19: root number -1, analytic rank 1</title></rect>
+<text x="138.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-19</text>
+<rect x="162" y="434" width="40" height="30" rx="4" fill="#eb6834"><title>d = -21: root number -1, analytic rank 1</title></rect>
+<text x="182.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-21</text>
+<rect x="206" y="434" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -22: root number +1, analytic rank 0</title></rect>
+<text x="226.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-22</text>
+<rect x="250" y="434" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -23: root number +1, analytic rank 0</title></rect>
+<text x="270.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-23</text>
+<rect x="294" y="434" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -26: root number +1, analytic rank 0</title></rect>
+<text x="314.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-26</text>
+<rect x="338" y="434" width="40" height="30" rx="4" fill="#eb6834"><title>d = -29: root number -1, analytic rank 1</title></rect>
+<text x="358.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-29</text>
+<rect x="382" y="434" width="40" height="30" rx="4" fill="#eb6834"><title>d = -30: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-30</text>
+<rect x="426" y="434" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -31: root number +1, analytic rank 0</title></rect>
+<text x="446.0" y="454.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-31</text>
+<rect x="30" y="468" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -33: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-33</text>
+<rect x="74" y="468" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -34: root number +1, analytic rank 0</title></rect>
+<text x="94.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-34</text>
+<rect x="118" y="468" width="40" height="30" rx="4" fill="#eb6834"><title>d = -35: root number -1, analytic rank 1</title></rect>
+<text x="138.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-35</text>
+<rect x="162" y="468" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -37: root number +1, analytic rank 0</title></rect>
+<text x="182.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-37</text>
+<rect x="206" y="468" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -38: root number +1, analytic rank 0</title></rect>
+<text x="226.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-38</text>
+<rect x="250" y="468" width="40" height="30" rx="4" fill="#eb6834"><title>d = -39: root number -1, analytic rank 1</title></rect>
+<text x="270.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-39</text>
+<rect x="294" y="468" width="40" height="30" rx="4" fill="#eb6834"><title>d = -41: root number -1, analytic rank 1</title></rect>
+<text x="314.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-41</text>
+<rect x="338" y="468" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -42: root number +1, analytic rank 0</title></rect>
+<text x="358.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-42</text>
+<rect x="382" y="468" width="40" height="30" rx="4" fill="#eb6834"><title>d = -43: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-43</text>
+<rect x="426" y="468" width="40" height="30" rx="4" fill="#eb6834"><title>d = -46: root number -1, analytic rank 1</title></rect>
+<text x="446.0" y="488.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-46</text>
+<rect x="30" y="502" width="40" height="30" rx="4" fill="#1baf7a"><title>d = -47: root number +1, analytic rank 2</title></rect>
+<text x="50.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-47</text>
+<rect x="74" y="502" width="40" height="30" rx="4" fill="#eb6834"><title>d = -51: root number -1, analytic rank 1</title></rect>
+<text x="94.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-51</text>
+<rect x="118" y="502" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -53: root number +1, analytic rank 0</title></rect>
+<text x="138.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-53</text>
+<rect x="162" y="502" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -55: root number +1, analytic rank 0</title></rect>
+<text x="182.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-55</text>
+<rect x="206" y="502" width="40" height="30" rx="4" fill="#eb6834"><title>d = -57: root number -1, analytic rank 1</title></rect>
+<text x="226.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-57</text>
+<rect x="250" y="502" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -58: root number +1, analytic rank 0</title></rect>
+<text x="270.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-58</text>
+<rect x="294" y="502" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -59: root number +1, analytic rank 0</title></rect>
+<text x="314.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-59</text>
+<rect x="338" y="502" width="40" height="30" rx="4" fill="#eb6834"><title>d = -61: root number -1, analytic rank 1</title></rect>
+<text x="358.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-61</text>
+<rect x="382" y="502" width="40" height="30" rx="4" fill="#eb6834"><title>d = -62: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-62</text>
+<rect x="426" y="502" width="40" height="30" rx="4" fill="#eb6834"><title>d = -65: root number -1, analytic rank 1</title></rect>
+<text x="446.0" y="522.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-65</text>
+<rect x="30" y="536" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -66: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-66</text>
+<rect x="74" y="536" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -67: root number +1, analytic rank 0</title></rect>
+<text x="94.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-67</text>
+<rect x="118" y="536" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -69: root number +1, analytic rank 0</title></rect>
+<text x="138.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-69</text>
+<rect x="162" y="536" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -70: root number +1, analytic rank 0</title></rect>
+<text x="182.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-70</text>
+<rect x="206" y="536" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -71: root number +1, analytic rank 0</title></rect>
+<text x="226.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-71</text>
+<rect x="250" y="536" width="40" height="30" rx="4" fill="#eb6834"><title>d = -73: root number -1, analytic rank 1</title></rect>
+<text x="270.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-73</text>
+<rect x="294" y="536" width="40" height="30" rx="4" fill="#eb6834"><title>d = -74: root number -1, analytic rank 1</title></rect>
+<text x="314.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-74</text>
+<rect x="338" y="536" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -77: root number +1, analytic rank 0</title></rect>
+<text x="358.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-77</text>
+<rect x="382" y="536" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -78: root number +1, analytic rank 0</title></rect>
+<text x="402.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-78</text>
+<rect x="426" y="536" width="40" height="30" rx="4" fill="#eb6834"><title>d = -79: root number -1, analytic rank 1</title></rect>
+<text x="446.0" y="556.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-79</text>
+<rect x="30" y="570" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -82: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-82</text>
+<rect x="74" y="570" width="40" height="30" rx="4" fill="#eb6834"><title>d = -83: root number -1, analytic rank 1</title></rect>
+<text x="94.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-83</text>
+<rect x="118" y="570" width="40" height="30" rx="4" fill="#eb6834"><title>d = -85: root number -1, analytic rank 1</title></rect>
+<text x="138.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-85</text>
+<rect x="162" y="570" width="40" height="30" rx="4" fill="#1baf7a"><title>d = -86: root number +1, analytic rank 2</title></rect>
+<text x="182.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-86</text>
+<rect x="206" y="570" width="40" height="30" rx="4" fill="#eb6834"><title>d = -87: root number -1, analytic rank 1</title></rect>
+<text x="226.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-87</text>
+<rect x="250" y="570" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -89: root number +1, analytic rank 0</title></rect>
+<text x="270.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-89</text>
+<rect x="294" y="570" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -91: root number +1, analytic rank 0</title></rect>
+<text x="314.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-91</text>
+<rect x="338" y="570" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -93: root number +1, analytic rank 0</title></rect>
+<text x="358.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-93</text>
+<rect x="382" y="570" width="40" height="30" rx="4" fill="#eb6834"><title>d = -94: root number -1, analytic rank 1</title></rect>
+<text x="402.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-94</text>
+<rect x="426" y="570" width="40" height="30" rx="4" fill="#eb6834"><title>d = -95: root number -1, analytic rank 1</title></rect>
+<text x="446.0" y="590.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-95</text>
+<rect x="30" y="604" width="40" height="30" rx="4" fill="#2a78d6"><title>d = -97: root number +1, analytic rank 0</title></rect>
+<text x="50.0" y="624.0" font-size="13" fill="#0b0b0b" text-anchor="middle" font-weight="600" >-97</text>
+<rect x="30" y="659" width="16" height="16" rx="3" fill="#2a78d6"/>
+<text x="52" y="672" font-size="13.5" fill="#52514e" text-anchor="start" font-weight="normal" >analytic rank 0  (root number +1)</text>
+<rect x="300" y="659" width="16" height="16" rx="3" fill="#eb6834"/>
+<text x="322" y="672" font-size="13.5" fill="#52514e" text-anchor="start" font-weight="normal" >analytic rank 1  (root number −1)</text>
+<rect x="570" y="659" width="16" height="16" rx="3" fill="#1baf7a"/>
+<text x="592" y="672" font-size="13.5" fill="#52514e" text-anchor="start" font-weight="normal" >analytic rank 2  (root number +1)</text>
+<text x="520" y="100" font-size="15" fill="#0b0b0b" text-anchor="start" font-weight="600" >All 2,430 squarefree d with |d| ≤ 2,000</text>
+<text x="520" y="124" font-size="13.5" fill="#52514e" text-anchor="start" font-weight="normal" >Share of twists by analytic rank, against the theorem's limit</text>
+<line x1="610.0" y1="146" x2="610.0" y2="284" stroke="#e1e0d9" stroke-width="1"/>
+<text x="610.0" y="300" font-size="12" fill="#898781" text-anchor="middle" font-weight="normal" >0%</text>
+<line x1="700.0" y1="146" x2="700.0" y2="284" stroke="#e1e0d9" stroke-width="1"/>
+<text x="700.0" y="300" font-size="12" fill="#898781" text-anchor="middle" font-weight="normal" >25%</text>
+<line x1="790.0" y1="146" x2="790.0" y2="284" stroke="#e1e0d9" stroke-width="1"/>
+<text x="790.0" y="300" font-size="12" fill="#898781" text-anchor="middle" font-weight="normal" >50%</text>
+<line x1="880.0" y1="146" x2="880.0" y2="284" stroke="#e1e0d9" stroke-width="1"/>
+<text x="880.0" y="300" font-size="12" fill="#898781" text-anchor="middle" font-weight="normal" >75%</text>
+<line x1="970.0" y1="146" x2="970.0" y2="284" stroke="#e1e0d9" stroke-width="1"/>
+<text x="970.0" y="300" font-size="12" fill="#898781" text-anchor="middle" font-weight="normal" >100%</text>
+<text x="1018" y="140" font-size="12.5" fill="#52514e" text-anchor="middle" font-weight="600" >observed</text>
+<text x="1082" y="140" font-size="12.5" fill="#52514e" text-anchor="middle" font-weight="600" >limit</text>
+<text x="598" y="169" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="600" >rank 0</text>
+<rect x="610" y="152" width="157.5" height="24" rx="4" fill="#2a78d6"><title>rank 0: 43.7% of 2430 twists</title></rect>
+<text x="1018" y="169" font-size="13.5" fill="#0b0b0b" text-anchor="middle" font-weight="normal" >43.7%</text>
+<text x="1082" y="169" font-size="13.5" fill="#0b0b0b" text-anchor="middle" font-weight="normal" >1/2</text>
+<text x="598" y="215" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="600" >rank 1</text>
+<rect x="610" y="198" width="180.3" height="24" rx="4" fill="#eb6834"><title>rank 1: 50.1% of 2430 twists</title></rect>
+<text x="1018" y="215" font-size="13.5" fill="#0b0b0b" text-anchor="middle" font-weight="normal" >50.1%</text>
+<text x="1082" y="215" font-size="13.5" fill="#0b0b0b" text-anchor="middle" font-weight="normal" >1/2</text>
+<text x="598" y="261" font-size="14" fill="#0b0b0b" text-anchor="end" font-weight="600" >rank ≥ 2</text>
+<rect x="610" y="244" width="22.2" height="24" rx="4" fill="#1baf7a"><title>rank ≥ 2: 6.2% of 2430 twists</title></rect>
+<text x="1018" y="261" font-size="13.5" fill="#0b0b0b" text-anchor="middle" font-weight="normal" >6.2%</text>
+<text x="1082" y="261" font-size="13.5" fill="#0b0b0b" text-anchor="middle" font-weight="normal" >0</text>
+<text x="520" y="336" font-size="13.5" fill="#52514e" text-anchor="start" font-weight="normal" >Rank 2 occurs 145 times and rank 3 occurs 5 times. The theorem says this share tends to 0,</text>
+<text x="520" y="356" font-size="13.5" fill="#52514e" text-anchor="start" font-weight="normal" >but at this height it is still about 6%: density zero is a statement about the limit.</text>
+<text x="520" y="390" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600" >Mean analytic rank: 0.626   (the companion paper: tends to 1/2)</text>
+<text x="520" y="418" font-size="14" fill="#0b0b0b" text-anchor="start" font-weight="600" >Root numbers: +1 for 49.7%,  −1 for 50.3% of these d</text>
+<text x="520" y="440" font-size="13.5" fill="#52514e" text-anchor="start" font-weight="normal" >The root number is the parity of the analytic rank, so it splits the family into</text>
+<text x="520" y="460" font-size="13.5" fill="#52514e" text-anchor="start" font-weight="normal" >an even half (ranks 0, 2, …) and an odd half (ranks 1, 3, …).</text>
+<text x="520" y="494" font-size="12" fill="#898781" text-anchor="start" font-weight="normal" >Computed with PARI/GP 2.17.2 (ellanalyticrank, ellrootno); numerical, not certified.</text>
+</svg>

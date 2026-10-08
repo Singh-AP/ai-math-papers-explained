@@ -1,0 +1,88 @@
+{
+  "name": "Quadratic Twists and Ranks of Elliptic Curves",
+  "children": [
+    {
+      "name": "Goldfeld's Conjectures",
+      "children": [
+        {
+          "name": "Analytic Density",
+          "children": [
+            {
+              "name": "Rank 0: 50% density"
+            },
+            {
+              "name": "Rank 1: 50% density"
+            },
+            {
+              "name": "Rank >= 2: 0% density"
+            }
+          ]
+        },
+        {
+          "name": "Mean Analytic-Rank",
+          "children": [
+            {
+              "name": "Average analytic rank tends to 1/2"
+            },
+            {
+              "name": "Requires analytic tail estimates"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "2-Converse Theorem",
+      "children": [
+        {
+          "name": "Hypothesis: 2-power Selmer corank in {0, 1}"
+        },
+        {
+          "name": "Conclusion: Analytic Rank = MW Rank"
+        },
+        {
+          "name": "Implication: Sha(E/Q) is finite"
+        }
+      ]
+    },
+    {
+      "name": "Selmer Groups & Descent",
+      "children": [
+        {
+          "name": "Finite Selmer criterion via Cassels-Tate pairing"
+        },
+        {
+          "name": "Smith's distribution of 2-power Selmer coranks"
+        }
+      ]
+    },
+    {
+      "name": "Proof Strategy",
+      "children": [
+        {
+          "name": "Binary twist families & local classes"
+        },
+        {
+          "name": "Beilinson-Kato classes (Rank 0) & Heegner points (Rank 1)"
+        },
+        {
+          "name": "Waldspurger's formula & theta series"
+        },
+        {
+          "name": "Handling reducible vs irreducible E[2]"
+        }
+      ]
+    },
+    {
+      "name": "Rank Moments & Consequences",
+      "children": [
+        {
+          "name": "Average integer rank moments = 1/2"
+        },
+        {
+          "name": "Exponential moment bounds"
+        }
+      ]
+    }
+  ]
+}
