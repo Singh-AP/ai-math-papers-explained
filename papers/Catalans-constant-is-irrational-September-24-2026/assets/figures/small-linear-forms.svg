@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="1000" height="560" font-family="Helvetica, Arial, sans-serif">
+  <title>Small but nonzero integer linear forms</title>
+  <desc>Log-scale plot of |A x - B| for integer pairs (A, B). For e, A = n! gives values between 0 and 1/n. For zeta(3), Apery's forms 2 lcm(1..n)^3 (b_n zeta(3) - a_n) shrink like 0.59^n. If x were a/b, every nonzero value would be at least 1/b.</desc>
+  <rect x="0" y="0" width="1000" height="560" fill="#ffffff"/>
+  <text x="70" y="38" font-size="22" font-weight="bold" fill="#111827">The irrationality test: integer combinations A·x − B that are small but never zero</text>
+  <text x="70" y="62" font-size="14" fill="#374151">If x = a/b, then A·x − B = (Aa − Bb)/b is 0 or at least 1/b in size. A sequence of nonzero values sinking below every 1/b</text>
+  <text x="70" y="80" font-size="14" fill="#374151">proves x is irrational. Both sequences below were computed with exact integers and 200-digit arithmetic.</text>
+  <line x1="110" y1="470.0" x2="930" y2="470.0" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="102" y="475.0" font-size="13" fill="#111827" text-anchor="end">10<tspan baseline-shift="super" font-size="10">-18</tspan></text>
+  <line x1="110" y1="411.6" x2="930" y2="411.6" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="102" y="416.6" font-size="13" fill="#111827" text-anchor="end">10<tspan baseline-shift="super" font-size="10">-15</tspan></text>
+  <line x1="110" y1="353.2" x2="930" y2="353.2" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="102" y="358.2" font-size="13" fill="#111827" text-anchor="end">10<tspan baseline-shift="super" font-size="10">-12</tspan></text>
+  <line x1="110" y1="294.9" x2="930" y2="294.9" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="102" y="299.9" font-size="13" fill="#111827" text-anchor="end">10<tspan baseline-shift="super" font-size="10">-9</tspan></text>
+  <line x1="110" y1="236.5" x2="930" y2="236.5" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="102" y="241.5" font-size="13" fill="#111827" text-anchor="end">10<tspan baseline-shift="super" font-size="10">-6</tspan></text>
+  <line x1="110" y1="178.1" x2="930" y2="178.1" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="102" y="183.1" font-size="13" fill="#111827" text-anchor="end">10<tspan baseline-shift="super" font-size="10">-3</tspan></text>
+  <line x1="110" y1="119.7" x2="930" y2="119.7" stroke="#e5e7eb" stroke-width="1"/>
+  <text x="102" y="124.7" font-size="13" fill="#111827" text-anchor="end">1</text>
+  <text x="110.0" y="492" font-size="13" fill="#111827" text-anchor="middle">1</text>
+  <text x="194.1" y="492" font-size="13" fill="#111827" text-anchor="middle">5</text>
+  <text x="299.2" y="492" font-size="13" fill="#111827" text-anchor="middle">10</text>
+  <text x="404.4" y="492" font-size="13" fill="#111827" text-anchor="middle">15</text>
+  <text x="509.5" y="492" font-size="13" fill="#111827" text-anchor="middle">20</text>
+  <text x="614.6" y="492" font-size="13" fill="#111827" text-anchor="middle">25</text>
+  <text x="719.7" y="492" font-size="13" fill="#111827" text-anchor="middle">30</text>
+  <text x="824.9" y="492" font-size="13" fill="#111827" text-anchor="middle">35</text>
+  <text x="930.0" y="492" font-size="13" fill="#111827" text-anchor="middle">40</text>
+  <text x="520.0" y="514" font-size="14" fill="#374151" text-anchor="middle">n</text>
+  <rect x="110" y="110" width="820" height="360" fill="none" stroke="#9ca3af" stroke-width="1"/>
+  <line x1="110" y1="236.5" x2="930" y2="236.5" stroke="#dc2626" stroke-width="2" stroke-dasharray="8 6"/>
+  <text x="924" y="228.5" font-size="13" fill="#dc2626" text-anchor="end">floor 1/b if x had denominator b = 10⁶: nonzero values cannot go below this line</text>
+  <path d="M 110.0 122.5 L 131.0 126.7 L 152.1 129.6 L 173.1 131.8 L 194.1 133.6 L 215.1 135.1 L 236.2 136.3 L 257.2 137.4 L 278.2 138.4 L 299.2 139.3 L 320.3 140.1 L 341.3 140.8 L 362.3 141.5 L 383.3 142.1 L 404.4 142.7 L 425.4 143.2 L 446.4 143.7 L 467.4 144.2 L 488.5 144.6 L 509.5 145.1 L 530.5 145.5 L 551.5 145.9 L 572.6 146.2 L 593.6 146.6 L 614.6 146.9 L 635.6 147.3 L 656.7 147.6 L 677.7 147.9 L 698.7 148.2 L 719.7 148.5 L 740.8 148.8 L 761.8 149.0 L 782.8 149.3 L 803.8 149.5 L 824.9 149.8 L 845.9 150.0 L 866.9 150.3 L 887.9 150.5 L 909.0 150.7 L 930.0 150.9" fill="none" stroke="#059669" stroke-width="2.5"/>
+  <circle cx="110.0" cy="122.5" r="3.5" fill="#059669"/>
+  <circle cx="131.0" cy="126.7" r="3.5" fill="#059669"/>
+  <circle cx="152.1" cy="129.6" r="3.5" fill="#059669"/>
+  <circle cx="173.1" cy="131.8" r="3.5" fill="#059669"/>
+  <circle cx="194.1" cy="133.6" r="3.5" fill="#059669"/>
+  <circle cx="215.1" cy="135.1" r="3.5" fill="#059669"/>
+  <circle cx="236.2" cy="136.3" r="3.5" fill="#059669"/>
+  <circle cx="257.2" cy="137.4" r="3.5" fill="#059669"/>
+  <circle cx="278.2" cy="138.4" r="3.5" fill="#059669"/>
+  <circle cx="299.2" cy="139.3" r="3.5" fill="#059669"/>
+  <circle cx="320.3" cy="140.1" r="3.5" fill="#059669"/>
+  <circle cx="341.3" cy="140.8" r="3.5" fill="#059669"/>
+  <circle cx="362.3" cy="141.5" r="3.5" fill="#059669"/>
+  <circle cx="383.3" cy="142.1" r="3.5" fill="#059669"/>
+  <circle cx="404.4" cy="142.7" r="3.5" fill="#059669"/>
+  <circle cx="425.4" cy="143.2" r="3.5" fill="#059669"/>
+  <circle cx="446.4" cy="143.7" r="3.5" fill="#059669"/>
+  <circle cx="467.4" cy="144.2" r="3.5" fill="#059669"/>
+  <circle cx="488.5" cy="144.6" r="3.5" fill="#059669"/>
+  <circle cx="509.5" cy="145.1" r="3.5" fill="#059669"/>
+  <circle cx="530.5" cy="145.5" r="3.5" fill="#059669"/>
+  <circle cx="551.5" cy="145.9" r="3.5" fill="#059669"/>
+  <circle cx="572.6" cy="146.2" r="3.5" fill="#059669"/>
+  <circle cx="593.6" cy="146.6" r="3.5" fill="#059669"/>
+  <circle cx="614.6" cy="146.9" r="3.5" fill="#059669"/>
+  <circle cx="635.6" cy="147.3" r="3.5" fill="#059669"/>
+  <circle cx="656.7" cy="147.6" r="3.5" fill="#059669"/>
+  <circle cx="677.7" cy="147.9" r="3.5" fill="#059669"/>
+  <circle cx="698.7" cy="148.2" r="3.5" fill="#059669"/>
+  <circle cx="719.7" cy="148.5" r="3.5" fill="#059669"/>
+  <circle cx="740.8" cy="148.8" r="3.5" fill="#059669"/>
+  <circle cx="761.8" cy="149.0" r="3.5" fill="#059669"/>
+  <circle cx="782.8" cy="149.3" r="3.5" fill="#059669"/>
+  <circle cx="803.8" cy="149.5" r="3.5" fill="#059669"/>
+  <circle cx="824.9" cy="149.8" r="3.5" fill="#059669"/>
+  <circle cx="845.9" cy="150.0" r="3.5" fill="#059669"/>
+  <circle cx="866.9" cy="150.3" r="3.5" fill="#059669"/>
+  <circle cx="887.9" cy="150.5" r="3.5" fill="#059669"/>
+  <circle cx="909.0" cy="150.7" r="3.5" fill="#059669"/>
+  <circle cx="930.0" cy="150.9" r="3.5" fill="#059669"/>
+  <path d="M 110.0 152.6 L 131.0 170.5 L 152.1 176.4 L 173.1 191.6 L 194.1 183.0 L 215.1 214.8 L 236.2 197.1 L 257.2 210.8 L 278.2 214.1 L 299.2 245.2 L 320.3 215.3 L 341.3 246.1 L 362.3 211.9 L 383.3 242.5 L 404.4 273.2 L 425.4 286.2 L 446.4 244.9 L 467.4 275.4 L 488.5 231.2 L 509.5 261.6 L 530.5 292.0 L 551.5 322.3 L 572.6 273.2 L 593.6 303.5 L 614.6 293.0 L 635.6 323.3 L 656.7 325.7 L 677.7 355.9 L 698.7 300.8 L 719.7 331.0 L 740.8 274.1 L 761.8 286.7 L 782.8 316.9 L 803.8 347.1 L 824.9 377.2 L 845.9 407.4 L 866.9 346.0 L 887.9 376.1 L 909.0 406.2 L 930.0 436.3" fill="none" stroke="#2563eb" stroke-width="2.5"/>
+  <circle cx="110.0" cy="152.6" r="3.5" fill="#2563eb"/>
+  <circle cx="131.0" cy="170.5" r="3.5" fill="#2563eb"/>
+  <circle cx="152.1" cy="176.4" r="3.5" fill="#2563eb"/>
+  <circle cx="173.1" cy="191.6" r="3.5" fill="#2563eb"/>
+  <circle cx="194.1" cy="183.0" r="3.5" fill="#2563eb"/>
+  <circle cx="215.1" cy="214.8" r="3.5" fill="#2563eb"/>
+  <circle cx="236.2" cy="197.1" r="3.5" fill="#2563eb"/>
+  <circle cx="257.2" cy="210.8" r="3.5" fill="#2563eb"/>
+  <circle cx="278.2" cy="214.1" r="3.5" fill="#2563eb"/>
+  <circle cx="299.2" cy="245.2" r="3.5" fill="#2563eb"/>
+  <circle cx="320.3" cy="215.3" r="3.5" fill="#2563eb"/>
+  <circle cx="341.3" cy="246.1" r="3.5" fill="#2563eb"/>
+  <circle cx="362.3" cy="211.9" r="3.5" fill="#2563eb"/>
+  <circle cx="383.3" cy="242.5" r="3.5" fill="#2563eb"/>
+  <circle cx="404.4" cy="273.2" r="3.5" fill="#2563eb"/>
+  <circle cx="425.4" cy="286.2" r="3.5" fill="#2563eb"/>
+  <circle cx="446.4" cy="244.9" r="3.5" fill="#2563eb"/>
+  <circle cx="467.4" cy="275.4" r="3.5" fill="#2563eb"/>
+  <circle cx="488.5" cy="231.2" r="3.5" fill="#2563eb"/>
+  <circle cx="509.5" cy="261.6" r="3.5" fill="#2563eb"/>
+  <circle cx="530.5" cy="292.0" r="3.5" fill="#2563eb"/>
+  <circle cx="551.5" cy="322.3" r="3.5" fill="#2563eb"/>
+  <circle cx="572.6" cy="273.2" r="3.5" fill="#2563eb"/>
+  <circle cx="593.6" cy="303.5" r="3.5" fill="#2563eb"/>
+  <circle cx="614.6" cy="293.0" r="3.5" fill="#2563eb"/>
+  <circle cx="635.6" cy="323.3" r="3.5" fill="#2563eb"/>
+  <circle cx="656.7" cy="325.7" r="3.5" fill="#2563eb"/>
+  <circle cx="677.7" cy="355.9" r="3.5" fill="#2563eb"/>
+  <circle cx="698.7" cy="300.8" r="3.5" fill="#2563eb"/>
+  <circle cx="719.7" cy="331.0" r="3.5" fill="#2563eb"/>
+  <circle cx="740.8" cy="274.1" r="3.5" fill="#2563eb"/>
+  <circle cx="761.8" cy="286.7" r="3.5" fill="#2563eb"/>
+  <circle cx="782.8" cy="316.9" r="3.5" fill="#2563eb"/>
+  <circle cx="803.8" cy="347.1" r="3.5" fill="#2563eb"/>
+  <circle cx="824.9" cy="377.2" r="3.5" fill="#2563eb"/>
+  <circle cx="845.9" cy="407.4" r="3.5" fill="#2563eb"/>
+  <circle cx="866.9" cy="346.0" r="3.5" fill="#2563eb"/>
+  <circle cx="887.9" cy="376.1" r="3.5" fill="#2563eb"/>
+  <circle cx="909.0" cy="406.2" r="3.5" fill="#2563eb"/>
+  <circle cx="930.0" cy="436.3" r="3.5" fill="#2563eb"/>
+  <text x="551.5" y="137.2" font-size="14" fill="#059669">e (Fourier): n!·e − (integer), between 0 and 1/n</text>
+  <text x="131.0" y="361.0" font-size="14" fill="#2563eb">ζ(3) (Apéry): 2·lcm(1,…,n)³·(b_n ζ(3) − a_n)</text>
+  <text x="131.0" y="386.3" font-size="14" fill="#2563eb">shrinks on average like 0.59ⁿ, because (√2 − 1)⁴·e³ ≈ 0.59 &lt; 1</text>
+  <text x="131.0" y="411.6" font-size="13" fill="#374151">(the zigzag comes from lcm(1,…,n), which jumps at prime powers)</text>
+  <text x="520.0" y="548" font-size="13" fill="#374151" text-anchor="middle">For Catalan's constant, the known Apéry-like forms do not tend to zero after their denominators are cleared (Zudilin 2003, cited by the paper).</text>
+</svg>

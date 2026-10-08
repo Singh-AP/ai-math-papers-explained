@@ -1,0 +1,130 @@
+{
+  "name": "Irrationality of Catalan's Constant",
+  "children": [
+    {
+      "name": "Core Result",
+      "children": [
+        {
+          "name": "Theorem: G is irrational"
+        },
+        {
+          "name": "Catalan's Constant G = β(2) = L(2, χ_-4)"
+        },
+        {
+          "name": "Lean 4 Formalization (Catalan.lean)"
+        }
+      ]
+    },
+    {
+      "name": "Determinant Strategy",
+      "children": [
+        {
+          "name": "Matrix Size n = 48N"
+        },
+        {
+          "name": "Polynomial Rows & Mixed Moments"
+        },
+        {
+          "name": "Taylor Contact Cancels ζ(2)"
+        },
+        {
+          "name": "Integral Chebyshev Coefficients"
+        },
+        {
+          "name": "Rationality under Assumption G ∈ Q"
+        }
+      ]
+    },
+    {
+      "name": "Asymptotic Bounds & Contradiction",
+      "children": [
+        {
+          "name": "Normalized Logarithm L_N"
+        },
+        {
+          "name": "Finite-Place Lower Bound (lim inf L_N > -2.29084)"
+        },
+        {
+          "name": "Real-Place Upper Bound (lim sup L_N ≤ -2.290939875)"
+        },
+        {
+          "name": "Incompatibility Proves Irrationality"
+        }
+      ]
+    },
+    {
+      "name": "Finite-Place (Arithmetic) Estimates",
+      "children": [
+        {
+          "name": "Prime 2 Bound (v_2(Δ_N))"
+        },
+        {
+          "name": "Digit Reduction modulo Odd Primes"
+        },
+        {
+          "name": "Leading & Central Layer Eliminations"
+        },
+        {
+          "name": "Prime Number Theorem Application"
+        }
+      ]
+    },
+    {
+      "name": "Nonvanishing Proof",
+      "children": [
+        {
+          "name": "Scale Parameter N = p (Prime)"
+        },
+        {
+          "name": "Reduction to 3 Fixed 48x48 Matrices"
+        },
+        {
+          "name": "Two Palindromic Bases & Frobenius Map"
+        },
+        {
+          "name": "Exact Arithmetic Certificate mod 101"
+        },
+        {
+          "name": "Valuation v_p(Δ_p) = -96p"
+        }
+      ]
+    },
+    {
+      "name": "Real-Place & Energy Estimates",
+      "children": [
+        {
+          "name": "Andréief Integration & Cauchy Double Alternant"
+        },
+        {
+          "name": "Uniform Holomorphic Interpolant (Interpolation Estimate)"
+        },
+        {
+          "name": "Hadamard Matrix Estimate"
+        },
+        {
+          "name": "Logarithmic Kernel Expansion (Chebyshev / Haagerup)"
+        },
+        {
+          "name": "Certified Trial Sequences & Root Brackets"
+        }
+      ]
+    },
+    {
+      "name": "Context & Applications",
+      "children": [
+        {
+          "name": "Obstruction: Denominator Clearing Costs"
+        },
+        {
+          "name": "Prior Results (Apéry, Zudilin, Rivoal, Viola, Eskandari)"
+        },
+        {
+          "name": "Hyperbolic 3-Manifolds Minimum Volume (Agol)"
+        },
+        {
+          "name": "Arithmetic Hyperbolic Volumes over Q(i)"
+        }
+      ]
+    }
+  ]
+}
