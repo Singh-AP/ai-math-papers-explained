@@ -122,7 +122,7 @@ The first one is easy to see: expand $\arctan x / x = 1 - x^2/3 + x^4/5 - \cdots
 **Geometry.** The paper's conclusion recalls two facts about hyperbolic 3-dimensional space:
 
 - By a theorem of Agol (2010), $4G = 3.66386\ldots$ is the smallest possible volume of an orientable complete finite-volume hyperbolic 3-manifold with exactly two cusps. The minimum is attained by the complements of the Whitehead link and of the $(-2,3,8)$ pretzel link.
-- The "Bianchi orbifold" $\mathrm{PSL}_2(\mathbb{Z}[i])\backslash\mathbb{H}^3$, built from the Gaussian integers $a + bi$, has volume $G/3 = 0.30532\ldots$. This comes from a volume formula in Voight's *Quaternion Algebras* together with the factorization of the Dedekind zeta function of $\mathbb{Q}(i)$, $\zeta_{\mathbb{Q}(i)}(2) = \zeta(2)\ L(2,\chi_{-4}) = \frac{\pi^2}{6} G$.
+- The "Bianchi orbifold" $`\mathrm{PSL}_2(\mathbb{Z}[i])\backslash\mathbb{H}^3`$, built from the Gaussian integers $`a + bi`$, has volume $`G/3 = 0.30532\ldots`$. This comes from a volume formula in Voight's *Quaternion Algebras* together with the factorization of the Dedekind zeta function of $`\mathbb{Q}(i)`$, $`\zeta_{\mathbb{Q}(i)}(2) = \zeta(2)\ L(2,\chi_{-4}) = \frac{\pi^2}{6} G`$.
 
 **Counting.** (Background from Wikipedia, checked by our own computation.) A chessboard can be tiled by $2\times1$ dominoes in exactly $12{,}988{,}816$ ways. We confirmed this both with Kasteleyn's product formula and with a brute-force count. For large $k \times k$ boards the number of tilings grows like $e^{(G/\pi)k^2}$. This is the Temperley–Fisher result of 1961, with $G/\pi \approx 0.2916$. (Our computed values of $\log(\text{tilings})/k^2$ are $0.256, 0.273, 0.282, 0.287, 0.289$ for $k = 8, 16, 32, 64, 128$; they creep up toward $0.2916$.)
 
@@ -197,7 +197,7 @@ Items marked *(general knowledge)* come from the author's background knowledge a
 | 1837 | **Peter Gustav Lejeune Dirichlet** | $L$-functions of characters, which include $\beta(s) = L(s,\chi_{-4})$ *(general knowledge)* |
 | 1865 | **Eugène Catalan** | A memoir with quickly converging series for $G$; the constant is named after him (Wikipedia) |
 | 1961 | **H. N. V. Temperley, Michael Fisher** (and Pieter Kasteleyn) | Domino tilings of large boards grow like $e^{(G/\pi)\cdot\text{area}}$ (Wikipedia) |
-| 1978 (published 1979) | **Roger Apéry** | $\zeta(3)$ is irrational (and a new proof for $\zeta(2)$), via recurrences whose integer linear forms tend to zero (the 1978 announcement date is general knowledge) |
+| 1978 (published 1979) | **Roger Apéry** | $`\zeta(3)`$ is irrational (and a new proof for $`\zeta(2)`$), via recurrences whose integer linear forms tend to zero (the 1978 announcement date is general knowledge) |
 | 1979 | **Frits Beukers** | Short integral proofs of Apéry's theorems |
 | 2000–2001 | **Tanguy Rivoal, Keith Ball; Wadim Zudilin** | Infinitely many odd zeta values are irrational; at least one of $\zeta(5), \ldots, \zeta(11)$ is *(general knowledge)* |
 | 2003 | **Tanguy Rivoal, Wadim Zudilin** | Infinitely many even beta values are irrational; at least one of $\beta(2), \beta(4), \ldots, \beta(14)$ is |
@@ -237,7 +237,7 @@ The proof combines three estimates for the same determinants $\Delta_N$, all sta
 
 | Statement in the paper | What it says | Needs "$G$ rational"? |
 |---|---|---|
-| Proposition 2.1 | Every entry of $\Delta_N$ lies in $\mathbb{Q} + \mathbb{Q}G$, so $\Delta_N$ is rational if $G$ is | Yes, for the conclusion |
+| Proposition 2.1 | Every entry of $`\Delta_N`$ lies in $`\mathbb{Q} + \mathbb{Q}G`$, so $`\Delta_N`$ is rational if $`G`$ is | Yes, for the conclusion |
 | Proposition 3.4 (finite places) | Along any sequence of nonzero determinants, $\liminf \mathcal{L}_N \ge -\frac{8609}{4608} - \left(\frac12 + \frac{505}{4608}\right)\log 2 > -2.29084$ | Yes |
 | Proposition 4.1 (nonvanishing) | For every large enough prime $p$, $v_p(\Delta_p) = -96p$, so in particular $\Delta_p \ne 0$ | Yes |
 | Proposition 7.1 (real place) | $\limsup \mathcal{L}_N \le -2.290939875 < -2.2909$ | No, this is always true |
@@ -247,7 +247,7 @@ Since $-2.29084 > -2.2909$, the second and fourth lines contradict each other al
 **Consequences stated in the paper (Section 8).** Normalize curvature to $-1$.
 
 - The minimal volume $4G$ of an orientable complete finite-volume hyperbolic 3-manifold with exactly two cusps (Agol's theorem) is irrational, and so are the volumes of the Whitehead-link and $(-2,3,8)$-pretzel-link complements that attain it.
-- Every orientable arithmetic hyperbolic 3-orbifold defined over $\mathbb{Q}(i)$ has irrational volume. ("Defined over $\mathbb{Q}(i)$" means that its group is, up to conjugacy, commensurable with the norm-one group of a maximal order in a quaternion algebra over $\mathbb{Q}(i)$.) The volume formula in Voight's *Quaternion Algebras* gives $\frac{G}{3}\prod_{\mathfrak p \mid \mathfrak D}(N\mathfrak p - 1)$ for those norm-one groups, and passing to a common finite-index subgroup multiplies this by a positive rational number. So each such volume is a positive rational multiple of $G$. For example, $\mathrm{PSL}_2(\mathbb{Z}[i])\backslash\mathbb{H}^3$ has volume $G/3$.
+- Every orientable arithmetic hyperbolic 3-orbifold defined over $`\mathbb{Q}(i)`$ has irrational volume. ("Defined over $`\mathbb{Q}(i)`$" means that its group is, up to conjugacy, commensurable with the norm-one group of a maximal order in a quaternion algebra over $`\mathbb{Q}(i)`$.) The volume formula in Voight's *Quaternion Algebras* gives $`\frac{G}{3}\prod_{\mathfrak p \mid \mathfrak D}(N\mathfrak p - 1)`$ for those norm-one groups, and passing to a common finite-index subgroup multiplies this by a positive rational number. So each such volume is a positive rational multiple of $`G`$. For example, $`\mathrm{PSL}_2(\mathbb{Z}[i])\backslash\mathbb{H}^3`$ has volume $`G/3`$.
 
 ---
 
@@ -257,7 +257,7 @@ Since $-2.29084 > -2.2909$, the second and fourth lines contradict each other al
 |---|---|---|
 | **Catalan's constant** | Unknown whether rational. Wikipedia quotes Bailey, Borwein, Mattingly and Wightwick calling it "arguably the most basic constant whose irrationality and transcendence (though strongly suspected) remain unproven" | Irrational |
 | **Even beta values** | At least one of $\beta(2), \beta(4), \ldots, \beta(10)$ is irrational, but not known which | $\beta(2)$ is. The remaining even values are still open individually |
-| **Hyperbolic volumes** | $4G$ (two-cusped minimum) and $G/3$ (Bianchi orbifold) of unknown arithmetic nature | Irrational, together with the volume of every orientable arithmetic hyperbolic 3-orbifold over $\mathbb{Q}(i)$ |
+| **Hyperbolic volumes** | $`4G`$ (two-cusped minimum) and $`G/3`$ (Bianchi orbifold) of unknown arithmetic nature | Irrational, together with the volume of every orientable arithmetic hyperbolic 3-orbifold over $`\mathbb{Q}(i)`$ |
 | **The $\zeta(2)$ obstacle** | The 2-adic analogue was proved irrational (Calegari 2005), but the real identity has an extra $\pi^2$ term with no 2-adic counterpart | The paper's rows cancel the $\zeta(2)$ term *exactly* in every entry, which it calls essential to the construction |
 | **Method** | Single linear forms (Apéry, Beukers), or family results that cannot single out one value | A signed, mixed determinant of size $48N$, with a prime-by-prime denominator count, an arithmetic nonvanishing proof, and a certified analytic bound |
 
@@ -271,7 +271,7 @@ The paper is 44 pages, with eight sections. Here it is at three zoom levels.
 
 ### Level 1: the one-paragraph version
 
-Assume $G = a/b$. Build a big square table of numbers, each one an integral that works out to (fraction) + (fraction)·$G$ + (fraction)·$\zeta(2)$. The rows are chosen so cleverly that every $\zeta(2)$ cancels. Under the assumption, each entry is then a fraction, and so is the determinant $\Delta_N$. Now measure $|\Delta_N|$ in two independent ways. **Arithmetic** says it is a nonzero fraction whose denominator contains only limited powers of each prime, so it cannot be *too* small. **Analysis** rewrites it as a giant integral and shows it is *even smaller* than that. The two measurements can't both be right. So the assumption was false.
+Assume $`G = a/b`$. Build a big square table of numbers, each one an integral that works out to (fraction) + (fraction)·$`G`$ + (fraction)·$`\zeta(2)`$. The rows are chosen so cleverly that every $`\zeta(2)`$ cancels. Under the assumption, each entry is then a fraction, and so is the determinant $`\Delta_N`$. Now measure $`|\Delta_N|`$ in two independent ways. **Arithmetic** says it is a nonzero fraction whose denominator contains only limited powers of each prime, so it cannot be *too* small. **Analysis** rewrites it as a giant integral and shows it is *even smaller* than that. The two measurements can't both be right. So the assumption was false.
 
 > **Analogy:** you are told a parcel contains a gold coin. The customs office certifies that *if* there is a coin, the parcel weighs at least 1.000 kg. A precise scale reads 0.999 kg. You never open the box, but you know there is no coin. Here the coin is "$G$ is a fraction", the certificate is the prime-by-prime count, and the scale is the integral estimate. There is one loophole: the certificate is only valid if the parcel is not empty. In the proof the loophole is $\Delta_N = 0$, and closing it takes a separate argument.
 
@@ -412,7 +412,7 @@ The values drift down toward the paper's limiting ceiling of $-2.290939875$ (the
 
 **Rationality and the two kernels.** Write $w = t/(1+f)$, so that $t = 2w/(1+w^2)$ and $f = (1-w^2)/(1+w^2)$. The involution $w \mapsto 1/w$ fixes $t$ and negates $f$. The rows come from $R_r = (1-t)^h t^{C-1} w^{r-g}$ by symmetrizing and antisymmetrizing: $P_r = (R_r + R_r^{\ast})/2$ and $D_r = t(R_r^{\ast} - R_r)/(2f)$. Then $tP_r/f - D_r = tR_r/f = O(t^{C+r-g})$, because $w = t/2 + O(t^3)$. Since $1/f = \sum_l c_l t^{2l}$, the $\zeta(2)$ kernel $c_{(j-i-1)/2}$ contracted against $P_r$ is exactly the Taylor coefficient of $tP_r/f$, which is matched by $D_r$ through the $Z$ kernel.
 
-**The prime 2.** In $\mathbb{Q}_2$ the moment series $\sum_k m_{i+k}/(j+k+1)$ converges, because $v_2(m_u) \ge u + 1 - \log_2(u+1)$. Its two homogeneous discrepancies with the rational part are fixed 2-adic constants $e_1, e_2$. Each raw column splits as $S_j + E_j + B_j$: a convergent 2-adic series part and two exceptional parts carrying $e_1$ and $e_2$. By Cauchy–Binet, it suffices to bound terms with $m$ columns of type $E$ and $l$ of type $B$. Repeated coefficient vectors kill a term, and that forces the quadratic gains $m(m-1)/2$ and $l(l-1)/2$. Minimizing the resulting quadratic gives $-(\delta/2+\delta^2/8)n^2$.
+**The prime 2.** In $`\mathbb{Q}_2`$ the moment series $`\sum_k m_{i+k}/(j+k+1)`$ converges, because $`v_2(m_u) \ge u + 1 - \log_2(u+1)`$. Its two homogeneous discrepancies with the rational part are fixed 2-adic constants $`e_1, e_2`$. Each raw column splits as $`S_j + E_j + B_j`$: a convergent 2-adic series part and two exceptional parts carrying $`e_1`$ and $`e_2`$. By Cauchy–Binet, it suffices to bound terms with $`m`$ columns of type $`E`$ and $`l`$ of type $`B`$. Repeated coefficient vectors kill a term, and that forces the quadratic gains $`m(m-1)/2`$ and $`l(l-1)/2`$. Minimizing the resulting quadratic gives $`-(\delta/2+\delta^2/8)n^2`$.
 
 **Odd primes.** For $2\sqrt{H} < p \le H$, Lemma 3.1 reduces $p^2 M^0(i,j)$ and $p^2 Z^0(i,j)$ modulo $p$ to the same arrays at the base-$p$ "digits" $(i', j')$. It uses $E(t) = (1-t^2)^{(p-1)/2}$, whose coefficients are $c_{d/2} \bmod p$ (Lucas-type congruences, with one controlled carry). This identifies pairs of raw columns $F_\ell$, $F_{p+\ell}$ whose sum loses only one power of $p$. For $p > H/2$, Lemma 3.2 computes the "central" columns after multiplication by $p$. Lemma 3.3 then shears them against retained columns with $\mathbb{Z}_p$-integral operations, which is always legal by Cauchy–Binet. The counts $R$ (columns with $`p^2`$) and $S$ (columns with $`p`$) give $v_p \ge -\min(2n, n+R, 2R+S)$, and the paper tabulates this as $d(x)$.
 
