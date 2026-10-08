@@ -9,7 +9,7 @@ Supporting material for the [explainer](../README.md). Everything in `notebooklm
 | `figures/besicovitch-cantor.svg`, `figures/besicovitch-cantor.png` | SVG written by a script | Levels 1, 2 and 4 of the Cantor-set Besicovitch construction (base-4 digits 0 and 3, segments from $(x,0)$ to $(y/2,1)$). The areas of levels 0–10 were computed by exact slicing and a 1,000-point midpoint rule. The PNG is a 3× render |
 | `figures/tubes-and-maximal-function.svg`, `figures/tubes-and-maximal-function.png` | Hand-written SVG (coordinates by script) | A planar sketch of the maximal function, a shaded tube, and the bush example. The PNG is a 3× render |
 | `figures/kakeya-landscape.svg`, `figures/kakeya-landscape.png` | Hand-written SVG (layout by script) | Status of the Minkowski, Hausdorff and maximal conjectures in dimensions 2, 3, 4 and ≥ 5, as described in the two papers. The PNG is a 3× render |
-| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), not revised | 15 beginner slides. This is the second request; the first deck failed to generate |
+| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck (detailed deck), revised once | 15 beginner slides. The first deck request failed to generate. The second deck was then revised once, to fix slides 3, 12, 13 and 15 (see the errata) |
 | `notebooklm/slides/slide-NN.png` | `scripts/render_slides.py` at 200 DPI from `slides.pdf` | Per-slide images for inline viewing |
 | `notebooklm/infographic-overview.png` | NotebookLM infographic (portrait, detailed, instructional) | One-page overview, shown at the top of the explainer |
 | `notebooklm/infographic-history-timeline.png` | NotebookLM infographic (landscape, sketch-note) | From 1917 to September 2026 |
@@ -47,15 +47,15 @@ NotebookLM gets the big picture right and is good at visuals, but it garbles som
 - The headline "September 2026: 4D dimension settled" overstates an unreviewed preprint. The caption under it ("OpenAI preprints claim …") is accurate.
 
 **`slides.pdf` / `slides.pptx`**
+- The first deck NotebookLM produced had four wrong slides, and all four were regenerated with one `nlm slides revise`. Slide 3 dated the needle result 1920 instead of 1928 and merged it with the 1919 measure-zero set. Slides 12 and 13 had the title "Solved", slide 12 drew the canonical profile as a smooth curve rather than flat-then-linear, and slide 13 garbled the regime-1 caption. Slide 15 said "SOLVED (AI, 2026)". A slide-by-slide diff (`scripts/diff_slides.py`) confirmed that no other slide changed. The shipped deck is the revised one.
 - Slide 1: the background formulas are decorative and partly garbled: "Area(D) = π", "f = u𝔤v ⋯ 1", "L(x) ⊂ D". The formula $f^{\ast}(x) = \sup \lvert \frac{1}{\lvert B\rvert}\int_B f\rvert$ is the Hardy–Littlewood maximal function over balls, not the Kakeya maximal function.
 - Slide 2: the deltoid's area $\pi/8 \approx 0.392$ is NotebookLM's own number and was not checked. The disk ($\pi/4$) and Pál's triangle ($1/\sqrt3$, 1920) are right.
-- Slide 3: "In 1920, Abram Besicovitch proved there is no minimum area. A needle can be fully rotated…". The needle result is from 1928. The 1919–1920 result is the planar set of measure zero with a segment in every direction.
 - Slide 6: "Union Volume ≥ λⁿ × Total Volume" leaves out the constant and the $\delta^{\varepsilon}$ loss.
 - Slide 9: the bush picture is right, but its captions ("volume is maximized" at the edges, "the math hits a physical limit") are NotebookLM's own gloss. The actual computation is in [section 5](../README.md#a-worked-calculation-why-the-exponent-is-3) of the explainer.
-- Slide 12: the title says "Solved"; "claimed" is accurate for an unreviewed preprint. The plotted profile bends smoothly upward after $\tau$, but the paper's canonical profile $F(s) = \beta(s-\tau)_+$ is flat and then exactly linear, with a corner at $\tau$.
-- Slide 13: the title says "Solved". The regime-1 caption ("Tubes form a polynomial potential. The field is switched to become approximately conservative") garbles the paper. There, switching between lines makes an interpolated velocity field approximately conservative, which yields a potential. The regime-2 caption leaves out the other branch of that case (wide projected intervals). "Mathematically crush the tubes" (regime 3) is not the paper's description: full-time localization and a scalar projection drive the time cost to zero.
+- Slide 12: the subtitle still says "The AI proves the 3D maximal conjecture"; "claims to prove" would be accurate.
+- Slide 13: the regime-2 caption leaves out the other branch of that case (wide projected intervals). "Mathematically crush the tubes" (regime 3) is not the paper's description: full-time localization and a scalar projection drive the time cost to zero.
 - Slide 14: "The Kakeya problem governs Fourier restriction" overstates the link. The restriction conjecture implies the Kakeya maximal conjecture, and not conversely. "Like light or sound" and "predict wave interference patterns" are NotebookLM's own gloss.
-- Slide 15: "SOLVED (AI, 2026)" for both results; they are unreviewed preprints. "Dimensions five and higher remain entirely open" is true of the full conjectures, but the companion does give dimension at least 4 there.
+- Slide 15: "Dimensions five and higher remain entirely open" is true of the full conjectures, but the companion does give dimension at least 4 there.
 
 **`beginner-explainer-report.md`**
 - The title ("Resolving the Four-Dimensional Kakeya Conjecture") centres the companion rather than the principal three-dimensional paper.
