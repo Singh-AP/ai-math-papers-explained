@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 600" width="1000" height="600" font-family="Helvetica, Arial, sans-serif">
+<title>From L(F3) = L(F4) = L(F5) to L(F2) = L(F3) by amplification</title>
+<desc>Two copies of the parameter line r of the interpolated free group factors L(F_r). Theorem 1.1 of the paper, used twice, identifies the factors at r = 3, 4, 5. Amplifying by t = sqrt(2) sends r to 1 + (r - 1)/2, so the three points move to 2, 2.5 and 3, and the isomorphism becomes L(F2) = L(F3).</desc>
+<rect x="0" y="0" width="1000" height="600" fill="#ffffff"/>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" fill="#7c3aed"/></marker></defs>
+<text x="500" y="40" font-size="24" text-anchor="middle" fill="#111827" font-weight="bold">One amplification turns ranks 3 ≅ 4 ≅ 5 into ranks 2 ≅ 3</text>
+<line x1="70.0" y1="190" x2="870.0" y2="190" stroke="#111827" stroke-width="1.8"/>
+<polygon points="870.0,190 860.0,185 860.0,195" fill="#111827"/>
+<text x="880.0" y="196" font-size="18" fill="#111827" font-style="italic">r</text>
+<line x1="90.0" y1="183" x2="90.0" y2="197" stroke="#111827" stroke-width="1.5"/>
+<text x="90.0" y="220" font-size="16" text-anchor="middle" fill="#374151">1</text>
+<line x1="240.0" y1="183" x2="240.0" y2="197" stroke="#111827" stroke-width="1.5"/>
+<text x="240.0" y="220" font-size="16" text-anchor="middle" fill="#374151">2</text>
+<line x1="390.0" y1="183" x2="390.0" y2="197" stroke="#111827" stroke-width="1.5"/>
+<text x="390.0" y="220" font-size="16" text-anchor="middle" fill="#374151">3</text>
+<line x1="540.0" y1="183" x2="540.0" y2="197" stroke="#111827" stroke-width="1.5"/>
+<text x="540.0" y="220" font-size="16" text-anchor="middle" fill="#374151">4</text>
+<line x1="690.0" y1="183" x2="690.0" y2="197" stroke="#111827" stroke-width="1.5"/>
+<text x="690.0" y="220" font-size="16" text-anchor="middle" fill="#374151">5</text>
+<line x1="840.0" y1="183" x2="840.0" y2="197" stroke="#111827" stroke-width="1.5"/>
+<text x="840.0" y="220" font-size="16" text-anchor="middle" fill="#374151">6</text>
+<text x="70.0" y="132" font-size="16" fill="#6b7280">before</text>
+<line x1="70.0" y1="410" x2="870.0" y2="410" stroke="#111827" stroke-width="1.8"/>
+<polygon points="870.0,410 860.0,405 860.0,415" fill="#111827"/>
+<text x="880.0" y="416" font-size="18" fill="#111827" font-style="italic">r</text>
+<line x1="90.0" y1="403" x2="90.0" y2="417" stroke="#111827" stroke-width="1.5"/>
+<text x="90.0" y="440" font-size="16" text-anchor="middle" fill="#374151">1</text>
+<line x1="240.0" y1="403" x2="240.0" y2="417" stroke="#111827" stroke-width="1.5"/>
+<text x="240.0" y="440" font-size="16" text-anchor="middle" fill="#374151">2</text>
+<line x1="390.0" y1="403" x2="390.0" y2="417" stroke="#111827" stroke-width="1.5"/>
+<text x="390.0" y="440" font-size="16" text-anchor="middle" fill="#374151">3</text>
+<line x1="540.0" y1="403" x2="540.0" y2="417" stroke="#111827" stroke-width="1.5"/>
+<text x="540.0" y="440" font-size="16" text-anchor="middle" fill="#374151">4</text>
+<line x1="690.0" y1="403" x2="690.0" y2="417" stroke="#111827" stroke-width="1.5"/>
+<text x="690.0" y="440" font-size="16" text-anchor="middle" fill="#374151">5</text>
+<line x1="840.0" y1="403" x2="840.0" y2="417" stroke="#111827" stroke-width="1.5"/>
+<text x="840.0" y="440" font-size="16" text-anchor="middle" fill="#374151">6</text>
+<text x="70.0" y="352" font-size="16" fill="#6b7280">after amplifying by t = √2</text>
+<circle cx="90.0" cy="190" r="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<circle cx="90.0" cy="410" r="6" fill="#ffffff" stroke="#9ca3af" stroke-width="2"/>
+<circle cx="390.0" cy="190" r="9" fill="#2563eb"/>
+<text x="390.0" y="168" font-size="19" text-anchor="middle" fill="#1e3a8a" font-weight="normal">L(F<tspan font-size="13" dy="5">3</tspan><tspan dy="-5">)</tspan></text>
+<circle cx="540.0" cy="190" r="9" fill="#2563eb"/>
+<text x="540.0" y="168" font-size="19" text-anchor="middle" fill="#1e3a8a" font-weight="normal">L(F<tspan font-size="13" dy="5">4</tspan><tspan dy="-5">)</tspan></text>
+<circle cx="690.0" cy="190" r="9" fill="#2563eb"/>
+<text x="690.0" y="168" font-size="19" text-anchor="middle" fill="#1e3a8a" font-weight="normal">L(F<tspan font-size="13" dy="5">5</tspan><tspan dy="-5">)</tspan></text>
+<path d="M 390.0 142 L 390.0 134 L 690.0 134 L 690.0 142" fill="none" stroke="#2563eb" stroke-width="2"/>
+<text x="540.0" y="126" font-size="16" text-anchor="middle" fill="#1e3a8a">Theorem 1.1 with n = 3 and n = 4: all three are isomorphic</text>
+<circle cx="240.0" cy="410" r="9" fill="#059669"/>
+<text x="240.0" y="470" font-size="19" text-anchor="middle" fill="#065f46" font-weight="normal">L(F<tspan font-size="13" dy="5">2</tspan><tspan dy="-5">)</tspan></text>
+<circle cx="315.0" cy="410" r="8" fill="#ffffff" stroke="#059669" stroke-width="3"/>
+<text x="315.0" y="470" font-size="19" text-anchor="middle" fill="#065f46" font-weight="normal">L(F<tspan font-size="13" dy="5">2.5</tspan><tspan dy="-5">)</tspan></text>
+<circle cx="390.0" cy="410" r="9" fill="#059669"/>
+<text x="390.0" y="470" font-size="19" text-anchor="middle" fill="#065f46" font-weight="normal">L(F<tspan font-size="13" dy="5">3</tspan><tspan dy="-5">)</tspan></text>
+<path d="M 240.0 482 L 240.0 490 L 390.0 490 L 390.0 482" fill="none" stroke="#059669" stroke-width="2"/>
+<text x="315.0" y="512" font-size="17" text-anchor="middle" fill="#065f46" font-weight="bold">so L(F<tspan font-size="12" dy="5">2</tspan><tspan dy="-5">) ≅ L(F</tspan><tspan font-size="12" dy="5">3</tspan><tspan dy="-5">): Theorem 1.2</tspan></text>
+<text x="315.0" y="534" font-size="14" text-anchor="middle" fill="#065f46">(the hollow point is the interpolated factor at r = 2.5)</text>
+<line x1="390.0" y1="204" x2="242.0" y2="396" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+<line x1="540.0" y1="204" x2="319.0" y2="396" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+<line x1="690.0" y1="204" x2="394.0" y2="396" stroke="#7c3aed" stroke-width="2.5" marker-end="url(#arr)"/>
+<rect x="650" y="250" width="320" height="132" rx="8" fill="#f5f3ff" stroke="#7c3aed" stroke-width="1.5"/>
+<text x="810.0" y="274" font-size="15" text-anchor="middle" fill="#3b0764">Amplification formula (Dykema 1994)</text>
+<text x="810.0" y="302" font-size="18" text-anchor="middle" fill="#3b0764">L(F<tspan font-size="12" dy="5">r</tspan><tspan dy="-5">)</tspan><tspan font-size="12" dy="-9">t</tspan><tspan dy="9" dx="6">≅ L(F</tspan><tspan font-size="12" dy="5">1 + (r − 1)/t²</tspan><tspan dy="-5">)</tspan></text>
+<text x="810.0" y="330" font-size="15" text-anchor="middle" fill="#5b21b6">With t = √2:  r  ↦  1 + (r − 1)/2</text>
+<text x="810.0" y="358" font-size="16" text-anchor="middle" fill="#5b21b6">3 → 2,   4 → 2.5,   5 → 3</text>
+<rect x="600" y="478" width="370" height="96" rx="8" fill="#f9fafb" stroke="#d1d5db" stroke-width="1.2"/>
+<text x="616" y="502" font-size="15" fill="#374151" font-weight="bold">The dichotomy (Dykema; Rădulescu, 1994):</text>
+<text x="616" y="523" font-size="15" fill="#374151">either every L(F<tspan font-size="11" dy="4">r</tspan><tspan dy="-4">) with 1 &lt; r ≤ ∞ is the same</tspan></text>
+<text x="616" y="544" font-size="15" fill="#374151">factor, or no two of them are isomorphic.</text>
+<text x="616" y="565" font-size="15" fill="#374151">Theorem 1.2 rules out the second case.</text>
+</svg>

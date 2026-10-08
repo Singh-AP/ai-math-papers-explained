@@ -1,0 +1,162 @@
+{
+  "name": "Isomorphism of Free Group Factors",
+  "children": [
+    {
+      "name": "Main Result",
+      "children": [
+        {
+          "name": "Theorem 1.1: Rank Comparison",
+          "children": [
+            {
+              "name": "L(Fn) ≅ L(Fn+1) for n ≥ 3"
+            },
+            {
+              "name": "Unital trace-preserving normal *-isomorphism"
+            }
+          ]
+        },
+        {
+          "name": "Theorem 1.2: Main Solution",
+          "children": [
+            {
+              "name": "L(F2) ≅ L(F3)"
+            },
+            {
+              "name": "Solves free group factor isomorphism problem"
+            }
+          ]
+        },
+        {
+          "name": "Corollary 6.1: Consequential Results",
+          "children": [
+            {
+              "name": "All interpolated factors L(Fr) ≅ L(Fs) for r,s > 1"
+            },
+            {
+              "name": "Includes infinite rank L(F∞)"
+            },
+            {
+              "name": "Fundamental group is R > 0"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Key Proof Techniques",
+      "children": [
+        {
+          "name": "Trace-Preserving Polynomial Flows",
+          "children": [
+            {
+              "name": "Driven by bounded logarithm S = arg(C)"
+            },
+            {
+              "name": "1-parameter automorphism groups βt"
+            },
+            {
+              "name": "Moment invariance via formal derivations"
+            }
+          ]
+        },
+        {
+          "name": "Small Cocycle Construction",
+          "children": [
+            {
+              "name": "Fox free differential calculus"
+            },
+            {
+              "name": "Prefix sums Tm and Catalan moment counts"
+            },
+            {
+              "name": "Spectral measure cutoff and inverse"
+            },
+            {
+              "name": "Bounds generator displacement & word error"
+            }
+          ]
+        },
+        {
+          "name": "Iterative Approximation & Generation",
+          "children": [
+            {
+              "name": "Adaptive error budgets (rk, εk)"
+            },
+            {
+              "name": "Operator norm convergence of first n coordinates"
+            },
+            {
+              "name": "L2 density & conditional expectation for W*-generation"
+            }
+          ]
+        },
+        {
+          "name": "Amplification Calculus",
+          "children": [
+            {
+              "name": "Corner amplification convention (Qt)"
+            },
+            {
+              "name": "Formula: N_s^t ≅ N_{1+(s-1)t^-2}"
+            },
+            {
+              "name": "Amplifying L(F3) ≅ L(F5) by √2 yields L(F2) ≅ L(F3)"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Impact on Free Entropy Dimensions",
+      "children": [
+        {
+          "name": "Corollary 7.1: Generator Dependence",
+          "children": [
+            {
+              "name": "Dimensions depend on choice of W*-generators"
+            },
+            {
+              "name": "Fails invariance under W*-algebra isomorphism"
+            }
+          ]
+        },
+        {
+          "name": "Dimensions Affected",
+          "children": [
+            {
+              "name": "Microstates: δ, δ0"
+            },
+            {
+              "name": "Nonmicrostates: δ*, δ⋆"
+            }
+          ]
+        },
+        {
+          "name": "Behavior on L(F2)",
+          "children": [
+            {
+              "name": "Attains every integer value n ≥ 2 on finite generating tuples"
+            },
+            {
+              "name": "Proves dimensions are unbounded on single factor"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Lean Formalization",
+      "children": [
+        {
+          "name": "Repository: openai/math"
+        },
+        {
+          "name": "File: InterpolatedFactors.lean"
+        },
+        {
+          "name": "Scope: Formalized isomorphism of interpolated free group factors (r, s > 1)"
+        }
+      ]
+    }
+  ]
+}
