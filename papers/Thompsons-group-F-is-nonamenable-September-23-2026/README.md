@@ -122,6 +122,8 @@ where $\triangle$ is the symmetric difference. Such an $A$ is "almost invariant"
 
 ![Slide: the Følner condition, intervals in Z versus balls in the free group](assets/notebooklm/slides/slide-04.png)
 
+(The slide's "boundary dwarfs interior" for $F_2$ exaggerates: for balls the ratio tends to 1, so the part that moves is about as large as the ball, not vastly larger.)
+
 So to prove a group is **not** amenable, it is enough to find one finite set $S$ and one $c > 0$ such that **every** finite set $A$ has $\max_{h\in S} \lvert hA \triangle A\rvert / \lvert A\rvert \ge c$. That is exactly what this paper does for F.
 
 ### 1.6 The Banach–Tarski connection
@@ -312,7 +314,7 @@ where $\alpha$ is the average correlation of the reference pair (equation 2.10).
 
 ![Slide: F carries a separated pair of internal basic dyadic intervals onto any other such pair](assets/notebooklm/slides/slide-11.png)
 
-(The slide says "any separated pair of dyadic intervals". Lemma 2.2 needs basic dyadic intervals with both endpoints inside $(0,1)$: every element of F fixes 0 and 1, so, for example, an interval starting at 0 can only be carried to another interval starting at 0.)
+(The revised slide states Lemma 2.2 with its hypotheses: basic dyadic intervals with all endpoints inside $(0,1)$, since every element of F fixes 0 and 1. Its diagram is muddled: the crossing arrows could suggest the pair's order is swapped, but elements of F are increasing, so the left interval of a pair always goes to the left interval of the other.)
 
 **Step 6: the variance estimate.** Expand $\lVert m\rVert^2$, $\lVert z_i\rVert^2$ and $\langle z_i, m\rangle$ into $D^2$ inner products each. In $\lVert m\rVert^2$ and $\lVert z_i\rVert^2$ the $D(D-1)$ off-diagonal terms are separated pairs, and the $D$ diagonal terms are at most 1. In $\langle z_i, m\rangle$, the pairs $\langle X_{I_i\cdot I_j}, X_{I_k}\rangle$ with $k \ne i$ are separated, and only the $D$ terms with $k = i$ are nested; each of those is at least $-1$. Putting this together, the unknown $\alpha$ cancels:
 
@@ -446,11 +448,11 @@ which is linear between these points, with slopes $1/2, 1, 8, 1/2, 1$. All break
 
 ## 9. Slides, audio and other assets
 
-Everything below except the three hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the Lean scope document and the Wikipedia article on amenable groups. The report and the mind map used only the paper and the Lean scope document. The outputs are kept exactly as NotebookLM produced them; the slide deck was not revised. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. In particular, slides 5, 6, 10 and 14 contain clear errors (a duplicated and misdated card, a graph that is not increasing, a misstated colouring rule, and invented Lean code).
+Everything below except the three hand-made figures was generated with **Google NotebookLM** (now "Gemini Notebook") from the paper, the Lean scope document and the Wikipedia article on amenable groups. The report and the mind map used only the paper and the Lean scope document. The outputs are kept exactly as NotebookLM produced them, apart from one revision of the slide deck: slides 5, 6, 10, 11 and 14 were regenerated once to fix a misdated card, a graph that was not increasing, a misstated colouring rule, a transport statement missing its hypotheses, and a misattributed Lean slide. A slide-by-slide diff confirmed that nothing else changed. They are AI-generated, so see the [errata](assets/README.md#errata) before relying on any detail. In particular, slide 14 still shows invented Lean code in its picture.
 
 | Asset | What it is |
 |---|---|
-| [Slide deck (PDF)](assets/notebooklm/slides.pdf) · [PPTX](assets/notebooklm/slides.pptx) | 15 beginner slides. Most are accurate; four have clear errors listed in the errata |
+| [Slide deck (PDF)](assets/notebooklm/slides.pdf) · [PPTX](assets/notebooklm/slides.pptx) | 15 beginner slides. Five slides were regenerated once to fix errors; smaller issues remain, listed in the errata |
 | [Infographic: overview](assets/notebooklm/infographic-overview.png) | The one-page summary shown at the top. Its generator graphs are garbled |
 | [Infographic: history timeline](assets/notebooklm/infographic-history-timeline.png) | From Hausdorff (1914) to 2026, in sketch-note style; a selection of events |
 | [Audio overview (≈1.7 min)](assets/notebooklm/audio-overview-brief.m4a) | A short podcast-style summary (not reviewed) |
@@ -502,7 +504,7 @@ See [`assets/README.md`](assets/README.md) for the full inventory and the file-b
 ## How this explainer was made
 
 1. The paper (with its TeX source), its openai/math README, the family entry in `CONTENTS.md`, the Lean scope document `lean/docs/248.md`, the Comparator challenge files, the main Lean file and `lean/formalization.yaml` were downloaded from [openai/math](https://github.com/openai/math).
-2. The paper, the Lean scope document and the Wikipedia article on [amenable groups](https://en.wikipedia.org/wiki/Amenable_group) were loaded into a NotebookLM notebook on a second NotebookLM account, through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI. That notebook generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/), using prompts written as plain statements of the paper's results. The report and the mind map were restricted to the paper and the Lean scope document. Every slide, both infographics, the report and the mind map were then read against the paper, and the errors are listed in the [errata](assets/README.md#errata). The slide deck was not revised, because the shared NotebookLM quota was too low for a revision.
+2. The paper, the Lean scope document and the Wikipedia article on [amenable groups](https://en.wikipedia.org/wiki/Amenable_group) were loaded into a NotebookLM notebook on a second NotebookLM account, through the [`notebooklm-mcp-cli`](https://github.com/jacob-bd/gemini-notebook-mcp-cli) MCP/CLI. That notebook generated the slides, infographics, report, mind map and audio in [`assets/notebooklm/`](assets/notebooklm/), using prompts written as plain statements of the paper's results. The report and the mind map were restricted to the paper and the Lean scope document. Every slide, both infographics, the report and the mind map were then read against the paper, and the errors are listed in the [errata](assets/README.md#errata). Five clearly wrong slides (5, 6, 10, 11 and 14) were regenerated once with `nlm slides revise`, and a slide-by-slide diff confirmed that nothing else changed.
 3. The text on this page was written by hand (with AI assistance) directly from the paper's TeX source and the openai/math documentation. The history table was checked against the paper's introduction and bibliography, the arXiv records of the 2009–2021 preprints, and Wikipedia's articles on amenable groups, the von Neumann conjecture, Thompson groups, the Banach–Tarski paradox and the Grigorchuk group. The relations between $A$ and $B$, the Følner ratios, the interval endpoints, the colours, the transport element, the covariance identity and the variance algebra were all computed with small scripts using exact fractions and symbolic algebra. The three figures were drawn by hand as SVG from those computed values. NotebookLM's outputs were used as visual and structural aids, not as the source of truth.
 
 See [`PIPELINE.md`](../../PIPELINE.md) for the exact, repeatable steps.
