@@ -8,7 +8,7 @@ Supporting material for the [explainer](../README.md). Everything in `notebooklm
 |---|---|---|
 | `figures/two-inner-products.svg`, `figures/two-inner-products.png` | Hand-written SVG, coordinates computed with NumPy | The 2×2 example: the oblique projection $\pi(e)$, the averaged inner product (green ellipse), and the orthogonal projection $\rho(e) = S\pi(e)S^{-1}$ with $S = D^{1/2}$. The PNG is a 3× render |
 | `figures/narrow-arc-cancellation.svg`, `figures/narrow-arc-cancellation.png` | Hand-written SVG, data computed with NumPy | The narrow-arc function of the paper's Section 5, and a log-log plot of the bound $3u$ for the corner element, the computed constant-vector test of the Hankel matrix times $u$, and the paper's lower bound $u/(2\pi^2)$, for $N = 2$ to $500$. The PNG is a 3× render |
-| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck ("detailed deck"), not revised | 14 beginner slides. The first generation request failed on NotebookLM's side; this is the second, identical request |
+| `notebooklm/slides.pdf`, `notebooklm/slides.pptx` | NotebookLM slide deck ("detailed deck"), revised once | 14 beginner slides. The first generation request failed on NotebookLM's side, and the second, identical request produced the original deck. Slides 7, 13 and 14 were then regenerated with one `nlm slides revise` (see errata); a slide-by-slide diff confirmed that no other slide changed |
 | `notebooklm/slides/slide-NN.png` | `pymupdf` at 200 DPI from `slides.pdf` | Per-slide images for inline viewing |
 | `notebooklm/infographic-overview.png` | NotebookLM infographic (portrait, detailed, instructional) | One-page overview, 1536×2752 |
 | `notebooklm/infographic-history-timeline.png` | NotebookLM infographic (landscape, sketch-note) | From 1943 to September 2026, 2752×1536 |
@@ -46,15 +46,18 @@ NotebookLM gets the big picture right but sometimes invents or garbles details. 
 **`slides.pdf` / `slides.pptx`**
 - Slide 1 shows a single sheared operator $T$ becoming unitary as $S^{-1}TS$, with labels "skewed by $C > 0$" and "$\lVert\cdot\rVert_C$". None of this comes from the paper. The theorem is about homomorphisms of whole algebras, not single operators.
 - Slide 4 puts a cross and "$\pi(x^{\ast}) \neq \pi(x)^{\ast}$" in the bounded-homomorphism column. Bounded homomorphisms are not *required* to respect adjoints, but some do: every \*-homomorphism is one.
-- Slide 7 prints a sentence in quotation marks as if it were Kadison's own words. It is a paraphrase written by NotebookLM, not a quotation from his 1955 paper, and the portrait is a generic drawing, not a likeness.
+- Slide 7 (fixed by the revision): the original deck printed NotebookLM's paraphrase in quotation marks, as if it were Kadison's own words, next to a generic portrait. The shipped slide labels it "Kadison's question, paraphrased" and uses a question-mark icon.
 - Slide 9 says the paper "officially solves" the conjecture; it is an unrefereed preprint. Its statement of the theorem also drops "unital".
 - Slide 10: the curve in the plot is an illustration, not computed data, and its axis jumps from 2 to 4.
 - Slide 11 merges two steps: averaging over the matrix unitary groups (Lemma 3.3) and the Schur–Weyl analysis of the averaged operator (Lemma 3.4). The labels on the bottom row ("bounded element", "rigid/orthogonal") do not correspond to anything in the paper.
 - Slide 12 draws the argument as a closed loop, but the logic is a chain: estimate → completely bounded → inner → Kirchberg's theorem → similarity. "The case is definitively closed" overstates the preprint status.
-- Slide 13's first bullet, "The distance from any operator to the algebra is universally bounded", is wrong. The corollary bounds $\mathrm{dist}(T, M)$ by $2C$ times the off-diagonal seminorm $\alpha_M(T)$, not by a universal number. The formula in the box is correct.
-- Slide 14 overstates the verification status ("Verified" check marks, "Formally Verified in Lean (2026)", "checked, and forever inscribed in code"). Its subtitle, "The era of 'mostly sure' human proofs is over", is an editorial claim found in no source. The code shown in the editor panel is invented and is not Lean.
+- Slide 13 (fixed by the revision): the original first bullet, "The distance from any operator to the algebra is universally bounded", was wrong. The shipped bullet says correctly that the distance from $T$ to $M$ is at most $2C$ times $\alpha_M(T)$, the largest off-diagonal block $(1-e)Te$ over projections $e$ in $M'$.
+- Slide 14 (partly fixed by the revision). The original was titled "The Ultimate Proof", with the subtitle "The era of 'mostly sure' human proofs is over" (an editorial claim found in no source) and the footer "Formally Verified in Lean (2026)". The shipped slide is titled "Lean Formalization Status", its subtitle says correctly that a Lean scope document lists Comparator statements for the main results, and its footer says the Lean build was not re-run and that the paper is an unrefereed preprint. Some problems remain:
+  - the "Verified" check marks and descriptions beside both file names, and the box "A 70-year human question answered, checked, and forever inscribed in code", overstate the status and contradict the footer;
+  - the code in the editor panel is invented and is not Lean;
+  - `UniformCommutator.lean` is listed twice, under a nonsense folder name.
 - Slides 2, 3, 5, 6 and 8 have no errors that we found. Slide 3 writes the C\*-identity as $\lVert xx^{\ast}\rVert = \lVert x\rVert^2$, which is equivalent to the usual $\lVert x^{\ast}x\rVert = \lVert x\rVert^2$.
-- No revision was made: the shared generation quota had about 11% left, below the threshold for a revision. A single revision of slides 7, 13 and 14 would be the one to try.
+- One revision targeted slides 7, 13 and 14, with instructions written as plain statements. `scripts/diff_slides.py` showed that only those three slides changed. The revised deck is shipped because it fixes slides 7 and 13 completely and slide 14 in part; the pre-revision deck is not kept in the repository.
 
 **`beginner-explainer-report.md`**
 - Section 1 says the main results "have been fully machine-verified in the Lean 4 theorem prover" (see the note on verification status above).
