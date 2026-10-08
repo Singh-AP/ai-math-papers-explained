@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="600" viewBox="0 0 980 600" font-family="Helvetica, Arial, DejaVu Sans, sans-serif">
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" fill="#333"/>
+    </marker>
+    <marker id="arrC0" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#1b6ca8"/></marker>
+    <marker id="arrC1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#c0392b"/></marker>
+    <marker id="arrC2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#27863f"/></marker>
+    <marker id="arrC3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#8e44ad"/></marker>
+  </defs>
+  <rect x="0" y="0" width="980" height="600" fill="#ffffff"/>
+  <text x="490" y="34" text-anchor="middle" font-size="21" font-weight="bold" fill="#222">The paper's parity trick on the smallest possible graphs</text>
+  <text x="490" y="58" text-anchor="middle" font-size="14" fill="#555">Same recipe as the paper (graphs, cones, α = Σ g_x, β = Σ h_y⁻¹), but tiny graphs, so the group has torsion</text>
+
+  <!-- Panel A -->
+  <rect x="20" y="78" width="230" height="270" rx="12" fill="#f4f8fc" stroke="#9db7d0"/>
+  <text x="135" y="104" text-anchor="middle" font-size="16" font-weight="bold" fill="#1b4f72">Γ_A: one edge</text>
+  <circle cx="70" cy="170" r="20" fill="#ffffff" stroke="#1b4f72" stroke-width="2"/>
+  <circle cx="70" cy="170" r="25" fill="none" stroke="#1b4f72" stroke-width="1.2"/>
+  <text x="70" y="176" text-anchor="middle" font-size="17" fill="#1b4f72">u</text>
+  <circle cx="200" cy="170" r="20" fill="#ffffff" stroke="#1b4f72" stroke-width="2"/>
+  <text x="200" y="176" text-anchor="middle" font-size="17" fill="#1b4f72">w</text>
+  <line x1="96" y1="170" x2="178" y2="170" stroke="#333" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="137" y="160" text-anchor="middle" font-size="16" font-style="italic" fill="#333">t</text>
+  <text x="70" y="216" text-anchor="middle" font-size="12" fill="#555">root</text>
+  <text x="35" y="248" font-size="14" fill="#222">S_u = {t},  S_w = {t⁻¹}</text>
+  <text x="35" y="274" font-size="14" fill="#222">g_u = 1,  g_w = t</text>
+  <text x="35" y="310" font-size="16" font-weight="bold" fill="#1b4f72">α = 1 + t</text>
+
+  <!-- Panel B -->
+  <rect x="268" y="78" width="262" height="270" rx="12" fill="#fbf6ef" stroke="#d7b98a"/>
+  <text x="399" y="104" text-anchor="middle" font-size="16" font-weight="bold" fill="#7a4b0c">Γ_B: a 4-cycle</text>
+  <circle cx="330" cy="140" r="18" fill="#ffffff" stroke="#7a4b0c" stroke-width="2"/>
+  <circle cx="330" cy="140" r="23" fill="none" stroke="#7a4b0c" stroke-width="1.2"/>
+  <text x="330" y="146" text-anchor="middle" font-size="15" fill="#7a4b0c">y₀</text>
+  <circle cx="468" cy="140" r="18" fill="#ffffff" stroke="#7a4b0c" stroke-width="2"/>
+  <text x="468" y="146" text-anchor="middle" font-size="15" fill="#7a4b0c">y₁</text>
+  <circle cx="468" cy="236" r="18" fill="#ffffff" stroke="#7a4b0c" stroke-width="2"/>
+  <text x="468" y="242" text-anchor="middle" font-size="15" fill="#7a4b0c">y₂</text>
+  <circle cx="330" cy="236" r="18" fill="#ffffff" stroke="#7a4b0c" stroke-width="2"/>
+  <text x="330" y="242" text-anchor="middle" font-size="15" fill="#7a4b0c">y₃</text>
+  <line x1="355" y1="140" x2="447" y2="140" stroke="#333" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="468" y1="160" x2="468" y2="215" stroke="#333" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="448" y1="236" x2="352" y2="236" stroke="#333" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="330" y1="216" x2="330" y2="166" stroke="#333" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="400" y="131" text-anchor="middle" font-size="15" font-style="italic" fill="#333">t</text>
+  <text x="482" y="193" font-size="15" font-style="italic" fill="#333">t</text>
+  <text x="400" y="255" text-anchor="middle" font-size="15" font-style="italic" fill="#333">t</text>
+  <text x="314" y="193" text-anchor="end" font-size="15" font-style="italic" fill="#333">t</text>
+  <text x="282" y="282" font-size="14" fill="#222">every S_y = {t, t⁻¹};  h_(y_k) = tᵏ</text>
+  <text x="282" y="308" font-size="16" font-weight="bold" fill="#7a4b0c">β = 1 + t⁻¹ + t⁻² + t⁻³</text>
+  <text x="282" y="334" font-size="13" fill="#b03a2e">cone kills t⁴, so G = ℤ/4 (torsion!)</text>
+
+  <!-- Panel C -->
+  <rect x="548" y="78" width="412" height="270" rx="12" fill="#f6f6f6" stroke="#bbbbbb"/>
+  <text x="754" y="104" text-anchor="middle" font-size="16" font-weight="bold" fill="#333">pairs (x, y) joined by common steps</text>
+  <!-- nodes: row u at y=150, row w at y=262 ; columns at 600, 690, 780, 870 -->
+  <g font-size="13" text-anchor="middle">
+    <rect x="566" y="128" width="68" height="44" rx="7" fill="#eaf2fa" stroke="#1b6ca8" stroke-width="2"/>
+    <text x="600" y="146" fill="#333">(u, y₀)</text><text x="600" y="164" font-weight="bold" fill="#1b6ca8">1</text>
+    <rect x="656" y="128" width="68" height="44" rx="7" fill="#fbeceb" stroke="#c0392b" stroke-width="2"/>
+    <text x="690" y="146" fill="#333">(u, y₁)</text><text x="690" y="164" font-weight="bold" fill="#c0392b">t⁻¹</text>
+    <rect x="746" y="128" width="68" height="44" rx="7" fill="#eaf5ec" stroke="#27863f" stroke-width="2"/>
+    <text x="780" y="146" fill="#333">(u, y₂)</text><text x="780" y="164" font-weight="bold" fill="#27863f">t⁻²</text>
+    <rect x="836" y="128" width="68" height="44" rx="7" fill="#f3ebf7" stroke="#8e44ad" stroke-width="2"/>
+    <text x="870" y="146" fill="#333">(u, y₃)</text><text x="870" y="164" font-weight="bold" fill="#8e44ad">t⁻³</text>
+
+    <rect x="566" y="240" width="68" height="44" rx="7" fill="#f3ebf7" stroke="#8e44ad" stroke-width="2"/>
+    <text x="600" y="258" fill="#333">(w, y₀)</text><text x="600" y="276" font-weight="bold" fill="#8e44ad">t = t⁻³</text>
+    <rect x="656" y="240" width="68" height="44" rx="7" fill="#eaf2fa" stroke="#1b6ca8" stroke-width="2"/>
+    <text x="690" y="258" fill="#333">(w, y₁)</text><text x="690" y="276" font-weight="bold" fill="#1b6ca8">1</text>
+    <rect x="746" y="240" width="68" height="44" rx="7" fill="#fbeceb" stroke="#c0392b" stroke-width="2"/>
+    <text x="780" y="258" fill="#333">(w, y₂)</text><text x="780" y="276" font-weight="bold" fill="#c0392b">t⁻¹</text>
+    <rect x="836" y="240" width="68" height="44" rx="7" fill="#eaf5ec" stroke="#27863f" stroke-width="2"/>
+    <text x="870" y="258" fill="#333">(w, y₃)</text><text x="870" y="276" font-weight="bold" fill="#27863f">t⁻²</text>
+  </g>
+  <line x1="612" y1="173" x2="678" y2="238" stroke="#1b6ca8" stroke-width="2.5"/>
+  <line x1="702" y1="173" x2="768" y2="238" stroke="#c0392b" stroke-width="2.5"/>
+  <line x1="792" y1="173" x2="858" y2="238" stroke="#27863f" stroke-width="2.5"/>
+  <path d="M904,150 L936,150 Q946,150 946,160 L946,300 Q946,310 936,310 L610,310 Q600,310 600,300 L600,286" fill="none" stroke="#8e44ad" stroke-width="2.5"/>
+  <text x="654" y="210" font-size="12" font-style="italic" fill="#1b6ca8">t</text>
+  <text x="744" y="210" font-size="12" font-style="italic" fill="#c0392b">t</text>
+  <text x="834" y="210" font-size="12" font-style="italic" fill="#27863f">t</text>
+  <text x="772" y="327" text-anchor="middle" font-size="12" fill="#8e44ad">t-step from (u, y₃) to (w, y₀), drawn around</text>
+  <text x="562" y="204" font-size="11" fill="#666">value</text>
+  <text x="562" y="217" font-size="11" fill="#666">g_x h_y⁻¹</text>
+
+  <!-- explanation -->
+  <g font-size="15" fill="#222">
+    <text x="30" y="384"><tspan font-weight="bold">1.</tspan> Every pair (x, y) shares exactly one outgoing label, so every pair has an odd number (1) of common steps.</text>
+    <text x="30" y="410"><tspan font-weight="bold">2.</tspan> A step x → xt, y → yt keeps the value: (g_x t)(h_y t)⁻¹ = g_x h_y⁻¹. Each colour class has one value.</text>
+    <text x="30" y="436"><tspan font-weight="bold">3.</tspan> All degrees odd ⇒ every component has an even number of pairs (handshake lemma). Here: 2 each.</text>
+    <text x="30" y="462"><tspan font-weight="bold">4.</tspan> Over 𝔽₂ equal terms cancel in pairs (1 + 1 = 0), so αβ = (1 + t)(1 + t⁻¹ + t⁻² + t⁻³) = 0.</text>
+  </g>
+  <rect x="20" y="482" width="940" height="100" rx="10" fill="#fff6e5" stroke="#e0a43a"/>
+  <text x="34" y="508" font-size="15" fill="#7a4b0c" font-weight="bold">Why this toy proves nothing new</text>
+  <text x="34" y="532" font-size="14" fill="#333">The cone on the 4-cycle forces t⁴ = 1. Since 1 + t = 1 − t over 𝔽₂, the product is the classical torsion zero divisor (1 − g)(1 + g + g² + g³) = 0.</text>
+  <text x="34" y="554" font-size="14" fill="#333">With a 1-cycle instead, t = 1 and α = 1 + 1 = 0. The paper keeps the same parity count on huge random graphs and adds two safeguards:</text>
+  <text x="34" y="576" font-size="14" fill="#333">the roots are the only vertices with label 1 (so α, β ≠ 0), and the complex X is aspherical (so G is torsion-free).</text>
+</svg>

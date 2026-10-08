@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="680" viewBox="0 0 980 680" font-family="Helvetica, Arial, DejaVu Sans, sans-serif">
+  <defs>
+    <marker id="down" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#333" transform="rotate(90 5 5)"/></marker>
+    <marker id="tip" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#555"/></marker>
+    <marker id="tipr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#b03a2e"/></marker>
+  </defs>
+  <rect x="0" y="0" width="980" height="680" fill="#ffffff"/>
+  <text x="490" y="34" text-anchor="middle" font-size="21" font-weight="bold" fill="#222">Kaplansky's three conjectures for a torsion-free group G and a field K</text>
+  <text x="490" y="58" text-anchor="middle" font-size="14" fill="#555">A failure higher up forces every failure below it, in the same algebra K[G]. The lowest step cannot be reversed.</text>
+
+  <!-- stronger-failure arrow -->
+  <line x1="38" y1="500" x2="38" y2="96" stroke="#555" stroke-width="2.5" marker-end="url(#tip)"/>
+  <text x="26" y="300" font-size="14" fill="#555" transform="rotate(-90 26 300)" text-anchor="middle">stronger failure</text>
+
+  <!-- Box I -->
+  <rect x="64" y="86" width="500" height="92" rx="12" fill="#f3ebf7" stroke="#8e44ad" stroke-width="2"/>
+  <text x="84" y="116" font-size="17" font-weight="bold" fill="#5b2c6f">A nontrivial idempotent:  e² = e,  e ≠ 0, 1</text>
+  <text x="84" y="142" font-size="14" fill="#333">The idempotent conjecture fails.</text>
+  <text x="84" y="164" font-size="13" fill="#666">Still open in general for torsion-free G.</text>
+
+  <!-- arrow I->Z -->
+  <line x1="314" y1="180" x2="314" y2="238" stroke="#333" stroke-width="2.5"/>
+  <polygon points="304,236 324,236 314,251" fill="#333"/>
+  <text x="330" y="218" font-size="14" fill="#333">because e(1 − e) = e − e² = 0</text>
+
+  <!-- Box Z -->
+  <rect x="64" y="252" width="500" height="92" rx="12" fill="#eaf2fa" stroke="#1b6ca8" stroke-width="3"/>
+  <text x="84" y="282" font-size="17" font-weight="bold" fill="#1b4f72">Nonzero zero divisors:  αβ = 0,  α ≠ 0,  β ≠ 0</text>
+  <text x="84" y="308" font-size="14" fill="#333">The zero-divisor conjecture fails.</text>
+  <text x="84" y="330" font-size="13" fill="#666">Before this paper: no counterexample over any field.</text>
+
+  <!-- arrow Z->U -->
+  <line x1="314" y1="346" x2="314" y2="404" stroke="#333" stroke-width="2.5"/>
+  <polygon points="304,402 324,402 314,417" fill="#333"/>
+  <text x="330" y="372" font-size="14" fill="#333">pick g ∈ G with c = βgα ≠ 0; then c² = βg(αβ)gα = 0,</text>
+  <text x="330" y="392" font-size="14" fill="#333">so 1 + c is a unit, with inverse 1 − c</text>
+
+  <!-- Box U -->
+  <rect x="64" y="418" width="500" height="92" rx="12" fill="#fbf6ef" stroke="#d68910" stroke-width="2"/>
+  <text x="84" y="448" font-size="17" font-weight="bold" fill="#7a4b0c">A nontrivial unit:  u invertible,  u ≠ λg</text>
+  <text x="84" y="474" font-size="14" fill="#333">The unit conjecture fails.</text>
+  <text x="84" y="496" font-size="13" fill="#666">This is the weakest of the three failures.</text>
+
+  <!-- blocked converse -->
+  <path d="M150,512 L150,560" stroke="#b03a2e" stroke-width="2" stroke-dasharray="6,4" fill="none"/>
+  <path d="M150,512 L150,500" stroke="none"/>
+  <line x1="138" y1="530" x2="162" y2="546" stroke="#b03a2e" stroke-width="3"/>
+  <line x1="162" y1="530" x2="138" y2="546" stroke="#b03a2e" stroke-width="3"/>
+  <text x="176" y="534" font-size="13" fill="#b03a2e">no way back up: Gardam's group P is virtually ℤ³,</text>
+  <text x="176" y="552" font-size="13" fill="#b03a2e">so 𝔽₂[P] has nontrivial units but no zero divisors</text>
+
+  <!-- right notes -->
+  <rect x="590" y="86" width="372" height="92" rx="10" fill="#ffffff" stroke="#8e44ad" stroke-width="1.5"/>
+  <text x="604" y="110" font-size="13" font-weight="bold" fill="#5b2c6f">Not addressed by this paper</text>
+  <text x="604" y="132" font-size="13" fill="#333">A zero divisor does not give an idempotent,</text>
+  <text x="604" y="151" font-size="13" fill="#333">so the rung above this paper's result</text>
+  <text x="604" y="170" font-size="13" fill="#333">is left untouched.</text>
+
+  <rect x="590" y="252" width="372" height="92" rx="10" fill="#1b6ca8"/>
+  <text x="604" y="274" font-size="14" font-weight="bold" fill="#ffffff">THIS PAPER (23 Sep 2026), over K = 𝔽₂</text>
+  <text x="604" y="294" font-size="13" fill="#ffffff">G finitely presented, torsion-free, with a</text>
+  <text x="604" y="313" font-size="13" fill="#ffffff">finite 2-dimensional K(G,1). Existence proof via</text>
+  <text x="604" y="332" font-size="13" fill="#ffffff">random graphs; listed as formalized in Lean.</text>
+
+  <rect x="590" y="418" width="372" height="92" rx="10" fill="#ffffff" stroke="#d68910" stroke-width="1.5"/>
+  <text x="604" y="440" font-size="13" font-weight="bold" fill="#7a4b0c">Gardam (Annals of Math., 2021), over K = 𝔽₂</text>
+  <text x="604" y="459" font-size="13" fill="#333">P = Hantzsche–Wendt (Promislow) group;</text>
+  <text x="604" y="478" font-size="13" fill="#333">an explicit unit with 21 terms. Later: Murray</text>
+  <text x="604" y="497" font-size="13" fill="#333">(2021) every 𝔽<tspan font-size="10" dy="3">p</tspan><tspan dy="-3">; Gardam (arXiv 2023–24) ℂ.</tspan></text>
+
+  <!-- torsion band -->
+  <rect x="20" y="582" width="940" height="82" rx="10" fill="#f6f6f6" stroke="#bbbbbb"/>
+  <text x="34" y="606" font-size="14" font-weight="bold" fill="#333">Why "torsion-free"? An element g of order m &gt; 1 always gives zero divisors, and can break the other two:</text>
+  <text x="34" y="630" font-size="14" fill="#333">(1 − g)(1 + g + ⋯ + gᵐ⁻¹) = 1 − gᵐ = 0;   in 𝔽₂[ℤ/3], e = 1 + g + g² has e² = e;</text>
+  <text x="34" y="652" font-size="14" fill="#333">in ℚ[ℤ/5], u = −1 + g + g⁴ has inverse −1 + g² + g³. (All three checked by script.)</text>
+</svg>

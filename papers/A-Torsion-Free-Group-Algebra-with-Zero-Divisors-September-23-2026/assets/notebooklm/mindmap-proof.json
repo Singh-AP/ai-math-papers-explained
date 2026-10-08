@@ -1,0 +1,189 @@
+{
+  "name": "Disproof of Kaplansky's Zero-Divisor Conjecture",
+  "children": [
+    {
+      "name": "Main Theorem (Theorem 1.1)",
+      "children": [
+        {
+          "name": "Finitely presented torsion-free group G"
+        },
+        {
+          "name": "Nonzero zero divisors α, β ∈ F2[G] (αβ = 0)"
+        },
+        {
+          "name": "Finite 2-dimensional classifying space K(G,1)"
+        },
+        {
+          "name": "Disproves Kaplansky's Zero-Divisor Conjecture"
+        }
+      ]
+    },
+    {
+      "name": "Context & Related Conjectures",
+      "children": [
+        {
+          "name": "Kaplansky's Zero-Divisor Conjecture (1957 / Higman 1940)"
+        },
+        {
+          "name": "Unique-Product Property (UPP)",
+          "children": [
+            {
+              "name": "Sufficient for domain conclusion"
+            },
+            {
+              "name": "Failure of UPP doesn't automatically give zero divisors (Rips-Segev, Gardam Ã2)"
+            }
+          ]
+        },
+        {
+          "name": "Unit Conjecture",
+          "children": [
+            {
+              "name": "Disproved by Gardam over F2 and C"
+            },
+            {
+              "name": "Nontrivial units are not zero divisors"
+            }
+          ]
+        },
+        {
+          "name": "Mineyev's Origami criteria"
+        }
+      ]
+    },
+    {
+      "name": "Construction & Mechanism",
+      "children": [
+        {
+          "name": "Graphs & Complex X",
+          "children": [
+            {
+              "name": "Two graphs ΓA, ΓB immersed into rose F"
+            },
+            {
+              "name": "Roots xA, xB with components A', B'"
+            },
+            {
+              "name": "Attach abstract cones on components to form X"
+            },
+            {
+              "name": "Group G = π1(X)"
+            }
+          ]
+        },
+        {
+          "name": "Proposed Factors",
+          "children": [
+            {
+              "name": "α = ∑_{x∈A'} gx"
+            },
+            {
+              "name": "β = ∑_{y∈B'} hy^(-1)"
+            }
+          ]
+        },
+        {
+          "name": "Cancellation Mechanism",
+          "children": [
+            {
+              "name": "Prescribed outgoing signed-label sets Sx, Sy"
+            },
+            {
+              "name": "|Sx ∩ Sy| is odd for all pairs (x,y)"
+            },
+            {
+              "name": "Simultaneous-step graph components have even cardinality"
+            },
+            {
+              "name": "Contributions cancel in Characteristic 2"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Finite Geometry & Random Matching",
+      "children": [
+        {
+          "name": "Projective plane over F_q (q=128)"
+        },
+        {
+          "name": "Ordinary letters (points) + 3 extra letters"
+        },
+        {
+          "name": "Girth conditioning (girth(Γ) ≥ L = ⌊c log n⌋)"
+        },
+        {
+          "name": "Turn weights & squared-word decay estimate (Lemma 2.1)"
+        },
+        {
+          "name": "Bounded component diameter (O(L))"
+        }
+      ]
+    },
+    {
+      "name": "Proof Steps & Topological Control",
+      "children": [
+        {
+          "name": "Bounded-Pattern Estimate",
+          "children": [
+            {
+              "name": "Multiplicity stages & vertex exponents"
+            },
+            {
+              "name": "Aligned blocks & link graph"
+            },
+            {
+              "name": "Expectation bounds tend to zero"
+            }
+          ]
+        },
+        {
+          "name": "Reduced Spherical Arrangements",
+          "children": [
+            {
+              "name": "Short closures via short based loops"
+            },
+            {
+              "name": "Linear bound on comparison intervals"
+            },
+            {
+              "name": "Lipton–Tarjan planar separator theorem"
+            },
+            {
+              "name": "Extraction of forbidden bounded pattern"
+            }
+          ]
+        },
+        {
+          "name": "Safeguards Verified",
+          "children": [
+            {
+              "name": "Root Separation (α ≠ 0, β ≠ 0)"
+            },
+            {
+              "name": "Asphericity (π2(X) = 0)"
+            },
+            {
+              "name": "Universal cover X̃ is contractible"
+            },
+            {
+              "name": "G is torsion-free"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Formalization & Verification",
+      "children": [
+        {
+          "name": "Lean formalization in openai/math repository"
+        },
+        {
+          "name": "Comparator statement in TorsionFreeZeroDivisors.lean"
+        }
+      ]
+    }
+  ]
+}
